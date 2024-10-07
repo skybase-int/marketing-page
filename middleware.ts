@@ -34,12 +34,22 @@ const STYLE_HASHES = `
 `;
 
 export async function middleware(request: NextRequest) {
+  // Add this check at the beginning of the function to prevent generating multiple nonces
+  const url = request.nextUrl;
+  if (/\.(webp|png|svg|jpg|jpeg|mp4)$/.test(url.pathname)) {
+    return NextResponse.next();
+  }
+
+  const isDevelopment = process.env.NODE_ENV === 'development';
   const nonce = Buffer.from(crypto.randomUUID()).toString('base64');
 
+  // TODO: This works well both dev and in preview mode: style-src 'self' 'unsafe-inline'  https://vercel.live;
   // TODO: do we need 'unsafe-eval'? check if is a requirement to run it locally or also in other environments
   const cspHeader = `
     default-src 'self';
-    script-src 'self' 'nonce-${nonce}' https://vercel.live/ https://vercel.com https://static.cloudflareinsights.com;
+    script-src 'self' 'nonce-${nonce}' ${
+      isDevelopment ? "'unsafe-eval'" : ''
+    } https://vercel.live/ https://vercel.com https://static.cloudflareinsights.com;
     connect-src 'self' 
       https://cloudflareinsights.com 
       https://cloudflare-eth.com 
@@ -51,7 +61,7 @@ export async function middleware(request: NextRequest) {
       wss://ws-us3.pusher.com
       *.pusher.com
       *.pusherapp.com;
-    style-src 'self' ${STYLE_HASHES} https://vercel.live;
+    style-src 'self' 'unsafe-inline'  https://vercel.live;
     img-src 'self' data: blob: https://vercel.live https://vercel.com;
     font-src 'self' https://vercel.live https://assets.vercel.com;
     object-src 'none';
