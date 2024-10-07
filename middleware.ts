@@ -84,7 +84,7 @@ export async function middleware(request: NextRequest) {
       *.pusher.com
       *.pusherapp.com;
     style-src 'self' ${
-      isVercelPreview ? 'unsafe-inline' : `'unsafe-hashes' ${STYLE_HASHES}`
+      isVercelPreview ? "'unsafe-inline'" : `'unsafe-hashes' ${STYLE_HASHES}`
     }   https://vercel.live;
     img-src 'self' data: blob: https://vercel.live https://vercel.com;
     font-src 'self' https://vercel.live https://assets.vercel.com;
