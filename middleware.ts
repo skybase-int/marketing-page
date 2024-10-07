@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const STYLE_HASHES = `
+const HOME_STYLE_HASHES = `
 'sha256-tTgjrFAQDNcRW/9ebtwfDewCTgZMFnKpGa9tcHFyvcs=' 
 'sha256-gG7n2yImybWYmjxjEMN7KEo3MhyMGgjqn8gRz+eG+ig=' 
 'sha256-DOBk7++YHUOjJNY/f4GsbHteEg5HdTneaiCEfy5uQM4=' 
@@ -33,6 +33,27 @@ const STYLE_HASHES = `
 'sha256-QIjW/+aUzfg58HcITJNHkkCTGmLovNUIQbL+Zq2TsIE=' 
 `;
 
+const FEATURES_STYLES_HASHES = `
+'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 
+'sha256-9d1/bGktyX/HErlr+gDK9XOIAo3PHktlnwprKr5GLvQ=' 
+'sha256-Wxq0SKoYXP1Uf4ZmbPE++6IQNVrXpXpVE2BigubWJPA=' 
+'sha256-Bm87+fZvaJVNUZL3L/sMrALpcfej59B29waITBC2kt4=' 
+'sha256-uwX/0QPNdZVT7wxtxVIqCPVfpri/jqolULWghWSVs8c=' 
+'sha256-Xq7OCU5IMwMZSrsUaEv9JZJoNjB0LpM3N/rnetT+N58=' 
+'sha256-QXR/61JZA9TfP5VMt3Vy5WR9YypA0QUoulspOpgGtfI=' 
+'sha256-z8RBh2yzK4Zy7walbf9wiX+TVE+egH1udCItazJGQiY=' 
+'sha256-laxniBKFE69CPUpLCGftSNNcrHa/q3ajB6sagR6TudM=' 
+'sha256-1Lnznc6eYWhURFb7nKJCOwpM65bki8wf9F7gAG0jW0Y=' 
+`;
+
+const FAQ_STYLES_HASHES = `
+'sha256-bJKFT9B/8Xb7kdIaf1CGP91GqvgbEcq5wlQ+0e45nVE=' 
+'sha256-WN8guh0BsgxGPqgaCZnUcAaIV5y9rUK1vuUtb654pdU=' 
+'sha256-8ilcya6PJ2mDcuNFfcZaaOL85o/T7b8cPlsalzaJVOs=' 
+`;
+
+const STYLE_HASHES = HOME_STYLE_HASHES + FEATURES_STYLES_HASHES + FAQ_STYLES_HASHES;
+
 export async function middleware(request: NextRequest) {
   // Add this check at the beginning of the function to prevent generating multiple nonces
   const url = request.nextUrl;
@@ -61,7 +82,7 @@ export async function middleware(request: NextRequest) {
       wss://ws-us3.pusher.com
       *.pusher.com
       *.pusherapp.com;
-    style-src 'self' 'unsafe-inline'  https://vercel.live;
+    style-src 'self' 'unsafe-hashes' ${STYLE_HASHES}  https://vercel.live;
     img-src 'self' data: blob: https://vercel.live https://vercel.com;
     font-src 'self' https://vercel.live https://assets.vercel.com;
     object-src 'none';
