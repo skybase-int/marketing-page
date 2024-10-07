@@ -31,5 +31,3 @@ export default async function RootLayout({ children }: { children?: React.ReactN
     </html>
   );
 }
-
-export const dynamic = 'force-dynamic';
