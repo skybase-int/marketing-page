@@ -295,9 +295,9 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
         {/* Section 1 */}
         <Card
           variant="glass"
-          className="col-span-1 grid grid-cols-1 gap-5 rounded-3xl p-4 tablet:col-span-2 tablet:grid-cols-2 desktop:grid-cols-3"
+          className="col-span-1 grid grid-cols-1 gap-5 rounded-3xl p-4 tablet:col-span-2 tablet:grid-cols-2"
         >
-          <LeadCard className="col-span-1 tablet:col-span-2 desktop:col-span-1" />
+          <LeadCard className="col-span-1 tablet:col-span-1" />
           <FeatureCard
             href={`${baseUrl}/?widget=upgrade`}
             descriptionElement={
@@ -325,6 +325,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
             emphasis="Upgrade"
             title="to USDS and SKY"
             className="col-span-1 h-[500px] overflow-y-auto"
+            cardClassName="col-span-2 tablet:col-span-1"
             featurePageId="upgrade"
           />
         </Card>
