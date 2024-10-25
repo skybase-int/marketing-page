@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { EmphasisHeading } from '@/app/components/EmphasisHeading';
-import { Heading, Text } from '@/app/components/Typography';
+import { Heading, List, Text } from '@/app/components/Typography';
 import { ButtonArrow } from '@/app/components/ui/button';
 import { Card } from '@/app/components/ui/card';
 import { cn, getTermsLink } from '@/app/lib/utils';
@@ -37,7 +37,7 @@ const FeatureCardStats = ({
   shortenedAPYDescription?: string;
   TVLDescription: string;
   className?: string;
-  type: 'ssr' | 'str';
+  type?: 'ssr' | 'str';
   cardWidth: number;
   isMobile?: boolean;
 }) => {
@@ -49,9 +49,7 @@ const FeatureCardStats = ({
             <Heading tag="h6">
               <span>{APY}</span> <span className="text-black/40">{APYDescription}</span>
             </Heading>
-            <div className="flex pl-1">
-              <PopoverRateInfo type={type} />
-            </div>
+            <div className="flex pl-1">{type && <PopoverRateInfo type={type} />}</div>
           </div>
         )}
         {TVL && (
@@ -82,7 +80,8 @@ const FeatureCardLg = ({
   type,
   APYDescription,
   TVLDescription,
-  href
+  href,
+  isAlpha = false
 }: {
   descriptionElement: React.ReactNode;
   title: string;
@@ -97,10 +96,11 @@ const FeatureCardLg = ({
   featurePageId: string;
   APY: string;
   TVL: string;
-  type: 'ssr' | 'str';
+  type?: 'ssr' | 'str';
   APYDescription: string;
   TVLDescription: string;
   href: string;
+  isAlpha?: boolean;
 }) => {
   const { state, setState, setIsHover } = useAutoClose({ delay: 60000 });
   const { bpi } = useBreakpointIndex();
@@ -129,8 +129,8 @@ const FeatureCardLg = ({
     <Card
       ref={cardRef}
       className={cn(
-        className,
-        'relative flex h-[740px] overflow-hidden border border-0 p-0 tablet:h-[560px] desktop:h-[600px] desktop-xl:h-[820px]'
+        'relative flex h-[740px] overflow-hidden border border-0 p-0 tablet:h-[560px] desktop:h-[600px] desktop-xl:h-[820px]',
+        className
       )}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
@@ -160,12 +160,22 @@ const FeatureCardLg = ({
         }
       >
         <div className="p-5 tablet:pb-0 tablet:pr-0 tablet:pt-6 desktop:pl-7 desktop:pt-11 desktop-xl:pl-10 desktop-xl:pt-10">
+          <div className="mb-3 mr-8 flex flex-row flex-wrap-reverse justify-between">
+            <EmphasisHeading reverse text={title} emphasisText={emphasis} tag="h5" />
+            {isAlpha && (
+              <div style={{ width: 'fit-content' }}>
+                <Text
+                  variant="ui-small"
+                  className="mb-3 rounded-full bg-aurora-3 px-5 py-3.5 text-white/80 desktop:-mt-3"
+                >
+                  Alpha launch
+                </Text>
+              </div>
+            )}
+          </div>
           <div className="flex flex-col tablet:flex-row tablet:space-x-8">
             <div className="flex h-full w-full flex-col justify-between pb-7 tablet:w-1/2 desktop:w-[60%] desktop-xl:w-[50%]">
-              <div className="space-y-3 tablet:mr-7">
-                <EmphasisHeading reverse text={title} emphasisText={emphasis} tag="h5" />
-                {descriptionElement}
-              </div>
+              <div className="space-y-3 tablet:mr-7">{descriptionElement}</div>
             </div>
             <div className="flex w-full justify-center tablet:absolute tablet:bottom-0 tablet:right-0 tablet:block tablet:w-fit desktop:w-[35%] 2xl:w-fit">
               <Image
@@ -317,50 +327,6 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
             className="col-span-1 h-[500px] overflow-y-auto"
             featurePageId="upgrade"
           />
-          <FeatureCard
-            href={`${baseUrl}/?widget=trade`}
-            descriptionElement={
-              <Text variant="p3">
-                Trade popular tokens for USDS and SKY, quickly and simply, utilising smart contracts on the
-                blockchain instead of relying on centralised entities. Trades are powered by{' '}
-                <ExternalLink href="https://swap.cow.fi/" className="text-black">
-                  CoW Swap
-                </ExternalLink>
-                .
-              </Text>
-            }
-            postTextElement={
-              <>
-                <Text variant="p2" className="mb-4 desktop:mb-[18px] desktop-xl:mb-[20px]">
-                  Directly trade popular tokens for Sky ecosystem tokens at current market prices.
-                  <br />
-                </Text>
-                <ul className="list-disc pl-7">
-                  <li>
-                    <Text variant="p2">
-                      Trade USDC, USDT, ETH and SKY for USDS, and vice versa. Once you have USDS, you can use
-                      it to access Sky Token Rewards and to access the Sky Savings Rate to accumulate more
-                      USDS.
-                    </Text>
-                  </li>
-                  <li>
-                    <Text variant="p2">
-                      Trade USDC, USDT, ETH and USDS for SKY, and vice versa. Subject to governance approval,
-                      you’ll soon be able to use SKY to get Activation Token Rewards and vote on proposed
-                      changes and additions to the Sky Protocol.
-                    </Text>
-                  </li>
-                </ul>
-              </>
-            }
-            imgSrc="/products_trade.png"
-            buttonVariant="twilight-3"
-            buttonText="Start Trading"
-            emphasis="Trade"
-            title="crypto for USDS"
-            className="col-span-1 h-[600px] overflow-y-auto"
-            featurePageId="trade"
-          />
         </Card>
 
         {/* Section 2 */}
@@ -456,6 +422,122 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           type="ssr"
           APYDescription="SSR Rate"
           TVLDescription="Sky Savings Rate TVL"
+        />
+        <FeatureCardLg
+          href={`${baseUrl}/?widget=trade`}
+          descriptionElement={
+            <Text variant="p3">
+              Trade popular tokens for USDS and SKY, quickly and simply, utilising smart contracts on the
+              blockchain instead of relying on centralised entities. Trades are powered by{' '}
+              <ExternalLink href="https://swap.cow.fi/" className="text-black">
+                CoW Swap
+              </ExternalLink>
+              .
+            </Text>
+          }
+          postTextElement={
+            <>
+              <Text variant="p2" className="mb-4 desktop:mb-[18px] desktop-xl:mb-[20px]">
+                Directly trade popular tokens for Sky ecosystem tokens at current market prices.
+                <br />
+              </Text>
+              <ul className="list-disc pl-7">
+                <li>
+                  <Text variant="p2">
+                    Trade USDC, USDT, ETH and SKY for USDS, and vice versa. Once you have USDS, you can use it
+                    to access Sky Token Rewards and to access the Sky Savings Rate to accumulate more USDS.
+                  </Text>
+                </li>
+                <li>
+                  <Text variant="p2">
+                    Trade USDC, USDT, ETH and USDS for SKY, and vice versa. Subject to governance approval,
+                    you’ll soon be able to use SKY to get Activation Token Rewards and vote on proposed
+                    changes and additions to the Sky Protocol.
+                  </Text>
+                </li>
+              </ul>
+            </>
+          }
+          imgSrc="/products_trade.png" // TODO: add desktop image
+          mobileImgSrc="/products_trade.png" // TODO: add mobile image
+          buttonVariant="twilight-3"
+          buttonText="Start Trading"
+          emphasis="Trade"
+          title="crypto for USDS"
+          postTitle="Trade crypto for USDS"
+          className="col-span-1 h-[500px] overflow-y-auto tablet:col-span-2 tablet:h-[600px] desktop:col-span-1"
+          featurePageId="trade"
+          APY=""
+          TVL=""
+          APYDescription=""
+          TVLDescription=""
+        />
+        <FeatureCardLg
+          href={`${baseUrl}/?widget=seal`}
+          // TODO: Add tooltip after "exit fee"
+          descriptionElement={
+            <Text variant="p3">
+              Supply MKR tokens to the Seal Engine of the Sky Protocol to create a position and access Seal
+              Rewards.
+              <br />
+              <br />
+              Use your sealed MKR to delegate your Sky governance voting rights, as collateral to borrow USDS,
+              or to just further support the Sky project. All positions automatically access rewards, as per
+              the protocol’s design.
+              <br />
+              <br />
+              You can seal or unseal your tokens—and claim your rewards—anytime. Unsealing requires payment of
+              an exit fee.
+            </Text>
+          }
+          postTitle="Seal Engine"
+          postTextElement={
+            <>
+              <Text variant="p2">
+                The MKR tokens you supply to the Seal Engine are sealed behind an exit feeⓘ in order to
+                provide access to Seal Rewards and encourage a deeper commitment to the Sky ecosystem.
+                <br />
+                <br />
+                Your sealed MKR enables you to create one or more positions through which you access the
+                rewards. You can:
+                <br />
+                <br />
+                <List tag="ol" variant="ordered">
+                  <li>
+                    <Text variant="p2">Borrow USDS against your MKRⓘ</Text>
+                  </li>
+                  <li>
+                    <Text variant="p2">
+                      Transfer the voting power your MKR provides you with to a recognized delegate or a
+                      contract you own
+                    </Text>
+                  </li>
+                  <li>
+                    <Text variant="p2">Seal your tokens and continue to collect rewards</Text>
+                  </li>
+                </List>
+                <br />
+                Your MKR tokens, as well as any rewards you accumulate, are supplied to a non-custodial smart
+                contract, which means no intermediary has custody of those tokens. With Sky, you always remain
+                in control of your funds.
+              </Text>
+            </>
+          }
+          imgSrc="/products_savings.png" // TODO: add desktop image
+          mobileImgSrc="/products_savings_mobile.png" // TODO: add mobile image
+          buttonVariant="twilight-2"
+          buttonText="Seal your MKR"
+          emphasis="Access Seal rewards"
+          title="via the Seal Engine"
+          className="col-span-1 tablet:col-span-2 desktop:col-span-1"
+          featurePageId="seal" // TODO: Check it works
+          APY=""
+          TVL="" // TODO:
+          type="ssr" // TODO:
+          APYDescription=""
+          TVLDescription=""
+          // TVLDescription="Seal Engine TVL"
+          isAlpha
         />
 
         {/* Section 4 */}
