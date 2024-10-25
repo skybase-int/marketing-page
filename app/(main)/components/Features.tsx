@@ -530,7 +530,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           buttonText="Seal your MKR"
           emphasis="Access Seal rewards"
           title="via the Seal Engine"
-          className="col-span-1 tablet:col-span-2 desktop:col-span-1"
+          className="col-span-1 tablet:col-span-2 desktop:col-span-1 desktop:mb-32 desktop-xl:mb-0"
           featurePageId="seal" // TODO: Check it works
           APY=""
           TVL="" // TODO:
