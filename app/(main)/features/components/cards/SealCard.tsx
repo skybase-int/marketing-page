@@ -13,6 +13,7 @@ import ProductsSeals5Mobile from '@/public/products_seal_5_mobile.png';
 import { useBreakpointIndex } from '@/app/hooks/useBreakpointIndex';
 import { FetchedData } from '@/app/(main)/fetchData';
 import { ExternalLink } from '@/app/components/ExternalLink';
+import { PopoverSealInfo } from '@/app/components/PopoverSealInfo';
 
 export const SealCard = ({ data }: { data: FetchedData }) => {
   const { bpi } = useBreakpointIndex();
@@ -35,10 +36,9 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
                 You can use your sealed MKR to delegate your Sky governance voting rights, as collateral to
                 borrow USDS, or to just further support the Sky project. All positions access Seal Rewards.
               </TextFeatureCard>
-              {/* TODO: Tooltip */}
               <TextFeatureCard>
                 No minimum supply is required, and you can seal or unseal your tokens—and claim your
-                rewards—anytime. Unsealing requires payment of an exit feeⓘ.
+                rewards—anytime. Unsealing requires payment of an exit fee <PopoverSealInfo type="exitFee" />.
                 <br />
                 With Sky, you always remain in control of your funds.
               </TextFeatureCard>
@@ -156,11 +156,10 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
                 anytime, and draw or pay back additional USDS whenever you’d like. This means you are always
                 able to actively manage your position.
               </TextFeatureCard>
-              {/* TODO: replace tooltip */}
               <TextFeatureCard>
-                The debt ceiling and borrow rateⓘ are determined by Sky ecosystem governance through a process
-                of decentralised, community-driven onchain voting. Borrow rate fees accumulate automatically
-                per block and get added to the total debt.
+                The debt ceiling and borrow rate <PopoverSealInfo type="borrowRate" /> are determined by Sky
+                ecosystem governance through a process of decentralised, community-driven onchain voting.
+                Borrow rate fees accumulate automatically per block and get added to the total debt.
               </TextFeatureCard>
               <TextFeatureCard>
                 Opening a USDS borrow position is subject to liquidation risk in the following scenario: If at
@@ -200,9 +199,9 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
                 When you supply MKR to the Seal Engine, a position is created and those tokens are sealed
                 behind an exit fee. You can seal and unseal your tokens anytime.
               </TextFeatureCard>
-              {/* TODO: replace tooltip */}
+              {/* TODO: Do we need an exit fee tooltip here? It's the same content as that of the tooltip */}
               <TextFeatureCard>
-                Unsealing requires payment of an exit feeⓘ —a percentage of the total amount of tokens you’ve
+                Unsealing requires payment of an exit fee—a percentage of the total amount of tokens you’ve
                 sealed in that position. The fee is automatically subtracted from that total amount, and then
                 burnt, removing the tokens from circulation. Your accumulated rewards are not affected.{' '}
               </TextFeatureCard>
