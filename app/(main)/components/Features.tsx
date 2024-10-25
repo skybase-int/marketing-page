@@ -231,8 +231,8 @@ const LeadCard = ({ className }: { className: string }) => {
           Explore the Sky.money&nbsp;app
         </Heading>
         <Text variant="p3" className="mt-3 tablet:mt-4 desktop:mt-5 desktop-xl:mt-6">
-          Sky.money is a non-custodial gateway to the decentralised Sky Protocol. It is accessible to eligible
-          users 24/7.
+          Sky.money is a non-custodial gateway to the decentralised Sky Protocol. <br />
+          It is accessible to eligible users 24/7.
         </Text>
       </div>
       <Banner title={TERMS_LINK[0].name} url={TERMS_LINK[0].url} />
