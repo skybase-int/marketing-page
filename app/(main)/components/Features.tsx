@@ -544,7 +544,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
         {/* Section 4 */}
         <Card
           variant="glass"
-          className="col-span-1 grid grid-cols-1 gap-5 rounded-3xl border p-4 tablet:col-span-2 desktop:grid-cols-3"
+          className="col-span-1 grid grid-cols-1 gap-5 rounded-3xl border p-4 tablet:col-span-2 desktop:grid-cols-2"
         >
           <FeatureCard
             href=""
@@ -586,43 +586,6 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
             isMediumSize={true}
             className="col-span-1 tablet:col-span-2 desktop:col-span-1"
             featurePageId="activation"
-          />
-          <FeatureCard
-            href=""
-            cardClassName={soonSectionClassName}
-            descriptionElement={
-              <Text variant="p3">
-                Sealed Activation, a powerful Sky Protocol feature to incentivise long-term governance
-                participation, is on the horizon. <br />
-                <br />
-                Pending governance approval, you&apos;ll be able to opt to seal your SKY or MKR governance
-                tokens to accumulate even more Activation Token Rewards in the form of USDS or Sky Star
-                tokens—the choice is yours.
-              </Text>
-            }
-            postTextElement={
-              <Text variant="p2">
-                When you supply SKY or MKR tokens to the Sealed Activation module, they are sealed behind an
-                Exit Fee to incentivise a deeper commitment to the Sky Project. 
-                <br />
-                <br />
-                Sealing enables you to accumulate Activation Token Rewards in amounts greater than with simple
-                Activation. The Activation Token Rewards will be in the form of USDS or Sky Star tokens—you
-                choose.
-                <br />
-                <br />
-                Additionally, you&apos;ll be able to use your Sealed SKY or MKR to delegate your voting power.
-              </Text>
-            }
-            imgSrc="/products_lse.png"
-            buttonVariant="azure-2"
-            emphasis="Sealed Activation"
-            title="Get more rewards with"
-            reverse={false}
-            isNotLaunched={true}
-            isMediumSize={true}
-            className="col-span-1 tablet:col-span-2 desktop:col-span-1"
-            featurePageId="sealed-activation"
           />
           <FeatureCard
             href=""

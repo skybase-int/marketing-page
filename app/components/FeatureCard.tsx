@@ -101,7 +101,7 @@ export const FeatureCard = ({
             'flex h-full flex-col justify-between overflow-hidden p-5 tablet:pt-6 desktop:p-7 desktop:pt-11'
           )}
         >
-          <div className="flex flex-row flex-wrap-reverse justify-between">
+          <div className="flex flex-row flex-wrap-reverse items-center justify-between">
             <EmphasisHeading
               reverse={reverse}
               text={title}
