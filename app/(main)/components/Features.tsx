@@ -459,8 +459,8 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
               </ul>
             </>
           }
-          imgSrc="/products_trade.png" // TODO: add desktop image
-          mobileImgSrc="/products_trade.png" // TODO: add mobile image
+          imgSrc="/products_trade.png"
+          mobileImgSrc="/products_trade_mobile.png"
           buttonVariant="twilight-3"
           buttonText="Start Trading"
           emphasis="Trade"

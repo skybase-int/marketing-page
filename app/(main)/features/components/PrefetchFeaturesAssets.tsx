@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import ProductsUpgrade from '@/public/features-upgrade.png';
 import ProductsTrade from '@/public/products_trade.png';
+import ProductsTradeMobile from '@/public/products_trade_mobile.png';
 import ProductsSkyBridge from '@/public/features-skylink.png';
 import ProductsSkyBridgeMobile from '@/public/features-skylink-mobile.png';
 import SealedActivationImg from '@/public/features-sealed-activation.png';
@@ -40,6 +41,14 @@ export const PrefetchFeaturesAssets = () => {
         alt="Products trade"
         placeholder="blur"
         src={ProductsTrade}
+        className="absolute top-1/2 w-full -translate-y-1/2 rounded-[20px] desktop:rounded-[40px]"
+        quality={100}
+        loading="eager"
+      />
+      <Image
+        alt="Products trade"
+        placeholder="blur"
+        src={ProductsTradeMobile}
         className="absolute top-1/2 w-full -translate-y-1/2 rounded-[20px] desktop:rounded-[40px]"
         quality={100}
         loading="eager"
