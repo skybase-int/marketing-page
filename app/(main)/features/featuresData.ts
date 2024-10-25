@@ -4,8 +4,8 @@ import { TradeCard } from './components/cards/TradeCard';
 import { RewardsCard } from './components/cards/RewardsCard';
 import { SaveCard } from './components/cards/SaveCard';
 import { ActivationCard } from './components/cards/ActivationCard';
-import { SealedActivationCard } from './components/cards/SealedActivationCard';
 import { SkyLinkCard } from './components/cards/SkyLinkCard';
+import { SealCard } from './components/cards/SealCard';
 
 type Feature = {
   icon: React.ElementType;
@@ -44,7 +44,7 @@ export const existingFeatures: Feature[] = [
   {
     icon: SealedActivation,
     title: 'Seal Engine',
-    card: SealedActivationCard,
+    card: SealCard,
     id: 'seal',
     isAlpha: true
   }
