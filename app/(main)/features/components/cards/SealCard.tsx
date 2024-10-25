@@ -1,11 +1,17 @@
 import Image from 'next/image';
 import { FeaturesPageCard, TextFeatureCard } from '../FeaturesPageCard';
-import ProductsSavings from '@/public/products_savings.png';
-import ProductsSavingsMobile from '@/public/products_savings_mobile.png';
+import ProductsSeals1 from '@/public/products_seal_1.png';
+import ProductsSeals2 from '@/public/products_seal_2.png';
+import ProductsSeals3 from '@/public/products_seal_3.png';
+import ProductsSeals4 from '@/public/products_seal_4.png';
+import ProductsSeals5 from '@/public/products_seal_5.png';
+import ProductsSeals1Mobile from '@/public/products_seal_1_mobile.png';
+import ProductsSeals2Mobile from '@/public/products_seal_2_mobile.png';
+import ProductsSeals3Mobile from '@/public/products_seal_3_mobile.png';
+import ProductsSeals4Mobile from '@/public/products_seal_4_mobile.png';
+import ProductsSeals5Mobile from '@/public/products_seal_5_mobile.png';
 import { useBreakpointIndex } from '@/app/hooks/useBreakpointIndex';
 import { FetchedData } from '@/app/(main)/fetchData';
-import WhatIsSave from '@/public/savings-what-is-it.png';
-import HowItWorks from '@/public/savings-how-it-works.png';
 import { ExternalLink } from '@/app/components/ExternalLink';
 
 export const SealCard = ({ data }: { data: FetchedData }) => {
@@ -48,7 +54,7 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
                 <Image
                   alt="Products seal"
                   placeholder="blur"
-                  src={bpi === 0 ? ProductsSavingsMobile : ProductsSavings}
+                  src={bpi === 0 ? ProductsSeals1Mobile : ProductsSeals1}
                   className="absolute top-1/2 h-auto w-full -translate-y-1/2 rounded-[20px] tablet:left-0 tablet:top-full tablet:translate-x-8 tablet:translate-y-[calc(-100%+92px)] tablet:rounded-r-none tablet:rounded-bl-none desktop:static desktop:top-auto desktop:translate-x-10 desktop:translate-y-10 desktop:rounded-tl-[40px]"
                   quality={100}
                 />
@@ -83,13 +89,14 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
           url: `?widget=seal`,
           buttonVariant: 'twilight-1',
           illustration: (
-            <div className="flex h-full w-full items-center justify-center py-6">
-              <div className="relative h-full w-full">
+            <div className="h-full w-full px-3 tablet:px-0">
+              <div className="relative flex h-full w-full flex-col">
+                <div className="grow" />
                 <Image
-                  alt="What is Sky Savings Rate"
-                  src={WhatIsSave}
-                  fill
-                  className="object-contain"
+                  alt="Products seal"
+                  placeholder="blur"
+                  src={bpi === 0 ? ProductsSeals2Mobile : ProductsSeals2}
+                  className="absolute top-1/2 h-auto w-full -translate-y-1/2 rounded-[20px] tablet:left-0 tablet:top-full tablet:translate-x-8 tablet:translate-y-[calc(-100%+92px)] tablet:rounded-r-none tablet:rounded-bl-none desktop:static desktop:top-auto desktop:translate-x-10 desktop:translate-y-10 desktop:rounded-tl-[40px]"
                   quality={100}
                 />
               </div>
@@ -124,13 +131,14 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
           url: `?widget=seal`,
           buttonVariant: 'twilight-1',
           illustration: (
-            <div className="flex h-full w-full items-center justify-center py-6">
-              <div className="relative h-full w-full">
+            <div className="h-full w-full px-3 tablet:px-0">
+              <div className="relative flex h-full w-full flex-col">
+                <div className="grow" />
                 <Image
-                  alt="How it works: sUSDS"
-                  src={HowItWorks}
-                  fill
-                  className="object-contain"
+                  alt="Products seal"
+                  placeholder="blur"
+                  src={bpi === 0 ? ProductsSeals3Mobile : ProductsSeals3}
+                  className="absolute top-1/2 h-auto w-full -translate-y-1/2 rounded-[20px] tablet:left-0 tablet:top-full tablet:translate-x-8 tablet:translate-y-[calc(-100%+92px)] tablet:rounded-r-none tablet:rounded-bl-none desktop:static desktop:top-auto desktop:translate-x-10 desktop:translate-y-10 desktop:rounded-tl-[40px]"
                   quality={100}
                 />
               </div>
@@ -169,13 +177,14 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
           url: `?widget=savings`,
           buttonVariant: 'twilight-1',
           illustration: (
-            <div className="flex h-full w-full items-center justify-center py-6">
-              <div className="relative h-full w-full">
+            <div className="h-full w-full px-3 tablet:px-0">
+              <div className="relative flex h-full w-full flex-col">
+                <div className="grow" />
                 <Image
-                  alt="How it works: sUSDS"
-                  src={HowItWorks}
-                  fill
-                  className="object-contain"
+                  alt="Products seal"
+                  placeholder="blur"
+                  src={bpi === 0 ? ProductsSeals4Mobile : ProductsSeals4}
+                  className="absolute top-1/2 h-auto w-full -translate-y-1/2 rounded-[20px] tablet:left-0 tablet:top-full tablet:translate-x-8 tablet:translate-y-[calc(-100%+92px)] tablet:rounded-r-none tablet:rounded-bl-none desktop:static desktop:top-auto desktop:translate-x-10 desktop:translate-y-10 desktop:rounded-tl-[40px]"
                   quality={100}
                 />
               </div>
@@ -209,13 +218,14 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
           url: `?widget=seal`,
           buttonVariant: 'twilight-1',
           illustration: (
-            <div className="flex h-full w-full items-center justify-center py-6">
-              <div className="relative h-full w-full">
+            <div className="h-full w-full px-3 tablet:px-0">
+              <div className="relative flex h-full w-full flex-col">
+                <div className="grow" />
                 <Image
-                  alt="How it works: sUSDS"
-                  src={HowItWorks}
-                  fill
-                  className="object-contain"
+                  alt="Products seal"
+                  placeholder="blur"
+                  src={bpi === 0 ? ProductsSeals5Mobile : ProductsSeals5}
+                  className="absolute top-1/2 h-auto w-full -translate-y-1/2 rounded-[20px] tablet:left-0 tablet:top-full tablet:translate-x-8 tablet:translate-y-[calc(-100%+92px)] tablet:rounded-r-none tablet:rounded-bl-none desktop:static desktop:top-auto desktop:translate-x-10 desktop:translate-y-10 desktop:rounded-tl-[40px]"
                   quality={100}
                 />
               </div>
