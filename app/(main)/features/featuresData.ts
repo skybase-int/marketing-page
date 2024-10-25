@@ -13,6 +13,7 @@ type Feature = {
   isLong?: boolean;
   card: React.ElementType;
   id: string; //should be the same as the id of the card
+  isAlpha?: boolean;
 };
 
 export const existingFeatures: Feature[] = [
@@ -39,6 +40,13 @@ export const existingFeatures: Feature[] = [
     title: 'Savings',
     card: SaveCard,
     id: 'savings'
+  },
+  {
+    icon: SealedActivation,
+    title: 'Seal Engine',
+    card: SealedActivationCard,
+    id: 'seal',
+    isAlpha: true
   }
 ];
 
@@ -48,12 +56,6 @@ export const comingSoonFeatures: Feature[] = [
     title: 'Activation',
     card: ActivationCard,
     id: 'activation'
-  },
-  {
-    icon: SealedActivation,
-    title: 'Sealed Activation',
-    card: SealedActivationCard,
-    id: 'sealed-activation'
   },
   {
     icon: SkyLink,
