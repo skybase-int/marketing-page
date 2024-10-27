@@ -27,6 +27,10 @@ export const menuSections: Record<
     {
       title: 'Sky Savings Rate',
       href: 'features#savings'
+    },
+    {
+      title: 'Seal Engine',
+      href: 'features#seal'
     }
   ],
   participate: [

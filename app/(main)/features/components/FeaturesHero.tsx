@@ -48,14 +48,22 @@ export function FeaturesHero({ heroHeight }: { heroHeight: number }) {
           </Heading>
           <div className="flex flex-wrap justify-center gap-3">
             {existingFeatures.map(feature => (
-              <InternalLink href={`#${feature.id}`} key={feature.id}>
-                <AnchorButton
-                  icon={<feature.icon boxSize={32} className="text-white" variant={IconVariantEnum.mono} />}
-                  isLong={feature.isLong}
+              <div key={feature.id} className="flex flex-col items-center">
+                <Text
+                  variant="caption"
+                  className={`mb-2 mt-8 text-white ${feature.isAlpha ? 'visible' : 'invisible'}`}
                 >
-                  {feature.title}
-                </AnchorButton>
-              </InternalLink>
+                  Alpha launch
+                </Text>
+                <InternalLink href={`#${feature.id}`}>
+                  <AnchorButton
+                    icon={<feature.icon boxSize={32} className="text-white" variant={IconVariantEnum.mono} />}
+                    isLong={feature.isLong}
+                  >
+                    {feature.title}
+                  </AnchorButton>
+                </InternalLink>
+              </div>
             ))}
           </div>
           <Text variant="caption" className="mb-2 mt-8 text-white">
