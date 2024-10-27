@@ -12,12 +12,12 @@ import FeaturesSkyBackground from '@/public/FeaturesBackground.png';
 import { BP, useBreakpointIndex } from '@/app/hooks/useBreakpointIndex';
 import { InternalLink } from '@/app/components/InternalLink';
 import { ArrowRight } from '@/app/components/icons/ArrowRight';
-import { motion } from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
 import { Banner } from '@/app/components/Banner';
 import { FetchedData } from '../fetchData';
 import { ExternalLink } from '@/app/components/ExternalLink';
 import { PopoverRateInfo } from '@/app/components/PopoverRateInfo';
+import { PopoverSealInfo } from '@/app/components/PopoverSealInfo';
 import { useSkyUrl } from '@/app/hooks/useSkyUrl';
 import { useHeaderInView } from '@/app/hooks/useHeaderInView';
 
@@ -475,7 +475,6 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
         />
         <FeatureCardLg
           href={`${baseUrl}/?widget=seal`}
-          // TODO: Add tooltip after "exit fee"
           descriptionElement={
             <Text variant="p3">
               Supply MKR tokens to the Seal Engine of the Sky Protocol to create a position and access Seal
@@ -488,15 +487,16 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
               <br />
               <br />
               You can seal or unseal your tokens—and claim your rewards—anytime. Unsealing requires payment of
-              an exit fee.
+              an exit fee <PopoverSealInfo type="exitFee" />.
             </Text>
           }
           postTitle="Seal Engine"
           postTextElement={
             <>
               <Text variant="p2">
-                The MKR tokens you supply to the Seal Engine are sealed behind an exit feeⓘ in order to
-                provide access to Seal Rewards and encourage a deeper commitment to the Sky ecosystem.
+                The MKR tokens you supply to the Seal Engine are sealed behind an exit fee{' '}
+                <PopoverSealInfo type="exitFee" className="z-[1000]" /> in order to provide access to Seal
+                Rewards and encourage a deeper commitment to the Sky ecosystem.
                 <br />
                 <br />
                 Your sealed MKR enables you to create one or more positions through which you access the
@@ -505,7 +505,9 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                 <br />
                 <List tag="ol" variant="ordered">
                   <li>
-                    <Text variant="p2">Borrow USDS against your MKRⓘ</Text>
+                    <Text variant="p2">
+                      Borrow USDS against your MKR <PopoverSealInfo type="borrow" className="z-[1000]" />
+                    </Text>
                   </li>
                   <li>
                     <Text variant="p2">
