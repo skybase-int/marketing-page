@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import ProductsUpgrade from '@/public/features-upgrade.png';
 import ProductsTrade from '@/public/products_trade.png';
+import ProductsTradeMobile from '@/public/products_trade_mobile.png';
 import ProductsSkyBridge from '@/public/features-skylink.png';
 import ProductsSkyBridgeMobile from '@/public/features-skylink-mobile.png';
 import SealedActivationImg from '@/public/features-sealed-activation.png';
@@ -14,6 +15,16 @@ import ProductsSavingsMobile from '@/public/products_savings_mobile.png';
 import WhatIsSave from '@/public/savings-what-is-it.png';
 import HowItWorksSavings from '@/public/savings-how-it-works.png';
 import { useBreakpointIndex } from '@/app/hooks/useBreakpointIndex';
+import ProductsSeals1 from '@/public/products_seal_1.png';
+import ProductsSeals2 from '@/public/products_seal_2.png';
+import ProductsSeals3 from '@/public/products_seal_3.png';
+import ProductsSeals4 from '@/public/products_seal_4.png';
+import ProductsSeals5 from '@/public/products_seal_5.png';
+import ProductsSeals1Mobile from '@/public/products_seal_1_mobile.png';
+import ProductsSeals2Mobile from '@/public/products_seal_2_mobile.png';
+import ProductsSeals3Mobile from '@/public/products_seal_3_mobile.png';
+import ProductsSeals4Mobile from '@/public/products_seal_4_mobile.png';
+import ProductsSeals5Mobile from '@/public/products_seal_5_mobile.png';
 
 export const PrefetchFeaturesAssets = () => {
   const { bpi } = useBreakpointIndex();
@@ -30,6 +41,14 @@ export const PrefetchFeaturesAssets = () => {
         alt="Products trade"
         placeholder="blur"
         src={ProductsTrade}
+        className="absolute top-1/2 w-full -translate-y-1/2 rounded-[20px] desktop:rounded-[40px]"
+        quality={100}
+        loading="eager"
+      />
+      <Image
+        alt="Products trade"
+        placeholder="blur"
+        src={ProductsTradeMobile}
         className="absolute top-1/2 w-full -translate-y-1/2 rounded-[20px] desktop:rounded-[40px]"
         quality={100}
         loading="eager"
@@ -102,6 +121,46 @@ export const PrefetchFeaturesAssets = () => {
         src={HowItWorksSavings}
         fill
         className="object-contain"
+        quality={100}
+        loading="eager"
+      />
+      <Image
+        alt="Products seal"
+        placeholder="blur"
+        src={bpi === 0 ? ProductsSeals1Mobile : ProductsSeals1}
+        className="absolute top-1/2 h-auto w-full -translate-y-1/2 rounded-[20px] tablet:left-0 tablet:top-full tablet:translate-x-8 tablet:translate-y-[calc(-100%+92px)] tablet:rounded-r-none tablet:rounded-bl-none desktop:static desktop:top-auto desktop:translate-x-10 desktop:translate-y-10 desktop:rounded-tl-[40px]"
+        quality={100}
+        loading="eager"
+      />
+      <Image
+        alt="Products seal"
+        placeholder="blur"
+        src={bpi === 0 ? ProductsSeals2Mobile : ProductsSeals2}
+        className="absolute top-1/2 h-auto w-full -translate-y-1/2 rounded-[20px] tablet:left-0 tablet:top-full tablet:translate-x-8 tablet:translate-y-[calc(-100%+92px)] tablet:rounded-r-none tablet:rounded-bl-none desktop:static desktop:top-auto desktop:translate-x-10 desktop:translate-y-10 desktop:rounded-tl-[40px]"
+        quality={100}
+        loading="eager"
+      />
+      <Image
+        alt="Products seal"
+        placeholder="blur"
+        src={bpi === 0 ? ProductsSeals3Mobile : ProductsSeals3}
+        className="absolute top-1/2 h-auto w-full -translate-y-1/2 rounded-[20px] tablet:left-0 tablet:top-full tablet:translate-x-8 tablet:translate-y-[calc(-100%+92px)] tablet:rounded-r-none tablet:rounded-bl-none desktop:static desktop:top-auto desktop:translate-x-10 desktop:translate-y-10 desktop:rounded-tl-[40px]"
+        quality={100}
+        loading="eager"
+      />
+      <Image
+        alt="Products seal"
+        placeholder="blur"
+        src={bpi === 0 ? ProductsSeals4Mobile : ProductsSeals4}
+        className="absolute top-1/2 h-auto w-full -translate-y-1/2 rounded-[20px] tablet:left-0 tablet:top-full tablet:translate-x-8 tablet:translate-y-[calc(-100%+92px)] tablet:rounded-r-none tablet:rounded-bl-none desktop:static desktop:top-auto desktop:translate-x-10 desktop:translate-y-10 desktop:rounded-tl-[40px]"
+        quality={100}
+        loading="eager"
+      />
+      <Image
+        alt="Products seal"
+        placeholder="blur"
+        src={bpi === 0 ? ProductsSeals5Mobile : ProductsSeals5}
+        className="absolute top-1/2 h-auto w-full -translate-y-1/2 rounded-[20px] tablet:left-0 tablet:top-full tablet:translate-x-8 tablet:translate-y-[calc(-100%+92px)] tablet:rounded-r-none tablet:rounded-bl-none desktop:static desktop:top-auto desktop:translate-x-10 desktop:translate-y-10 desktop:rounded-tl-[40px]"
         quality={100}
         loading="eager"
       />

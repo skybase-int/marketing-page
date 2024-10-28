@@ -48,10 +48,12 @@ export function LiFeatureCard({ children }: { children: ReactNode }) {
 
 export function FeaturesPageCard({
   isComingSoon = false,
+  isAlpha = false,
   tabs,
   id
 }: {
   isComingSoon?: boolean;
+  isAlpha?: boolean;
   tabs: CardTab[];
   id: string;
 }) {
@@ -74,15 +76,24 @@ export function FeaturesPageCard({
               </Text>
             </div>
           )}
-          {tabs.length > 1 && (
-            <TabsList className="flex w-fit flex-wrap justify-start gap-2">
-              {tabs.map(({ title, label = title }) => (
-                <TabsTrigger variant="secondary" key={label} value={label}>
-                  {label}
-                </TabsTrigger>
-              ))}
-            </TabsList>
-          )}
+          <div className="mb-2 flex flex-col-reverse items-center justify-between tablet:mb-4 tablet:flex-row">
+            {tabs.length > 1 && (
+              <TabsList className="flex w-fit flex-wrap justify-start gap-2">
+                {tabs.map(({ title, label = title }) => (
+                  <TabsTrigger variant="secondary" key={label} value={label}>
+                    {label}
+                  </TabsTrigger>
+                ))}
+              </TabsList>
+            )}
+            {isAlpha && (
+              <div className="mb-2 flex h-12 w-fit items-center justify-center self-start rounded-full bg-aurora-3 px-5 tablet:mb-0">
+                <Text variant="caption-medium" className="text-center text-white">
+                  Alpha launch
+                </Text>
+              </div>
+            )}
+          </div>
           <div className="flex min-h-0 w-full grow flex-col">
             {tabs.map(
               ({
