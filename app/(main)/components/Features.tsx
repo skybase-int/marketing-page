@@ -526,8 +526,8 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
               </Text>
             </>
           }
-          imgSrc="/products_savings.png" // TODO: add desktop image
-          mobileImgSrc="/products_savings_mobile.png" // TODO: add mobile image
+          imgSrc="/products_seal_1.png"
+          mobileImgSrc="/products_seal_1_mobile.png"
           buttonVariant="twilight-2"
           buttonText="Seal your MKR"
           emphasis="Access Seal rewards"
