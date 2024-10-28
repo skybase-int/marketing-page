@@ -1,0 +1,9 @@
+.changeset/
+.devcontainer/
+.git/
+.github/
+.husky/
+.vscode/
+.env.example
+Dockerfile
+README.md
