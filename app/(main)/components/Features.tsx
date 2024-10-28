@@ -483,7 +483,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
               <br />
               Use your sealed MKR to delegate your Sky governance voting rights, as collateral to borrow USDS,
               or to just further support the Sky project. All positions automatically access rewards, as per
-              the protocol’s design.
+              the protocol’s design, when certain parameters determined by Governance are met.
               <br />
               <br />
               You can seal or unseal your tokens—and claim your rewards—anytime. Unsealing requires payment of
@@ -496,7 +496,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
               <Text variant="p2">
                 The MKR tokens you supply to the Seal Engine are sealed behind an exit fee{' '}
                 <PopoverSealInfo type="exitFee" className="z-[1000]" /> in order to provide access to Seal
-                Rewards and encourage a deeper commitment to the Sky ecosystem.
+                Rewards and encourage a deeper commitment to the Sky ecosystem governance.
                 <br />
                 <br />
                 Your sealed MKR enables you to create one or more positions through which you access the
@@ -511,8 +511,8 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                   </li>
                   <li>
                     <Text variant="p2">
-                      Transfer the voting power your MKR provides you with to a recognized delegate or a
-                      contract you own
+                      Transfer the voting power of your MKR tokens to your favorite delegate or a delegate
+                      contract you own.
                     </Text>
                   </li>
                   <li>
