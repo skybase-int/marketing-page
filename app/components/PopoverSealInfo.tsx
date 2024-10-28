@@ -25,9 +25,11 @@ const content = {
         <br />
         The exit fee is a risk parameter managed and determined (regardless of position duration) by Sky
         ecosystem governance. The exit fee applies at unsealing, not at sealing, which means that it is
-        determined the moment you unseal your MKR. The moment the Seal Engine launched, the exit fee rate was
-        set to 5% of the value of MKR tokens you’ve sealed, with a 1% increase every 6 months thereafter until
-        it reaches the long-term fee rate of 15%.
+        determined the moment you unseal your MKR.
+        <br />
+        <br />
+        The moment the Seal Engine launched, the exit fee rate was set to 5% of the value of MKR tokens you’ve
+        sealed, with a 1% increase every 6 months thereafter until it reaches the long-term fee rate of 15%.
       </Text>
     )
   },
@@ -66,7 +68,11 @@ export const PopoverSealInfo = ({
       <PopoverTrigger>
         <Info />
       </PopoverTrigger>
-      <PopoverContent align="center" side="top" className={cn('backdrop-blur-lg', className)}>
+      <PopoverContent
+        align="center"
+        side="top"
+        className={cn('w-[100vw] backdrop-blur-lg md:w-[500px]', className)}
+      >
         <div className="flex w-full justify-end pb-2">
           <PopoverClose>
             <Close className="h-5 w-5 cursor-pointer" />
