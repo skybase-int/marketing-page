@@ -174,7 +174,7 @@ export function Ecosystem({ childrenRef }: { childrenRef: React.RefObject<HTMLDi
                   of enduring documents that serve the evolving needs of the ecosystem.
                 </Text>
                 <div className="mt-8">
-                  <ExternalLink href="https://mips.makerdao.com/mips/details/MIP101#ecosystem-intelligence">
+                  <ExternalLink href="https://sky-atlas.powerhouse.io/">
                     <ButtonArrow variant="twilight-1">To the Atlas</ButtonArrow>
                   </ExternalLink>
                 </div>

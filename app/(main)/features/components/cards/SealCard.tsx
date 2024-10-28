@@ -34,7 +34,8 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
               </TextFeatureCard>
               <TextFeatureCard>
                 You can use your sealed MKR to delegate your Sky governance voting rights, as collateral to
-                borrow USDS, or to just further support the Sky project. All positions access Seal Rewards.
+                borrow USDS, or to just further support the Sky project’s decentralisation and security. All
+                positions access Seal Rewards.
               </TextFeatureCard>
               <TextFeatureCard>
                 No minimum supply is required, and you can seal or unseal your tokens—and claim your

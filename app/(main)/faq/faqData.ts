@@ -494,7 +494,7 @@ Delegates in receipt of voting power can never directly access any tokens delega
   },
   {
     question: 'Where can I learn about Sky ecosystem governance?',
-    answer: `For a deep dive into the facets and checks and balances of Sky ecosystem governance, please refer to the [Sky Forum](https://forum.sky.money/), the [Sky Voting Portal](https://vote.makerdao.com/) and the [Sky Atlas](https://mips.makerdao.com/mips/details/MIP101)—the source of truth behind the Sky project, superseding and overriding all other competing rules or decisions.`,
+    answer: `For a deep dive into the facets and checks and balances of Sky ecosystem governance, please refer to the [Sky Forum](https://forum.sky.money/), the [Sky Voting Portal](https://vote.makerdao.com/) and the [Sky Atlas](https://sky-atlas.powerhouse.io/)—the source of truth behind the Sky project, superseding and overriding all other competing rules or decisions.`,
     categories: ['Seal Engine']
   }
 ];
