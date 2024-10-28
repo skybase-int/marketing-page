@@ -1,0 +1,92 @@
+name: Build image
+description: Build a Docker image and push it to ECR
+inputs:
+  AWS_REGION:
+    description: 'The AWS region for the account'
+    required: true
+    default: ''
+  ECR_REGISTRY:
+    description: 'The URI of the ECR registry'
+    required: true
+    default: ''
+  ECR_REPO_NAME:
+    description: 'The name of the ECR repo'
+    required: true
+    default: ''
+  NPM_TOKEN:
+    description: 'The NPM token required to download private packages'
+    required: true
+    default: ''
+  ROLE_SESSION_NAME:
+    description: 'The name of the role session'
+    required: true
+    default: ''
+  ROLE_TO_ASSUME:
+    description: 'The IAM role to assume'
+    required: true
+    default: ''
+  SHA_TAG:
+    description: 'The git SHA to use for the image tag'
+    required: true
+    default: ''
+  # Environment variables required by the app:
+  API_URL:
+    description: 'The BA API endpoint'
+    required: true
+    default: ''
+  NEXT_PUBLIC_AUTH_URL:
+    description: 'The Sky API endpoint'
+    required: true
+    default: ''
+  PNPM_VERSION:
+    description: 'The version of pnpm to use'
+    required: true
+    default: ''
+  NEXT_PUBLIC_TERMS_LINK:
+    description: 'public terms url'
+    required: true
+    default: ''
+  NEXT_PUBLIC_FOOTER_LINKS:
+    description: 'Footer links'
+    required: true
+    default: ''
+
+
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        aws-region: ${{ inputs.AWS_REGION }}
+        role-session-name: ${{ inputs.ROLE_SESSION_NAME }}
+        role-to-assume: ${{ inputs.ROLE_TO_ASSUME }}
+
+    - name: Login to Amazon ECR
+      id: login_ecr
+      uses: aws-actions/amazon-ecr-login@v2
+
+    - name: Build, tag, and push image to ECR
+      id: build_image
+      uses: docker/build-push-action@v6
+      with:
+        context: .
+        push: true
+        tags: |
+          ${{ inputs.ECR_REGISTRY }}/${{ inputs.ECR_REPO_NAME }}:latest
+          ${{ inputs.ECR_REGISTRY }}/${{ inputs.ECR_REPO_NAME }}:${{ inputs.SHA_TAG }}
+        cache-from: type=registry,ref=${{ inputs.ECR_REGISTRY }}/${{ inputs.ECR_REPO_NAME }}:buildcache
+        cache-to: type=registry,ref=${{ inputs.ECR_REGISTRY }}/${{ inputs.ECR_REPO_NAME }}:buildcache,mode=max,image-manifest=true,oci-mediatypes=true
+        provenance: false
+        build-args: |
+          API_URL=${{ inputs.API_URL }}
+          NEXT_PUBLIC_AUTH_URL=${{ inputs.NEXT_PUBLIC_AUTH_URL }}
+          PNPM_VERSION=${{ inputs.PNPM_VERSION }}
+          NEXT_PUBLIC_TERMS_LINK=${{ inputs.NEXT_PUBLIC_TERMS_LINK }}
+          NEXT_PUBLIC_FOOTER_LINKS=${{ inputs.NEXT_PUBLIC_FOOTER_LINKS }}
+
+        secrets: NPM_TOKEN=${{ inputs.NPM_TOKEN }}

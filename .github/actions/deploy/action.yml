@@ -1,0 +1,106 @@
+name: Deploy image to EKS
+description: Deploy a Docker image to an EKS cluster
+inputs:
+  APP_NAME:
+    description: The name of the app (also used for the k8s namespace)
+    required: true
+    default: ''
+  AWS_REGION:
+    description: The AWS region for the account
+    required: true
+    default: ''
+  CLUSTER_NAME:
+    description: The name of the EKS cluster
+    required: true
+    default: ''
+  ECR_REGISTRY:
+    description: The URI of the ECR registry
+    required: true
+    default: ''
+  ECR_REPO_NAME:
+    description: The name of the ECR repo
+    required: true
+    default: ''
+  HELM_VALUES:
+    description: The path to the Helm values file
+    required: true
+    default: ''
+  ENDPOINT:
+    description: The k8s endpoint
+    required: true
+    default: ''
+  IMAGE_TAG:
+    description: The tag of the image to deploy
+    required: false
+    default: latest
+  MAX_REPLICAS:
+    description: 'The maximum number of replicas for the autoscaling (cannot be less than 2)'
+    required: false
+    default: '3'
+  NAMESPACE:
+    description: The k8s namespace into which to deploy the app
+    required: true
+    default: ''
+  PORT:
+    description: The port the app listens on
+    required: false
+    default: '3000'
+  ROLE_SESSION_NAME:
+    description: 'The name of the role session'
+    required: true
+    default: ''
+  ROLE_TO_ASSUME:
+    description: 'The IAM role to assume'
+    required: true
+    default: ''
+
+runs:
+  using: composite
+  steps:
+    - name: Checkout Helm values file
+      uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+        sparse-checkout: |
+          ${{ inputs.HELM_VALUES }}
+        sparse-checkout-cone-mode: false
+
+    - name: Replace variables in Helm values file
+      id: replace_vars
+      shell: sh
+      env:
+        APP_NAME: ${{ inputs.APP_NAME }}
+        ECR_REGISTRY: ${{ inputs.ECR_REGISTRY }}
+        ECR_REPO_NAME: ${{ inputs.ECR_REPO_NAME }}
+        ENDPOINT: ${{ inputs.ENDPOINT }}
+        HELM_VALUES: ${{ inputs.HELM_VALUES }}
+        IMAGE_TAG: ${{ inputs.IMAGE_TAG }}
+        MAX_REPLICAS: ${{ inputs.MAX_REPLICAS }}
+        PORT: ${{ inputs.PORT }}
+      run: |
+        cp $HELM_VALUES temp.yml
+        envsubst < temp.yml > $HELM_VALUES
+        rm -f temp.yml
+        cat $HELM_VALUES
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        aws-region: ${{ inputs.AWS_REGION }}
+        role-session-name: ${{ inputs.ROLE_SESSION_NAME }}
+        role-to-assume: ${{ inputs.ROLE_TO_ASSUME }}
+
+    - name: Deploy to EKS with Helm
+      id: deploy
+      uses: bitovi/github-actions-deploy-eks-helm@v1.2.10
+      with:
+        atomic: true
+        chart-path: techops-services/common
+        chart-repository: https://techops-services.github.io/helm-charts
+        cluster-name: ${{ inputs.CLUSTER_NAME }}
+        config-files: ${{ inputs.HELM_VALUES }}
+        create-namespace: false
+        name: ${{ inputs.APP_NAME }}
+        namespace: ${{ inputs.NAMESPACE }}
+        timeout: 3m0s
+        version: 0.0.35
