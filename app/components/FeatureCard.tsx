@@ -51,7 +51,7 @@ export const FeatureCard = ({
   href: string;
   cardClassName?: string;
 }) => {
-  const { bpi } = useBreakpointIndex();
+  const { bpi, isLoading: bpiLoading } = useBreakpointIndex();
   const { state, setState, setIsHover } = useAutoClose({ delay: 60000 });
   const defaultSizes: { [key: number]: number[]; default: number[] } = {
     [BP.sm]: [200, 200],
@@ -121,7 +121,7 @@ export const FeatureCard = ({
             )}
           </div>
           {descriptionElement}
-          <div className={cn(imgClassname, 'flex justify-center')}>
+          <div className={cn(imgClassname, `flex justify-center ${bpiLoading ? 'invisible' : ''}`)}>
             <Image src={imgSrc} width={imgSize[0]} height={imgSize[1]} alt="" />
           </div>
           <div className="h-14" />
