@@ -16,7 +16,7 @@ import { ExternalLink } from '@/app/components/ExternalLink';
 import { PopoverSealInfo } from '@/app/components/PopoverSealInfo';
 
 export const SealCard = ({ data }: { data: FetchedData }) => {
-  const { bpi } = useBreakpointIndex();
+  const { bpi, isLoading: bpiLoading } = useBreakpointIndex();
 
   return (
     <FeaturesPageCard
@@ -48,7 +48,7 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
           buttonCta: 'Get Seal Rewards',
           url: `?widget=seal`,
           buttonVariant: 'twilight-1',
-          illustration: (
+          illustration: !bpiLoading ? (
             <div className="h-full w-full px-3 tablet:px-0">
               <div className="relative flex h-full w-full flex-col">
                 <div className="grow" />
@@ -61,7 +61,7 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
                 />
               </div>
             </div>
-          )
+          ) : null
         },
         {
           label: 'About Seal rewards',
@@ -89,7 +89,7 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
           buttonCta: 'Access Seal Rewards',
           url: `?widget=seal`,
           buttonVariant: 'twilight-1',
-          illustration: (
+          illustration: !bpiLoading ? (
             <div className="h-full w-full px-3 tablet:px-0">
               <div className="relative flex h-full w-full flex-col">
                 <div className="grow" />
@@ -102,7 +102,7 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
                 />
               </div>
             </div>
-          )
+          ) : null
         },
         {
           label: 'Seal to delegate',
@@ -131,7 +131,7 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
           buttonCta: 'Seal to delegate',
           url: `?widget=seal`,
           buttonVariant: 'twilight-1',
-          illustration: (
+          illustration: !bpiLoading ? (
             <div className="h-full w-full px-3 tablet:px-0">
               <div className="relative flex h-full w-full flex-col">
                 <div className="grow" />
@@ -144,7 +144,7 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
                 />
               </div>
             </div>
-          )
+          ) : null
         },
         {
           label: 'Seal to borrow USDS',
@@ -176,7 +176,7 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
           buttonCta: 'Borrow USDS',
           url: `?widget=savings`,
           buttonVariant: 'twilight-1',
-          illustration: (
+          illustration: !bpiLoading ? (
             <div className="h-full w-full px-3 tablet:px-0">
               <div className="relative flex h-full w-full flex-col">
                 <div className="grow" />
@@ -189,7 +189,7 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
                 />
               </div>
             </div>
-          )
+          ) : null
         },
         {
           label: 'How unsealing works',
@@ -217,7 +217,7 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
           buttonCta: 'Create a position',
           url: `?widget=seal`,
           buttonVariant: 'twilight-1',
-          illustration: (
+          illustration: !bpiLoading ? (
             <div className="h-full w-full px-3 tablet:px-0">
               <div className="relative flex h-full w-full flex-col">
                 <div className="grow" />
@@ -230,7 +230,7 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
                 />
               </div>
             </div>
-          )
+          ) : null
         }
       ]}
     />
