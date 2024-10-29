@@ -8,7 +8,7 @@ import HowItWorks from '@/public/rewards-how-it-works.png';
 import UseRewards from '@/public/rewards-use.png';
 
 export const RewardsCard = ({ data }: { data: FetchedData }) => {
-  const { bpi } = useBreakpointIndex();
+  const { bpi, isLoading: bpiLoading } = useBreakpointIndex();
   return (
     <FeaturesPageCard
       id="rewards"
@@ -37,7 +37,7 @@ export const RewardsCard = ({ data }: { data: FetchedData }) => {
           buttonCta: 'Access Sky Token Rewards',
           url: `?widget=rewards`,
           buttonVariant: 'sunset-2',
-          illustration: (
+          illustration: !bpiLoading ? (
             <div className="h-full w-full py-1.5 tablet:py-0">
               <div className="relative flex h-full w-full flex-col">
                 <div className="grow" />
@@ -50,7 +50,7 @@ export const RewardsCard = ({ data }: { data: FetchedData }) => {
                 />
               </div>
             </div>
-          )
+          ) : null
         },
         {
           label: 'Use Sky Token Rewards',
@@ -80,7 +80,7 @@ export const RewardsCard = ({ data }: { data: FetchedData }) => {
           buttonCta: 'Access Sky Token Rewards',
           url: `?widget=rewards`,
           buttonVariant: 'sunset-2',
-          illustration: (
+          illustration: !bpiLoading ? (
             <div className="flex h-full w-full items-center justify-center py-6">
               <div className="relative h-full w-full">
                 <Image
@@ -92,7 +92,7 @@ export const RewardsCard = ({ data }: { data: FetchedData }) => {
                 />
               </div>
             </div>
-          )
+          ) : null
         },
         {
           label: 'How Sky Token Rewards work',
@@ -125,7 +125,7 @@ export const RewardsCard = ({ data }: { data: FetchedData }) => {
           buttonCta: 'Access Sky Token Rewards',
           url: `?widget=rewards`,
           buttonVariant: 'sunset-2',
-          illustration: (
+          illustration: !bpiLoading ? (
             <div className="flex h-full w-full items-center justify-center py-6">
               <div className="relative h-full w-full">
                 <Image
@@ -137,7 +137,7 @@ export const RewardsCard = ({ data }: { data: FetchedData }) => {
                 />
               </div>
             </div>
-          )
+          ) : null
         }
       ]}
     />
