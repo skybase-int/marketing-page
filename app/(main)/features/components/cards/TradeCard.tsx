@@ -7,7 +7,7 @@ import { ExternalLink } from '@/app/components/ExternalLink';
 import { useBreakpointIndex } from '@/app/hooks/useBreakpointIndex';
 
 export const TradeCard = ({ data }: { data: FetchedData }) => {
-  const { bpi } = useBreakpointIndex();
+  const { bpi, isLoading: bpiLoading } = useBreakpointIndex();
 
   return (
     <FeaturesPageCard
@@ -57,7 +57,7 @@ export const TradeCard = ({ data }: { data: FetchedData }) => {
           buttonCta: 'Start Trading',
           url: `?widget=trade`,
           buttonVariant: 'sunset-1',
-          illustration: (
+          illustration: !bpiLoading ? (
             <div className="h-full w-full px-3 tablet:px-0">
               <div className="relative flex h-full w-full flex-col">
                 <div className="grow" />
@@ -70,7 +70,7 @@ export const TradeCard = ({ data }: { data: FetchedData }) => {
                 />
               </div>
             </div>
-          )
+          ) : null
         }
       ]}
     />
