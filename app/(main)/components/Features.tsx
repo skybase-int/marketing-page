@@ -103,7 +103,7 @@ const FeatureCardLg = ({
   isAlpha?: boolean;
 }) => {
   const { state, setState, setIsHover } = useAutoClose({ delay: 60000 });
-  const { bpi } = useBreakpointIndex();
+  const { bpi, isLoading: bpiLoading } = useBreakpointIndex();
   const [cardWidth, setCardWidth] = useState(0);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -180,8 +180,8 @@ const FeatureCardLg = ({
             <div className="flex w-full justify-center tablet:absolute tablet:bottom-0 tablet:right-0 tablet:block tablet:w-fit desktop:w-[35%] 2xl:w-fit">
               <Image
                 src={bpi === BP.sm ? mobileImgSrc : imgSrc}
-                width={bpi > BP.xl ? 457 : 295}
-                height={bpi > BP.xl ? 849 : 621}
+                width={bpiLoading ? 0 : bpi > BP.xl ? 457 : 295}
+                height={bpiLoading ? 0 : bpi > BP.xl ? 849 : 621}
                 alt=""
               />
             </div>

@@ -13,6 +13,8 @@ type ScreenSizes = 'tablet' | 'desktop' | 'desktop-xl';
 
 export const useBreakpointIndex = () => {
   const [breakpointIndex, setBreakpointIndex] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
+
   const { theme } = resolveConfig(tailwindConfig);
   // @ts-expect-error
   const themeScreens = theme?.screens as Record<ScreenSizes, string>;
@@ -34,6 +36,8 @@ export const useBreakpointIndex = () => {
       else if (width < screens['desktop-xl']) setBreakpointIndex(BP.xl);
       // 2xl
       else setBreakpointIndex(BP['2xl']);
+
+      setIsLoading(false);
     };
 
     updateBreakpointIndex();
@@ -44,5 +48,5 @@ export const useBreakpointIndex = () => {
     };
   }, []);
 
-  return { bpi: breakpointIndex };
+  return { bpi: breakpointIndex, isLoading };
 };

@@ -8,7 +8,7 @@ import WhatIsSave from '@/public/savings-what-is-it.png';
 import HowItWorks from '@/public/savings-how-it-works.png';
 
 export const SaveCard = ({ data }: { data: FetchedData }) => {
-  const { bpi } = useBreakpointIndex();
+  const { bpi, isLoading: bpiLoading } = useBreakpointIndex();
 
   return (
     <FeaturesPageCard
@@ -35,7 +35,7 @@ export const SaveCard = ({ data }: { data: FetchedData }) => {
           buttonCta: 'Start Saving',
           url: `?widget=savings`,
           buttonVariant: 'twilight-1',
-          illustration: (
+          illustration: !bpiLoading ? (
             <div className="h-full w-full px-3 tablet:px-0">
               <div className="relative flex h-full w-full flex-col">
                 <div className="grow" />
@@ -48,7 +48,7 @@ export const SaveCard = ({ data }: { data: FetchedData }) => {
                 />
               </div>
             </div>
-          )
+          ) : null
         },
         {
           label: 'What is the Sky Savings Rate?',
@@ -68,7 +68,7 @@ export const SaveCard = ({ data }: { data: FetchedData }) => {
           buttonCta: 'Start Saving',
           url: `?widget=savings`,
           buttonVariant: 'twilight-1',
-          illustration: (
+          illustration: !bpiLoading ? (
             <div className="flex h-full w-full items-center justify-center py-6">
               <div className="relative h-full w-full">
                 <Image
@@ -80,7 +80,7 @@ export const SaveCard = ({ data }: { data: FetchedData }) => {
                 />
               </div>
             </div>
-          )
+          ) : null
         },
         {
           label: 'How it works: sUSDS',
@@ -107,7 +107,7 @@ export const SaveCard = ({ data }: { data: FetchedData }) => {
           buttonCta: 'Start Saving',
           url: `?widget=savings`,
           buttonVariant: 'twilight-1',
-          illustration: (
+          illustration: !bpiLoading ? (
             <div className="flex h-full w-full items-center justify-center py-6">
               <div className="relative h-full w-full">
                 <Image
@@ -119,7 +119,7 @@ export const SaveCard = ({ data }: { data: FetchedData }) => {
                 />
               </div>
             </div>
-          )
+          ) : null
         }
       ]}
     />
