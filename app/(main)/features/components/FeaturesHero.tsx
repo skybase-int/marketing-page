@@ -16,7 +16,6 @@ export function FeaturesHero({ heroHeight = 0 }: { heroHeight?: number }) {
   useHeaderInView(divRef, 'dark');
   useHeaderInView(topDivRef, 'dark');
   const { isSlowNetwork } = useAppContext();
-  console.log('🚀 ~ FeaturesHero ~ isSlowNetwork:', isSlowNetwork);
 
   return (
     <div className="relative z-10 h-screen">

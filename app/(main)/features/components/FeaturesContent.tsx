@@ -50,7 +50,6 @@ export function FeaturesContent({ data }: { data: FetchedData }) {
     if (!landingLoadingTime) {
       // Measure the time from the initial page load to when this effect runs
       const duration = performance.now() / 1000; // Convert milliseconds to seconds
-      console.log('🚀 ~ useEffect ~ duration:', duration);
       setLandingLoadingTime(duration);
 
       // Consider network slow if it takes more than 6 seconds for landing page to load
