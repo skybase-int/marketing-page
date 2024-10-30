@@ -25,6 +25,7 @@ import { BP, useBreakpointIndex } from '@/app/hooks/useBreakpointIndex';
 import { useHeaderInView } from '@/app/hooks/useHeaderInView';
 import { FetchedData } from '../fetchData';
 import { usePathname } from 'next/navigation';
+import { useAppContext } from '@/app/context/AppContext';
 
 const useTokensSectionSpring = (mv: MotionValue) => useSpring(mv, { bounce: 0, damping: 20 });
 
@@ -42,6 +43,7 @@ export function Tokens({
   const [frameIndex, setFrameIndex] = useState(0);
   const { viewportHeight } = useWindowDimensions();
   const { bpi } = useBreakpointIndex();
+  const { isSlowNetwork } = useAppContext();
   const isMobile = bpi <= BP.md;
 
   const targetRef = useRef(null);
@@ -132,7 +134,7 @@ export function Tokens({
       ref={targetRef}
     >
       <div className="hidden">
-        {frames.map((frame, index) => (
+        {(isSlowNetwork === false ? frames : frames.slice(0, 1)).map((frame, index) => (
           <TokensSequenceFrame
             key={`${frame}-${bpi}`}
             id={`${frame}-${bpi}`}
@@ -158,8 +160,8 @@ export function Tokens({
         {isHomePage && (
           <TokensSequenceFrame
             key="tokens"
-            frameIndex={frameIndex}
-            formattedFrameIndex={framesIndexFormatted[frameIndex]}
+            frameIndex={isSlowNetwork === false ? frameIndex : 0}
+            formattedFrameIndex={framesIndexFormatted[isSlowNetwork === false ? frameIndex : 0]}
             className={`h-full w-full ${
               frameIndex === frameCount - 1 ? 'opacity-0' : 'opacity-100'
             } absolute left-0 top-[100px] tablet:top-[200px] desktop:top-0`}

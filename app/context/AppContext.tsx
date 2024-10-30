@@ -7,6 +7,10 @@ export type Tone = 'dark' | 'light';
 
 interface ContextProps {
   readonly localStorageLoaded: boolean | undefined;
+  readonly landingLoadingTime: number;
+  readonly setLandingLoadingTime: (val: number) => void;
+  readonly isSlowNetwork: boolean | undefined;
+  readonly setIsSlowNetwork: (val: boolean | undefined) => void;
   readonly isFirstPlay: boolean | undefined;
   readonly setIsFirstPlay: (val: boolean | undefined) => void;
   readonly modalOpened: boolean;
@@ -28,6 +32,8 @@ type PropTypes = {
 };
 
 export const AppProvider = ({ children }: PropTypes) => {
+  const [landingLoadingTime, setLandingLoadingTime] = useState(0);
+  const [isSlowNetwork, setIsSlowNetwork] = useState<boolean | undefined>(undefined);
   const [isFirstPlay, setIsFirstPlay] = useState<boolean | undefined>(undefined);
   const [modalOpened, setModalOpened] = useState(false);
   const [externalLinkModalOpened, setExternalLinkModalOpened] = useState(false);
@@ -51,6 +57,10 @@ export const AppProvider = ({ children }: PropTypes) => {
         localStorageLoaded,
         isFirstPlay,
         setIsFirstPlay,
+        landingLoadingTime,
+        setLandingLoadingTime,
+        isSlowNetwork,
+        setIsSlowNetwork,
         modalOpened,
         setModalOpened,
         externalLinkModalOpened,

@@ -26,7 +26,7 @@ export function Hero({ data }: { data: FetchedData }) {
   const { url } = useSkyUrl();
 
   const videoRef = useRef<HTMLVideoElement>(null);
-  const { isFirstPlay, setIsFirstPlay } = useAppContext();
+  const { isFirstPlay, setIsFirstPlay, isSlowNetwork } = useAppContext();
 
   //skip sunrise if not first play
   const handleVideoLoaded = () => {
@@ -54,17 +54,27 @@ export function Hero({ data }: { data: FetchedData }) {
         className="relative flex w-full flex-col items-center justify-center overflow-visible px-3 text-center tablet:h-screen tablet:px-5"
       >
         {isFirstPlay !== undefined && (
-          <video
-            ref={videoRef}
-            muted
-            autoPlay={isFirstPlay !== undefined}
-            playsInline
-            onLoadedMetadata={handleVideoLoaded}
-            onEnded={handleVideoEnded}
-            className="absolute inset-0 min-h-full w-screen object-cover tablet:h-full"
-          >
-            <source src="/HomeVideoBackground.mp4" type="video/mp4" />
-          </video>
+          <>
+            {!isSlowNetwork ? (
+              <video
+                ref={videoRef}
+                muted
+                autoPlay={isFirstPlay !== undefined}
+                playsInline
+                onLoadedMetadata={handleVideoLoaded}
+                onEnded={handleVideoEnded}
+                className="absolute inset-0 min-h-full w-screen object-cover tablet:h-full"
+              >
+                <source src="/HomeVideoBackground.mp4" type="video/mp4" />
+              </video>
+            ) : (
+              <img
+                src="/SkyBackgroundLowRes.png"
+                alt="Sky background"
+                className="absolute inset-0 min-h-full w-screen object-cover tablet:h-full"
+              />
+            )}
+          </>
         )}
         <div className="relative z-20 mt-[30vh] flex w-full justify-center">
           <div className="flex w-full flex-col items-center">
