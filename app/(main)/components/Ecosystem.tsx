@@ -11,13 +11,16 @@ import EcosystemStarsDesktop from '@/public/EcosystemStarsDesktop.png';
 import { BP, useBreakpointIndex } from '@/app/hooks/useBreakpointIndex';
 import { ExternalLink } from '@/app/components/ExternalLink';
 import { useHeaderInView } from '@/app/hooks/useHeaderInView';
+import { useAppContext } from '@/app/context/AppContext';
 
 const FirstSectionBackgrounds = ({ opacity }: { opacity: MotionValue<number> }) => {
   const [videoHeight, setVideoHeight] = useState<string>('');
   const [videoWidth, setVideoWidth] = useState<string>('');
+  const { localStorageLoaded } = useAppContext();
 
   const videoRef = useRef<HTMLVideoElement>(null);
-  const isVideoInView = useInView(videoRef);
+  const containerVideoRef = useRef<HTMLDivElement>(null);
+  const isVideoInView = useInView(containerVideoRef);
 
   useEffect(() => {
     const handleResize = () => {
@@ -45,19 +48,25 @@ const FirstSectionBackgrounds = ({ opacity }: { opacity: MotionValue<number> }) 
   }, [isVideoInView]);
 
   return (
-    <motion.div className="absolute left-0 top-0 h-full w-full" style={{ opacity }}>
-      <video
-        loop
-        muted
-        playsInline
-        ref={videoRef}
-        className="absolute right-0 top-0 translate-x-[10%] translate-y-[20%] tablet:translate-y-[10%] desktop:translate-x-0 desktop:translate-y-0"
-        style={{ minWidth: videoWidth, minHeight: videoHeight }}
-      >
-        <source src="/EcosystemBackground.mp4" type="video/mp4" />
-        {/* Fallback background */}
-        <EcosystemBackground className="absolute -left-[140%] top-3/4 w-[400vw] -translate-y-1/2 tablet:-left-[60%] tablet:top-[60%] tablet:w-[250vw] desktop:-left-[10%] desktop:top-1/2 desktop:w-[180vw]" />
-      </video>
+    <motion.div className="absolute left-0 top-0 h-full w-full" style={{ opacity }} ref={containerVideoRef}>
+      {/* 
+      Hero video (HomeVideoBackground.mp4) only plays if localStorage is loaded making the Ecosystem video to start downloading firts 
+      making the hero video to lag ans show a blank screen. We're forcing here to make sure the Ecosystem video starts downloading second.
+      */}
+      {localStorageLoaded && (
+        <video
+          loop
+          muted
+          playsInline
+          ref={videoRef}
+          className="absolute right-0 top-0 translate-x-[10%] translate-y-[20%] tablet:translate-y-[10%] desktop:translate-x-0 desktop:translate-y-0"
+          style={{ minWidth: videoWidth, minHeight: videoHeight }}
+        >
+          <source src="/EcosystemBackground.mp4" type="video/mp4" />
+          {/* Fallback background */}
+          <EcosystemBackground className="absolute -left-[140%] top-3/4 w-[400vw] -translate-y-1/2 tablet:-left-[60%] tablet:top-[60%] tablet:w-[250vw] desktop:-left-[10%] desktop:top-1/2 desktop:w-[180vw]" />
+        </video>
+      )}
       <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-b from-black from-[20.71%] to-black/0 to-[47.32%] desktop:h-1/4" />
       <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-r from-black from-[-50%] to-black/0 to-[70%]" />
       {/* This overlay layer prevents the video flickering when scrolling */}

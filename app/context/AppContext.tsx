@@ -1,10 +1,14 @@
 'use client';
 
-import React, { ReactNode, useContext, useState } from 'react';
+import React, { ReactNode, useContext, useEffect, useState } from 'react';
+import { storageKey } from '../constants';
 
 export type Tone = 'dark' | 'light';
 
 interface ContextProps {
+  readonly localStorageLoaded: boolean | undefined;
+  readonly isFirstPlay: boolean | undefined;
+  readonly setIsFirstPlay: (val: boolean | undefined) => void;
   readonly modalOpened: boolean;
   readonly setModalOpened: (val: boolean) => void;
   readonly externalLinkModalOpened: boolean;
@@ -24,6 +28,7 @@ type PropTypes = {
 };
 
 export const AppProvider = ({ children }: PropTypes) => {
+  const [isFirstPlay, setIsFirstPlay] = useState<boolean | undefined>(undefined);
   const [modalOpened, setModalOpened] = useState(false);
   const [externalLinkModalOpened, setExternalLinkModalOpened] = useState(false);
   const [externalLinkModalUrl, setExternalLinkModalUrl] = useState('');
@@ -31,10 +36,21 @@ export const AppProvider = ({ children }: PropTypes) => {
   const [scrollContainerRef, setScrollContainerRef] = useState<React.RefObject<HTMLDivElement> | undefined>(
     undefined
   );
+  const [localStorageLoaded, setLocalStorageLoaded] = useState(false);
+
+  //check session storage to see if video has already been played
+  useEffect(() => {
+    const storedValue = window.sessionStorage.getItem(storageKey);
+    setIsFirstPlay(storedValue !== 'true');
+    setLocalStorageLoaded(true);
+  }, []);
 
   return (
     <AppContext.Provider
       value={{
+        localStorageLoaded,
+        isFirstPlay,
+        setIsFirstPlay,
         modalOpened,
         setModalOpened,
         externalLinkModalOpened,

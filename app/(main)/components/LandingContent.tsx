@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import { Hero } from './Hero';
 import { Tokens } from './Tokens';
 import { Ecosystem } from './Ecosystem';

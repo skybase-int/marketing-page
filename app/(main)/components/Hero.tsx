@@ -10,12 +10,13 @@ import {
   headingAnimationThree,
   HomePageTransition
 } from '@/app/components/PageTransition';
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import { useHeaderInView } from '@/app/hooks/useHeaderInView';
 import { FetchedData } from '../fetchData';
 import { ExternalLink } from '@/app/components/ExternalLink';
 import { useSkyUrl } from '@/app/hooks/useSkyUrl';
 import { storageKey, SUNRISE_VIDEO_DELAY } from '@/app/constants';
+import { useAppContext } from '@/app/context/AppContext';
 
 export function Hero({ data }: { data: FetchedData }) {
   const divRef = useRef(null);
@@ -25,13 +26,7 @@ export function Hero({ data }: { data: FetchedData }) {
   const { url } = useSkyUrl();
 
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [isFirstPlay, setIsFirstPlay] = useState<boolean | undefined>(undefined);
-
-  //check session storage to see if video has already been played
-  useEffect(() => {
-    const storedValue = window.sessionStorage.getItem(storageKey);
-    setIsFirstPlay(storedValue !== 'true');
-  }, []);
+  const { isFirstPlay, setIsFirstPlay } = useAppContext();
 
   //skip sunrise if not first play
   const handleVideoLoaded = () => {
