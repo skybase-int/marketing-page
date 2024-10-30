@@ -25,7 +25,7 @@ export function LandingContent({ data }: { data: FetchedData }) {
       setLandingLoadingTime(duration);
 
       // Consider network slow if it takes more than 6 seconds for landing page to load
-      setIsSlowNetwork(duration > 6);
+      setIsSlowNetwork(duration > 3.5);
     }
   }, []);
 
