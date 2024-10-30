@@ -23,8 +23,14 @@ export function FeaturesContent({ data }: { data: FetchedData }) {
     bottomDivRef,
     topDivRef
   });
-  const [heroHeight, setHeroHeight] = useState(minHeroHeight);
-  const { setVisibleAreaTone, setScrollContainerRef } = useAppContext();
+  const [heroHeight, setHeroHeight] = useState<number | undefined>(undefined);
+  const {
+    setVisibleAreaTone,
+    setScrollContainerRef,
+    landingLoadingTime,
+    setLandingLoadingTime,
+    setIsSlowNetwork
+  } = useAppContext();
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -37,6 +43,18 @@ export function FeaturesContent({ data }: { data: FetchedData }) {
       handleResize(); // Set initial dimensions
       window.addEventListener('resize', handleResize);
       return () => window.removeEventListener('resize', handleResize);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!landingLoadingTime) {
+      // Measure the time from the initial page load to when this effect runs
+      const duration = performance.now() / 1000; // Convert milliseconds to seconds
+      console.log('🚀 ~ useEffect ~ duration:', duration);
+      setLandingLoadingTime(duration);
+
+      // Consider network slow if it takes more than 6 seconds for landing page to load
+      setIsSlowNetwork(duration > 3.5);
     }
   }, []);
 

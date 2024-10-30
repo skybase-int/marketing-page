@@ -2,43 +2,66 @@ import { Heading, Text } from '@/app/components/Typography';
 import { existingFeatures, comingSoonFeatures } from '../featuresData';
 import Image from 'next/image';
 import FeaturesBackround from '@/public/FeaturesHero.png';
+import FeaturesBackroundVFrame from '@/public/FeaturesVideoBackgroundFrame.png';
 import { AnchorButton } from '@/app/components/ui/anchor';
 import { IconVariantEnum } from '@/app/components/icons/VariantIcon';
 import { InternalLink } from '@/app/components/InternalLink';
 import { useRef } from 'react';
 import { useHeaderInView } from '@/app/hooks/useHeaderInView';
+import { useAppContext } from '@/app/context/AppContext';
 
-export function FeaturesHero({ heroHeight }: { heroHeight: number }) {
+export function FeaturesHero({ heroHeight = 0 }: { heroHeight?: number }) {
   const divRef = useRef(null);
   const topDivRef = useRef(null);
   useHeaderInView(divRef, 'dark');
   useHeaderInView(topDivRef, 'dark');
+  const { isSlowNetwork } = useAppContext();
+  console.log('🚀 ~ FeaturesHero ~ isSlowNetwork:', isSlowNetwork);
 
   return (
-    <div className="relative z-10">
+    <div className="relative z-10 h-screen">
       <div ref={topDivRef} className="fixed h-[0.5px] w-full bg-transparent" />
       <div
         style={{ height: `${heroHeight}px` }}
         className="flex w-full flex-col items-center px-3 text-center tablet:px-5 desktop:px-10 desktop-xl:px-[60px]"
       >
         {/* video */}
-        <video
-          loop
-          muted
-          autoPlay
-          playsInline
-          style={{ height: `${heroHeight}px` }}
+        <Image
+          src={FeaturesBackroundVFrame}
+          alt="Purple cloudy sky"
+          placeholder="blur"
+          fill
           className="absolute w-screen object-cover object-center"
-        >
-          <source src="/FeaturesVideoBackground.mp4" type="video/mp4" />
+          loading="eager"
+        />
+        {!isSlowNetwork ? (
+          <video
+            loop
+            muted
+            autoPlay
+            playsInline
+            style={{ height: `${heroHeight}px` }}
+            className="absolute w-screen object-cover object-center"
+          >
+            <source src="/FeaturesVideoBackground.mp4" type="video/mp4" />
+            <Image
+              src={FeaturesBackround}
+              alt="Purple cloudy sky"
+              placeholder="blur"
+              fill
+              className="object-cover object-center"
+            />
+          </video>
+        ) : (
           <Image
             src={FeaturesBackround}
             alt="Purple cloudy sky"
             placeholder="blur"
             fill
-            className="object-cover object-center"
+            className="absolute w-screen object-cover object-center"
+            loading="eager"
           />
-        </video>
+        )}
         <div className="relative mt-36 flex flex-col items-center desktop:mt-[30vh]">
           <Heading
             tag="h1"
