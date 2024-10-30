@@ -17,6 +17,7 @@ import { ExternalLink } from '@/app/components/ExternalLink';
 import { useSkyUrl } from '@/app/hooks/useSkyUrl';
 import { storageKey, SUNRISE_VIDEO_DELAY } from '@/app/constants';
 import { useAppContext } from '@/app/context/AppContext';
+import Image from 'next/image';
 
 export function Hero({ data }: { data: FetchedData }) {
   const divRef = useRef(null);
@@ -55,6 +56,15 @@ export function Hero({ data }: { data: FetchedData }) {
       >
         {isFirstPlay !== undefined && (
           <>
+            {/* Fallback background while video is loading */}
+            <Image
+              src={isFirstPlay ? '/SkyBackgroundStars.png' : '/SkyBackgroundVideo.png'}
+              alt="Sky background"
+              loading="eager"
+              sizes="100vw"
+              fill
+              className="absolute inset-0 min-h-full w-screen object-cover tablet:h-full"
+            />
             {!isSlowNetwork ? (
               <video
                 ref={videoRef}
@@ -66,12 +76,24 @@ export function Hero({ data }: { data: FetchedData }) {
                 className="absolute inset-0 min-h-full w-screen object-cover tablet:h-full"
               >
                 <source src="/HomeVideoBackground.mp4" type="video/mp4" />
+                {/* Fallback background if video doesn't load */}
+                <Image
+                  src="/SkyBackground.png"
+                  alt="Sky background"
+                  className="absolute inset-0 min-h-full w-screen object-cover tablet:h-full"
+                  loading="eager"
+                  sizes="100vw"
+                  fill
+                />
               </video>
             ) : (
-              <img
+              <Image
                 src="/SkyBackgroundLowRes.png"
                 alt="Sky background"
                 className="absolute inset-0 min-h-full w-screen object-cover tablet:h-full"
+                loading="eager"
+                sizes="100vw"
+                fill
               />
             )}
           </>
