@@ -211,3 +211,28 @@
   /* Glass blur */
   backdrop-filter: blur(50px);
 }
+
+.js-loading {
+  opacity: 1 !important;
+}
+
+/* Once JS loads, remove the override */
+.js-loaded .js-loading {
+  opacity: initial;
+}
+
+@keyframes initialFade {
+  0% {
+    opacity: 0;
+  }
+  99.9% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-initial-fade {
+  animation: initialFade 1500ms ease-in-out forwards;
+}
