@@ -134,15 +134,18 @@ export function Tokens({
       ref={targetRef}
     >
       <div className="hidden">
-        {(isSlowNetwork === false ? frames : frames.slice(0, 1)).map((frame, index) => (
-          <TokensSequenceFrame
-            key={`${frame}-${bpi}`}
-            id={`${frame}-${bpi}`}
-            frameIndex={index}
-            formattedFrameIndex={framesIndexFormatted[index]}
-            className="coin-sequence-image"
-          />
-        ))}
+        {(isSlowNetwork === false ? frames : frames.slice(-1)).map((frame, index) => {
+          const indexFrame = isSlowNetwork === false ? index : frameCount - 1;
+          return (
+            <TokensSequenceFrame
+              key={`${frame}-${bpi}`}
+              id={`${frame}-${bpi}`}
+              frameIndex={indexFrame}
+              formattedFrameIndex={framesIndexFormatted[indexFrame]}
+              className="coin-sequence-image"
+            />
+          );
+        })}
       </div>
       <motion.div
         className="pointer-events-none sticky left-full top-12 z-20 ml-6 h-[400px] w-full tablet:ml-0 tablet:h-[589px] tablet:w-[589px] desktop:h-[810px] desktop:w-[810px] desktop-xl:top-0 desktop-xl:h-[1080px] desktop-xl:w-[1080px]"
@@ -160,8 +163,8 @@ export function Tokens({
         {isHomePage && (
           <TokensSequenceFrame
             key="tokens"
-            frameIndex={isSlowNetwork === false ? frameIndex : 0}
-            formattedFrameIndex={framesIndexFormatted[isSlowNetwork === false ? frameIndex : 0]}
+            frameIndex={isSlowNetwork === false ? frameIndex : frameCount - 1}
+            formattedFrameIndex={framesIndexFormatted[isSlowNetwork === false ? frameIndex : frameCount - 1]}
             className={`h-full w-full ${
               frameIndex === frameCount - 1 ? 'opacity-0' : 'opacity-100'
             } absolute left-0 top-[100px] tablet:top-[200px] desktop:top-0`}

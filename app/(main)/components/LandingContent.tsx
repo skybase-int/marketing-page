@@ -31,7 +31,7 @@ export function LandingContent({ data }: { data: FetchedData }) {
     <div>
       <Hero data={data} />
       <div className="h-48 w-full bg-[url(/HeroTokensSeparator.png)]" />
-      {!isSlowNetwork && <Tokens childrenRef={childrenRef} data={data} />}
+      <Tokens childrenRef={childrenRef} data={data} />
       <div className="relative">
         <HomepageFeatures data={data} />
         <div className="pointer-events-none absolute bottom-0 left-0 w-full overflow-hidden ">
