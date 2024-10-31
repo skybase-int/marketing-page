@@ -25,6 +25,7 @@ import { BP, useBreakpointIndex } from '@/app/hooks/useBreakpointIndex';
 import { useHeaderInView } from '@/app/hooks/useHeaderInView';
 import { FetchedData } from '../fetchData';
 import { usePathname } from 'next/navigation';
+import { useAppContext } from '@/app/context/AppContext';
 
 const useTokensSectionSpring = (mv: MotionValue) => useSpring(mv, { bounce: 0, damping: 20 });
 
@@ -42,6 +43,7 @@ export function Tokens({
   const [frameIndex, setFrameIndex] = useState(0);
   const { viewportHeight } = useWindowDimensions();
   const { bpi } = useBreakpointIndex();
+  const { isSlowNetwork, isJsLoaded } = useAppContext();
   const isMobile = bpi <= BP.md;
 
   const targetRef = useRef(null);
@@ -126,83 +128,96 @@ export function Tokens({
       }
     : { opacity: opacityTokens, x: 0, y: yTokens.get() - 48 };
 
+  const Div = isJsLoaded ? motion.div : 'div';
+
   return (
     <div
-      className="relative min-h-[500vh] w-full overflow-clip px-3 tablet:px-5 desktop:px-10 desktop-xl:px-[60px]"
+      className={`relative ${
+        isJsLoaded ? 'min-h-[500vh]' : 'min-h-[100vh]'
+      } w-full overflow-clip px-3 tablet:px-5 desktop:px-10 desktop-xl:px-[60px]`}
       ref={targetRef}
     >
-      <div className="hidden">
-        {frames.map((frame, index) => (
-          <TokensSequenceFrame
-            key={`${frame}-${bpi}`}
-            id={`${frame}-${bpi}`}
-            frameIndex={index}
-            formattedFrameIndex={framesIndexFormatted[index]}
-            className="coin-sequence-image"
-          />
-        ))}
-      </div>
-      <motion.div
-        className="pointer-events-none sticky left-full top-12 z-20 ml-6 h-[400px] w-full tablet:ml-0 tablet:h-[589px] tablet:w-[589px] desktop:h-[810px] desktop:w-[810px] desktop-xl:top-0 desktop-xl:h-[1080px] desktop-xl:w-[1080px]"
-        style={styleObj}
-      >
-        <motion.div
-          className={`absolute left-0 top-0 flex h-full w-full justify-between tablet:py-[141px] tablet:pl-[15px] tablet:pr-[45px] desktop:py-[234px] desktop:pl-[25px] desktop:pr-[73px] desktop-xl:py-[312px] desktop-xl:pl-[33px] desktop-xl:pr-[100px] ${
-            isMobile ? 'opacity-0' : frameIndex === frameCount - 1 ? 'opacity-100' : 'opacity-0'
-          }`}
-        >
-          <Image src={CoinUsds} alt={'usds-token-logo'} className="max-w-fit" />
-          <Image src={CoinSky} alt={'usds-token-logo'} className="max-w-fit" />
-        </motion.div>
+      {isJsLoaded && (
+        <>
+          <div className="hidden">
+            {(isSlowNetwork === false ? frames : frames.slice(-1)).map((frame, index) => {
+              const indexFrame = isSlowNetwork === false ? index : frameCount - 1;
+              return (
+                <TokensSequenceFrame
+                  key={`${frame}-${bpi}`}
+                  id={`${frame}-${bpi}`}
+                  frameIndex={indexFrame}
+                  formattedFrameIndex={framesIndexFormatted[indexFrame]}
+                  className="coin-sequence-image"
+                />
+              );
+            })}
+          </div>
+          <motion.div
+            className="pointer-events-none sticky left-full top-12 z-20 ml-6 h-[400px] w-full tablet:ml-0 tablet:h-[589px] tablet:w-[589px] desktop:h-[810px] desktop:w-[810px] desktop-xl:top-0 desktop-xl:h-[1080px] desktop-xl:w-[1080px]"
+            style={styleObj}
+          >
+            <motion.div
+              className={`absolute left-0 top-0 flex h-full w-full justify-between tablet:py-[141px] tablet:pl-[15px] tablet:pr-[45px] desktop:py-[234px] desktop:pl-[25px] desktop:pr-[73px] desktop-xl:py-[312px] desktop-xl:pl-[33px] desktop-xl:pr-[100px] ${
+                isMobile ? 'opacity-0' : frameIndex === frameCount - 1 ? 'opacity-100' : 'opacity-0'
+              }`}
+            >
+              <Image src={CoinUsds} alt={'usds-token-logo'} className="max-w-fit" />
+              <Image src={CoinSky} alt={'usds-token-logo'} className="max-w-fit" />
+            </motion.div>
 
-        {isHomePage && (
-          <TokensSequenceFrame
-            key="tokens"
-            frameIndex={frameIndex}
-            formattedFrameIndex={framesIndexFormatted[frameIndex]}
-            className={`h-full w-full ${
-              frameIndex === frameCount - 1 ? 'opacity-0' : 'opacity-100'
-            } absolute left-0 top-[100px] tablet:top-[200px] desktop:top-0`}
-          />
-        )}
-      </motion.div>
-      <motion.div
-        className="sticky left-0 top-full w-fit py-32 desktop:py-16"
-        style={{ opacity: opacityOne, y: '-100%', x: xOne }}
-      >
-        <motion.div style={{ y: yOne }}>
-          <EmphasisHeading
-            text="Introducing"
-            emphasisText="Sky tokens"
-            textClassName="block"
-            emphasisClassName="block"
-          />
-        </motion.div>
-      </motion.div>
-      <motion.div
-        className="sticky left-0 top-full w-fit py-32 desktop:py-16"
-        style={{ opacity: opacityTwo, y: '-100%', x: xTwo }}
-      >
-        <Heading>Accessible</Heading>
-      </motion.div>
-      <motion.div
-        className="sticky left-0 top-full w-fit py-32 desktop:py-16"
-        style={{ opacity: opacityThree, y: '-100%', x: xThree }}
-      >
-        <Heading>Powerful</Heading>
-      </motion.div>
-      <motion.div
-        className="sticky left-0 top-full w-fit py-32 desktop:py-16"
-        style={{ opacity: opacityFour, y: '-100%', x: xFour }}
-      >
-        <Heading>
-          Ready <span className="block">when you are</span>
-        </Heading>
-      </motion.div>
-      <motion.div
+            {isHomePage && (
+              <TokensSequenceFrame
+                key="tokens"
+                frameIndex={isSlowNetwork === false ? frameIndex : frameCount - 1}
+                formattedFrameIndex={
+                  framesIndexFormatted[isSlowNetwork === false ? frameIndex : frameCount - 1]
+                }
+                className={`h-full w-full ${
+                  frameIndex === frameCount - 1 ? 'opacity-0' : 'opacity-100'
+                } absolute left-0 top-[100px] tablet:top-[200px] desktop:top-0`}
+              />
+            )}
+          </motion.div>
+          <motion.div
+            className="sticky left-0 top-full w-fit py-32 desktop:py-16"
+            style={{ opacity: opacityOne, y: '-100%', x: xOne }}
+          >
+            <motion.div style={{ y: yOne }}>
+              <EmphasisHeading
+                text="Introducing"
+                emphasisText="Sky tokens"
+                textClassName="block"
+                emphasisClassName="block"
+              />
+            </motion.div>
+          </motion.div>
+          <motion.div
+            className="sticky left-0 top-full w-fit py-32 desktop:py-16"
+            style={{ opacity: opacityTwo, y: '-100%', x: xTwo }}
+          >
+            <Heading>Accessible</Heading>
+          </motion.div>
+          <motion.div
+            className="sticky left-0 top-full w-fit py-32 desktop:py-16"
+            style={{ opacity: opacityThree, y: '-100%', x: xThree }}
+          >
+            <Heading>Powerful</Heading>
+          </motion.div>
+          <motion.div
+            className="sticky left-0 top-full w-fit py-32 desktop:py-16"
+            style={{ opacity: opacityFour, y: '-100%', x: xFour }}
+          >
+            <Heading>
+              Ready <span className="block">when you are</span>
+            </Heading>
+          </motion.div>
+        </>
+      )}
+      <Div
         ref={sectionFiveRef}
         className="sticky left-0 top-0 w-full  py-28 desktop:flex desktop:justify-between desktop:py-20 desktop-xl:py-[60px]"
-        style={{ opacity: opacityFive, x: xFive }}
+        style={{ opacity: opacityFive, x: xFive } as any}
       >
         <div className="mb-16 tablet:w-3/4 desktop:mb-0 desktop:mt-7 desktop:w-[363px] desktop-xl:mt-10 desktop-xl:w-[483]">
           <Text variant="p2" className="text-black/80">
@@ -223,7 +238,7 @@ export function Tokens({
           <UsdsCard data={data} />
           <SkyCard data={data} />
         </div>
-      </motion.div>
+      </Div>
     </div>
   );
 }
