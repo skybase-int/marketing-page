@@ -6,6 +6,8 @@ import { storageKey } from '../constants';
 export type Tone = 'dark' | 'light';
 
 interface ContextProps {
+  readonly isJsLoaded: boolean;
+  readonly setIsJsLoaded: (val: boolean) => void;
   readonly localStorageLoaded: boolean | undefined;
   readonly landingLoadingTime: number;
   readonly setLandingLoadingTime: (val: number) => void;
@@ -32,6 +34,7 @@ type PropTypes = {
 };
 
 export const AppProvider = ({ children }: PropTypes) => {
+  const [isJsLoaded, setIsJsLoaded] = useState(false);
   const [landingLoadingTime, setLandingLoadingTime] = useState(0);
   const [isSlowNetwork, setIsSlowNetwork] = useState<boolean | undefined>(undefined);
   const [isFirstPlay, setIsFirstPlay] = useState<boolean | undefined>(undefined);
@@ -46,6 +49,10 @@ export const AppProvider = ({ children }: PropTypes) => {
 
   //check session storage to see if video has already been played
   useEffect(() => {
+    // Once JS loads, mark as loaded
+    document.documentElement.classList.add('js-loaded');
+    setIsJsLoaded(true);
+
     const storedValue = window.sessionStorage.getItem(storageKey);
     setIsFirstPlay(storedValue !== 'true');
     setLocalStorageLoaded(true);
@@ -70,7 +77,9 @@ export const AppProvider = ({ children }: PropTypes) => {
         visibleAreaTone,
         setVisibleAreaTone,
         scrollContainerRef,
-        setScrollContainerRef
+        setScrollContainerRef,
+        isJsLoaded,
+        setIsJsLoaded
       }}
     >
       {children}

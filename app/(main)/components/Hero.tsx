@@ -21,20 +21,12 @@ import Image from 'next/image';
 
 export function Hero({ data }: { data: FetchedData }) {
   const divRef = useRef(null);
-  const [isJsLoaded, setIsJsLoaded] = useState(false);
   const bottomDivRef = useRef(null);
   useHeaderInView(divRef, 'dark');
   useHeaderInView(bottomDivRef, 'dark');
   const { url } = useSkyUrl();
-
   const videoRef = useRef<HTMLVideoElement>(null);
-  const { isFirstPlay, setIsFirstPlay, isSlowNetwork } = useAppContext();
-
-  useEffect(() => {
-    // Once JS loads, mark as loaded
-    document.documentElement.classList.add('js-loaded');
-    setIsJsLoaded(true);
-  }, []);
+  const { isFirstPlay, setIsFirstPlay, isSlowNetwork, isJsLoaded } = useAppContext();
 
   //skip sunrise if not first play
   const handleVideoLoaded = () => {
