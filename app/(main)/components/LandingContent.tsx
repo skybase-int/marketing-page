@@ -14,7 +14,7 @@ import { useAppContext } from '@/app/context/AppContext';
 
 export function LandingContent({ data }: { data: FetchedData }) {
   const childrenRef = useRef<HTMLDivElement>(null);
-  const { landingLoadingTime, setLandingLoadingTime, setIsSlowNetwork, isSlowNetwork } = useAppContext();
+  const { landingLoadingTime, setLandingLoadingTime, setIsSlowNetwork } = useAppContext();
 
   useEffect(() => {
     if (!landingLoadingTime) {
