@@ -10,7 +10,7 @@ import {
   headingAnimationThree,
   HomePageTransition
 } from '@/app/components/PageTransition';
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { useHeaderInView } from '@/app/hooks/useHeaderInView';
 import { FetchedData } from '../fetchData';
 import { ExternalLink } from '@/app/components/ExternalLink';
@@ -25,9 +25,8 @@ export function Hero({ data }: { data: FetchedData }) {
   useHeaderInView(divRef, 'dark');
   useHeaderInView(bottomDivRef, 'dark');
   const { url } = useSkyUrl();
-
   const videoRef = useRef<HTMLVideoElement>(null);
-  const { isFirstPlay, setIsFirstPlay, isSlowNetwork } = useAppContext();
+  const { isFirstPlay, setIsFirstPlay, isSlowNetwork, isJsLoaded } = useAppContext();
 
   //skip sunrise if not first play
   const handleVideoLoaded = () => {
@@ -48,12 +47,25 @@ export function Hero({ data }: { data: FetchedData }) {
     }
   };
 
+  const Div = isJsLoaded ? motion.div : 'div';
+
   return (
     <HomePageTransition isFirstLoad={isFirstPlay !== false}>
       <div
         ref={divRef}
-        className="relative flex w-full flex-col items-center justify-center overflow-visible px-3 text-center tablet:h-screen tablet:px-5"
+        className={`relative flex w-full flex-col items-center justify-center overflow-visible px-3 text-center tablet:h-screen tablet:px-5 ${
+          isJsLoaded ? '' : 'animate-initial-fade opacity-0'
+        }`}
       >
+        <Image
+          src="/SkyBackgroundVideo.png"
+          alt="Sky background"
+          loading="eager"
+          sizes="100vw"
+          fill
+          className={`animate-initial-fade absolute inset-0 min-h-full w-screen object-cover tablet:h-full`}
+        />
+
         {isFirstPlay !== undefined && (
           <>
             {/* Fallback background while video is loading */}
@@ -101,21 +113,21 @@ export function Hero({ data }: { data: FetchedData }) {
         <div className="relative z-20 mt-[30vh] flex w-full justify-center">
           <div className="flex w-full flex-col items-center">
             <Heading tag="h1" className="w-full text-balance text-white tablet:text-balance">
-              <motion.div variants={headingAnimation} initial={'initial'} animate={'animate'}>
+              <Div variants={headingAnimation} initial={'initial'} animate={'animate'}>
                 Get rewarded for saving,
-              </motion.div>
-              <motion.div variants={headingAnimationTwo} initial={'initial'} animate={'animate'}>
+              </Div>
+              <Div variants={headingAnimationTwo} initial={'initial'} animate={'animate'}>
                 without giving up&nbsp;control
-              </motion.div>
+              </Div>
             </Heading>
-            <motion.div variants={headingAnimationThree} initial={'initial'} animate={'animate'}>
+            <Div variants={headingAnimationThree} initial={'initial'} animate={'animate'}>
               <ExternalLink href={url} noStyle>
                 <AccentButton className="relative z-10 mt-6 tablet:mt-8 desktop-xl:mt-12">
                   <StarVariantOne className="absolute right-0 top-0 -translate-y-1/2 translate-x-1 rotate-45" />
                   Launch App
                 </AccentButton>
               </ExternalLink>
-            </motion.div>
+            </Div>
             <HeroPills />
           </div>
         </div>
