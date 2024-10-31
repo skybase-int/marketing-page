@@ -10,9 +10,22 @@ import { FAQ } from './FAQ';
 import { Footer } from '@/app/components/Footer';
 import { FetchedData } from '../fetchData';
 import { TrianglesSeparator } from '@/app/components/TrianglesSeparator';
+import { useAppContext } from '@/app/context/AppContext';
 
 export function LandingContent({ data }: { data: FetchedData }) {
   const childrenRef = useRef<HTMLDivElement>(null);
+  const { landingLoadingTime, setLandingLoadingTime, setIsSlowNetwork } = useAppContext();
+
+  useEffect(() => {
+    if (!landingLoadingTime) {
+      // Measure the time from the initial page load to when this effect runs
+      const duration = performance.now() / 1000; // Convert milliseconds to seconds
+      setLandingLoadingTime(duration);
+
+      // Consider network slow if it takes more than 6 seconds for landing page to load
+      setIsSlowNetwork(duration > 3.5);
+    }
+  }, []);
 
   return (
     <div>
