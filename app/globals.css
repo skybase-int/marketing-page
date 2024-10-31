@@ -234,6 +234,6 @@
 }
 
 .animate-initial-fade {
-  animation: initialFade 1000ms ease-in-out forwards;
-  animation-delay: 900ms;
+  animation: initialFade 1500ms ease-in-out forwards;
+  /* animation-delay: 900ms; */
 }
