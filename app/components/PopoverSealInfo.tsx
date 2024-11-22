@@ -51,6 +51,15 @@ const content = {
         total debt.
       </Text>
     )
+  },
+  delegate: {
+    title: 'Delegate',
+    description: (
+      // TODO: add correct popover text
+      <Text className="leading-5 text-white/80" variant="ui-small-regular">
+        Delegate info
+      </Text>
+    )
   }
 };
 
