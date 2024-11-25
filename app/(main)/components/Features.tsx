@@ -280,7 +280,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
         />
         <div className="my-3 flex flex-col tablet:mb-4 tablet:mt-5 desktop:mt-6 desktop:flex-row desktop:items-center desktop:space-x-4 desktop-xl:mt-8">
           <Text variant="p3" className="mb-4 desktop:mb-0">
-            Do more with your assets. Use Sky.money to experience the powerful features of the decentralized
+            Do more with your funds. Use Sky.money to experience the powerful features of the decentralized
             Sky Protocol, without giving up control.
           </Text>
           <InternalLink href="/features">
@@ -345,7 +345,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
               rate of each Sky Token Reward.
               <br />
               <br />
-              With Sky, you always remain in full control of your assets.
+              With Sky, you always remain in full control of your funds.
             </Text>
           }
           postTitle="Rewards"
@@ -364,7 +364,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
               <br />
               <br />
               With Sky.money, it&apos;s easy to build a diversified Sky Token Rewards portfolio while always
-              remaining in control of your assets.
+              remaining in control of your funds.
             </Text>
           }
           imgSrc="/products_rewards.png"
@@ -524,7 +524,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                 <br />
                 Your MKR or SKY tokens, as well as any rewards that you accumulate, are supplied to a
                 non-custodial smart contract, which means that no intermediary takes custody of those tokens.
-                With Sky, you always remain in control of your assets.
+                With Sky, you always remain in control of your funds.
               </Text>
             </>
           }
@@ -564,7 +564,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                 <br />
                 <br />
                 Activate or Deactivate your SKY anytime, with no restrictions or fees. With Sky.money, you
-                always remain in control of assets.
+                always remain in control of funds.
               </Text>
             }
             postTextElement={
@@ -577,7 +577,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                 <br />
                 <br />
                 You can Activate or Deactivate your SKY anytime, with no restrictions or fees. With Sky.money,
-                you always remain in control of assets.
+                you always remain in control of funds.
               </Text>
             }
             imgSrc="/features-activation.png"
@@ -605,7 +605,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
             }
             postTextElement={
               <Text variant="p2">
-                SkyLink will enhance your ability to manage and leverage your digital assets efficiently by
+                SkyLink will enhance your ability to manage and leverage your digital funds efficiently by
                 seamlessly connecting all of your Ethereum-based Sky Protocol tokens and features to supported
                 L2 networks.
                 <br />
