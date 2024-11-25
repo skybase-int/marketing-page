@@ -485,7 +485,7 @@ The exit fee is a risk parameter managed and determined (regardless of position 
   },
   {
     question: 'What does it mean to delegate my voting power?',
-    answer: `When you hold MKR or SKY tokens, you maintain the right to participate in the process of Sky ecosystem governance voting. That means that you have the ability to contribute to the community-driven, decentralised ecosystem decision-making process, which occurs through onchain voting. MKR holders can vote directly through the Sky Governance Voting portal. SKY holders cannot—they must delegate their voting power.
+    answer: `When you hold MKR or SKY tokens, you maintain the right to participate in the process of Sky ecosystem governance voting. That means that you have the ability to contribute to the community-driven, decentralised ecosystem decision-making process, which occurs through onchain voting. MKR holders can vote directly through the [Sky Governance Voting portal.](https://vote.makerdao.com/) SKY holders cannot—they must delegate their voting power.
       
 The voting power delegation feature of the Seal Engine of the Sky Protocol enables SKY or MKR holders to entrust their voting power to a delegate of their choosing, who can then vote in the Sky ecosystem governance process on their behalf. Users can choose one delegate per sealed MKR or SKY position. If users want to entrust their MKR or SKY to two delegates using the Seal Engine, they will need to create two separate positions.
       
