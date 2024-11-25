@@ -77,7 +77,7 @@ export const UsdsCard = ({ data }: { data: FetchedData }) => {
             </ul>
             <br />
             <Text variant="p3">
-              With Sky.money, you always remain in control of your assets.
+              With Sky.money, you always remain in control of your funds.
               <br />
               <br />
               Upgrading is optional.

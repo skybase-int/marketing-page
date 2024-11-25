@@ -280,7 +280,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
         />
         <div className="my-3 flex flex-col tablet:mb-4 tablet:mt-5 desktop:mt-6 desktop:flex-row desktop:items-center desktop:space-x-4 desktop-xl:mt-8">
           <Text variant="p3" className="mb-4 desktop:mb-0">
-            Do more with your assets. Use Sky.money to experience the powerful features of the decentralized
+            Do more with your funds. Use Sky.money to experience the powerful features of the decentralized
             Sky Protocol, without giving up control.
           </Text>
           <InternalLink href="/features">
@@ -345,7 +345,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
               rate of each Sky Token Reward.
               <br />
               <br />
-              With Sky, you always remain in full control of your assets.
+              With Sky, you always remain in full control of your funds.
             </Text>
           }
           postTitle="Rewards"
@@ -364,7 +364,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
               <br />
               <br />
               With Sky.money, it&apos;s easy to build a diversified Sky Token Rewards portfolio while always
-              remaining in control of your assets.
+              remaining in control of your funds.
             </Text>
           }
           imgSrc="/products_rewards.png"
@@ -477,42 +477,45 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           href={`${baseUrl}/?widget=seal`}
           descriptionElement={
             <Text variant="p3">
-              Supply MKR tokens to the Seal Engine of the Sky Protocol to create a position and access Seal
-              Rewards.
+              Supply MKR or SKY tokens to the Seal Engine of the Sky Protocol to create a position and access
+              Seal Rewards.
               <br />
               <br />
-              Use your sealed MKR to delegate your Sky governance voting rights, as collateral to borrow USDS,
-              or to just further support the Sky project. All positions automatically access rewards, as per
-              the protocol’s design, when certain parameters determined by Governance are met.
+              Use your sealed MKR or SKY to delegate <PopoverSealInfo type="delegate" /> your Sky governance
+              voting rights, as collateral to borrow USDS, or to further support the Sky project’s
+              decentralisation and security. All positions automatically access rewards, as per the protocol’s
+              design, when certain parameters determined by Sky ecosystem governance are met.
               <br />
               <br />
-              You can seal or unseal your tokens—and claim your rewards—anytime. Unsealing requires payment of
-              an exit fee <PopoverSealInfo type="exitFee" />.
+              You can seal or unseal your tokens—and claim your rewards—at any time. Unsealing requires
+              payment of an exit fee <PopoverSealInfo type="exitFee" />.
             </Text>
           }
           postTitle="Seal Engine"
           postTextElement={
             <>
               <Text variant="p2">
-                The MKR tokens you supply to the Seal Engine are sealed behind an exit fee{' '}
+                The MKR or SKY tokens that you supply to the Seal Engine are sealed behind an exit fee{' '}
                 <PopoverSealInfo type="exitFee" className="z-[1000]" /> in order to provide access to Seal
-                Rewards and encourage a deeper commitment to the Sky ecosystem governance.
+                Rewards and encourage a deeper commitment to Sky ecosystem governance.
                 <br />
                 <br />
-                Your sealed MKR enables you to create one or more positions through which you access the
-                rewards. You can:
+                Your sealed MKR or SKY enables you to create one or more positions through which you access
+                the rewards. You can:
                 <br />
                 <br />
                 <List tag="ol" variant="ordered">
                   <li>
                     <Text variant="p2">
-                      Borrow USDS against your MKR <PopoverSealInfo type="borrow" className="z-[1000]" />
+                      Borrow USDS against your supplied MKR or SKY{' '}
+                      <PopoverSealInfo type="borrow" className="z-[1000]" />
                     </Text>
                   </li>
                   <li>
                     <Text variant="p2">
-                      Transfer the voting power of your MKR tokens to your favorite delegate or a delegate
-                      contract you own.
+                      Transfer the voting power of your supplied MKR or SKY tokens to a delegate{' '}
+                      <PopoverSealInfo type="delegate" className="z-[1000]" /> of your choosing or a contract
+                      that you own.
                     </Text>
                   </li>
                   <li>
@@ -520,9 +523,9 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                   </li>
                 </List>
                 <br />
-                Your MKR tokens, as well as any rewards you accumulate, are supplied to a non-custodial smart
-                contract, which means no intermediary has custody of those tokens. With Sky, you always remain
-                in control of your funds.
+                Your MKR or SKY tokens, as well as any rewards that you accumulate, are supplied to a
+                non-custodial smart contract, which means that no intermediary takes custody of those tokens.
+                With Sky, you always remain in control of your funds.
               </Text>
             </>
           }
@@ -562,7 +565,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                 <br />
                 <br />
                 Activate or Deactivate your SKY anytime, with no restrictions or fees. With Sky.money, you
-                always remain in control of assets.
+                always remain in control of funds.
               </Text>
             }
             postTextElement={
@@ -575,7 +578,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                 <br />
                 <br />
                 You can Activate or Deactivate your SKY anytime, with no restrictions or fees. With Sky.money,
-                you always remain in control of assets.
+                you always remain in control of funds.
               </Text>
             }
             imgSrc="/features-activation.png"
@@ -603,7 +606,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
             }
             postTextElement={
               <Text variant="p2">
-                SkyLink will enhance your ability to manage and leverage your digital assets efficiently by
+                SkyLink will enhance your ability to manage and leverage your digital funds efficiently by
                 seamlessly connecting all of your Ethereum-based Sky Protocol tokens and features to supported
                 L2 networks.
                 <br />
