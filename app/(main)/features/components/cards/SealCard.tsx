@@ -110,9 +110,9 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
           content: (
             <>
               <TextFeatureCard>
-                When you hold MKR or SKY—sealed or unsealed, you also hold the right to participate in Sky
-                ecosystem governance voting. This means that you have the ability to contribute to the
-                decentralised ecosystem decision-making process through onchain voting.
+                When you hold MKR or SKY, you also hold the right to participate in Sky ecosystem governance
+                voting. This means that you have the ability to contribute to the decentralised ecosystem
+                decision-making process through onchain voting.
               </TextFeatureCard>
               <TextFeatureCard>
                 The delegation of voting power through the Seal Engine of the Sky Protocol enables you to
