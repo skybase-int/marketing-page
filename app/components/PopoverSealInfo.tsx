@@ -59,17 +59,14 @@ const content = {
       <Text className="leading-5 text-white/80" variant="ui-small-regular">
         When you hold MKR or SKY tokens, you maintain the right to participate in the process of Sky ecosystem
         governance voting. That means that you have the ability to contribute to the community-driven,
-        decentralised ecosystem decision-making process, which occurs through onchain voting. MKR holders can
-        vote directly through the{' '}
-        <ExternalLink href="https://vote.makerdao.com/">Sky Governance Voting Portal.</ExternalLink> SKY
-        holders cannot—they must delegate their voting power.
+        decentralised ecosystem decision-making process, which occurs through onchain voting.
         <br />
         <br />
-        The voting power delegation feature of the Seal Engine of the Sky Protocol enables SKY or MKR holders
-        to entrust their voting power to a delegate of their choosing, who can then vote in the Sky ecosystem
-        governance process on their behalf. Users can choose one delegate per sealed MKR or SKY position. If
-        users want to entrust their MKR or SKY to two delegates using the Seal Engine, they will need to
-        create two separate positions
+        The voting power delegation feature of the Seal Engine of the Sky Protocol enables you to entrust your
+        voting power to a delegate of your choosing, who can then vote in the Sky ecosystem governance process
+        on your behalf. You can choose one delegate per sealed MKR or SKY position. If you want to entrust
+        your MKR or SKY to two delegates using the Seal Engine, you will need to create two separate
+        positions.
         <br />
         <br />
         Delegates in receipt of token voting power can never directly access any tokens delegated to them,
