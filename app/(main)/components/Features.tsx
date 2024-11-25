@@ -481,10 +481,10 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
               Seal Rewards.
               <br />
               <br />
-              Use your sealed MKR or SKY to delegate your Sky governance voting rights, as collateral to
-              borrow USDS, or to further support the Sky project’s decentralisation and security. All
-              positions automatically access rewards, as per the protocol’s design, when certain parameters
-              determined by Sky ecosystem governance are met.
+              Use your sealed MKR or SKY to delegate <PopoverSealInfo type="delegate" /> your Sky governance
+              voting rights, as collateral to borrow USDS, or to further support the Sky project’s
+              decentralisation and security. All positions automatically access rewards, as per the protocol’s
+              design, when certain parameters determined by Sky ecosystem governance are met.
               <br />
               <br />
               You can seal or unseal your tokens—and claim your rewards—at any time. Unsealing requires
@@ -513,8 +513,9 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                   </li>
                   <li>
                     <Text variant="p2">
-                      Transfer the voting power of your supplied MKR or SKY tokens to a delegate of your
-                      choosing or a contract that you own.
+                      Transfer the voting power of your supplied MKR or SKY tokens to a delegate{' '}
+                      <PopoverSealInfo type="delegate" className="z-[1000]" /> of your choosing or a contract
+                      that you own.
                     </Text>
                   </li>
                   <li>

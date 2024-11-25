@@ -33,9 +33,9 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
                 positions and access Seal Rewards.
               </TextFeatureCard>
               <TextFeatureCard>
-                You can use your sealed MKR or SKY to delegate your Sky governance voting rights, as
-                collateral to borrow USDS, or to further support the Sky project’s decentralisation and
-                security. All positions are eligible to access Seal Rewards.
+                You can use your sealed MKR or SKY to delegate <PopoverSealInfo type="delegate" /> your Sky
+                governance voting rights, as collateral to borrow USDS, or to further support the Sky
+                project’s decentralisation and security. All positions are eligible to access Seal Rewards.
               </TextFeatureCard>
               <TextFeatureCard>
                 No minimum supply is required, and you can seal or unseal your tokens—and claim your
@@ -116,10 +116,10 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
               </TextFeatureCard>
               <TextFeatureCard>
                 The delegation of voting power through the Seal Engine of the Sky Protocol enables you to
-                entrust your voting power to a delegate (i), who can then vote in the Sky ecosystem governance
-                process on your behalf. Delegates in receipt of voting power can never directly access any
-                tokens delegated to them, including sealed tokens. You always own and are in control of your
-                sealed tokens, and you can change your delegate at any time.
+                entrust your voting power to a delegate <PopoverSealInfo type="delegate" />, who can then vote
+                in the Sky ecosystem governance process on your behalf. Delegates in receipt of voting power
+                can never directly access any tokens delegated to them, including sealed tokens. You always
+                own and are in control of your sealed tokens, and you can change your delegate at any time.
               </TextFeatureCard>
               <TextFeatureCard>
                 Sealing to delegate your voting power may be a useful option for governance token holders who
@@ -205,14 +205,17 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
               <TextFeatureCard>
                 Unsealing requires payment of an exit fee —a percentage of the total amount of tokens that you
                 have sealed in that position. The fee is automatically subtracted from that total amount, and
-                then burnt, removing the tokens from circulation. Your accumulated rewards are not affected.{' '}
+                then burnt, removing the tokens from circulation. Your accumulated rewards, which take the
+                form of USDS, are not affected by this process. In other words, you do not have to pay an exit
+                fee to claim your rewards.{' '}
               </TextFeatureCard>
               <TextFeatureCard>
-                The exit fee is a risk parameter managed and determined (regardless of position duration) by
-                Sky ecosystem governance. The exit fee applies at unsealing, not at sealing, which means that
-                it is determined the moment you unseal your MKR. The moment the Seal Engine launched, the exit
-                fee rate was set to 5%, with a planned 1% increase every 6 months thereafter until it reaches
-                the long-term fee rate of 15%.
+                The exit fee is a risk parameter managed and determined, regardless of the duration of a
+                position, by Sky ecosystem governance. The exit fee applies at unsealing, and the total amount
+                is determined at the moment you unseal your MKR or SKY. The moment the Seal Engine launched,
+                the exit fee rate was set to 5% of the value of the MKR or SKY tokens that a user has sealed,
+                with a planned 1% increase every 6 months thereafter until it reaches the long-term fee rate
+                of 15%.
               </TextFeatureCard>
             </>
           ),
