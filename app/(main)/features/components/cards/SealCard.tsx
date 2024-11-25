@@ -81,7 +81,7 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
               <TextFeatureCard>
                 Your supplied MKR or SKY tokens, as well as any accumulated Seal Rewards, automatically enter
                 a non-custodial smart contract, which allows you to always remain in control of your supplied
-                assets.
+                funds.
               </TextFeatureCard>
               <TextFeatureCard>Seal Reward rates are determined by Sky ecosystem governance.</TextFeatureCard>
             </>
