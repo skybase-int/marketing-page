@@ -22,7 +22,7 @@ const questions: Question[] = [
   },
   {
     question: 'What is Sky.money, and what can I do with it?',
-    answer: `Sky.money is one of the many non-custodial gateways to the permissionless Sky Protocol, a decentralised protocol developed around the USDS stablecoin. Sky.money is a front end that provides access to the app without holding your funds or acting as an intermediary. It provides eligible users with access to Sky Protocol features, including Sky tokens (USDS, SKY, DAI, MKR), the Sky Savings Rate (SSR), Sky Token Rewards (STRs), and eventually Activation Token Rewards and SkyLink. With the Sky Protocol, you can save and access rewards without giving up control of your supplied assets. 
+    answer: `Sky.money is one of the many non-custodial gateways to the permissionless Sky Protocol, a decentralised protocol developed around the USDS stablecoin. Sky.money is a front end that provides access to the app without holding your funds or acting as an intermediary. It provides eligible users with access to Sky Protocol features, including Sky tokens (USDS, SKY, DAI, MKR), the Sky Savings Rate (SSR), Sky Token Rewards (STRs), and eventually Activation Token Rewards and SkyLink. With the Sky Protocol, you can save and access rewards without giving up control of your supplied funds. 
 
 Eligible Sky.money users can access the Sky Protocol to do the following: 
 
@@ -35,7 +35,7 @@ Eligible Sky.money users can access the Sky Protocol to do the following:
     
 * **Access Rewards.** Use USDS to access Sky Token Rewards (STRs) over time. No minimum USDS supply amount is required.   
   * The amount of STRs you receive is calculated based on your share of the entire pool of USDS tokens supplied to the Sky Token Rewards module by all participants, not on the amount of tokens you supply. This share, and consequently the rate of STR rewards, can fluctuate as the total pool size changes over time. Sky.money does not control the issuance, determination, or distribution of these rewards.  
-  * The USDS stablecoin, as well as the rewards received, are supplied to a non-custodial smart contract that represents the USDS pool of assets. This means that no intermediary takes custody over your funds. 
+  * The USDS stablecoin, as well as the rewards received, are supplied to a non-custodial smart contract that represents the USDS pool of funds. This means that no intermediary takes custody over your funds. 
 
 
 * **Save.** Place USDS into the Sky Savings Rate (SSR) module to access the SSR and accumulate additional USDS over time. No minimum supply amount is required.   

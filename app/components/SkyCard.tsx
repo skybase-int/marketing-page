@@ -60,7 +60,7 @@ export const SkyCard = ({ data }: { data: FetchedData }) => {
             <br />
             <br />
             You’ll also soon be able to Activate and Seal your SKY to accumulate Activation Token Rewards.
-            With the Sky Protocol, you can receive rewards without giving up control of your supplied assets. 
+            With the Sky Protocol, you can receive rewards without giving up control of your supplied funds. 
             <br />
             <br />
             Upgrading is optional.
