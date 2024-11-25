@@ -33,7 +33,7 @@ export const UpgradeCard = ({ data }: { data: FetchedData }) => (
             </ul>
             <TextFeatureCard>
               Upgrade is an automatic and non-custodial feature. With Sky.money, you always remain in control
-              of your assets.
+              of your funds.
             </TextFeatureCard>
           </>
         ),

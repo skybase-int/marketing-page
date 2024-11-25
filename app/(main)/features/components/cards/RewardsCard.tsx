@@ -27,7 +27,7 @@ export const RewardsCard = ({ data }: { data: FetchedData }) => {
                 access Sky Token Rewards over time in the form of SKY governance tokens. Subject to governance
                 approval, you&apos;ll soon be able to receive rewards in the form of Sky Star tokens, too.
               </TextFeatureCard>
-              <TextFeatureCard>With Sky.money, you always remain in control of your assets.</TextFeatureCard>
+              <TextFeatureCard>With Sky.money, you always remain in control of your funds.</TextFeatureCard>
             </>
           ),
           stats: [
@@ -113,7 +113,7 @@ export const RewardsCard = ({ data }: { data: FetchedData }) => {
                 </LiFeatureCard>
                 <LiFeatureCard>The market price of the token rewarded</LiFeatureCard>
                 <LiFeatureCard>
-                  The user&apos;s proportional supply within the total pool of assets linked to the Sky Token
+                  The user&apos;s proportional supply within the total pool of funds linked to the Sky Token
                   Rewards module
                 </LiFeatureCard>
               </ul>
