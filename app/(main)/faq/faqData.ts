@@ -44,7 +44,7 @@ Like traditional accounting ledgers, blockchain networks keep a record of transa
   },
   {
     question: 'What is a blockchain transaction (gas) fee?',
-    answer: `Every time you engage in transactions with your digital assets (*e.g.*, buy, sell, trade or transfer them) you will likely pay a transaction fee— called a gas fee—for using the blockchain network. That fee is not controlled, imposed, or received by Sky.money; it is calculated based on current network demand and the amount of gas (*i.e.*, units of compute resources) required to process your transaction. On the Ethereum blockchain, gas fees are paid in ETH, the native currency of the blockchain. So, be sure to have ETH in your wallet anytime you transact using the Sky Protocol.`,
+    answer: `Every time you engage in transactions with your digital funds (*e.g.*, buy, sell, trade or transfer them) you will likely pay a transaction fee— called a gas fee—for using the blockchain network. That fee is not controlled, imposed, or received by Sky.money; it is calculated based on current network demand and the amount of gas (*i.e.*, units of compute resources) required to process your transaction. On the Ethereum blockchain, gas fees are paid in ETH, the native currency of the blockchain. So, be sure to have ETH in your wallet anytime you transact using the Sky Protocol.`,
     categories: ['Crypto (General)']
   },
   {
@@ -70,7 +70,7 @@ Finally, DeFi offerings are typically managed by decentralised ecosystems that o
   // TODO: THIS ONE MAY NEED REVISION
   {
     question: 'What is a crypto wallet, and how do I get one?',
-    answer: `A crypto wallet is software that enables you to easily view a list of your digital assets, manage them, and help safeguard them. Note that in the case of non-custodial wallets, your assets are only *visible* in the wallet—not stored there. Your non-custodial wallet holds the private keys needed to sign crypto transactions, and gives you full control over these private keys, which are essential for accessing and managing your crypto. Unlike custodial wallets where a third party holds the private keys, non-custodial wallets allow users to be the sole custodian of their keys. This means that only the user has the ability to sign transactions, making it more secure and private; however, it also means that if a user loses their private key or recovery phrase, they may permanently lose access to their funds. All crypto assets are stored on a public blockchain and can be accessed via your private keys. 
+    answer: `A crypto wallet is software that enables you to easily view a list of your digital funds, manage them, and help safeguard them. Note that in the case of non-custodial wallets, your funds are only *visible* in the wallet—not stored there. Your non-custodial wallet holds the private keys needed to sign crypto transactions, and gives you full control over these private keys, which are essential for accessing and managing your crypto. Unlike custodial wallets where a third party holds the private keys, non-custodial wallets allow users to be the sole custodian of their keys. This means that only the user has the ability to sign transactions, making it more secure and private; however, it also means that if a user loses their private key or recovery phrase, they may permanently lose access to their funds. All crypto funds are stored on a public blockchain and can be accessed via your private keys. 
 
 Non-custodial wallets can be software-based, like mobile apps, or hardware devices designed for enhanced security. There are several types of crypto wallets and no limit to the number of wallets you can own. Two popular software-based wallets are [Metamask](https://metamask.io/) and [Rainbow](https://rainbow.me/). 
 
@@ -79,18 +79,18 @@ Sky Balances is not a crypto wallet, but rather a non-custodial tool that displa
   },
   {
     question: 'How do crypto wallets work?',
-    answer: `Crypto wallets use a pair of cryptographic keys—one public, the other private. These are essential components of cryptography used in crypto wallets for security and managing digital assets. They work together as a key pair known as public-key cryptography. 
+    answer: `Crypto wallets use a pair of cryptographic keys—one public, the other private. These are essential components of cryptography used in crypto wallets for security and managing digital funds. They work together as a key pair known as public-key cryptography. 
 
 A private key is a randomly generated string of letters and numbers which acts as a password or secret code. It is known only to the user and should be kept secure and confidential to ensure that only the user has access to and can control any associated funds. The private key is used to sign transactions. For example, when a user wants to send crypto or access their funds, they will use the private key to authorise the transaction. 
 
-A public key is derived from the private key using a mathematical algorithm. It is a string of characters that can be shared openly without compromising security. The public key is used to generate wallet addresses and to encrypt data. For example, when someone wants to send digital assets to a user, they will use the user's public key (or the associated wallet address). 
+A public key is derived from the private key using a mathematical algorithm. It is a string of characters that can be shared openly without compromising security. The public key is used to generate wallet addresses and to encrypt data. For example, when someone wants to send digital funds to a user, they will use the user's public key (or the associated wallet address). 
 
 Typically, when initialising a new non-custodial digital wallet, the wallet software generates a “seed phrase,” which is a sequence of 12 or 24 seemingly random words used to generate the public and private keys associated with them. The seed phrase can be used to recover the public and private keys, and should therefore be stored somewhere safe and never shared with anyone.`,
     categories: ['Crypto (General)']
   },
   {
     question: 'How do I use a non-custodial digital wallet to make a transaction?',
-    answer: `Once you've set up your non-custodial digital wallet and have your public and private keys, you can use it to manage (send and receive) your digital assets on the blockchain. Every time you transact, your wallet requires you to digitally sign the transaction with your private key. Signing when prompted demonstrates that you acknowledge your action.
+    answer: `Once you've set up your non-custodial digital wallet and have your public and private keys, you can use it to manage (send and receive) your digital funds on the blockchain. Every time you transact, your wallet requires you to digitally sign the transaction with your private key. Signing when prompted demonstrates that you acknowledge your action.
 
 Signing is a simple but critical part of the process, as your digital signature approves the transaction, ensuring that only you have control of your crypto. Some actions might require multiple wallet signatures to authorise the activity in question. For example, to complete a trade on the Sky Protocol, you would first need to confirm that you allow the app to access the token you want to trade in your wallet (one signature), and then authorise the actual trade (another signature).`,
     categories: ['Crypto (General)']
@@ -100,7 +100,7 @@ Signing is a simple but critical part of the process, as your digital signature 
 const skyEcosystem: FAQItem[] = [
   {
     question: 'What is Sky.money, and what can I do with it?',
-    answer: `Sky.money is one of the many non-custodial gateways to the permissionless Sky Protocol, a decentralised protocol developed around the USDS stablecoin. Sky.money is a front end that provides access to the app without holding your funds or acting as an intermediary. It provides eligible users with access to Sky Protocol features, including Sky tokens (USDS, SKY, DAI, MKR), the Sky Savings Rate (SSR), Sky Token Rewards (STRs), and eventually Activation Token Rewards and SkyLink. With the Sky Protocol, you can save and access rewards without giving up control of your supplied assets. 
+    answer: `Sky.money is one of the many non-custodial gateways to the permissionless Sky Protocol, a decentralised protocol developed around the USDS stablecoin. Sky.money is a front end that provides access to the app without holding your funds or acting as an intermediary. It provides eligible users with access to Sky Protocol features, including Sky tokens (USDS, SKY, DAI, MKR), the Sky Savings Rate (SSR), Sky Token Rewards (STRs), and eventually Activation Token Rewards and SkyLink. With the Sky Protocol, you can save and access rewards without giving up control of your supplied funds. 
 
 Eligible Sky.money users can access the Sky Protocol to do the following: 
 
@@ -113,7 +113,7 @@ Eligible Sky.money users can access the Sky Protocol to do the following:
     
 * **Access Rewards.** Use USDS to access Sky Token Rewards (STRs) over time. No minimum USDS supply amount is required.   
   * The amount of STRs you receive is calculated based on your share of the entire pool of USDS tokens supplied to the Sky Token Rewards module by all participants, not on the amount of tokens you supply. This share, and consequently the rate of STR rewards, can fluctuate as the total pool size changes over time. Sky.money does not control the issuance, determination, or distribution of these rewards.  
-  * The USDS stablecoin, as well as the rewards received, are supplied to a non-custodial smart contract that represents the USDS pool of assets. This means that no intermediary takes custody over your funds. 
+  * The USDS stablecoin, as well as the rewards received, are supplied to a non-custodial smart contract that represents the USDS pool of funds. This means that no intermediary takes custody over your funds. 
 
 
 * **Save.** Place USDS into the Sky Savings Rate (SSR) module to access the SSR and accumulate additional USDS over time. No minimum supply amount is required.   
@@ -135,7 +135,7 @@ With Sky.money, you always remain in control of your supplied funds.`,
 1. The Sky Protocol is easy to access and explore via Sky.money, a non-custodial gateway to the Sky Protocol.   
 2. The Sky Protocol was built from the core module of the Maker Protocol, one of the largest and most popular decentralised finance protocols in the world.   
 3. Transparent governance of the Sky ecosystem aims to facilitate continual improvements of the Sky Protocol, regular independent security audits, and ongoing monitoring of the financial stability of USDS.  
-4. You remain in full control of your supplied assets.  
+4. You remain in full control of your supplied funds.  
 5. Fast-moving protocol innovation is driven in the ecosystem by independent Sky Stars, such as Spark.`,
     categories: ['Sky Protocol & Ecosystem']
   },
@@ -242,7 +242,7 @@ Unlike cryptocurrencies that can fluctuate widely in value, USDS is designed to 
   },
   {
     question: 'How can I use USDS?',
-    answer: `Like other decentralized stablecoins, USDS is freely transferable and can be used in connection with any software protocol or platform that supports it. Unlike other stablecoins, you can use USDS to access the Sky Savings Rate to accumulate additional USDS over time, and to access Sky Token Rewards without giving up control of your digital assets. With Sky Token Rewards, you can participate—if you choose to do so— in the governance of the Sky ecosystem.`,
+    answer: `Like other decentralized stablecoins, USDS is freely transferable and can be used in connection with any software protocol or platform that supports it. Unlike other stablecoins, you can use USDS to access the Sky Savings Rate to accumulate additional USDS over time, and to access Sky Token Rewards without giving up control of your digital funds. With Sky Token Rewards, you can participate—if you choose to do so— in the governance of the Sky ecosystem.`,
     categories: ['Sky Tokens']
   },
   {
@@ -279,7 +279,7 @@ Note that decisions regarding the decentralized Sky Protocol, its tokens, and fe
     question: `What happens to the DAI I've supplied to the DAI Savings Rate (DSR) contract?`,
     answer: `The DAI Savings Rate (DSR) contract remains unchanged for now, so you don't need to immediately do anything to your DAI in the DSR module. Eligible users can, however, withdraw their DSR position, upgrade their DAI to USDS, and then use their USDS to access the Sky Savings Rate.
 
-When you supply USDS to the Sky Savings Rate module, you receive sUSDS savings tokens. When you choose to redeem your sUSDS for USDS—which you can do anytime—the total USDS you will receive will equal the amount you originally supplied, plus any rewards accumulated. No minimum supply amount is required to access the SSR, and you always maintain full control of your supplied assets, as this feature is non-custodial.`,
+When you supply USDS to the Sky Savings Rate module, you receive sUSDS savings tokens. When you choose to redeem your sUSDS for USDS—which you can do anytime—the total USDS you will receive will equal the amount you originally supplied, plus any rewards accumulated. No minimum supply amount is required to access the SSR, and you always maintain full control of your supplied funds, as this feature is non-custodial.`,
     categories: ['Sky Tokens']
   },
   {
@@ -362,12 +362,12 @@ When you supply USDS to the Sky Savings Rate module, you access the SSR and may 
 The decentralized Sky Protocol dynamically adds USDS tokens to the pool every few seconds, in accordance with the Sky Savings Rate. As those tokens auto-accumulate in the pool over time, the value of the sUSDS you hold may gradually increase. 
 
 So, when you choose to redeem your sUSDS for USDS—which you can do anytime—the total USDS you will receive will equal the amount you originally supplied, plus any additional USDS accumulated.   
-With the Sky Protocol, you're always in full control of your supplied assets, as this feature is non-custodial.`,
+With the Sky Protocol, you're always in full control of your supplied funds, as this feature is non-custodial.`,
     categories: ['Sky Savings Rate']
   },
   {
     question: 'Does it cost anything to access the Sky Savings Rate?',
-    answer: `Accessing the Sky Savings Rate via the Sky Protocol is free. However, any time you supply or withdraw assets to/from the Sky Savings Rate module, you will incur a transaction fee— called a gas fee—for using the Ethereum blockchain network. That fee is not controlled, imposed or received by Sky.money or the Sky Protocol.`,
+    answer: `Accessing the Sky Savings Rate via the Sky Protocol is free. However, any time you supply or withdraw funds to/from the Sky Savings Rate module, you will incur a transaction fee— called a gas fee—for using the Ethereum blockchain network. That fee is not controlled, imposed or received by Sky.money or the Sky Protocol.`,
     categories: ['Sky Savings Rate']
   },
   {
@@ -382,14 +382,14 @@ const skyTokenRewards: FAQItem[] = [
     question: 'What are Sky Token Rewards, and how do they work?',
     answer: `When you supply USDS to the Sky Token Rewards module through the Sky Protocol, you receive Sky Token Rewards over time in the form of SKY governance tokens. 
 
-The USDS, as well as the rewards received, are supplied to a non-custodial smart contract that represents the USDS pool of assets. That means no intermediary has custody of your supplied funds.
+The USDS, as well as the rewards received, are supplied to a non-custodial smart contract that represents the USDS pool of funds. That means no intermediary has custody of your supplied funds.
 
 Soon, you'll be able to use SKY to access Activation Token Rewards, and to participate in Sky ecosystem governance through a system of decentralized onchain voting.`,
     categories: ['Sky Token Rewards']
   },
   {
     question: 'How much USDS do I have to supply to accumulate Sky Token Rewards?',
-    answer: `Eligible users can supply any amount of USDS to the Sky Token Rewards module to begin getting Sky Token Rewards. There is no minimum amount required. Eligible users can also withdraw their USDS anytime. With the Sky Protocol, you can receive rewards without giving up control of your supplied assets, as this feature is non-custodial.`,
+    answer: `Eligible users can supply any amount of USDS to the Sky Token Rewards module to begin getting Sky Token Rewards. There is no minimum amount required. Eligible users can also withdraw their USDS anytime. With the Sky Protocol, you can receive rewards without giving up control of your supplied funds, as this feature is non-custodial.`,
     categories: ['Sky Token Rewards']
   },
   {
@@ -398,7 +398,7 @@ Soon, you'll be able to use SKY to access Activation Token Rewards, and to parti
 
 * The issuance rate of the token rewarded, which is determined by Sky ecosystem governance  
 * The market price of the token rewarded  
-* The user's share of the total pool of assets earning the token rewarded
+* The user's share of the total pool of funds earning the token rewarded
 
 Sky.money does not control the issuance, determination, or distribution of these rewards.`,
     categories: ['Sky Token Rewards']
@@ -436,7 +436,7 @@ const seal: FAQItem[] = [
     question: 'What are Seal Rewards?',
     answer: `Seal Rewards are accessed when you supply MKR to the Seal Engine of the decentralised Sky Protocol. Currently, all Seal Rewards take the form of USDS. Eventually, subject to Sky ecosystem governance approval, Seal Rewards may also be available in the form of Sky Star tokens, including SPK, the governance token of the Spark decentralised community. Choose the reward you’d like to receive!
 
-Your supplied MKR tokens, as well as any rewards accumulated, automatically enter a non-custodial smart contract, which allows you to always remain in control of your supplied assets.
+Your supplied MKR tokens, as well as any rewards accumulated, automatically enter a non-custodial smart contract, which allows you to always remain in control of your supplied funds.
 
 Seal reward rates are determined by Sky ecosystem governance.
 `,
@@ -485,11 +485,11 @@ The exit fee is a risk parameter managed and determined (regardless of position 
   },
   {
     question: 'What does it mean to delegate my voting power?',
-    answer: `When you hold MKR—sealed or not, you also hold the right to participate in Sky ecosystem governance voting. That means you have the ability to contribute to the decentralised ecosystem decision-making process through onchain voting. 
-
-The delegation of voting power through the Seal Engine of the Sky Protocol enables you to entrust your voting power to a delegate, who can then vote in the Sky ecosystem governance process on your behalf. You can choose one delegate per sealed MKR position. If you want to entrust your MKR to two delegates using the Seal Engine, you will need to create two separate positions.   
-
-Delegates in receipt of voting power can never directly access any tokens delegated to them, including sealed tokens. You always own and are in control of your sealed tokens, and you can change your delegate anytime.Sealing to delegate your voting power is an option for governance token holders who don’t have much time to allocate to the process, who want to save on the cost of gas involved in voting on their own, and who want to earn Seal Rewards.`,
+    answer: `When you hold MKR or SKY tokens, you maintain the right to participate in the process of Sky ecosystem governance voting. That means that you have the ability to contribute to the community-driven, decentralised ecosystem decision-making process, which occurs through onchain voting.
+      
+The voting power delegation feature of the Seal Engine of the Sky Protocol enables you to entrust your voting power to a delegate of your choosing, who can then vote in the Sky ecosystem governance process on your behalf. You can choose one delegate per sealed MKR or SKY position. If you want to entrust your MKR or SKY to two delegates using the Seal Engine, you will need to create two separate positions.
+      
+Delegates in receipt of token voting power can never directly access any tokens delegated to them, including sealed tokens. Throughout the delegation process, you always own and are in control of your sealed tokens, and you can change your delegate at any time.Sealing to delegate your voting power may be a useful option for governance token holders who have limited time to allocate to the process, who want to save on the cost of gas involved in voting on their own, and who also want to earn Seal Rewards.`,
     categories: ['Seal Engine']
   },
   {
