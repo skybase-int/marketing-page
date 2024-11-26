@@ -29,13 +29,13 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
           content: (
             <>
               <TextFeatureCard>
-                Supply MKR tokens to the Seal Engine of the Sky Protocol to create one or more positions and
-                access Seal Rewards.
+                Supply MKR or SKY tokens to the Seal Engine of the Sky Protocol to create one or more
+                positions and access Seal Rewards.
               </TextFeatureCard>
               <TextFeatureCard>
-                You can use your sealed MKR to delegate your Sky governance voting rights, as collateral to
-                borrow USDS, or to just further support the Sky project’s decentralisation and security. All
-                positions access Seal Rewards.
+                You can use your sealed MKR or SKY to delegate <PopoverSealInfo type="delegate" /> your Sky
+                governance voting rights, as collateral to borrow USDS, or to further support the Sky
+                project’s decentralisation and security. All positions are eligible to access Seal Rewards.
               </TextFeatureCard>
               <TextFeatureCard>
                 No minimum supply is required, and you can seal or unseal your tokens—and claim your
@@ -45,7 +45,7 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
               </TextFeatureCard>
             </>
           ),
-          buttonCta: 'Get Seal Rewards',
+          buttonCta: 'Access Seal Rewards',
           url: `?widget=seal`,
           buttonVariant: 'twilight-1',
           illustration: !bpiLoading ? (
@@ -69,19 +69,19 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
           content: (
             <>
               <TextFeatureCard>
-                Seal Rewards are accessed when you supply MKR to the Seal Engine of the decentralised Sky
-                Protocol.
+                Seal Rewards are accessed when you supply MKR or SKY to the Seal Engine of the decentralised
+                Sky Protocol.
               </TextFeatureCard>
               <TextFeatureCard>
                 Currently, all Seal Rewards take the form of USDS. Eventually, subject to approval by Sky
                 ecosystem governance, Seal Rewards may also be available in the form of Sky Star tokens,
-                including SPK, the governance token of the Spark decentralised community. Choose the reward
-                you’d like to receive!
+                including SPK, the governance token of the Spark decentralised community. With this feature,
+                you choose the reward you would like to receive!
               </TextFeatureCard>
               <TextFeatureCard>
-                Your supplied MKR tokens, as well as any Seal Rewards accumulated, automatically enter a
-                non-custodial smart contract, which allows you to always remain in control of your supplied
-                assets.
+                Your supplied MKR or SKY tokens, as well as any accumulated Seal Rewards, automatically enter
+                a non-custodial smart contract, which allows you to always remain in control of your supplied
+                funds.
               </TextFeatureCard>
               <TextFeatureCard>Seal Reward rates are determined by Sky ecosystem governance.</TextFeatureCard>
             </>
@@ -110,21 +110,21 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
           content: (
             <>
               <TextFeatureCard>
-                When you hold MKR—sealed or not, you also hold the right to participate in Sky ecosystem
-                governance voting. That means you have the ability to contribute to the decentralised
-                ecosystem decision-making process through onchain voting.
+                When you hold MKR or SKY, you also hold the right to participate in Sky ecosystem governance
+                voting. This means that you have the ability to contribute to the decentralised ecosystem
+                decision-making process through onchain voting.
               </TextFeatureCard>
               <TextFeatureCard>
                 The delegation of voting power through the Seal Engine of the Sky Protocol enables you to
-                entrust your voting power to a delegate, who can then vote in the Sky ecosystem governance
-                process on your behalf. Delegates in receipt of voting power can never directly access any
-                tokens delegated to them, including sealed tokens. You always own and are in control of your
-                sealed tokens, and you can change your delegate anytime.
+                entrust your voting power to a delegate <PopoverSealInfo type="delegate" />, who can then vote
+                in the Sky ecosystem governance process on your behalf. Delegates in receipt of voting power
+                can never directly access any tokens delegated to them, including sealed tokens. You always
+                own and are in control of your sealed tokens, and you can change your delegate at any time.
               </TextFeatureCard>
               <TextFeatureCard>
-                Sealing to delegate your voting power is an option for governance token holders who don’t have
-                much time to allocate to the process, who want to save on the cost of gas involved in voting
-                on their own, and who want to earn Seal rewards.
+                Sealing to delegate your voting power may be a useful option for governance token holders who
+                have limited time to allocate to the process, who want to save on the cost of gas involved in
+                voting on their own, and who want to earn Seal rewards.
               </TextFeatureCard>
             </>
           ),
@@ -152,10 +152,10 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
           content: (
             <>
               <TextFeatureCard>
-                Sealing MKR enables you to access Seal Rewards by creating a position through which you
-                generate and borrow USDS against those tokens. You can seal and unseal your collateral
-                anytime, and draw or pay back additional USDS whenever you’d like. This means you are always
-                able to actively manage your position.
+                Sealing MKR or SKY enables you to access Seal Rewards by creating a position through which you
+                generate and borrow USDS against those tokens. You can seal and unseal your MKR or SKY
+                collateral anytime, and draw or pay back additional USDS whenever you would like. This means
+                that you are always able to actively manage your position.
               </TextFeatureCard>
               <TextFeatureCard>
                 The debt ceiling and borrow rate <PopoverSealInfo type="borrowRate" /> are determined by Sky
@@ -163,10 +163,11 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
                 Borrow rate fees accumulate automatically per block and get added to the total debt.
               </TextFeatureCard>
               <TextFeatureCard>
-                Opening a USDS borrow position is subject to liquidation risk in the following scenario: If at
-                any time the value of your sealed collateral drops below the required threshold and your
-                position becomes undercollateralised, the smart contract automatically liquidates it and
-                auctions your collateral. Any leftover collateral can be claimed through the{' '}
+                Opening a USDS borrow position is subject to liquidation risk if at any time the value of your
+                sealed collateral drops below the required threshold (liquidation price) and your position
+                becomes undercollateralised. If this were to happen, the smart contract would automatically
+                liquidate the position and auction your collateral. Any leftover collateral may be claimed
+                through the{' '}
                 <ExternalLink className="text-text underline" href="https://unified-auctions.makerdao.com/">
                   Unified Auctions portal.
                 </ExternalLink>
@@ -197,20 +198,24 @@ export const SealCard = ({ data }: { data: FetchedData }) => {
           content: (
             <>
               <TextFeatureCard>
-                When you supply MKR to the Seal Engine, a position is created and those tokens are sealed
-                behind an exit fee. You can seal and unseal your tokens anytime.
+                When you supply MKR or SKY to the Seal Engine, a position is created and those tokens are
+                sealed behind an exit fee. You can seal and unseal your tokens anytime.
               </TextFeatureCard>
               {/* TODO: Do we need an exit fee tooltip here? It's the same content as that of the tooltip */}
               <TextFeatureCard>
-                Unsealing requires payment of an exit fee—a percentage of the total amount of tokens you’ve
-                sealed in that position. The fee is automatically subtracted from that total amount, and then
-                burnt, removing the tokens from circulation. Your accumulated rewards are not affected.{' '}
+                Unsealing requires payment of an exit fee —a percentage of the total amount of tokens that you
+                have sealed in that position. The fee is automatically subtracted from that total amount, and
+                then burnt, removing the tokens from circulation. Your accumulated rewards, which take the
+                form of USDS, are not affected by this process. In other words, you do not have to pay an exit
+                fee to claim your rewards.{' '}
               </TextFeatureCard>
               <TextFeatureCard>
-                The exit fee is a risk parameter managed and determined (regardless of position duration) by
-                Sky ecosystem governance. The moment the Seal Engine launched, the exit fee rate was set to
-                5%, with a 1% increase every 6 months thereafter until it reaches the long-term fee rate of
-                15%.
+                The exit fee is a risk parameter managed and determined, regardless of the duration of a
+                position, by Sky ecosystem governance. The exit fee applies at unsealing, and the total amount
+                is determined at the moment you unseal your MKR or SKY. The moment the Seal Engine launched,
+                the exit fee rate was set to 5% of the value of the MKR or SKY tokens that a user has sealed,
+                with a planned 1% increase every 6 months thereafter until it reaches the long-term fee rate
+                of 15%.
               </TextFeatureCard>
             </>
           ),

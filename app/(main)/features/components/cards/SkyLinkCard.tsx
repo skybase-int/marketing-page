@@ -16,7 +16,7 @@ export const SkyLinkCard = () => {
           content: (
             <>
               <TextFeatureCard>
-                SkyLink will enhance your ability to manage and leverage your digital assets efficiently by
+                SkyLink will enhance your ability to manage and leverage your digital funds efficiently by
                 seamlessly connecting all of your Ethereum-based Sky Protocol tokens and features to supported
                 L2 networks.
               </TextFeatureCard>

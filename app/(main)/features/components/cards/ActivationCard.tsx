@@ -21,7 +21,7 @@ export const ActivationCard = () => (
             </TextFeatureCard>
             <TextFeatureCard>
               Activate or Deactivate your SKY anytime, with no restrictions or fees. With Sky.money, you
-              always remain in control of assets, as this feature is non-custodial.
+              always remain in control of funds, as this feature is non-custodial.
             </TextFeatureCard>
             <TextFeatureCard>
               The implementation of Activation is subject to governance approval.

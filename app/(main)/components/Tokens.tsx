@@ -231,7 +231,7 @@ export function Tokens({
             including the Sky Savings Rate and Sky Token Rewards.
             <br />
             <br />
-            With Sky tokens, you remain in full control of your assets.
+            With Sky tokens, you remain in full control of your funds.
           </Text>
         </div>
         <div className="flex w-full flex-col gap-3.5 tablet:flex-row tablet:gap-5 desktop:w-[900px] desktop-xl:w-[1192px] desktop-xl:gap-6">
