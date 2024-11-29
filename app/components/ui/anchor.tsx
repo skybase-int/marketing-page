@@ -5,7 +5,7 @@ import { cn } from '@/app/lib/utils';
 import { graphikStdClassName } from '@/app/lib/fonts';
 
 const anchorVariants = tv({
-  base: `flex w-[144px] mobile:w-[164px] px-5 justify-between shrink-0 items-center rounded-2xl border-2 backdrop-blur-[20px] bg-white-fill shadow-anchor font-medium ${graphikStdClassName} text-[16px] leading-[20px] -tracking-2 text-left tablet:px-6 desktop:gap-7 transition-gradient-and-colors tablet:w-[220px] desktop:w-[230px]`,
+  base: `flex w-[144px] mobile:w-[164px] px-5 justify-between shrink-0 items-center rounded-2xl border-2 backdrop-blur-[20px] bg-white-fill shadow-anchor font-medium ${graphikStdClassName} text-[16px] leading-[20px] -tracking-2 text-left tablet:px-6 desktop:gap-7 transition-gradient-and-colors tablet:w-[212px] desktop:w-[230px]`,
   slots: {
     icon: 'h-8 w-8 desktop:h-10 desktop:w-10 shrink-0 flex items-center justify-center'
   },
