@@ -15,10 +15,12 @@ import { getTermsLink } from '@/app/lib/utils';
 
 export function FeaturesMain({
   childrenRef,
-  data
+  data,
+  marginTopPx
 }: {
   childrenRef: React.RefObject<HTMLDivElement>;
   data: FetchedData;
+  marginTopPx?: number;
 }) {
   const { bpi } = useBreakpointIndex();
   const targetRef = useRef<HTMLDivElement>(null);
@@ -71,7 +73,11 @@ export function FeaturesMain({
 
   return (
     <>
-      <div ref={divRef} className="relative w-full overflow-clip">
+      <div
+        ref={divRef}
+        className="relative w-full overflow-clip"
+        style={{ marginTop: marginTopPx ? `${marginTopPx}px` : undefined }}
+      >
         <div
           className="fixed left-0 top-0 hidden h-screen w-screen desktop:block"
           style={{ background: gradientParts[activeIndex] }}
