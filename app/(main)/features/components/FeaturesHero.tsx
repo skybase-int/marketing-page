@@ -73,7 +73,7 @@ export function FeaturesHero({ heroHeight = 0 }: { heroHeight?: number }) {
               <div key={feature.id} className="flex flex-col items-center">
                 <Text
                   variant="caption"
-                  className={`mb-2 mt-8 text-white ${feature.isAlpha ? 'visible' : 'invisible'}`}
+                  className={`mb-2 mt-5 text-white ${feature.isAlpha ? 'visible' : 'invisible'}`}
                 >
                   Alpha launch
                 </Text>
