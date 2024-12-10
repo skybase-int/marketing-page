@@ -24,6 +24,7 @@ export function FeaturesContent({ data }: { data: FetchedData }) {
     topDivRef
   });
   const [heroHeight, setHeroHeight] = useState<number | undefined>(undefined);
+  const [extraHeroHeight, setExtraHeroHeight] = useState<number | undefined>(undefined);
   const {
     setVisibleAreaTone,
     setScrollContainerRef,
@@ -35,9 +36,11 @@ export function FeaturesContent({ data }: { data: FetchedData }) {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const handleResize = () => {
-        const newHeight = window.innerHeight;
+        const newScreenHeight = window.innerHeight;
+        const heroHeight = Math.max(minHeroHeight, newScreenHeight);
         //hero height is the max of the min hero height and the viewport height
-        setHeroHeight(Math.max(minHeroHeight, newHeight));
+        setHeroHeight(heroHeight);
+        setExtraHeroHeight(Math.max(0, heroHeight - newScreenHeight));
       };
 
       handleResize(); // Set initial dimensions
@@ -105,7 +108,7 @@ export function FeaturesContent({ data }: { data: FetchedData }) {
     <div>
       <FeaturesHero heroHeight={heroHeight} />
       <PrefetchFeaturesAssets />
-      <FeaturesMain childrenRef={transitionChildrenRef} data={data} />
+      <FeaturesMain childrenRef={transitionChildrenRef} data={data} marginTopPx={extraHeroHeight} />
       <div className="relative z-30">
         <div className="pointer-events-none absolute left-0 top-0 w-full overflow-hidden">
           <TrianglesSeparator
