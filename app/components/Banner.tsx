@@ -24,7 +24,7 @@ export const Banner = ({
         <InfoIcon />
       </div>
       <Text variant="ui-small-regular" className="pl-3 tablet:pl-5">
-        <span>{`Some functionalities of Sky.money, including Sky Savings Rate, Sky Token Rewards and Seal Engine, are not available in selected jurisdictions, including the U.S. Please refer to the `}</span>
+        <span>{`Some functionalities of Sky.money, including Sky Savings Rate and Sky Token Rewards are not available in selected jurisdictions, including the U.S. Please refer to the `}</span>
         <ExternalLink href={url}>
           <u>{title}</u>
         </ExternalLink>
