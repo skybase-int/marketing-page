@@ -15,6 +15,16 @@ export const metadata: Metadata = {
 export default async function RootLayout({ children }: { children?: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src="https://cdn.markfi.xyz/scripts/analytics/0.11.21/cookie3.analytics.min.js"
+          integrity="sha384-wtYmYhbRlAqGwxc5Vb9GZVyp/Op3blmJICmXjRiJu2/TlPze5dHsmg2gglbH8viT"
+          crossOrigin="anonymous"
+          async
+          strategy="lazyOnload"
+          site-id="8bc6c187-b8df-4666-89c1-3f4c9f344382"
+        />
+      </head>
       <body className={`flex min-h-screen flex-col overflow-x-hidden ${circleStdClassName}`}>
         <Providers>
           <ExternalLinkModal />
