@@ -17,6 +17,7 @@ on:
       - main
       - staging
       - development
+      - TECH-* # Allows deployments only to development (enforced by branch protection rules)
 
 permissions:
   id-token: write
@@ -76,10 +77,11 @@ jobs:
           SHA_TAG: ${{ needs.setup.outputs.short_sha }}
           # Environment variables required by the app:
           API_URL: ${{ vars.API_URL }}
+          NEXT_COOKIE3_SITE_ID: ${{ secrets.NEXT_COOKIE3_SITE_ID }}
           NEXT_PUBLIC_AUTH_URL: ${{ vars.NEXT_PUBLIC_AUTH_URL }}
-          PNPM_VERSION: ${{ vars.PNPM_VERSION }}
-          NEXT_PUBLIC_TERMS_LINK: ${{ vars.NEXT_PUBLIC_TERMS_LINK }}
           NEXT_PUBLIC_FOOTER_LINKS: ${{ vars.NEXT_PUBLIC_FOOTER_LINKS }}
+          NEXT_PUBLIC_TERMS_LINK: ${{ vars.NEXT_PUBLIC_TERMS_LINK }}
+          PNPM_VERSION: ${{ vars.PNPM_VERSION }}
 
   deploy:
     name: Deploy image
