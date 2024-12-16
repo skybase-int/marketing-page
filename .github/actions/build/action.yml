@@ -34,24 +34,26 @@ inputs:
     description: 'The BA API endpoint'
     required: true
     default: ''
+  NEXT_COOKIE3_SITE_ID:
+    description: 'Cookie3 site ID'
+    required: true
+    default: ''
   NEXT_PUBLIC_AUTH_URL:
     description: 'The Sky API endpoint'
-    required: true
-    default: ''
-  PNPM_VERSION:
-    description: 'The version of pnpm to use'
-    required: true
-    default: ''
-  NEXT_PUBLIC_TERMS_LINK:
-    description: 'public terms url'
     required: true
     default: ''
   NEXT_PUBLIC_FOOTER_LINKS:
     description: 'Footer links'
     required: true
     default: ''
-
-
+  NEXT_PUBLIC_TERMS_LINK:
+    description: 'public terms url'
+    required: true
+    default: ''
+  PNPM_VERSION:
+    description: 'The version of pnpm to use'
+    required: true
+    default: ''
 
 runs:
   using: 'composite'
@@ -84,9 +86,10 @@ runs:
         provenance: false
         build-args: |
           API_URL=${{ inputs.API_URL }}
+          NEXT_COOKIE3_SITE_ID=${{ inputs.NEXT_COOKIE3_SITE_ID }}
           NEXT_PUBLIC_AUTH_URL=${{ inputs.NEXT_PUBLIC_AUTH_URL }}
-          PNPM_VERSION=${{ inputs.PNPM_VERSION }}
-          NEXT_PUBLIC_TERMS_LINK=${{ inputs.NEXT_PUBLIC_TERMS_LINK }}
           NEXT_PUBLIC_FOOTER_LINKS=${{ inputs.NEXT_PUBLIC_FOOTER_LINKS }}
+          NEXT_PUBLIC_TERMS_LINK=${{ inputs.NEXT_PUBLIC_TERMS_LINK }}
+          PNPM_VERSION=${{ inputs.PNPM_VERSION }}
 
         secrets: NPM_TOKEN=${{ inputs.NPM_TOKEN }}
