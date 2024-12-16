@@ -17,7 +17,6 @@ on:
       - main
       - staging
       - development
-      - TECH-* # Allows deployments only to development (enforced by branch protection rules)
 
 permissions:
   id-token: write
