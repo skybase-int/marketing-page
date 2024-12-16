@@ -23,7 +23,7 @@ export default async function RootLayout({ children }: { children?: React.ReactN
           crossOrigin="anonymous"
           async
           strategy="lazyOnload"
-          site-id="8bc6c187-b8df-4666-89c1-3f4c9f344382"
+          site-id={process.env.VITE_COOKIE3_SITE_ID || ''}
         />
       </head>
       <body className={`flex min-h-screen flex-col overflow-x-hidden ${circleStdClassName}`}>
