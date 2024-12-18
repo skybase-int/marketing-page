@@ -39,7 +39,6 @@ podAnnotations:
 resources:
   limits:
     memory: 2Gi
-    cpu: 0
   requests:
     cpu: 60m
     memory: 900Mi
