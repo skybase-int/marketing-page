@@ -2,8 +2,9 @@
 
 const cspHeader = `
     default-src 'self';
-    script-src 'self' 'unsafe-inline' 'unsafe-eval' https://vercel.live/ https://vercel.com https://static.cloudflareinsights.com;
+    script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.markfi.xyz https://vercel.live/ https://vercel.com https://static.cloudflareinsights.com;
     connect-src 'self' 
+      https://a.markfi.xyz/
       https://cloudflareinsights.com 
       https://cloudflare-eth.com 
       https://staging-api.sky.money 
