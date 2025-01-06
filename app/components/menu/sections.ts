@@ -31,6 +31,10 @@ export const menuSections: Record<
     {
       title: 'Seal Engine',
       href: 'features#seal'
+    },
+    {
+      title: 'SkyLink',
+      href: 'features#skylink'
     }
   ],
   participate: [
