@@ -21,7 +21,8 @@ const categories = [
   'Upgrade & Trade',
   'Sky Savings Rate',
   'Sky Token Rewards',
-  'Seal Engine'
+  'Seal Engine',
+  'SkyLink'
 ];
 const PAGE_SIZE = 10;
 
