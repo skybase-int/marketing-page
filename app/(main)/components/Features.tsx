@@ -129,7 +129,7 @@ const FeatureCardLg = ({
     <Card
       ref={cardRef}
       className={cn(
-        'relative flex h-[740px] overflow-hidden border border-0 p-0 tablet:h-[560px] desktop:h-[600px] desktop-xl:h-[820px]',
+        'relative flex h-[740px] overflow-hidden border-0 p-0 tablet:h-[560px] desktop:h-[600px] desktop-xl:h-[820px]',
         className
       )}
       onMouseEnter={() => setIsHover(true)}
@@ -552,6 +552,68 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           className="col-span-1 grid grid-cols-1 gap-5 rounded-3xl border p-4 tablet:col-span-2 desktop:grid-cols-2"
         >
           <FeatureCard
+            href={`${baseUrl}/?network=base`}
+            cardClassName={soonSectionClassName}
+            descriptionElement={
+              <Text variant="p3">
+                SkyLink seamlessly connects your Ethereum-based Sky Protocol tokens and features to supported
+                L2 networks.
+                <br />
+                <br />
+                Currently, Skylink is supported by the{' '}
+                <ExternalLink href="https://app.sky.money/" className="text-grayscale-50">
+                  Sky.money app
+                </ExternalLink>{' '}
+                and{' '}
+                <ExternalLink href="https://spark.fi/" className="text-grayscale-50">
+                  Spark
+                </ExternalLink>
+                , the very first Sky Star, and is available on Base, Coinbase’s L2 network.
+                <br />
+                <br />
+                If you have shied away from the Ethereum blockchain due to the high price of gas, SkyLink
+                introduces reduced cost transactions and faster transaction speeds.
+              </Text>
+            }
+            postTextElement={
+              <Text variant="p2">
+                SkyLink enhances your ability to manage your digital assets efficiently by seamlessly
+                connecting your Ethereum-based Sky Protocol tokens and features to the{' '}
+                <ExternalLink href="https://www.base.org/" className="text-grayscale-50">
+                  Base network.
+                </ExternalLink>
+                <br />
+                <br />
+                SkyLink offers efficient access to the Sky Savings Rate on Base, with minimal transaction
+                costs. Also, USDC holders can trade their tokens for USDS with no protocol fee, powered by
+                Spark.
+                <br />
+                <br />
+                Subject to governance approval, Base (and other L2) users may soon be able to use SkyLink to
+                access:
+                <ul className="list-disc pl-7">
+                  <li>
+                    <Text variant="p2">Other Sky ecosystem tokens, including SKY</Text>
+                  </li>
+                  <li>
+                    <Text variant="p2">Sky Token Rewards</Text>
+                  </li>
+                  <li>
+                    <Text variant="p2">Rewards in the form of Sky Star tokens</Text>
+                  </li>
+                </ul>
+              </Text>
+            }
+            imgSrc="/products_skybridge.png"
+            buttonVariant="azure-2"
+            buttonText="Access SkyLink"
+            title="Connect with"
+            emphasis="SkyLink"
+            reverse={false}
+            className="col-span-1"
+            featurePageId="skylink"
+          />
+          <FeatureCard
             href=""
             cardClassName={soonSectionClassName}
             descriptionElement={
@@ -591,40 +653,6 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
             isMediumSize={true}
             className="col-span-1 tablet:col-span-2 desktop:col-span-1"
             featurePageId="activation"
-          />
-          <FeatureCard
-            href=""
-            cardClassName={soonSectionClassName}
-            descriptionElement={
-              <Text variant="p3">
-                Seamlessly connect all of your Ethereum-based Sky Protocol tokens and features to supported L2
-                networks.
-                <br />
-                <br />
-                The implementation of Skylink is subject to governance approval.
-              </Text>
-            }
-            postTextElement={
-              <Text variant="p2">
-                SkyLink will enhance your ability to manage and leverage your digital funds efficiently by
-                seamlessly connecting all of your Ethereum-based Sky Protocol tokens and features to supported
-                L2 networks.
-                <br />
-                <br />
-                If you&apos;ve shied away from the Ethereum blockchain due to the high price of gas, SkyLink
-                will open the door to lower-cost platforms that not only offer access to USDS, SKY, DAI, MKR,
-                Sky Star tokens, and the Sky Savings Rate, but also enable access to Sky Token Rewards.
-              </Text>
-            }
-            imgSrc="/products_skybridge.png"
-            buttonVariant="azure-2"
-            title="Connect with"
-            emphasis="SkyLink"
-            isNotLaunched={true}
-            isMediumSize={true}
-            reverse={false}
-            className="col-span-1"
-            featurePageId="skylink"
           />
         </Card>
       </div>
