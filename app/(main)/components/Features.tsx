@@ -74,6 +74,8 @@ const FeatureCardLg = ({
   buttonVariant,
   imgSrc,
   mobileImgSrc,
+  imgWidths = [295, 457],
+  imgHeights = [621, 849],
   featurePageId,
   APY,
   TVL,
@@ -81,6 +83,7 @@ const FeatureCardLg = ({
   APYDescription,
   TVLDescription,
   href,
+  reverse = true,
   isAlpha = false
 }: {
   descriptionElement: React.ReactNode;
@@ -93,6 +96,8 @@ const FeatureCardLg = ({
   buttonVariant: any;
   imgSrc: any;
   mobileImgSrc: any;
+  imgWidths?: number[];
+  imgHeights?: number[];
   featurePageId: string;
   APY: string;
   TVL: string;
@@ -100,6 +105,7 @@ const FeatureCardLg = ({
   APYDescription: string;
   TVLDescription: string;
   href: string;
+  reverse?: boolean;
   isAlpha?: boolean;
 }) => {
   const { state, setState, setIsHover } = useAutoClose({ delay: 60000 });
@@ -161,7 +167,7 @@ const FeatureCardLg = ({
       >
         <div className="p-5 tablet:pb-0 tablet:pr-0 tablet:pt-6 desktop:pl-7 desktop:pt-11 desktop-xl:pl-10 desktop-xl:pt-10">
           <div className="mb-3 mr-8 flex flex-row flex-wrap-reverse justify-between">
-            <EmphasisHeading reverse text={title} emphasisText={emphasis} tag="h5" />
+            <EmphasisHeading reverse={reverse} text={title} emphasisText={emphasis} tag="h5" />
             {isAlpha && (
               <div style={{ width: 'fit-content' }}>
                 <Text
@@ -180,8 +186,8 @@ const FeatureCardLg = ({
             <div className="flex w-full justify-center tablet:absolute tablet:bottom-0 tablet:right-0 tablet:block tablet:w-fit desktop:w-[35%] 2xl:w-fit">
               <Image
                 src={bpi === BP.sm ? mobileImgSrc : imgSrc}
-                width={bpiLoading ? 0 : bpi > BP.xl ? 457 : 295}
-                height={bpiLoading ? 0 : bpi > BP.xl ? 849 : 621}
+                width={bpiLoading ? 0 : bpi > BP.xl ? imgWidths[1] : imgWidths[0]}
+                height={bpiLoading ? 0 : bpi > BP.xl ? imgHeights[1] : imgHeights[0]}
                 alt=""
               />
             </div>
@@ -551,9 +557,9 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           variant="glass"
           className="col-span-1 grid grid-cols-1 gap-5 rounded-3xl border p-4 tablet:col-span-2 desktop:grid-cols-2"
         >
-          <FeatureCard
+          <FeatureCardLg
             href={`${baseUrl}/?network=base`}
-            cardClassName={soonSectionClassName}
+            // cardClassName={soonSectionClassName}
             descriptionElement={
               <Text variant="p3">
                 SkyLink seamlessly connects your Ethereum-based Sky Protocol tokens and features to supported
@@ -605,13 +611,20 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
               </Text>
             }
             imgSrc="/products_skybridge.png"
+            mobileImgSrc="/products_skybridge.png"
+            imgWidths={[600, 800]}
             buttonVariant="azure-2"
             buttonText="Access SkyLink"
             title="Connect with"
             emphasis="SkyLink"
             reverse={false}
-            className="col-span-1"
+            postTitle="SkyLink"
+            className={cn('col-span-1', soonSectionClassName)}
             featurePageId="skylink"
+            APY=""
+            TVL=""
+            APYDescription=""
+            TVLDescription=""
           />
           <FeatureCard
             href=""

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { FeaturesPageCard, LiFeatureCard, TextFeatureCard } from '../FeaturesPageCard';
-import ProductsSkyBridge from '@/public/features-skylink.png';
+import ProductsSkyBridge from '@/public/products_skybridge.png';
 import ProductsSkyBridgeMobile from '@/public/features-skylink-mobile.png';
 import { useBreakpointIndex } from '@/app/hooks/useBreakpointIndex';
 
