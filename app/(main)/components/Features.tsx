@@ -74,8 +74,8 @@ const FeatureCardLg = ({
   buttonVariant,
   imgSrc,
   mobileImgSrc,
-  imgWidths = [295, 457],
-  imgHeights = [621, 849],
+  imgWidths = [295, 295, 457],
+  imgHeights = [621, 621, 849],
   featurePageId,
   APY,
   TVL,
@@ -181,13 +181,17 @@ const FeatureCardLg = ({
           </div>
           <div className="flex flex-col tablet:flex-row tablet:space-x-8">
             <div className="flex h-full w-full flex-col justify-between pb-7 tablet:w-1/2 desktop:w-[60%] desktop-xl:w-[50%]">
-              <div className="space-y-3 tablet:mr-7">{descriptionElement}</div>
+              <div className="z-10 space-y-3 tablet:mr-7">{descriptionElement}</div>
             </div>
-            <div className="flex w-full justify-center tablet:absolute tablet:bottom-0 tablet:right-0 tablet:block tablet:w-fit desktop:w-[35%] 2xl:w-fit">
+            <div className="z-0 flex w-full justify-center tablet:absolute tablet:bottom-0 tablet:right-0 tablet:block tablet:w-fit desktop:w-[35%] 2xl:w-fit">
               <Image
                 src={bpi === BP.sm ? mobileImgSrc : imgSrc}
-                width={bpiLoading ? 0 : bpi > BP.xl ? imgWidths[1] : imgWidths[0]}
-                height={bpiLoading ? 0 : bpi > BP.xl ? imgHeights[1] : imgHeights[0]}
+                width={
+                  bpiLoading ? 0 : bpi > BP.xl ? imgWidths[2] : bpi > BP.md ? imgWidths[1] : imgWidths[0]
+                }
+                height={
+                  bpiLoading ? 0 : bpi > BP.xl ? imgHeights[2] : bpi > BP.md ? imgHeights[1] : imgHeights[0]
+                }
                 alt=""
               />
             </div>
@@ -209,7 +213,7 @@ const FeatureCardLg = ({
           APYDescription={APYDescription}
           TVLDescription={TVLDescription}
           cardWidth={cardWidth}
-          className="absolute left-5 hidden tablet:bottom-28 tablet:block desktop:bottom-28 desktop:left-7 desktop-xl:bottom-36 desktop-xl:left-10"
+          className="absolute left-5 z-10 hidden tablet:bottom-28 tablet:block desktop:bottom-28 desktop:left-7 desktop-xl:bottom-36 desktop-xl:left-10"
           type={type}
         />
       </Transition>
@@ -559,7 +563,6 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
         >
           <FeatureCardLg
             href={`${baseUrl}/?network=base`}
-            // cardClassName={soonSectionClassName}
             descriptionElement={
               <Text variant="p3">
                 SkyLink seamlessly connects your Ethereum-based Sky Protocol tokens and features to supported
@@ -611,8 +614,8 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
               </Text>
             }
             imgSrc="/products_skybridge.png"
-            mobileImgSrc="/products_skybridge.png"
-            imgWidths={[600, 800]}
+            mobileImgSrc="/features-skylink-mobile.png"
+            imgWidths={[200, 600, 800]}
             buttonVariant="azure-2"
             buttonText="Access SkyLink"
             title="Connect with"
