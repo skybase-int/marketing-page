@@ -36,7 +36,8 @@ const linksA: LinkSection[] = [
         title: 'Media Assets',
         url: 'https://www.notion.so/Sky-Brand-Kit-ec871fa39f9d41bf9cc4446e7d1f6997?pvs=4'
       },
-      { title: 'FAQs', url: '/faq' }
+      { title: 'FAQs', url: '/faq' },
+      { title: 'Whitepaper', url: 'https://ipfs.io/ipfs/Qmex5coqQPXqo4FvCkPqvKfH2ibBgACTsUV3YrTGaC86LQ' }
     ]
   ]
 ];
@@ -48,7 +49,13 @@ const linksB: LinkSection[] = [
       { title: 'Community', url: 'https://forum.makerdao.com/' }
     ]
   ],
-  ['Build', [{ title: 'Developer Documentation', url: 'https://developers.sky.money' }]]
+  [
+    'Build',
+    [
+      { title: 'Developer Documentation', url: 'https://developers.sky.money' },
+      { title: 'Audits', url: 'https://developers.sky.money/security/security-measures/overview#audits' }
+    ]
+  ]
 ];
 
 export function Footer() {
