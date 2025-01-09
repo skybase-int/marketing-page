@@ -553,6 +553,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           APYDescription=""
           TVLDescription=""
           // TVLDescription="Seal Engine TVL"
+          isAlpha
         />
 
         {/* Section 4 */}
