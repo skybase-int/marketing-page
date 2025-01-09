@@ -45,8 +45,7 @@ export const existingFeatures: Feature[] = [
     icon: SealedActivation,
     title: 'Seal Engine',
     card: SealCard,
-    id: 'seal',
-    isAlpha: true
+    id: 'seal'
   },
   {
     icon: SkyLink,

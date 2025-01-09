@@ -11,7 +11,7 @@ export const SkyLinkCard = () => {
       id="skylink"
       tabs={[
         {
-          title: 'Connect with SkyLink',
+          title: 'Do more with SkyLink',
           content: (
             <>
               <TextFeatureCard>

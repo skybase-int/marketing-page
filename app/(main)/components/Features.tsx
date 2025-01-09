@@ -553,7 +553,6 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           APYDescription=""
           TVLDescription=""
           // TVLDescription="Seal Engine TVL"
-          isAlpha
         />
 
         {/* Section 4 */}
@@ -570,11 +569,11 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                 <br />
                 <br />
                 Currently, Skylink is supported by the{' '}
-                <ExternalLink href="https://app.sky.money/" className="text-grayscale-50">
+                <ExternalLink href="https://app.sky.money/" className="text-text underline">
                   Sky.money app
                 </ExternalLink>{' '}
                 and{' '}
-                <ExternalLink href="https://spark.fi/" className="text-grayscale-50">
+                <ExternalLink href="https://spark.fi/" className="text-text underline">
                   Spark
                 </ExternalLink>
                 , the very first Sky Star, and is available on Base, Coinbase’s L2 network.
@@ -588,7 +587,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
               <Text variant="p2">
                 SkyLink enhances your ability to manage your digital assets efficiently by seamlessly
                 connecting your Ethereum-based Sky Protocol tokens and features to the{' '}
-                <ExternalLink href="https://www.base.org/" className="text-grayscale-50">
+                <ExternalLink href="https://www.base.org/" className="text-text underline">
                   Base network.
                 </ExternalLink>
                 <br />
