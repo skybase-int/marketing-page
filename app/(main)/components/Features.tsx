@@ -74,6 +74,8 @@ const FeatureCardLg = ({
   buttonVariant,
   imgSrc,
   mobileImgSrc,
+  imgWidths = [295, 295, 457],
+  imgHeights = [621, 621, 849],
   featurePageId,
   APY,
   TVL,
@@ -81,6 +83,7 @@ const FeatureCardLg = ({
   APYDescription,
   TVLDescription,
   href,
+  reverse = true,
   isAlpha = false
 }: {
   descriptionElement: React.ReactNode;
@@ -93,6 +96,8 @@ const FeatureCardLg = ({
   buttonVariant: any;
   imgSrc: any;
   mobileImgSrc: any;
+  imgWidths?: number[];
+  imgHeights?: number[];
   featurePageId: string;
   APY: string;
   TVL: string;
@@ -100,6 +105,7 @@ const FeatureCardLg = ({
   APYDescription: string;
   TVLDescription: string;
   href: string;
+  reverse?: boolean;
   isAlpha?: boolean;
 }) => {
   const { state, setState, setIsHover } = useAutoClose({ delay: 60000 });
@@ -129,7 +135,7 @@ const FeatureCardLg = ({
     <Card
       ref={cardRef}
       className={cn(
-        'relative flex h-[740px] overflow-hidden border border-0 p-0 tablet:h-[560px] desktop:h-[600px] desktop-xl:h-[820px]',
+        'relative flex h-[740px] overflow-hidden border-0 p-0 tablet:h-[560px] desktop:h-[600px] desktop-xl:h-[820px]',
         className
       )}
       onMouseEnter={() => setIsHover(true)}
@@ -161,7 +167,7 @@ const FeatureCardLg = ({
       >
         <div className="p-5 tablet:pb-0 tablet:pr-0 tablet:pt-6 desktop:pl-7 desktop:pt-11 desktop-xl:pl-10 desktop-xl:pt-10">
           <div className="mb-3 mr-8 flex flex-row flex-wrap-reverse justify-between">
-            <EmphasisHeading reverse text={title} emphasisText={emphasis} tag="h5" />
+            <EmphasisHeading reverse={reverse} text={title} emphasisText={emphasis} tag="h5" />
             {isAlpha && (
               <div style={{ width: 'fit-content' }}>
                 <Text
@@ -175,13 +181,17 @@ const FeatureCardLg = ({
           </div>
           <div className="flex flex-col tablet:flex-row tablet:space-x-8">
             <div className="flex h-full w-full flex-col justify-between pb-7 tablet:w-1/2 desktop:w-[60%] desktop-xl:w-[50%]">
-              <div className="space-y-3 tablet:mr-7">{descriptionElement}</div>
+              <div className="z-10 space-y-3 tablet:mr-7">{descriptionElement}</div>
             </div>
-            <div className="flex w-full justify-center tablet:absolute tablet:bottom-0 tablet:right-0 tablet:block tablet:w-fit desktop:w-[35%] 2xl:w-fit">
+            <div className="z-0 flex w-full justify-center tablet:absolute tablet:bottom-0 tablet:right-0 tablet:block tablet:w-fit desktop:w-[35%] 2xl:w-fit">
               <Image
                 src={bpi === BP.sm ? mobileImgSrc : imgSrc}
-                width={bpiLoading ? 0 : bpi > BP.xl ? 457 : 295}
-                height={bpiLoading ? 0 : bpi > BP.xl ? 849 : 621}
+                width={
+                  bpiLoading ? 0 : bpi > BP.xl ? imgWidths[2] : bpi > BP.md ? imgWidths[1] : imgWidths[0]
+                }
+                height={
+                  bpiLoading ? 0 : bpi > BP.xl ? imgHeights[2] : bpi > BP.md ? imgHeights[1] : imgHeights[0]
+                }
                 alt=""
               />
             </div>
@@ -203,7 +213,7 @@ const FeatureCardLg = ({
           APYDescription={APYDescription}
           TVLDescription={TVLDescription}
           cardWidth={cardWidth}
-          className="absolute left-5 hidden tablet:bottom-28 tablet:block desktop:bottom-28 desktop:left-7 desktop-xl:bottom-36 desktop-xl:left-10"
+          className="absolute left-5 z-10 hidden tablet:bottom-28 tablet:block desktop:bottom-28 desktop:left-7 desktop-xl:bottom-36 desktop-xl:left-10"
           type={type}
         />
       </Transition>
@@ -551,6 +561,74 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           variant="glass"
           className="col-span-1 grid grid-cols-1 gap-5 rounded-3xl border p-4 tablet:col-span-2 desktop:grid-cols-2"
         >
+          <FeatureCardLg
+            href={`${baseUrl}/?network=base`}
+            descriptionElement={
+              <Text variant="p3">
+                SkyLink seamlessly connects your Ethereum-based Sky Protocol tokens and features to supported
+                L2 networks.
+                <br />
+                <br />
+                Currently, Skylink is supported by the{' '}
+                <ExternalLink href="https://app.sky.money/" className="text-text underline">
+                  Sky.money app
+                </ExternalLink>{' '}
+                and{' '}
+                <ExternalLink href="https://spark.fi/" className="text-text underline">
+                  Spark
+                </ExternalLink>
+                , the very first Sky Star, and is available on Base, Coinbase’s L2 network.
+                <br />
+                <br />
+                If you have shied away from the Ethereum blockchain due to the high price of gas, SkyLink
+                introduces reduced cost transactions and faster transaction speeds.
+              </Text>
+            }
+            postTextElement={
+              <Text variant="p2">
+                SkyLink enhances your ability to manage your digital assets efficiently by seamlessly
+                connecting your Ethereum-based Sky Protocol tokens and features to the{' '}
+                <ExternalLink href="https://www.base.org/" className="text-text underline">
+                  Base network.
+                </ExternalLink>
+                <br />
+                <br />
+                SkyLink offers efficient access to the Sky Savings Rate on Base, with minimal transaction
+                costs. Also, USDC holders can trade their tokens for USDS with no protocol fee, powered by
+                Spark.
+                <br />
+                <br />
+                Subject to governance approval, Base (and other L2) users may soon be able to use SkyLink to
+                access:
+                <ul className="list-disc pl-7">
+                  <li>
+                    <Text variant="p2">Other Sky ecosystem tokens, including SKY</Text>
+                  </li>
+                  <li>
+                    <Text variant="p2">Sky Token Rewards</Text>
+                  </li>
+                  <li>
+                    <Text variant="p2">Rewards in the form of Sky Star tokens</Text>
+                  </li>
+                </ul>
+              </Text>
+            }
+            imgSrc="/products_skybridge.png"
+            mobileImgSrc="/features-skylink-mobile.png"
+            imgWidths={[200, 600, 800]}
+            buttonVariant="azure-2"
+            buttonText="Access SkyLink"
+            title="Connect with"
+            emphasis="SkyLink"
+            reverse={false}
+            postTitle="SkyLink"
+            className={cn('col-span-1', soonSectionClassName)}
+            featurePageId="skylink"
+            APY=""
+            TVL=""
+            APYDescription=""
+            TVLDescription=""
+          />
           <FeatureCard
             href=""
             cardClassName={soonSectionClassName}
@@ -591,40 +669,6 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
             isMediumSize={true}
             className="col-span-1 tablet:col-span-2 desktop:col-span-1"
             featurePageId="activation"
-          />
-          <FeatureCard
-            href=""
-            cardClassName={soonSectionClassName}
-            descriptionElement={
-              <Text variant="p3">
-                Seamlessly connect all of your Ethereum-based Sky Protocol tokens and features to supported L2
-                networks.
-                <br />
-                <br />
-                The implementation of Skylink is subject to governance approval.
-              </Text>
-            }
-            postTextElement={
-              <Text variant="p2">
-                SkyLink will enhance your ability to manage and leverage your digital funds efficiently by
-                seamlessly connecting all of your Ethereum-based Sky Protocol tokens and features to supported
-                L2 networks.
-                <br />
-                <br />
-                If you&apos;ve shied away from the Ethereum blockchain due to the high price of gas, SkyLink
-                will open the door to lower-cost platforms that not only offer access to USDS, SKY, DAI, MKR,
-                Sky Star tokens, and the Sky Savings Rate, but also enable access to Sky Token Rewards.
-              </Text>
-            }
-            imgSrc="/products_skybridge.png"
-            buttonVariant="azure-2"
-            title="Connect with"
-            emphasis="SkyLink"
-            isNotLaunched={true}
-            isMediumSize={true}
-            reverse={false}
-            className="col-span-1"
-            featurePageId="skylink"
           />
         </Card>
       </div>
