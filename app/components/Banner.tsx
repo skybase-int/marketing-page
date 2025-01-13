@@ -28,6 +28,7 @@ export const Banner = ({
         <ExternalLink href={url}>
           <u>{title}</u>
         </ExternalLink>
+        .
       </Text>
     </Card>
   );

@@ -47,6 +47,12 @@ export const existingFeatures: Feature[] = [
     card: SealCard,
     id: 'seal',
     isAlpha: true
+  },
+  {
+    icon: SkyLink,
+    title: 'SkyLink',
+    card: SkyLinkCard,
+    id: 'skylink'
   }
 ];
 
@@ -56,12 +62,6 @@ export const comingSoonFeatures: Feature[] = [
     title: 'Activation',
     card: ActivationCard,
     id: 'activation'
-  },
-  {
-    icon: SkyLink,
-    title: 'SkyLink',
-    card: SkyLinkCard,
-    id: 'skylink'
   }
 ];
 
