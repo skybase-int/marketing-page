@@ -13,7 +13,10 @@ on:
           - 'staging'
           - 'development'
   schedule:
-    - cron: '13 */1 * * *'
+    - cron: '13 * * * *'
+  repository_dispatch:
+    types:
+      - manual-trigger-by-devs
 
 env:
   UPSTREAM_REPO: 'jetstreamgg/marketing-page'
