@@ -1,6 +1,6 @@
 import { cn } from '../lib/utils';
 import { useAppContext } from '../context/AppContext';
-import { ALLOWED_DOMAINS } from '../constants';
+import { ALLOWED_DOMAINS, RESTRICTED_DOMAINS } from '../constants';
 
 interface ExternalLinkProps {
   href: string;
@@ -22,7 +22,11 @@ export function ExternalLink({
   const { setExternalLinkModalOpened, setExternalLinkModalUrl } = useAppContext();
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    if (!skipConfirm && !ALLOWED_DOMAINS.some(domain => href.includes(domain))) {
+    if (
+      !skipConfirm &&
+      (RESTRICTED_DOMAINS.some(domain => href.includes(domain)) ||
+        !ALLOWED_DOMAINS.some(domain => href.includes(domain)))
+    ) {
       e.preventDefault();
       setExternalLinkModalUrl(href);
       setExternalLinkModalOpened(true);

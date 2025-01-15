@@ -14,3 +14,5 @@ export const getSunriseDelay = () => {
 };
 
 export const ALLOWED_DOMAINS = ['sky.money', 'app.sky.money', 'docs.sky.money'];
+// Subdomains that require explicit user acknowledgment before navigation
+export const RESTRICTED_DOMAINS = ['developers.sky.money'];
