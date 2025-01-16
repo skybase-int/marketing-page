@@ -105,7 +105,7 @@ export function FeaturesContent({ data }: { data: FetchedData }) {
   }, [setScrollContainerRef, sectionVisibility]);
 
   return (
-    <div>
+    <div className="relative z-[999]">
       <FeaturesHero heroHeight={heroHeight} />
       <PrefetchFeaturesAssets />
       <FeaturesMain childrenRef={transitionChildrenRef} data={data} marginTopPx={extraHeroHeight} />
