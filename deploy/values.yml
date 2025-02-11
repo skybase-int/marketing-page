@@ -54,6 +54,16 @@ readinessProbe:
   initialDelaySeconds: 6
   periodSeconds: 20
 
+affinity:
+  nodeAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: karpenter.sh/capacity-type
+          operator: In
+          values:
+          - on-demand
+
 autoscaling:
   enabled: true
   minReplicas: 1
