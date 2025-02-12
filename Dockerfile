@@ -1,4 +1,4 @@
-FROM node:18-bookworm
+FROM node:20-bookworm-slim
 
 EXPOSE 3000
 WORKDIR /app
@@ -19,6 +19,7 @@ ENV API_URL=$API_URL \
 
 COPY .npmrc package.json pnpm-lock.yaml ./
 RUN --mount=type=secret,id=NPM_TOKEN \
+    npm install -g corepack@latest && \
     corepack enable && \
     NPM_TOKEN=$(cat /run/secrets/NPM_TOKEN) pnpm install
 
