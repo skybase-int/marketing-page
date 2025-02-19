@@ -161,7 +161,7 @@ export function Footer() {
       <div className="flex flex-wrap justify-between gap-7 desktop:flex-nowrap">
         <div className="w-full tablet:w-1/2">
           <Text variant="ui-small-regular" className="justify-end text-white/50">
-            © 2024 All rights reserved
+            © {new Date().getFullYear()} All rights reserved
           </Text>
         </div>
         {/* TODO: add these links to the footer */}
