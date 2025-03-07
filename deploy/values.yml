@@ -63,6 +63,15 @@ affinity:
           operator: In
           values:
           - on-demand
+  podAntiAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+      - labelSelector:
+          matchExpressions:
+            - key: app.kubernetes.io/name
+              operator: In
+              values:
+                - '${APP_NAME}'
+        topologyKey: "kubernetes.io/hostname"
 
 autoscaling:
   enabled: true
