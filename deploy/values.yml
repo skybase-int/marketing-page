@@ -64,14 +64,24 @@ affinity:
           values:
           - on-demand
   podAntiAffinity:
-    requiredDuringSchedulingIgnoredDuringExecution:
-      - labelSelector:
+    preferredDuringSchedulingIgnoredDuringExecution:
+    - weight: 100
+      podAffinityTerm:
+        labelSelector:
           matchExpressions:
             - key: app.kubernetes.io/name
               operator: In
               values:
                 - '${APP_NAME}'
         topologyKey: "kubernetes.io/hostname"
+
+topologySpreadConstraints:
+  - maxSkew: 1
+    topologyKey: kubernetes.io/hostname
+    whenUnsatisfiable: ScheduleAnyway
+    labelSelector:
+      matchLabels:
+        app.kubernetes.io/name: '${APP_NAME}'
 
 autoscaling:
   enabled: true
