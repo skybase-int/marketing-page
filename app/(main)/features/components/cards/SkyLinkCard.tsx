@@ -5,7 +5,7 @@ import ProductsSkyBridgeMobile from '@/public/features-skylink-mobile.png';
 import { useBreakpointIndex } from '@/app/hooks/useBreakpointIndex';
 import { getRandomL2Name } from '@/app/lib/utils';
 export const SkyLinkCard = () => {
-  const { bpi } = useBreakpointIndex();
+  const { bpi, isLoading: isLoadingBreakpointIndex } = useBreakpointIndex();
   const randomL2 = getRandomL2Name();
 
   return (
@@ -42,7 +42,7 @@ export const SkyLinkCard = () => {
           buttonCta: 'Access SkyLink',
           url: `?network=${randomL2}`,
           buttonVariant: 'azure-2',
-          illustration: (
+          illustration: isLoadingBreakpointIndex ? null : (
             <Image
               alt="SkyBridge illustration"
               src={bpi === 0 ? ProductsSkyBridgeMobile : ProductsSkyBridge}
