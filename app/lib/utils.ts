@@ -61,3 +61,8 @@ export function getFooterLinks(): { url: string; name: string }[] {
   }
   return footerLinks;
 }
+
+export function getRandomL2Name(): string {
+  // TODO: With the scarlett feature, 'arbitrum one' will become 'arbitrumone'
+  return Math.random() > 0.5 ? 'base' : 'arbitrum one';
+}

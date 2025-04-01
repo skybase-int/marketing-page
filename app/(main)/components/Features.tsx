@@ -3,7 +3,7 @@ import { EmphasisHeading } from '@/app/components/EmphasisHeading';
 import { Heading, List, Text } from '@/app/components/Typography';
 import { ButtonArrow } from '@/app/components/ui/button';
 import { Card } from '@/app/components/ui/card';
-import { cn, getTermsLink } from '@/app/lib/utils';
+import { cn, getRandomL2Name, getTermsLink } from '@/app/lib/utils';
 import { FeatureCard } from '../../components/FeatureCard';
 import { Transition } from '@/app/components/Transition';
 import { useAutoClose } from '@/app/hooks/useAutoClose';
@@ -272,6 +272,7 @@ const FeaturesBackground = () => (
 );
 
 export function HomepageFeatures({ data }: { data: FetchedData }) {
+  const randomL2 = getRandomL2Name();
   const targetRef = useRef(null);
   useHeaderInView(targetRef, 'light');
   const { baseUrl } = useSkyUrl();
@@ -562,7 +563,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           className="col-span-1 grid grid-cols-1 gap-5 rounded-3xl border p-4 tablet:col-span-2 desktop:grid-cols-2"
         >
           <FeatureCardLg
-            href={`${baseUrl}/?network=base`}
+            href={`${baseUrl}/?network=${randomL2}`}
             descriptionElement={
               <Text variant="p3">
                 SkyLink seamlessly connects your Ethereum-based Sky Protocol tokens and features to supported
@@ -577,7 +578,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                 <ExternalLink href="https://spark.fi/" className="text-text underline">
                   Spark
                 </ExternalLink>
-                , the very first Sky Star, and is available on Base, Coinbase’s L2 network.
+                , the very first Sky Star (SubDAO)
                 <br />
                 <br />
                 If you have shied away from the Ethereum blockchain due to the high price of gas, SkyLink
@@ -587,22 +588,18 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
             postTextElement={
               <Text variant="p2">
                 SkyLink enhances your ability to manage your digital assets efficiently by seamlessly
-                connecting your Ethereum-based Sky Protocol tokens and features to the{' '}
-                <ExternalLink href="https://www.base.org/" className="text-text underline">
-                  Base network.
-                </ExternalLink>
+                connecting your Ethereum-based Sky Protocol tokens and features to supported L2 networks
                 <br />
                 <br />
-                SkyLink offers efficient access to the Sky Savings Rate on Base, with minimal transaction
-                costs. Also, USDC holders can trade their tokens for USDS with no protocol fee, powered by
-                Spark.
+                SkyLink offers efficient access to the Sky Savings Rate with minimal transaction costs. Also,
+                USDC holders can trade their tokens for USDS with no protocol fee, powered by Spark.
                 <br />
                 <br />
-                Subject to governance approval, Base (and other L2) users may soon be able to use SkyLink to
-                access:
+                Subject to governance approval, users of supported L2 networks may soon be able to use SkyLink
+                to access:
                 <ul className="list-disc pl-7">
                   <li>
-                    <Text variant="p2">Other Sky ecosystem tokens, including SKY</Text>
+                    <Text variant="p2">Other Sky Ecosystem tokens, including SKY</Text>
                   </li>
                   <li>
                     <Text variant="p2">Sky Token Rewards</Text>

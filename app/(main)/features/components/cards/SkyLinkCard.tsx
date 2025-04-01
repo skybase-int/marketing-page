@@ -3,9 +3,11 @@ import { FeaturesPageCard, LiFeatureCard, TextFeatureCard } from '../FeaturesPag
 import ProductsSkyBridge from '@/public/products_skybridge.png';
 import ProductsSkyBridgeMobile from '@/public/features-skylink-mobile.png';
 import { useBreakpointIndex } from '@/app/hooks/useBreakpointIndex';
-
+import { getRandomL2Name } from '@/app/lib/utils';
 export const SkyLinkCard = () => {
   const { bpi } = useBreakpointIndex();
+  const randomL2 = getRandomL2Name();
+
   return (
     <FeaturesPageCard
       id="skylink"
@@ -16,19 +18,19 @@ export const SkyLinkCard = () => {
             <>
               <TextFeatureCard>
                 SkyLink enhances your ability to manage your digital assets efficiently by seamlessly
-                connecting your Ethereum L1-based Sky Protocol tokens and features to the Base network.
+                connecting your Ethereum L1-based Sky Protocol tokens and features to supported L2 networks.
               </TextFeatureCard>
               <TextFeatureCard>
-                SkyLink offers Base users liquid trading between USDS, sUSDS and USDC powered by Spark, and
-                efficient access to the Sky Savings Rate on Base—all with reduced transaction costs.
+                SkyLink offers users of supported networks liquid trading between USDS, sUSDS and USDC powered
+                by Spark, and efficient access to the Sky Savings Rate —all with reduced transaction costs.
               </TextFeatureCard>
               <TextFeatureCard>
-                Subject to governance approval, Base and other L2 users may be able to use SkyLink to access:
+                Subject to governance approval, supported L2 users may be able to use SkyLink to access:{' '}
               </TextFeatureCard>
               <ul className="list-disc pl-7">
                 <LiFeatureCard>Other Sky ecosystem tokens, including SKY</LiFeatureCard>
                 <LiFeatureCard>Sky Token Rewards over time in the form of SKY tokens</LiFeatureCard>
-                <LiFeatureCard>Rewards in the form of Sky Star tokens</LiFeatureCard>
+                <LiFeatureCard>Rewards in the form of Sky Star Agent tokens</LiFeatureCard>
               </ul>
               <TextFeatureCard>
                 If you have shied away from the Ethereum blockchain due to the high price of gas, SkyLink
@@ -38,7 +40,7 @@ export const SkyLinkCard = () => {
             </>
           ),
           buttonCta: 'Access SkyLink',
-          url: `?network=base`,
+          url: `?network=${randomL2}`,
           buttonVariant: 'azure-2',
           illustration: (
             <Image
