@@ -3,10 +3,11 @@ import { FeaturesPageCard, LiFeatureCard, TextFeatureCard } from '../FeaturesPag
 import ProductsSkyBridge from '@/public/products_skybridge.png';
 import ProductsSkyBridgeMobile from '@/public/features-skylink-mobile.png';
 import { useBreakpointIndex } from '@/app/hooks/useBreakpointIndex';
-import { getRandomL2Name } from '@/app/lib/utils';
+import { useRandomL2Name } from '@/app/hooks/useRandomL2Name';
+
 export const SkyLinkCard = () => {
   const { bpi, isLoading: isLoadingBreakpointIndex } = useBreakpointIndex();
-  const randomL2 = getRandomL2Name();
+  const randomL2Name = useRandomL2Name();
 
   return (
     <FeaturesPageCard
@@ -40,7 +41,7 @@ export const SkyLinkCard = () => {
             </>
           ),
           buttonCta: 'Access SkyLink',
-          url: `?network=${randomL2}`,
+          url: `?network=${randomL2Name}`,
           buttonVariant: 'azure-2',
           illustration: isLoadingBreakpointIndex ? null : (
             <Image

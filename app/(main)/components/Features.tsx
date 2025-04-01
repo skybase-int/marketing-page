@@ -3,7 +3,7 @@ import { EmphasisHeading } from '@/app/components/EmphasisHeading';
 import { Heading, List, Text } from '@/app/components/Typography';
 import { ButtonArrow } from '@/app/components/ui/button';
 import { Card } from '@/app/components/ui/card';
-import { cn, getRandomL2Name, getTermsLink } from '@/app/lib/utils';
+import { cn, getTermsLink } from '@/app/lib/utils';
 import { FeatureCard } from '../../components/FeatureCard';
 import { Transition } from '@/app/components/Transition';
 import { useAutoClose } from '@/app/hooks/useAutoClose';
@@ -20,6 +20,7 @@ import { PopoverRateInfo } from '@/app/components/PopoverRateInfo';
 import { PopoverSealInfo } from '@/app/components/PopoverSealInfo';
 import { useSkyUrl } from '@/app/hooks/useSkyUrl';
 import { useHeaderInView } from '@/app/hooks/useHeaderInView';
+import { useRandomL2Name } from '@/app/hooks/useRandomL2Name';
 
 const FeatureCardStats = ({
   APY,
@@ -272,7 +273,7 @@ const FeaturesBackground = () => (
 );
 
 export function HomepageFeatures({ data }: { data: FetchedData }) {
-  const randomL2 = getRandomL2Name();
+  const randomL2Name = useRandomL2Name();
   const targetRef = useRef(null);
   useHeaderInView(targetRef, 'light');
   const { baseUrl } = useSkyUrl();
@@ -563,7 +564,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           className="col-span-1 grid grid-cols-1 gap-5 rounded-3xl border p-4 tablet:col-span-2 desktop:grid-cols-2"
         >
           <FeatureCardLg
-            href={`${baseUrl}/?network=${randomL2}`}
+            href={`${baseUrl}/?network=${randomL2Name}`}
             descriptionElement={
               <Text variant="p3">
                 SkyLink seamlessly connects your Ethereum-based Sky Protocol tokens and features to supported
