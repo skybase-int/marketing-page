@@ -435,50 +435,50 @@ A stablecoin that is soft-pegged to the U.S. dollar aims to stay close to $1 in 
 Both types of stablecoins strive to offer stability, but the degree of price stability and the mechanisms employed to achieve it can differ significantly. Importantly, some stablecoins are pegged or soft-pegged not to the U.S. dollar, but to other fiat (government-issued) currency.
 `,
     categories: ['Crypto (General)']
-  },
-  {
-    question: 'What are stablecoins, and how do they differ from other types of cryptocurrencies?',
-    answer: `Stablecoins are cryptocurrencies designed to attempt to maintain a stable value. They are typically pegged to the value of a fiat (government-issued) currency, such as the U.S. dollar or the euro. Stablecoins are backed either by fiat currencies, commodities (real-world assets) or other cryptocurrencies held in reserves, the presence of which is intended to make them more stable mediums of exchange. 
-
-For details on the risks associated with soft-pegged stablecoins, please review the User Risk Documentation.`,
-    categories: ['Crypto (General)']
-  },
-  {
-    question: 'What is decentralised finance?',
-    answer: `Decentralised finance (DeFi) is a sector of the cryptocurrency economy that consists of open and permissionless financial applications, products, and services built on and accessed via blockchains. The term "permissionless" is used in DeFi to mean that users do not need permission to join an open blockchain network, and are in complete and direct control of their financial activities. Open speaks to the complete transparency of public blockchains. 
-
-DeFi offers users fast, low-cost and borderless transactions as a result of being disintermediated (in direct control of their activities). 
-
-Finally, DeFi offerings are typically managed by decentralised ecosystems that operate with the help of rules and agreements embedded in the smart contracts. Smart contracts are written in computer code and deployed to a blockchain. Ecosystem projects are controlled not by one person or entity, but by a global community of ecosystem participants.`,
-    categories: ['Crypto (General)']
   }
-  // TODO: THIS ONE MAY NEED REVISION
 ];
 
 const skyEcosystem: FAQItem[] = [
   {
-    question: 'What is Sky.money, and what can I do with it?',
-    answer: `Sky.money is one of the many non-custodial gateways to the permissionless Sky Protocol, a decentralised protocol developed around the USDS stablecoin. Sky.money is a front end that provides access to the app without holding your funds or acting as an intermediary. It provides eligible users with access to Sky Protocol features, including Sky tokens (USDS, SKY, DAI, MKR), the Sky Savings Rate (SSR), Sky Token Rewards (STRs), and eventually Activation Token Rewards and SkyLink. With the Sky Protocol, you can save and access rewards without giving up control of your supplied funds. 
+    question: 'Who is behind the Sky Protocol?',
+    answer: `Sky Ecosystem Governance relies on a decentralized, multi-faceted, detailed and transparent system of decision-making that includes discussion in the [Sky Forum](https://forum.sky.money/]) and polling and onchain voting in the [Sky Governance Voting Portal](https://vote.sky.money/) to maintain the non-custodial Sky Protocol and the Sky Ecosystem. Governance is shared among a broad and diversified community, comprising individuals and entities from around the world.
+For a deeper dive into the facets and checks and balances of governance, please refer to the [Sky Atlas](https://sky-atlas.powerhouse.io/).`,
+    categories: ['Sky Protocol & Ecosystem']
+  },
+  {
+    question: 'What is Sky.money web app, and what can I do with it?',
+    answer: `The non-custodial Sky.money web app is one of many free-to-access frontend gateways to the Sky Protocol, which is designed around the USDS stablecoin. It provides eligible users with access to all Sky Protocol tokens (sUSDS, USDS, DAI, SKY and MKR) and features, including the Sky Savings Rate (SSR), Sky Token Rewards (STRs), the Staking Engine, SkyLink, more. 
 
-Eligible Sky.money users can access the Sky Protocol to do the following: 
+Eligible Sky.money web app users can: 
 
-* **Trade.** Directly trade popular tokens for Sky ecosystem tokens using permissionless and non-custodial pools.  
-  * Trade USDC, USDT, ETH and SKY for USDS, and vice versa. With USDS, you can access Sky Token Rewards and access the Sky Savings Rate to accumulate more USDS.  
-  * Trade USDC, USDT, ETH and USDS for SKY, and vice versa. Eventually, SKY will be used to get Activation Token Rewards and to vote on changes and additions to the Protocol. 
-
-
-* **Upgrade.** Upgrade DAI to USDS 1:1, and MKR to the SKY governance token at a rate of 1:24,000. USDS and SKY can also be converted back to DAI and MKR. While upgrading is optional, doing so enables you to take advantage of the many new Sky ecosystem features.    
-    
-* **Access Rewards.** Use USDS to access Sky Token Rewards (STRs) over time. No minimum USDS supply amount is required.   
-  * The amount of STRs you receive is calculated based on your share of the entire pool of USDS tokens supplied to the Sky Token Rewards module by all participants, not on the amount of tokens you supply. This share, and consequently the rate of STR rewards, can fluctuate as the total pool size changes over time. Sky.money does not control the issuance, determination, or distribution of these rewards.  
-  * The USDS stablecoin, as well as the rewards received, are supplied to a non-custodial smart contract that represents the USDS pool of funds. This means that no intermediary takes custody over your funds. 
+* **Trade.** Sky Protocol tokens are available to trade on crypto exchanges that list them. Eligible users of the Sky.money web app can access the non-custodial Sky Protocol to trade some SKY on Ethereum Mainnet via an API integration with the third-party decentralized exchange (DEX) [CoW Swap](swap.cow.fi). Please see the [Terms of Use](https://docs.sky.money/legal-terms) for more information on third-party services. 
 
 
-* **Save.** Place USDS into the Sky Savings Rate (SSR) module to access the SSR and accumulate additional USDS over time. No minimum supply amount is required.   
-  * When you supply USDS to the SSR module, you receive sUSDS tokens. These sUSDS tokens serve as a digital record of your USDS interaction with the SSR module and any value accrued to your position.   
-  * The Sky Protocol dynamically adds USDS tokens to the pool every few seconds, in accordance with the SSR. As those tokens auto-accumulate in the pool over time, the value of the sUSDS you hold may gradually increase. So, when you choose to redeem your sUSDS for USDS—which you can do anytime—the total USDS you receive will equal the amount originally supplied, plus any rewards earned. 
+* **Upgrade.** Upgrading enables you to take advantage of the many Sky Ecosystem features.
+  * Upgrade DAI to USDS 1:1, and revert USDS back to DAI 1:1. Upgrading and reverting are optional, instant, and free; however, you will likely pay gas fees for using the Ethereum blockchain network. That fee is not controlled, imposed or received by Sky.money or the Sky Protocol
+  * Upgrade MKR to the SKY token at a rate of 1:24,000 (1 MKR = 24,000 SKY). While MKR will continue to exist, reverting from SKY to MKR via the Sky Protocol is not possible. SKY is the technical and functional evolution of MKR and the sole governance token of the Sky Protocol. SKY inherited the governance functionalities previously held by MKR. For upgrade details and step-by-step upgrade instructions, please visit the [MKR to SKY Upgrade Hub](https://upgrademkrtosky.sky.money).
 
-With Sky.money, you always remain in control of your supplied funds.`,
+* **Save.** Supply USDS to the Sky Savings Rate module of the Sky Protocol to access the Sky Savings Rate and accumulate additional USDS over time. No minimum supply amount is required; withdraw at any time.   
+  * When you supply USDS to the Sky Savings Rate module, you receive sUSDS tokens. These sUSDS tokens serve as a digital record of your USDS interaction with the module and any value accrued to your position.   
+  * The Sky Protocol dynamically adds USDS tokens to the pool every few seconds, in accordance with the Sky Savings Rate. As those tokens auto-accumulate in the pool over time, the value of the sUSDS you hold may gradually increase. So, when you choose to redeem your sUSDS for USDS—which you can do at any time—the total USDS you receive will equal the amount originally supplied, plus any rewards earned. 
+
+
+* **Access Sky Token Rewards.** Supply USDS to the Sky Token Rewards module of the Sky Protocol to earn rewards over time. No minimum USDS supply amount is required; withdraw at any time.   
+  * The amount of Sky Token Rewards you receive is calculated based on your share of the entire pool of USDS tokens supplied to the Sky Token Rewards module by all participants, not on the amount of tokens you supply. This share, and consequently the rate of Sky Token Reward, can fluctuate as the total pool size changes over time. Sky.money does not control the issuance, determination, or distribution of these rewards.  
+  * The USDS stablecoin, as well as the rewards received, are supplied to a smart contract that represents the USDS pool of assets. This means that no intermediary takes custody over your assets.  
+
+
+* **Access Staking Rewards.** Supply SKY tokens to the Staking Engine of the Sky Protocol to create a position, enabling SKY holder access to Staking Rewards, and more:
+  * **Access Rewards.** Supply SKY tokens to access Staking Rewards, initially in the form of USDS. Staking Reward rates are determined by Sky Ecosystem Governance through the process of decentralized onchain voting.
+  * **Borrow.** Borrow USDS against your supplied SKY. You can exit your borrow position at any time and draw or pay back USDS whenever you would like. The USDS Borrow Rate and Debt Ceiling are determined by Sky Ecosystem Governance through the process of decentralized onchain voting. Your total debt increases each block according to the Borrow Rate.
+  * **Delegate.** Transfer the voting power of your supplied SKY tokens to a recognized delegate or a contract that you own. Your chosen delegate can then participate in the Sky Ecosystem Governance voting process on your behalf. You can choose one delegate per position, meaning if you want to entrust your SKY to two different delegates using the Staking Engine, you will need to create two separate positions. 
+  You may exit your position(s) at any time; no exit fee applies.
+
+
+* **Connect with SkyLink.** SkyLink is the Sky system that provides the rails for Sky Ecosystem projects, such as [Spark](https://spark.fi/), to link assets between the Sky Protocol on Ethereum Mainnet and supported L2 networks. This enables end users on L2s, such as Base and Arbitrum for example, to tap into Sky Protocol features via the Sky Ecosystem projects’ rails.
+
+
+With Sky.money, you always remain in control of your supplied assets.`,
     categories: ['Sky Protocol & Ecosystem']
   },
   {
