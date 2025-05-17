@@ -685,6 +685,202 @@ The Sky Protocol features several tokens— USDS, DAI, sUSDS, SKY and MKR—plus
     question: 'Where can I make Sky Ecosystem Governance proposals? ',
     answer: `You can propose a change to the Sky Protocol or Sky Ecosystem Governance in the [Sky Forum](https://forum.sky.money/), where it can be reviewed by the community and debated. Depending on the results of community discussion in the Forum, your proposal may be placed in the [Sky Governance Voting portal](https://vote.sky.money/) and voted upon.`,
     categories: ['Sky Protocol & Ecosystem']
+  },
+  {
+    question: 'What is the Sky Forum, and how does it differ from other discussion platforms? ',
+    answer: `The [Sky Forum](https://forum.sky.money/) (formerly the Maker Forum) is a public discussion platform group that includes conversation threads, tagging, categorization and active moderation. It is formally used for discussions focused mainly on Sky Ecosystem Governance and risk. Other platforms used by the Sky Ecosystem community, such as [Discord](https://discord.com/invite/skyecosystem) and X ([@SkyEcosystem](https://x.com/SkyEcosystem)), are much less formal, more ad hoc.`,
+    categories: ['Sky Protocol & Ecosystem']
+  },
+  {
+    question: ' How is the Sky Ecosystem designed for community-driven innovation?',
+    answer: `In addition to being designed for security, scalability and governance, the Sky Protocol’s architecture is built to enhance interoperability within the larger decentralized finance (DeFi) ecosystem. 
+
+The Sky Protocol’s native USDS stablecoin powers the open Sky Ecosystem and is designed to scale. Sky provides liquidity for various DeFi applications, promoting efficient trading and enhancing the overall liquidity of the DeFi ecosystem. The composability features of the Protocol empower developers to build a richer DeFi environment by leveraging the tokens and rewards of the Sky Ecosystem, leading to integrations that offer new functionalities and efficiencies.
+Visit the [Sky.money website](https://sky.money/) or the [Developer Documentation](https://developers.sky.money/) for more info.`,
+    categories: ['Sky Protocol & Ecosystem']
+  },
+  {
+    question: 'Why rebrand MakerDAO to the Sky Ecosystem?',
+    answer: `Maker began in 2014, as a small community-governed project responsible for developing the Maker Protocol on the Ethereum blockchain. Maker quickly grew to find success with the development of its DAI stablecoin. DAI enabled the Maker Protocol to become the first decentralized finance (DeFi) liquidity protocol with a product-market fit. The Maker Protocol grew to such an extent that by 2021, effective governance by its monolithic community proved challenging. 
+
+While the complexity of Maker had been necessary to pursue the best opportunities in the market, the community felt that there existed scaling issues that ultimately held the project back. The rebrand of Maker to the Sky Ecosystem, in 2024, took the former Maker Protocol to the next level with technology that focuses on resilience and simplicity while remaining decentralized and non-custodial. In short, the Sky Protocol features products and tools, organizational restructuring, and token upgrades — i.e., USDS, the upgraded version of DAI; and SKY, the upgraded version of MKR. 
+
+These advancements have vastly improved user experiences and enhanced network resilience while creating more alignment between product users, governance participants and the ecosystem as a whole. 
+`,
+    categories: ['Sky Protocol & Ecosystem']
+  },
+  {
+    question: 'Are Sky and Maker the same?',
+    answer: `The Sky Ecosystem is the rebrand of Maker. Maker became Sky in 2024, taking the Maker Protocol to the next level with new technology that focuses on resilience and simplicity while remaining decentralized and non-custodial. The Sky Protocol is maintained by Sky Ecosystem Governance and is easy to access and explore via the [Sky.money web app](https://sky.money/), a gateway to the Protocol. `,
+    categories: ['Sky Protocol & Ecosystem']
+  },
+  {
+    question: 'What happens if I never upgrade my MKR?',
+    answer: `All MKR holders are encouraged to upgrade to SKY promptly to maintain the ability to participate in key decisions shaping the Sky Protocol. Upgrading in a timely fashion ensures reduced governance complexity and a more effective, efficient and resilient ecosystem for all. Please note that while MKR will continue to exist, users will not be able to revert back to MKR from SKY via the Sky Protocol.
+
+To facilitate a smooth and prompt transition, Sky Ecosystem Governance [voted to introduce a Delayed Upgrade Penalty](https://vote.makerdao.com/polling/QmTVd4iq). The penalty, which will [begin sometime in September 2025](https://upgrademkrtosky.sky.money), reduces the amount of SKY received per MKR upgraded at a rate of 1%, and increases by 1% every three months thereafter until it reaches 100% in 25 years. The penalty will not apply to anyone upgrading their MKR to SKY before it kicks in.
+
+Here are some examples of how the Delayed Upgrade Penalty works:
+
+
+  * If a user upgrades 1 MKR before the Delayed Upgrade Penalty takes effect, the user will not pay a penalty and will receive 24,000 SKY.
+
+  * If a user upgrades 1 MKR three months after the Delayed Upgrade Penalty takes effect, the penalty applies at 1%. So, the amount the user will receive as a result of the upgrade will be 23,760 SKY (24,000 minus 1%).  
+
+  * If a user upgrades 1 MKR six months after the Delayed Upgrade Penalty takes effect, the penalty applies at 2%, meaning the user will receive 23,520 SKY (24,000 minus 2%).
+
+Please note that blockchain, or gas, fees for using the Ethereum network apply when upgrading. Blockchain transaction fees are neither controlled, imposed nor received by Sky.money or the Sky Protocol. 
+
+For upgrade details and step-by-step upgrade instructions, please visit the [MKR to SKY Upgrade Hub](https://upgrademkrtosky.sky.money).`,
+    categories: ['Sky Protocol & Ecosystem']
+  },
+  {
+    question: 'Will the MKR I hold lose its value if I never upgrade to SKY?',
+    answer: `All MKR holders are encouraged to upgrade to SKY promptly to maintain the ability to participate in key decisions shaping the Sky Protocol. Upgrading in a timely fashion ensures reduced governance complexity and a more effective, efficient and resilient ecosystem for all. Please note that while MKR will continue to exist, users will not be able to revert back to MKR from SKY via the Sky Protocol.
+
+To facilitate a smooth and prompt transition, Sky Ecosystem Governance [voted to introduce a Delayed Upgrade Penalty](https://vote.makerdao.com/polling/QmTVd4iq). The penalty, which will [begin sometime in September 2025](https://upgrademkrtosky.sky.money), reduces the amount of SKY received per MKR upgraded at a rate of 1%, and increases by 1% every three months thereafter until it reaches 100% in 25 years. The penalty will not apply to anyone upgrading their MKR to SKY before it kicks in.
+
+Here are some examples of how the Delayed Upgrade Penalty works:
+
+
+  * If a user upgrades 1 MKR before the Delayed Upgrade Penalty takes effect, the user will not pay a penalty and will receive 24,000 SKY.
+
+  * If a user upgrades 1 MKR three months after the Delayed Upgrade Penalty takes effect, the penalty applies at 1%. So, the amount the user will receive as a result of the upgrade will be 23,760 SKY (24,000 minus 1%).  
+
+  * If a user upgrades 1 MKR six months after the Delayed Upgrade Penalty takes effect, the penalty applies at 2%, meaning the user will receive 23,520 SKY (24,000 minus 2%).
+
+Please note that blockchain, or gas, fees for using the Ethereum network apply when upgrading. Blockchain transaction fees are neither controlled, imposed nor received by Sky.money or the Sky Protocol. 
+
+For upgrade details and step-by-step upgrade instructions, please visit the [MKR to SKY Upgrade Hub](https://upgrademkrtosky.sky.money).`,
+    categories: ['Sky Protocol & Ecosystem']
+  },
+  {
+    question: 'Can I convert my SKY back to MKR?',
+    answer: `While MKR will continue to exist, it is not possible to revert back to MKR from SKY via the Sky Protocol.`,
+    categories: ['Sky Protocol & Ecosystem']
+  },
+  {
+    question: 'How do I vote with SKY?',
+    answer: `SKY token holders can use their SKY to participate directly in Sky Ecosystem Governance through a system of decentralized onchain voting, and/or to transfer the voting power of their SKY tokens to a recognized delegate or a contract that they own. Voting with MKR is no longer possible.
+ 
+**Direct Voting with SKY**
+SKY holders participate directly in Sky Ecosystem Governance by supplying SKY to the Governance Contract of the Sky Protocol via the [Sky Governance Voting Portal](https://vote.sky.money/). Direct voting is weighted, meaning that voting power is proportional to the number of SKY tokens voters supply to that contract. For example, if 50 voters supply a total of 600 SKY in favor of proposal A, while 100 voters supply a total of 400 SKY in support of proposal B, then Proposal A would win with 60% of the vote. The number of people who voted for a proposal is irrelevant; rather, the combined power of SKY tokens behind a proposal decides the winner.
+
+**Delegating with SKY**
+SKY holders can use their tokens to entrust their voting power to one or more delegates via the Sky Governance Voting portal or the Staking Engine of the Sky Protocol. Sky Ecosystem Governance delegates are chosen and approved by governance vote. Creating a new delegate account can only be done via the Sky Governance Voting Portal.
+
+Delegates in receipt of token voting power can never directly access any SKY tokens delegated to them. Throughout the delegation process, users always own and are in control of their SKY tokens, and can change their delegate(s) at any time (subject to the Sky Protocol’s rules that prevent double voting or misuse of delegated voting power). Delegating voting power may be a useful option for SKY token holders who have limited time to allocate to the process and who want to save on the cost of gas involved in voting on their own.
+`,
+    categories: ['Sky Protocol & Ecosystem']
+  },
+  {
+    question: 'Does the MKR to SKY upgrade affect DAI and USDS?',
+    answer: `No. DAI and USDS are not affected by the MKR to SKY upgrade. Eligible users of the [Sky.money web app](https://sky.money/) can continue to upgrade any amount of DAI to USDS (and revert USDS to DAI) at any time without a fee. Please note, however, that blockchain fees for using the Ethereum network apply when upgrading. Blockchain transaction fees are neither controlled, imposed nor received by Sky.money or the Sky Protocol. `,
+    categories: ['Sky Protocol & Ecosystem']
+  },
+  {
+    question: 'Are DAI and MKR going away?',
+    answer: `No. Sky Ecosystem Governance has not indicated that the DAI and MKR will go away. You can continue to hold DAI exactly as you have in the past, or you can upgrade it to USDS, which may enable more uses than DAI. 
+
+SKY is the technical and functional evolution of MKR, inheriting and extending the governance rights and functionalities previously held by MKR. It reflects the community’s desire to streamline governance, increase voter participation, and support the ecosystem’s long-term growth and scalability. 
+
+MKR holders can upgrade their tokens to SKY at the rate of 1:24,000 (1 MKR = 24,000 SKY). For upgrade details, see the [MKR to SKY Upgrade Hub](https://upgrademkrtosky.sky.money). For the most current information on all things Sky, join the community conversations in the [Sky Forum](https://forum.sky.money/), [Sky Discord](https://discord.com/invite/skyecosystem), and [Sky Builder Discord](https://discord.gg/skybuilder), where the Sky community dives deep into Sky Stars, the Star Agent Framework and Sky Ecosystem Governance.`,
+    categories: ['Sky Protocol & Ecosystem']
+  },
+  {
+    question: 'What is Sky Ecosystem governance, and how does it work?',
+    answer: `Sky Ecosystem Governance relies on a decentralized, multi-faceted, detailed and transparent system of decision-making that includes discussion, polling and onchain voting to maintain the Sky Protocol and the ecosystem. Governance is shared among a broad and diversified community comprising individuals and entities from around the world who hold Sky Ecosystem Governance tokens, SKY. 
+
+Any Sky Ecosystem governance token holder can propose changes and additions to the Sky 
+Protocol and ecosystem. Examples of changes and additions to the Sky Protocol and ecosystem may include, but are not limited to, the following:
+
+  * Technical changes and additions to the Sky Protocol
+
+  * Changes and additions to rules and processes outside the technical layer of the Sky Protocol, such as governance procedures or compensation amounts for delegates.
+
+  * Adjustments to all risk parameters. 
+
+
+
+**Voting with SKY**
+SKY is the sole governance token of the Sky Ecosystem. SKY token holders can use their SKY to participate directly in Sky Ecosystem Governance through a system of decentralized onchain voting, and/or to to transfer the voting power of their SKY tokens to a recognized delegate or a contract that they own. Voting with MKR is no longer possible.
+
+**Direct Voting with SKY**
+SKY holders participate directly in Sky Ecosystem Governance by supplying SKY to the Governance Contract of the Sky Protocol via the [Sky Governance Voting Portal](https://vote.sky.money/). Direct voting is weighted, meaning that voting power is proportional to the number of SKY tokens voters supply to that contract. For example, if 50 voters supply a total of 600 SKY in favor of proposal A, while 100 voters supply a total of 400 SKY in support of proposal B, then Proposal A would win with 60% of the vote. The number of people who voted for a proposal is irrelevant; rather, the combined power of SKY tokens behind a proposal decides the winner.
+
+**Delegating with SKY**
+SKY holders can use their tokens to entrust their voting power to a contract they own or one or more delegates via the Sky Governance Voting portal or the Staking Engine of the Sky Protocol (more on the Staking Engine below). Sky Ecosystem Governance delegates are chosen and approved by governance vote. Creating a new delegate account can only be done via the Sky Governance Voting Portal.
+
+Delegates in receipt of token voting power can never directly access any SKY tokens delegated to them. Throughout the delegation process, users always own and are in control of their SKY tokens, and can change their delegate(s) at any time (subject to the Sky Protocol’s rules that prevent double voting or misuse of delegated voting power). 
+
+Delegating voting power may be a useful option for SKY token holders who have limited time to allocate to the process and who want to save on the cost of gas involved in voting on their own.  
+
+**Staking SKY to Delegate**
+When you supply SKY tokens to the Staking Engine using the [Sky.money web app](https://sky.money/), you can access Staking Rewards and choose to create one or more positions, including positions that enable you to generate and borrow USDS against your supplied SKY and to delegate the voting power your SKY tokens provide. Here’s a brief overview:
+
+  * **Access Rewards.** Supply SKY tokens to access Staking Rewards, initially in the form of USDS. Staking Reward rates are determined by Sky Ecosystem Governance through the process of decentralized onchain voting.
+
+  * **Borrow.** Borrow USDS against your supplied SKY. You can exit your borrow position at any time and withdraw or pay back USDS whenever you would like. The USDS Borrow Rate and Debt Ceiling are determined by Sky Ecosystem Governance through the process of decentralized onchain voting. Your total debt increases each block according to the Borrow Rate.
+
+  * **Delegate.** Transfer the voting power of your supplied SKY tokens to a recognized delegate or a contract that you own. Your chosen delegate can then participate in the Sky Ecosystem Governance voting process on your behalf. You can choose one delegate per position, meaning if you want to entrust your SKY to two different delegates using the Staking Engine, you will need to create two separate positions.     
+
+You may exit your Staking positions at any time; no exit fee applies. The Staking Reward rate and Borrow rate are determined by Sky Ecosystem Governance through the process of decentralized onchain voting. Your SKY, as well as any Staking Rewards that you accumulate, are supplied to a non-custodial smart contract, such that no intermediary ever takes custody of those tokens. With Sky, you always remain in control of your assets.
+
+For a deeper dive into the facets and checks and balances of governance, please refer to the [Sky Forum](https://forum.sky.money/), the [Sky Governance Voting Portal](https://vote.sky.money/) and the [Sky Atlas](https://sky-atlas.powerhouse.io/).`,
+    categories: ['Sky Protocol & Ecosystem']
+  },
+  {
+    question: 'Can I participate in Sky Ecosystem Governance using both MKR and SKY?',
+    answer: `No. SKY is the sole governance token of the Sky Ecosystem and the upgrade of MKR. Only SKY token holders can use their SKY to participate directly in Sky Ecosystem Governance through a system of decentralized onchain voting, and/or to transfer the voting power of their SKY tokens to a recognized delegate or a contract that they own. Voting with MKR is no longer possible.`,
+    categories: ['Sky Protocol & Ecosystem']
+  },
+  {
+    question: 'What is Spark?',
+    answer: `[Spark](https://spark.fi/) is the first Star Agent (Star) focused on decentralized finance (DeFi) innovation. It is a gateway to the decentralized, non-custodial Sky Protocol and, like all Stars, an independent decentralized project within the larger Sky Ecosystem. For detailed information on Spark’s offerings and governance, review its [documentation](https://docs.spark.fi/). `,
+    categories: ['Sky Protocol & Ecosystem']
+  },
+  {
+    question: 'What is the Spark Liquidity Layer',
+    answer: `The Spark Liquidity Layer is a solution that utilizes smart contracts to deploy, withdraw and balance stablecoin liquidity across blockchains on demand. It distributes USDS, a native stablecoin of the decentralized Sky Protocol, and sUSDS, a native savings token for eligible users. 
+When you supply USDS to the Sky Savings Rate module, you access the Sky Savings Rate and receive sUSDS tokens. These sUSDS tokens serve as a digital record of your USDS interaction with the module and any value accrued to your position. Note that some Sky Protocol features are not available in selected jurisdictions.
+In short, the Spark Liquidity Layer dynamically balances the mix of a highly liquid stablecoin—USDC— with a savings generating stablecoin—sUSDS—across networks in real time. This ensures liquidity is provided precisely when users need it rather than being locked idly across networks. For more information, see [Spark Documentation](https://docs.spark.fi/user-guides/spark-liquidity-layer).`,
+    categories: ['Sky Protocol & Ecosystem']
+  },
+  {
+    question: 'What is the Sky Atlas?',
+    answer: `The [Sky Atlas](https://sky-atlas.powerhouse.io/) is the definitive rulebook of the Sky Ecosystem, as determined by Sky Ecosystem Governance.  It is a Sky artifact—a data structure encompassing Sky documents—which exists to stabilize and streamline the governance process to serve the evolving needs of the ecosystem. The Atlas is a partially immutable work in progress that will continue to be refined through an improvement proposal and decentralized voting framework until Sky Ecosystem Governance determines that modifications are no longer necessary. `,
+    categories: ['Sky Protocol & Ecosystem']
+  },
+  {
+    question: 'What is the difference between direct voting and delegating voting power?',
+    answer: `With SKY tokens comes voting power. Every SKY holder can participate directly in Sky Ecosystem Governance through a system of decentralized onchain voting or  transfer the voting power of their SKY tokens to a recognized delegate or a contract that they own. Sky Ecosystem Governance delegates are chosen and approved by governance vote. Creating a new delegate account can only be done via the [Sky Governance Voting Portal](https://vote.sky.money/).
+
+**Direct Voting with SKY**
+
+SKY holders participate directly in Sky Ecosystem Governance by supplying SKY to the Governance Contract of the Sky Protocol via the Sky Governance Voting Portal. Direct voting is weighted, meaning that voting power is proportional to the number of SKY tokens voters supply to that contract. For example, if 50 voters supply a total of 600 SKY in favor of proposal A, while 100 voters supply a total of 400 SKY in support of proposal B, then Proposal A would win with 60% of the vote. The number of people who voted for a proposal is irrelevant; rather, the combined power of SKY tokens behind a proposal decides the winner.
+
+**Delegating with SKY**
+
+SKY holders can use their tokens to entrust their voting power to one or more delegates via the Sky Governance Voting portal or they can use the [Sky.money web app](https://app.sky.money/) to delegate via the Staking Engine of the Sky Protocol. 
+
+Delegates in receipt of token voting power can never directly access any SKY tokens delegated to them. Throughout the delegation process, users always own and are in control of their SKY tokens, and can change their delegate(s) at any time (subject to the Sky Protocol’s rules that prevent double voting or misuse of delegated voting power). Delegating voting power may be a useful option for SKY token holders who have limited time to allocate to the process and who want to save on the cost of gas involved in voting on their own.  
+
+For a deep dive into Sky Ecosystem Governance, please refer to the [Sky Atlas](https://sky-atlas.powerhouse.io/), the [Sky Governance Voting Portal](https://vote.sky.money/) and the [Sky Forum](https://forum.sky.money/).`,
+    categories: ['Sky Protocol & Ecosystem']
+  },
+  {
+    question: 'What is onchain voting?',
+    answer: `Onchain voting is a method used by some decentralized projects—Sky included—to facilitate decision-making and governance processes. This type of voting occurs directly on the blockchain, ensuring a transparent and secure democratic voting process. Onchain voting empowers SKY token holders to have a direct impact on the development and operation of the Sky Protocol.
+
+For a deep dive into Sky Ecosystem Governance, please refer to the [Sky Atlas](https://sky-atlas.powerhouse.io/), the [Sky Governance Voting Portal](https://vote.sky.money/) and the [Sky Forum](https://forum.sky.money/).`,
+    categories: ['Sky Protocol & Ecosystem']
+  },
+  {
+    question: 'Where can I go for technical help or to ask questions that aren’t answered here?',
+    answer: `For answers to technical questions about the Sky Protocol, please refer to the [Developer Documentation](https://developers.sky.money/). 
+
+You may also reach out to community members with general questions on X ([@SkyEcosystem](https://x.com/SkyEcosystem)) and on [Sky Discord](https://discord.com/invite/skyecosystem).`,
+    categories: ['Sky Protocol & Ecosystem']
   }
 ];
 
