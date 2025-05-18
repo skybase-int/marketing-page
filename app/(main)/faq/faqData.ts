@@ -2,6 +2,8 @@ import { cryptoGeneral } from './faqCryptoGeneral';
 import { skyEcosystem } from './faqSkyEcosystem';
 import { skyTokens } from './faqSkyTokens';
 import { upgradeTrade } from './faqUpgradeAndTrade';
+import { skySavingsRate } from './faqSkySavingsRate';
+import { skyTokenRewards } from './faqSkyTokenRewards';
 
 type Category =
   | 'All FAQs'
@@ -19,85 +21,6 @@ export type FAQItem = {
   answer: string;
   categories: Category[];
 };
-
-const skySavingsRate: FAQItem[] = [
-  {
-    question: 'What is the Sky Savings Rate, and how does it work?',
-    answer: `The Sky Savings Rate (SSR) is an automated token-accumulation mechanism of the decentralized Sky Protocol that takes into account the effect of accumulated USDS compounded in real time. In other words, the USDS you supply to the Sky Savings Rate module enables you to receive sUSDS. The SSR is variable, determined not by market factors but by Sky ecosystem governance through a process of decentralized onchain voting. 
-
-When you supply USDS to the Sky Savings Rate module, you access the SSR and may receive sUSDS tokens. These sUSDS tokens serve as a digital record of your USDS interaction with the SSR module and any value accrued to your position. 
-
-The decentralized Sky Protocol dynamically adds USDS tokens to the pool every few seconds, in accordance with the Sky Savings Rate. As those tokens auto-accumulate in the pool over time, the value of the sUSDS you hold may gradually increase. 
-
-So, when you choose to redeem your sUSDS for USDS—which you can do anytime—the total USDS you will receive will equal the amount you originally supplied, plus any additional USDS accumulated.   
-With the Sky Protocol, you're always in full control of your supplied funds, as this feature is non-custodial.`,
-    categories: ['Sky Savings Rate']
-  },
-  {
-    question: 'Does it cost anything to access the Sky Savings Rate?',
-    answer: `Accessing the Sky Savings Rate via the Sky Protocol is free. However, any time you supply or withdraw funds to/from the Sky Savings Rate module, you will incur a transaction fee— called a gas fee—for using the Ethereum blockchain network. That fee is not controlled, imposed or received by Sky.money or the Sky Protocol.`,
-    categories: ['Sky Savings Rate']
-  },
-  {
-    question: 'Can I withdraw my USDS from the Sky Savings Rate module anytime?',
-    answer: `You can withdraw your original supply of USDS and any accumulated sUSDS from the Sky Savings Rate module anytime. While no withdrawal fee is imposed, you will pay a blockchain transaction fee— called a gas fee—for using the network. That fee is not controlled, imposed or received by Sky.money or the Sky Protocol.`,
-    categories: ['Sky Savings Rate']
-  }
-];
-
-const skyTokenRewards: FAQItem[] = [
-  {
-    question: 'What are Sky Token Rewards, and how do they work?',
-    answer: `When you supply USDS to the Sky Token Rewards module through the Sky Protocol, you receive Sky Token Rewards over time in the form of SKY governance tokens. 
-
-The USDS, as well as the rewards received, are supplied to a non-custodial smart contract that represents the USDS pool of funds. That means no intermediary has custody of your supplied funds.
-
-Soon, you'll be able to use SKY to access Activation Token Rewards, and to participate in Sky ecosystem governance through a system of decentralized onchain voting.`,
-    categories: ['Sky Token Rewards']
-  },
-  {
-    question: 'How much USDS do I have to supply to accumulate Sky Token Rewards?',
-    answer: `Eligible users can supply any amount of USDS to the Sky Token Rewards module to begin getting Sky Token Rewards. There is no minimum amount required. Eligible users can also withdraw their USDS anytime. With the Sky Protocol, you can receive rewards without giving up control of your supplied funds, as this feature is non-custodial.`,
-    categories: ['Sky Token Rewards']
-  },
-  {
-    question: 'How is the Sky Token Rewards Rate calculated?',
-    answer: `The Sky Token Rewards rate is different for each type of token rewarded, and always fluctuates, determined by the following factors:
-
-* The issuance rate of the token rewarded, which is determined by Sky ecosystem governance  
-* The market price of the token rewarded  
-* The user's share of the total pool of funds earning the token rewarded
-
-Sky.money does not control the issuance, determination, or distribution of these rewards.`,
-    categories: ['Sky Token Rewards']
-  },
-  {
-    question: 'How much does it cost to participate in Sky Token Rewards?',
-    answer: `There is no fee to participate in Sky Token Rewards; however, with each transaction, you may pay a gas fee for using the Ethereum blockchain network. That fee is not controlled, imposed or received by Sky.money or the Sky Protocol.`,
-    categories: ['Sky Token Rewards']
-  },
-  {
-    question: 'What is Chronicle?',
-    answer: `Chronicle is the original oracle on Ethereum built within MakerDAO for the creation of DAI. Today, [Chronicle’s decentralised oracle network](https://docs.chroniclelabs.org/Intro/network) secures Sky, Spark, and many other DeFi and RWA protocols.`,
-    categories: ['Sky Token Rewards']
-  },
-  {
-    question: 'What are Chronicle Points, and how do they work?',
-    answer: `Use the Sky.money app to access [Chronicle Points](https://www.youtube.com/watch?v=CYsC7Nrm2Vs), which might later be claimable for Chronicle tokens at a rate of 10 points = 1 CLE token. The total supply of CLE tokens will be 10 billion. Chronicle Points are being emitted at a rate of 3.75 billion per year. Any future opportunities to convert Chronicle Points into CLE tokens, if offered, would be managed independently by Chronicle’s own applications.`,
-    categories: ['Sky Token Rewards']
-  },
-  {
-    question:
-      'Is there a minimum requirement of USDS I need to supply to the Sky Protocol to start collecting Chronicle Points?',
-    answer: `No minimum supply of USDS is required.`,
-    categories: ['Sky Token Rewards']
-  },
-  {
-    question: 'Where can I see the current total distribution of Chronicle Points?',
-    answer: `Users can see the current distribution of Chronicle Points on the [Sky Ecosystem dashboard](https://info.sky.money/rewards/0x10ab606b067c9c461d8893c47c7512472e19e2ce).`,
-    categories: ['Sky Token Rewards']
-  }
-];
 
 const seal: FAQItem[] = [
   {
