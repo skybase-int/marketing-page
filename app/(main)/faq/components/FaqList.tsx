@@ -21,8 +21,11 @@ const categories = [
   'Upgrade & Trade',
   'Sky Savings Rate',
   'Sky Token Rewards',
+  // TODO should Seal be removed?
   'Seal Engine',
-  'SkyLink'
+  'Staking Engine',
+  'SkyLink',
+  'Network Integrations'
 ];
 const PAGE_SIZE = 10;
 
