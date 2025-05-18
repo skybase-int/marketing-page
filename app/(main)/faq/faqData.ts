@@ -4,7 +4,6 @@ import { skyTokens } from './faqSkyTokens';
 import { upgradeTrade } from './faqUpgradeAndTrade';
 import { skySavingsRate } from './faqSkySavingsRate';
 import { skyTokenRewards } from './faqSkyTokenRewards';
-import { sealEngine } from './faqSealEngine';
 import { stakingEngine } from './faqStakingEngine';
 import { skyLink } from './faqSkyLink';
 import { networkIntegrations } from './faqNetworkIntegrations';
@@ -35,7 +34,6 @@ export const faqDataset: FAQItem[] = [
   ...upgradeTrade,
   ...skySavingsRate,
   ...skyTokenRewards,
-  ...sealEngine,
   ...stakingEngine,
   ...skyLink,
   ...networkIntegrations

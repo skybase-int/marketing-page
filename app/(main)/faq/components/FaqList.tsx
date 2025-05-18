@@ -21,8 +21,6 @@ const categories = [
   'Upgrade & Trade',
   'Sky Savings Rate',
   'Sky Token Rewards',
-  // TODO should Seal be removed?
-  'Seal Engine',
   'Staking Engine',
   'SkyLink',
   'Network Integrations'
