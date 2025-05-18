@@ -840,7 +840,7 @@ For a deeper dive into the facets and checks and balances of governance, please 
     categories: ['Sky Protocol & Ecosystem']
   },
   {
-    question: 'What is the Spark Liquidity Layer',
+    question: 'What is the Spark Liquidity Layer?',
     answer: `The Spark Liquidity Layer is a solution that utilizes smart contracts to deploy, withdraw and balance stablecoin liquidity across blockchains on demand. It distributes USDS, a native stablecoin of the decentralized Sky Protocol, and sUSDS, a native savings token for eligible users. 
 When you supply USDS to the Sky Savings Rate module, you access the Sky Savings Rate and receive sUSDS tokens. These sUSDS tokens serve as a digital record of your USDS interaction with the module and any value accrued to your position. Note that some Sky Protocol features are not available in selected jurisdictions.
 In short, the Spark Liquidity Layer dynamically balances the mix of a highly liquid stablecoin—USDC— with a savings generating stablecoin—sUSDS—across networks in real time. This ensures liquidity is provided precisely when users need it rather than being locked idly across networks. For more information, see [Spark Documentation](https://docs.spark.fi/user-guides/spark-liquidity-layer).`,
