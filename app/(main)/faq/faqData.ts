@@ -1,6 +1,7 @@
 import { cryptoGeneral } from './faqCryptoGeneral';
 import { skyEcosystem } from './faqSkyEcosystem';
 import { skyTokens } from './faqSkyTokens';
+import { upgradeTrade } from './faqUpgradeAndTrade';
 
 type Category =
   | 'All FAQs'
@@ -18,69 +19,6 @@ export type FAQItem = {
   answer: string;
   categories: Category[];
 };
-
-const upgradeTrade: FAQItem[] = [
-  {
-    question: 'How much does it cost to upgrade?',
-    answer: `Upgrading is free and instant; however, you will likely pay gas fees for using the Ethereum blockchain network. That fee is not controlled, imposed or received by Sky.money or the Sky Protocol. It is calculated based on current Ethereum network demand and the amount of gas required to process the upgrade transaction. So, be sure to have ETH in your wallet anytime you transact using the Sky Protocol.`,
-    categories: ['Upgrade & Trade']
-  },
-  {
-    question: 'Do I have to upgrade my DAI to USDS, and my MKR to SKY?',
-    answer: `No. DAI and MKR will remain unaltered in their original forms for the foreseeable future. You can continue to hold and use both tokens exactly as you have in the past. While each has an upgraded Sky version, upgrading is optional. But only by holding USDS and SKY can you utilize the Sky Protocol functionalities available in your region.
-
-Note that decisions regarding the Sky Protocol, its tokens and features are made by Sky ecosystem governance token holders through a system of decentralized on-chain voting.`,
-    categories: ['Upgrade & Trade']
-  },
-  {
-    question: 'Why did the governance community choose to upgrade MKR to create SKY?',
-    answer: `By upgrading MKR to SKY at a rate of 1:24,000, far more people are provided with access to the Sky ecosystem. The larger supply of SKY improves the experience for those who want to purchase more than just a fraction of the token, as well as for those who want to trade USDS for SKY and get whole amounts of SKY as token rewards, instead of fractional amounts. 
-
-Additionally, the SKY token will eventually be used to get Activation Token Rewards and to vote on changes and additions to the Sky Protocol.`,
-    categories: ['Upgrade & Trade']
-  },
-  {
-    question: 'What is the Atlas Risk Dashboard?',
-    answer: `The Atlas Risk Dashboard allows you to examine the health of the decentralized Sky Protocol in real time. You can view the total value locked (“TVL”) in the Sky Protocol, TVL in the Sky Token Rewards module, TVL in the Sky Savings Rate module, the total amount of collateral backing the system, an estimation of annual rewards, and much more.`,
-    categories: ['Upgrade & Trade']
-  },
-  {
-    question: 'What is a trade?',
-    answer: `A trade is the direct exchange of one cryptocurrency token for another at current market prices. Sky Protocol users can trade tokens via an API integration with the third-party decentralized exchange. These trades occur through smart contracts on the blockchain without relying on centralized entities. The exact trade route is determined by the third party decentralized exchange and is not influenced by Sky.money or the Sky Protocol. 
-
-Note that price slippage—a change in price between the time of the trade order and its execution on the blockchain—can occur due to market volatility. When you trade via the Sky Protocol, you can set your slippage tolerance level.`,
-    categories: ['Upgrade & Trade']
-  },
-  {
-    question: 'Why would I trade tokens?',
-    answer: `The following statements are provided for informational purposes only and are not intended to be construed as financial advice or recommendations on trading strategies. Your use of the Sky Protocol is at your own risk. Please see our User Risk Documentation and Terms of Use for further information. 
-
-When you trade USDC, USDT, ETH or SKY for USDS via the Sky Protocol, you can use your USDS to access the Sky Savings Rate to get additional USDS over time, and to access Sky Token Rewards in the form of SKY governance tokens.
-
-When you trade USDC, USDT, ETH and USDS for SKY, you'll soon be able to use SKY to accumulate Activation Token Rewards and to participate in Sky ecosystem governance through a system of decentralized onchain voting.`,
-    categories: ['Upgrade & Trade']
-  },
-  {
-    question: 'Is trading using Sky.money free?',
-    answer: `Trading generally involves a fee imposed by the third-party decentralized exchange integrated with the Sky Protocol that is used to make the trade. In addition, you will likely pay a blockchain network transaction fee called a gas fee. This fee is calculated based on current Ethereum network demand and the amount of gas required to process your transaction. Neither fee is controlled, imposed or received by Sky.money or the Sky Protocol.`,
-    categories: ['Upgrade & Trade']
-  },
-  {
-    question: 'Can I trade USDS on the open market?',
-    answer: `Yes. you can trade USDS, as well as USDC, USDT and ETH, for SKY via the Sky Protocol. USDS is freely transferable and can be used in connection with any software protocol or platform that supports it.`,
-    categories: ['Upgrade & Trade']
-  },
-  {
-    question: 'What is an exchange rate?',
-    answer: `Exchange rate refers to the price of one cryptocurrency relative to another cryptocurrency or fiat currency at any given moment. Cryptocurrency exchange rates may be subject to price volatility and may fluctuate based on various factors.`,
-    categories: ['Upgrade & Trade']
-  },
-  {
-    question: 'Is trading risky?',
-    answer: `Your use of the Sky Protocol is at your own risk. Please see our User Risk Documentation and Terms of Use for further information.`,
-    categories: ['Upgrade & Trade']
-  }
-];
 
 const skySavingsRate: FAQItem[] = [
   {
