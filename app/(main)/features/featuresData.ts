@@ -42,7 +42,7 @@ export const existingFeatures: Feature[] = [
     id: 'savings'
   },
   {
-    icon: SealedActivation,
+    icon: Activation,
     title: 'Staking Engine',
     card: StakeCard,
     id: 'stake',
@@ -56,13 +56,6 @@ export const existingFeatures: Feature[] = [
   }
 ];
 
-export const comingSoonFeatures: Feature[] = [
-  {
-    icon: Activation,
-    title: 'Activation',
-    card: ActivationCard,
-    id: 'activation'
-  }
-];
+export const comingSoonFeatures: Feature[] = [];
 
 export const features: Feature[] = [...existingFeatures, ...comingSoonFeatures];

@@ -88,10 +88,7 @@ export function FeaturesHero({ heroHeight = 0 }: { heroHeight?: number }) {
               </div>
             ))}
           </div>
-          <Text variant="caption" className="mb-2 mt-8 text-white">
-            Coming Soon
-          </Text>
-          <div className="flex flex-wrap justify-center gap-3">
+          {/* <div className="flex flex-wrap justify-center gap-3">
             {comingSoonFeatures.map(feature => (
               <InternalLink href={`#${feature.id}`} key={feature.id}>
                 <AnchorButton
@@ -102,7 +99,7 @@ export function FeaturesHero({ heroHeight = 0 }: { heroHeight?: number }) {
                 </AnchorButton>
               </InternalLink>
             ))}
-          </div>
+          </div> */}
         </div>
         <div ref={divRef} className="absolute bottom-10 h-10 w-full" />
       </div>
