@@ -18,11 +18,11 @@ const questions: Question[] = [
   {
     question: 'What is the Sky ecosystem?',
     answer:
-      'The Sky ecosystem consists of the community and projects that support the decentralised Sky Protocol. The ecosystem’s community participates in a transparent system of governance that uses a decentralised onchain voting process supported by two governance tokens, SKY and MKR. The Sky ecosystem also includes Sky Stars—independent decentralised projects designed to enable focused, fast-moving innovation and growth.'
+      'The Sky ecosystem consists of the community and projects that support the decentralised Sky Protocol. The ecosystem’s community participates in a transparent system of governance that uses a decentralised onchain voting process supported by a governance token, SKY. The Sky ecosystem also includes Sky Stars—independent decentralised projects designed to enable focused, fast-moving innovation and growth.'
   },
   {
     question: 'What is Sky.money, and what can I do with it?',
-    answer: `Sky.money is one of the many non-custodial gateways to the permissionless Sky Protocol, a decentralised protocol developed around the USDS stablecoin. Sky.money is a front end that provides access to the app without holding your funds or acting as an intermediary. It provides eligible users with access to Sky Protocol features, including Sky tokens (USDS, SKY, DAI, MKR), the Sky Savings Rate (SSR), Sky Token Rewards (STRs), and eventually Activation Token Rewards and SkyLink. With the Sky Protocol, you can save and access rewards without giving up control of your supplied funds. 
+    answer: `Sky.money is one of the many non-custodial gateways to the permissionless Sky Protocol, a decentralised protocol developed around the USDS stablecoin. Sky.money is a front end that provides access to the app without holding your funds or acting as an intermediary. It provides eligible users with access to Sky Protocol features, including Sky tokens (USDS, SKY, DAI), the Sky Savings Rate (SSR), Sky Token Rewards (STRs), and eventually Activation Token Rewards and SkyLink. With the Sky Protocol, you can save and access rewards without giving up control of your supplied funds. 
 
 Eligible Sky.money users can access the Sky Protocol to do the following: 
 
@@ -31,7 +31,7 @@ Eligible Sky.money users can access the Sky Protocol to do the following:
   * Trade USDC, USDT, ETH and USDS for SKY, and vice versa. Eventually, SKY will be used to get Activation Token Rewards and to vote on changes and additions to the Protocol. 
 
 
-* **Upgrade.** Upgrade DAI to USDS 1:1, and MKR to the SKY governance token at a rate of 1:24,000. USDS and SKY can also be converted back to DAI and MKR. While upgrading is optional, doing so enables you to take advantage of the many new Sky ecosystem features.    
+* **Upgrade.** Upgrade DAI to USDS 1:1, and MKR to the SKY governance token at a rate of 1:24,000. USDS can also be converted back to DAI. While upgrading is optional, doing so enables you to take advantage of the many new Sky ecosystem features.    
     
 * **Access Rewards.** Use USDS to access Sky Token Rewards (STRs) over time. No minimum USDS supply amount is required.   
   * The amount of STRs you receive is calculated based on your share of the entire pool of USDS tokens supplied to the Sky Token Rewards module by all participants, not on the amount of tokens you supply. This share, and consequently the rate of STR rewards, can fluctuate as the total pool size changes over time. Sky.money does not control the issuance, determination, or distribution of these rewards.  
@@ -50,8 +50,8 @@ With Sky.money, you always remain in control of your supplied funds.`
       'You can use Sky.money as a gateway to the Sky Protocol and to then access the permissionless liquidity pools, or similar onchain solutions, to trade USDC, USDT, ETH or SKY for USDS. You can also upgrade your DAI to USDS subject to any applicable gas fees for using the Ethereum blockchain network, which powers the Sky Protocol. That fee is not controlled, imposed, or received by Sky.money or the Sky Protocol. You might be able to obtain USDS on various crypto exchanges that decide to make it available on their platforms.'
   },
   {
-    question: 'Do I have to upgrade my DAI and MKR?',
-    answer: `No. DAI and MKR will remain unaltered in their original forms for the foreseeable future. You can continue to hold and use both tokens exactly as you have in the past. While each has an upgraded Sky version, upgrading is optional. But only by holding USDS and SKY can you utilise the Sky Protocol functionalities available in your region.
+    question: 'Do I have to upgrade my DAI?',
+    answer: `No. DAI will remain unaltered in it's original form for the foreseeable future. You can continue to hold the token exactly as you have in the past. But only by holding USDS and SKY can you utilise the Sky Protocol functionalities available in your region.
 
 Note that decisions regarding the Sky Protocol, its tokens and features are made by Sky ecosystem governance token holders through a system of decentralised on-chain voting.`
   },

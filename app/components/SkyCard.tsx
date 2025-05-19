@@ -59,7 +59,7 @@ export const SkyCard = ({ data }: { data: FetchedData }) => {
             token voting is around the corner.  
             <br />
             <br />
-            You’ll also soon be able to Activate and Seal your SKY to accumulate Activation Token Rewards.
+            You’ll also soon be able to Activate and Stake your SKY to accumulate Activation Token Rewards.
             With the Sky Protocol, you can receive rewards without giving up control of your supplied funds. 
             <br />
             <br />
