@@ -323,12 +323,8 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                 including Sky Token Rewards and the Sky Savings Rate.
                 <br />
                 <br />
-                Upgrade MKR to SKY to use it in the future to accumulate Activation Token Rewards in the form
-                of USDS and various Sky Star tokens, and to participate in Sky ecosystem decentralised onchain
-                governance.
-                <br />
-                <br />
-                Upgrading is optional.
+                Upgrade MKR to SKY to maintain the ability to participate in governance (vote and delegate),
+                maintain access to Staking Rewards and avoid the Delayed Upgrade Penalty.
               </Text>
             }
             imgSrc="/products_upgrade.png"
@@ -489,64 +485,60 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           href={`${baseUrl}/?widget=seal`}
           descriptionElement={
             <Text variant="p3">
-              Supply MKR or SKY tokens to the Seal Engine of the Sky Protocol to create a position and access
-              Seal Rewards.
+              The Staking Engine replaces the Seal Engine and supports only SKY tokens, with no exit fee.
+              Stake SKY to earn rewards, delegate <PopoverSealInfo type="delegate" /> governance voting rights
+              or borrow <PopoverSealInfo type="borrow" /> USDS.
               <br />
               <br />
-              Use your sealed MKR or SKY to delegate <PopoverSealInfo type="delegate" /> your Sky governance
-              voting rights, as collateral to borrow USDS, or to further support the Sky project’s
-              decentralisation and security. All positions automatically access rewards, as per the protocol’s
-              design, when certain parameters determined by Sky ecosystem governance are met.
+              You can open or close positions and claim rewards anytime.
               <br />
               <br />
-              You can seal or unseal your tokens—and claim your rewards—at any time. Unsealing requires
-              payment of an exit fee <PopoverSealInfo type="exitFee" />.
+              Have positions in the Seal Engine?
+              <br />
+              <br />
+              Migrate them via the Sky.money web app, your MKR will be upgraded to SKY during the process.
             </Text>
           }
           postTitle="Seal Engine"
           postTextElement={
             <>
               <Text variant="p2">
-                The MKR or SKY tokens that you supply to the Seal Engine are sealed behind an exit fee{' '}
-                <PopoverSealInfo type="exitFee" className="z-[1000]" /> in order to provide access to Seal
-                Rewards and encourage a deeper commitment to Sky ecosystem governance.
-                <br />
-                <br />
-                Your sealed MKR or SKY enables you to create one or more positions through which you access
-                the rewards. You can:
+                Staking SKY in the Staking Engine gives you access to:
                 <br />
                 <br />
                 <List tag="ol" variant="ordered">
                   <li>
+                    <Text variant="p2">Rewards – Earn Staking Rewards, starting with USDS.</Text>
+                  </li>
+                  <li>
                     <Text variant="p2">
-                      Borrow USDS against your supplied MKR or SKY{' '}
+                      Borrowing – Use SKY as collateral to borrow{' '}
                       <PopoverSealInfo type="borrow" className="z-[1000]" />
+                      USDS. You can exit your borrow position and repay or withdraw USDS anytime.
                     </Text>
                   </li>
                   <li>
                     <Text variant="p2">
-                      Transfer the voting power of your supplied MKR or SKY tokens to a delegate{' '}
-                      <PopoverSealInfo type="delegate" className="z-[1000]" /> of your choosing or a contract
-                      that you own.
+                      Delegation – Assign your voting power to a delegate
+                      <PopoverSealInfo type="delegate" className="z-[1000]" /> or your own contract. that you
+                      own.
                     </Text>
-                  </li>
-                  <li>
-                    <Text variant="p2">Seal your tokens and continue to collect rewards</Text>
                   </li>
                 </List>
+                Withdraw your SKY or claim rewards anytime, no exit fee.
                 <br />
-                Your MKR or SKY tokens, as well as any rewards that you accumulate, are supplied to a
-                non-custodial smart contract, which means that no intermediary takes custody of those tokens.
+                <br />
                 With Sky, you always remain in control of your funds.
               </Text>
             </>
           }
-          imgSrc="/products_seal_1.png"
-          mobileImgSrc="/products_seal_1_mobile.png"
+          imgSrc="/products_stake_2.svg"
+          imgWidths={[350, 370, 580]}
+          mobileImgSrc="/products_stake_1_mobile.svg"
           buttonVariant="twilight-2"
-          buttonText="Seal your MKR"
-          emphasis="Access Seal rewards"
-          title="via the Seal Engine"
+          buttonText="Stake your SKY"
+          emphasis="Access Staking rewards"
+          title="with SKY"
           className="col-span-1 tablet:col-span-2 desktop:col-span-1 desktop:mb-32 desktop-xl:mb-0"
           featurePageId="seal" // TODO: Check it works
           APY=""
@@ -567,48 +559,30 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
             href={`${baseUrl}/?network=${randomL2Name}`}
             descriptionElement={
               <Text variant="p3">
-                SkyLink seamlessly connects your Ethereum-based Sky Protocol tokens and features to supported
-                L2 networks.
-                <br />
-                <br />
-                Currently, Skylink is supported by the{' '}
+                SkyLink is the system that provides the rails for the{' '}
                 <ExternalLink href="https://app.sky.money/" className="text-text underline">
-                  Sky.money app
+                  Sky.money
                 </ExternalLink>{' '}
-                and{' '}
-                <ExternalLink href="https://spark.fi/" className="text-text underline">
-                  Spark
-                </ExternalLink>
-                , the very first Sky Star (SubDAO)
+                web app and Sky Ecosystem projects, such as Spark, to bridge assets between the Sky Protocol
+                on Ethereum Mainnet and a growing number of supported Layer 2 (L2) networks. SkyLink enables
+                end users on L2s, such as Base and Arbitrum, to tap into Sky Protocol features via the Sky
+                Ecosystem projects’ rails. SkyLink seamlessly connects your Ethereum-based Sky Protocol tokens
+                and features to supported L2 networks.
                 <br />
                 <br />
                 If you have shied away from the Ethereum blockchain due to the high price of gas, SkyLink
-                introduces reduced cost transactions and faster transaction speeds.
+                introduces reduced fees and faster transaction speeds.
               </Text>
             }
             postTextElement={
               <Text variant="p2">
                 SkyLink enhances your ability to manage your digital assets efficiently by seamlessly
-                connecting your Ethereum-based Sky Protocol tokens and features to supported L2 networks
+                connecting your Ethereum L1-based Sky Protocol tokens and features, such as the Sky Savings
+                Rate, to supported L2 networks.
                 <br />
                 <br />
-                SkyLink offers efficient access to the Sky Savings Rate with minimal transaction costs. Also,
-                USDC holders can trade their tokens for USDS with no protocol fee, powered by Spark.
-                <br />
-                <br />
-                Subject to governance approval, users of supported L2 networks may soon be able to use SkyLink
-                to access:
-                <ul className="list-disc pl-7">
-                  <li>
-                    <Text variant="p2">Other Sky Ecosystem tokens, including SKY</Text>
-                  </li>
-                  <li>
-                    <Text variant="p2">Sky Token Rewards</Text>
-                  </li>
-                  <li>
-                    <Text variant="p2">Rewards in the form of Sky Star tokens</Text>
-                  </li>
-                </ul>
+                If you have shied away from the Ethereum blockchain due to the high price of gas, SkyLink
+                introduces reduced fees and faster transaction speeds.
               </Text>
             }
             imgSrc="/products_skybridge.png"
