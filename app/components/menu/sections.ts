@@ -29,8 +29,8 @@ export const menuSections: Record<
       href: 'features#savings'
     },
     {
-      title: 'Seal Engine',
-      href: 'features#seal'
+      title: 'Staking Engine',
+      href: 'features#stake'
     },
     {
       title: 'SkyLink',

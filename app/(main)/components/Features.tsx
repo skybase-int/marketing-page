@@ -482,7 +482,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           TVLDescription=""
         />
         <FeatureCardLg
-          href={`${baseUrl}/?widget=seal`}
+          href={`${baseUrl}/?widget=stake`}
           descriptionElement={
             <Text variant="p3">
               The Staking Engine replaces the Seal Engine and supports only SKY tokens, with no exit fee.
@@ -499,7 +499,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
               Migrate them via the Sky.money web app, your MKR will be upgraded to SKY during the process.
             </Text>
           }
-          postTitle="Seal Engine"
+          postTitle="Staking Engine"
           postTextElement={
             <>
               <Text variant="p2">
@@ -540,13 +540,13 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           emphasis="Access Staking rewards"
           title="with SKY"
           className="col-span-1 tablet:col-span-2 desktop:col-span-1 desktop:mb-32 desktop-xl:mb-0"
-          featurePageId="seal" // TODO: Check it works
+          featurePageId="stake" // TODO: Check it works
           APY=""
           TVL="" // TODO:
           type="ssr" // TODO:
           APYDescription=""
           TVLDescription=""
-          // TVLDescription="Seal Engine TVL"
+          // TVLDescription="Stake Engine TVL"
           isAlpha
         />
 
