@@ -63,8 +63,8 @@ export const menuSections: Record<
 };
 
 export const internalLinks: Record<string, string> = {
-  ['FAQs']: '/faq'
-  // about: '/about'
+  ['FAQs']: '/faq',
+  mkrUpgradeHub: 'https://upgrademkrtosky.sky.money/'
 };
 
 export const sections = [...Object.keys(menuSections), ...Object.keys(internalLinks)];
@@ -72,6 +72,7 @@ export const sectionsTitle: Record<string, string> = {
   explore: 'Explore',
   participate: 'Participate',
   build: 'Build',
+  mkrUpgradeHub: 'MKR to SKY Upgrade Hub',
   FAQs: 'FAQs'
   // about: 'About'
 };
