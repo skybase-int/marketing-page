@@ -78,7 +78,7 @@ export function FeaturesPageCard({
           )}
           <div className="mb-2 flex flex-col-reverse items-center justify-between tablet:mb-4 tablet:flex-row">
             {tabs.length > 1 && (
-              <TabsList className="flex w-fit flex-wrap justify-start gap-2">
+              <TabsList className="flex w-fit flex-wrap justify-start gap-2 tablet:max-w-[80%]">
                 {tabs.map(({ title, label = title }) => (
                   <TabsTrigger variant="secondary" key={label} value={label}>
                     {label}
