@@ -5,7 +5,7 @@ import { RewardsCard } from './components/cards/RewardsCard';
 import { SaveCard } from './components/cards/SaveCard';
 import { ActivationCard } from './components/cards/ActivationCard';
 import { SkyLinkCard } from './components/cards/SkyLinkCard';
-import { SealCard } from './components/cards/SealCard';
+import { StakeCard } from './components/cards/StakeCard';
 
 type Feature = {
   icon: React.ElementType;
@@ -42,10 +42,10 @@ export const existingFeatures: Feature[] = [
     id: 'savings'
   },
   {
-    icon: SealedActivation,
-    title: 'Seal Engine',
-    card: SealCard,
-    id: 'seal',
+    icon: Activation,
+    title: 'Staking Engine',
+    card: StakeCard,
+    id: 'stake',
     isAlpha: true
   },
   {
@@ -56,13 +56,6 @@ export const existingFeatures: Feature[] = [
   }
 ];
 
-export const comingSoonFeatures: Feature[] = [
-  {
-    icon: Activation,
-    title: 'Activation',
-    card: ActivationCard,
-    id: 'activation'
-  }
-];
+export const comingSoonFeatures: Feature[] = [];
 
 export const features: Feature[] = [...existingFeatures, ...comingSoonFeatures];

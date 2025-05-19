@@ -11,34 +11,11 @@ import { cn } from '../lib/utils';
 import { ExternalLink } from '@/app/components/ExternalLink';
 
 const content = {
-  exitFee: {
-    title: 'Exit fee',
-    description: (
-      <Text className="leading-5 text-white/80" variant="ui-small-regular">
-        When you supply MKR to the Seal Engine, a position is created and those tokens are sealed behind an
-        exit fee. You can seal and unseal your tokens anytime.
-        <br />
-        <br />
-        Unsealing requires payment of an exit fee—a percentage of the total amount of tokens you’ve sealed in
-        that position. The fee is automatically subtracted from that total amount, and then burnt, removing
-        the tokens from circulation. Your accumulated rewards are not affected.
-        <br />
-        <br />
-        The exit fee is a risk parameter managed and determined (regardless of position duration) by Sky
-        ecosystem governance. The exit fee applies at unsealing, not at sealing, which means that it is
-        determined the moment you unseal your MKR.
-        <br />
-        <br />
-        The moment the Seal Engine launched, the exit fee rate was set to 5% of the value of MKR tokens you’ve
-        sealed, with a 1% increase every 6 months thereafter until it reaches the long-term fee rate of 15%.
-      </Text>
-    )
-  },
   borrow: {
     title: 'Borrow USDS against your MKR',
     description: (
       <Text className="leading-5 text-white/80" variant="ui-small-regular">
-        Borrowing against your sealed position carries the risk of automatic liquidation without any
+        Borrowing against your staked position carries the risk of automatic liquidation without any
         possibility of recourse. Please ensure you fully understand these risks before proceeding.
       </Text>
     )
@@ -47,9 +24,8 @@ const content = {
     title: 'Borrow Rate',
     description: (
       <Text className="leading-5 text-white/80" variant="ui-small-regular">
-        The borrow rate is a parameter determined by Sky ecosystem governance through a process of
-        decentralised onchain voting. Borrow rate fees accumulate automatically per block and get added to the
-        total debt.
+        The borrow rate is determined by Sky ecosystem governance through a process of decentralised onchain
+        voting. Borrow rate fees accumulate automatically per block and get added to the total debt.
       </Text>
     )
   },
@@ -57,24 +33,39 @@ const content = {
     title: 'Choose your delegate',
     description: (
       <Text className="leading-5 text-white/80" variant="ui-small-regular">
-        When you hold MKR or SKY tokens, you maintain the right to participate in the process of Sky ecosystem
+        When you hold SKY tokens, you maintain the right to participate in the process of Sky ecosystem
         governance voting. That means that you have the ability to contribute to the community-driven,
         decentralised ecosystem decision-making process, which occurs through onchain voting.
         <br />
         <br />
-        The voting power delegation feature of the Seal Engine of the Sky Protocol enables you to entrust your
-        voting power to a delegate of your choosing, who can then vote in the Sky ecosystem governance process
-        on your behalf. You can choose one delegate per sealed MKR or SKY position. If you want to entrust
-        your MKR or SKY to two delegates using the Seal Engine, you will need to create two separate
-        positions.
+        The voting power delegation feature of the Staking Engine of the Sky Protocol enables you to entrust
+        your voting power to a delegate of your choosing, who can then vote in the Sky ecosystem governance
+        process on your behalf. You can choose one delegate per staked SKY position. If you want to entrust
+        your SKY to two delegates using the Staking Engine, you will need to create two separate positions.
         <br />
         <br />
         Delegates in receipt of token voting power can never directly access any tokens delegated to them,
-        including sealed tokens. Throughout the delegation process, you always own and are in control of your
-        sealed tokens, and you can change your delegate at any time.Sealing to delegate your voting power may
+        including staked tokens. Throughout the delegation process, you always own and are in control of your
+        staked tokens, and you can change your delegate at any time. Staking to delegate your voting power may
         be a useful option for governance token holders who have limited time to allocate to the process, who
-        want to save on the cost of gas involved in voting on their own, and who also want to earn Seal
+        want to save on the cost of gas involved in voting on their own, and who also want to earn Stake
         Rewards.
+      </Text>
+    )
+  },
+  srr: {
+    title: 'Staking Rewards rate',
+    description: (
+      <Text className="leading-5 text-white/80" variant="ui-small-regular">
+        The Staking Rewards Rate (SRR) is variable and may fluctuate. It is determined by: (1) the current
+        issuance rate of the rewards set through onchain governance processes and (2) the market price of the
+        staked SKY at the time of each calculation. Rewards are accrued in USDS for the time being, subject to
+        future adjustment by onchain governance. The SRR provided is an estimated annual rate, updated using
+        data from a third party provider (i.e.,{' '}
+        <ExternalLink href="https://blockanalitica.com/" className="underline">
+          BlockAnaltica
+        </ExternalLink>
+        ). Further, The estimate is for informational purposes only and does not guarantee future results.
       </Text>
     )
   }
@@ -85,7 +76,7 @@ export const PopoverSealInfo = ({
   type
 }: {
   className?: string;
-  type: 'exitFee' | 'borrow' | 'borrowRate' | 'delegate';
+  type: 'borrow' | 'borrowRate' | 'delegate' | 'srr';
 }) => {
   if (!(type in content)) return null;
 
