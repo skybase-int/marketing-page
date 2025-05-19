@@ -503,8 +503,8 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           postTextElement={
             <>
               <Text variant="p2" className="mb-4 desktop:mb-[18px] desktop-xl:mb-[20px]">
-                The SKY tokens you supply to the Staking Engine provide access to Seal Rewards, and more. Your
-                staked SKY enables you to create one or more positions through which you can:
+                The SKY tokens you supply to the Staking Engine provide access to Staking Rewards, and more.
+                Your staked SKY enables you to create one or more positions through which you can:
                 <br />
                 <br />
                 <ul className="list-disc pl-7">
@@ -553,7 +553,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
         {/* Section 4 */}
         <Card
           variant="glass"
-          className="col-span-1 grid grid-cols-1 gap-5 rounded-3xl border p-4 tablet:col-span-2 desktop:grid-cols-2"
+          className="col-span-1 grid grid-cols-1 gap-5 rounded-3xl border p-4 tablet:col-span-2"
         >
           <FeatureCardLg
             href={`${baseUrl}/?network=${randomL2Name}`}
@@ -601,7 +601,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
             APYDescription=""
             TVLDescription=""
           />
-          <FeatureCard
+          {/* <FeatureCard
             href=""
             cardClassName={soonSectionClassName}
             descriptionElement={
@@ -641,7 +641,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
             isMediumSize={true}
             className="col-span-1 tablet:col-span-2 desktop:col-span-1"
             featurePageId="activation"
-          />
+          /> */}
         </Card>
       </div>
     </div>

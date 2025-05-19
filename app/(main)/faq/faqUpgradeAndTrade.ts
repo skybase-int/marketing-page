@@ -26,7 +26,7 @@ For upgrade details and step-by-step upgrade instructions, please visit the MKR 
     question: 'What is the Delayed Upgrade Penalty?',
     answer: `The Delayed Upgrade Penalty is a time-based upgrade mechanism, approved by Sky Ecosystem Governance, which is designed to facilitate a smooth and prompt upgrade of MKR to SKY.
 
-The penalty, which will begin sometime in September 2025, reduces the amount of SKY received per MKR upgraded at a rate of 1%, and increases by 1% every three months thereafter until it reaches 100% in 25 years. The penalty will not apply to anyone upgrading their MKR to SKY before it kicks in.
+The penalty, which will begin September 18, 2025, reduces the amount of SKY received per MKR upgraded at a rate of 1%, and increases by 1% every three months thereafter until it reaches 100% in 25 years. The penalty will not apply to anyone upgrading their MKR to SKY before it kicks in.
 
 How the Delayed Upgrade Penalty works
 Here are some examples:
@@ -56,7 +56,7 @@ SKY also enables users to access Staking Rewards via the Sky.money web app. When
 Why upgrade
 All MKR holders are encouraged to upgrade to SKY promptly to maintain the ability to participate in key decisions shaping the Sky Protocol. Upgrading in a timely fashion ensures reduced governance complexity and a more effective, efficient and resilient ecosystem for all. Please note that while MKR will continue to exist, users will not be able to revert back to MKR from SKY via the Sky Protocol.
 
-To facilitate a smooth and prompt transition, Sky Ecosystem Governance voted to introduce a Delayed Upgrade Penalty. The penalty, which will begin sometime in September 2025, reduces the amount of SKY received per MKR upgraded at a rate of 1%, and increases by 1% every three months thereafter until it reaches 100% in 25 years. The penalty will not apply to anyone upgrading their MKR to SKY before it kicks in.
+To facilitate a smooth and prompt transition, Sky Ecosystem Governance voted to introduce a Delayed Upgrade Penalty. The penalty, which will begin September 18, 2025, reduces the amount of SKY received per MKR upgraded at a rate of 1%, and increases by 1% every three months thereafter until it reaches 100% in 25 years. The penalty will not apply to anyone upgrading their MKR to SKY before it kicks in.
 
 How the Delayed Upgrade Penalty works
 
@@ -128,7 +128,7 @@ Your SKY, as well as any Staking Rewards that you accumulate, is supplied to a n
     question: 'What happens if I never upgrade my MKR?',
     answer: `All MKR holders are encouraged to upgrade to SKY promptly to maintain the ability to participate in key decisions shaping the Sky Protocol. Upgrading in a timely fashion ensures reduced governance complexity and a more effective, efficient and resilient ecosystem for all. Please note that while MKR will continue to exist, users will not be able to revert back to MKR from SKY via the Sky Protocol.
 
-To facilitate a smooth and prompt transition, Sky Ecosystem Governance voted to introduce a Delayed Upgrade Penalty. The penalty, which will begin sometime in September 2025, reduces the amount of SKY received per MKR upgraded at a rate of 1%, and increases by 1% every three months thereafter until it reaches 100% in 25 years. The penalty will not apply to anyone upgrading their MKR to SKY before it kicks in.
+To facilitate a smooth and prompt transition, Sky Ecosystem Governance voted to introduce a Delayed Upgrade Penalty. The penalty, which will begin September 18, 2025, reduces the amount of SKY received per MKR upgraded at a rate of 1%, and increases by 1% every three months thereafter until it reaches 100% in 25 years. The penalty will not apply to anyone upgrading their MKR to SKY before it kicks in.
 
 Here are some examples of how the Delayed Upgrade Penalty works:
 
@@ -147,7 +147,7 @@ For upgrade details and step-by-step upgrade instructions, please visit the MKR 
     question: 'Is there a deadline to upgrade MKR to SKY?',
     answer: `No, but all MKR holders are encouraged to upgrade to SKY promptly to maintain the ability to participate in key decisions shaping the Sky Protocol. Upgrading in a timely fashion ensures reduced governance complexity and a more effective, efficient and resilient ecosystem for all. Please note that while MKR will continue to exist, users will not be able to revert back to MKR from SKY via the Sky Protocol.
 
-To facilitate a smooth and prompt transition, Sky Ecosystem Governance voted to introduce a Delayed Upgrade Penalty. The penalty, which will begin sometime in September 2025, reduces the amount of SKY received per MKR upgraded at a rate of 1%, and increases by 1% every three months thereafter until it reaches 100% in 25 years. The penalty will not apply to anyone upgrading their MKR to SKY before it kicks in.
+To facilitate a smooth and prompt transition, Sky Ecosystem Governance voted to introduce a Delayed Upgrade Penalty. The penalty, which will begin September 18, 2025, reduces the amount of SKY received per MKR upgraded at a rate of 1%, and increases by 1% every three months thereafter until it reaches 100% in 25 years. The penalty will not apply to anyone upgrading their MKR to SKY before it kicks in.
 
 How the Delayed Upgrade Penalty works
 Here are some examples:
@@ -186,7 +186,7 @@ Why upgrade?
 
 Only SKY can be used to vote directly on Sky Ecosystem Governance proposals and/or to transfer the voting power of your SKY tokens to a recognized delegate or a contract that you own. Upgrading your MKR to SKY promptly allows you to maintain the ability to participate in key decisions shaping the Sky Protocol. Please note that while MKR will continue to exist, users will not be able to revert back to MKR from SKY via the Sky Protocol.
 
-To facilitate a smooth and prompt transition, Sky Ecosystem Governance voted to introduce a Delayed Upgrade Penalty. The penalty, which will begin sometime in September 2025, reduces the amount of SKY received per MKR upgraded at a rate of 1%, and increases by 1% every three months thereafter until it reaches 100% in 25 years. The penalty will not apply to anyone upgrading their MKR to SKY before it kicks in.
+To facilitate a smooth and prompt transition, Sky Ecosystem Governance voted to introduce a Delayed Upgrade Penalty. The penalty, which will begin September 18, 2025, reduces the amount of SKY received per MKR upgraded at a rate of 1%, and increases by 1% every three months thereafter until it reaches 100% in 25 years. The penalty will not apply to anyone upgrading their MKR to SKY before it kicks in.
 
 How the Delayed Upgrade Penalty works
 Here are some examples:
