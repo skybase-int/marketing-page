@@ -533,8 +533,8 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
               </Text>
             </>
           }
-          imgSrc="/products_stake_2.svg"
-          imgWidths={[350, 370, 580]}
+          imgSrc="/products_stake_1.svg"
+          imgWidths={[310, 390, 590]}
           mobileImgSrc="/products_stake_1_mobile.svg"
           buttonVariant="twilight-2"
           buttonText="Stake your SKY"

@@ -4,6 +4,7 @@ import ProductsSkyBridge from '@/public/products_skybridge.png';
 import ProductsSkyBridgeMobile from '@/public/features-skylink-mobile.png';
 import { useBreakpointIndex } from '@/app/hooks/useBreakpointIndex';
 import { useRandomL2Name } from '@/app/hooks/useRandomL2Name';
+import { ExternalLink } from '@/app/components/ExternalLink';
 
 export const SkyLinkCard = () => {
   const { bpi, isLoading: isLoadingBreakpointIndex } = useBreakpointIndex();
@@ -18,25 +19,25 @@ export const SkyLinkCard = () => {
           content: (
             <>
               <TextFeatureCard>
+                SkyLink is the system that provides the rails for the{' '}
+                <ExternalLink href="https://app.sky.money/" className="text-black/80 underline">
+                  Sky.money web app
+                </ExternalLink>{' '}
+                and Sky Ecosystem projects, such as{' '}
+                <ExternalLink href="https://spark.fi/" className="text-black/80 underline">
+                  Spark
+                </ExternalLink>{' '}
+                to link assets between the Sky Protocol on Ethereum Mainnet and a growing number of supported
+                second-layer networks.
+              </TextFeatureCard>
+              <TextFeatureCard>
                 SkyLink enhances your ability to manage your digital assets efficiently by seamlessly
-                connecting your Ethereum L1-based Sky Protocol tokens and features to supported L2 networks.
+                connecting Sky Protocol tokens and features, such as the Sky Savings Rate, across L2
+                solutions.
               </TextFeatureCard>
-              <TextFeatureCard>
-                SkyLink offers users of supported networks liquid trading between USDS, sUSDS and USDC powered
-                by Spark, and efficient access to the Sky Savings Rate —all with reduced transaction costs.
-              </TextFeatureCard>
-              <TextFeatureCard>
-                Subject to governance approval, supported L2 users may be able to use SkyLink to access:{' '}
-              </TextFeatureCard>
-              <ul className="list-disc pl-7">
-                <LiFeatureCard>Other Sky ecosystem tokens, including SKY</LiFeatureCard>
-                <LiFeatureCard>Sky Token Rewards over time in the form of SKY tokens</LiFeatureCard>
-                <LiFeatureCard>Rewards in the form of Sky Star Agent tokens</LiFeatureCard>
-              </ul>
               <TextFeatureCard>
                 If you have shied away from the Ethereum blockchain due to the high price of gas, SkyLink
-                seamlessly connects your Ethereum-based Sky Protocol tokens and features to supported L2
-                networks to introduce reduced cost transactions and faster transaction speeds.
+                introduces reduced fees and faster transaction speeds.
               </TextFeatureCard>
             </>
           ),

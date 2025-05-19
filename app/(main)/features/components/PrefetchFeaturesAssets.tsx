@@ -15,16 +15,18 @@ import ProductsSavingsMobile from '@/public/products_savings_mobile.png';
 import WhatIsSave from '@/public/savings-what-is-it.png';
 import HowItWorksSavings from '@/public/savings-how-it-works.png';
 import { useBreakpointIndex } from '@/app/hooks/useBreakpointIndex';
-import ProductsSeals1 from '@/public/products_seal_1.png';
-import ProductsSeals2 from '@/public/products_seal_2.png';
-import ProductsSeals3 from '@/public/products_seal_3.png';
-import ProductsSeals4 from '@/public/products_seal_4.png';
-import ProductsSeals5 from '@/public/products_seal_5.png';
-import ProductsSeals1Mobile from '@/public/products_seal_1_mobile.png';
-import ProductsSeals2Mobile from '@/public/products_seal_2_mobile.png';
-import ProductsSeals3Mobile from '@/public/products_seal_3_mobile.png';
-import ProductsSeals4Mobile from '@/public/products_seal_4_mobile.png';
-import ProductsSeals5Mobile from '@/public/products_seal_5_mobile.png';
+import ProductsStake1 from '@/public/products_stake_1.svg';
+import ProductsStake2 from '@/public/products_stake_2.svg';
+import ProductsStake3 from '@/public/products_stake_3.svg';
+import ProductsStake4 from '@/public/products_stake_4.svg';
+import ProductsStake5 from '@/public/products_stake_5.svg';
+import ProductsStake6 from '@/public/products_stake_6.svg';
+import ProductsStake1Mobile from '@/public/products_stake_1_mobile.svg';
+import ProductsStake2Mobile from '@/public/products_stake_2_mobile.svg';
+import ProductsStake3Mobile from '@/public/products_stake_3_mobile.svg';
+import ProductsStake4Mobile from '@/public/products_stake_4_mobile.svg';
+import ProductsStake5Mobile from '@/public/products_stake_5_mobile.svg';
+import ProductsStake6Mobile from '@/public/products_stake_6_mobile.svg';
 
 export const PrefetchFeaturesAssets = () => {
   const { bpi } = useBreakpointIndex();
@@ -125,41 +127,55 @@ export const PrefetchFeaturesAssets = () => {
         loading="eager"
       />
       <Image
-        alt="Products seal"
-        placeholder="blur"
-        src={bpi === 0 ? ProductsSeals1Mobile : ProductsSeals1}
+        alt="Products stake"
+        // TODO: Uncomment once we have the PNG images
+        // placeholder="blur"
+        src={bpi === 0 ? ProductsStake1Mobile : ProductsStake1}
         className="absolute top-1/2 h-auto w-full -translate-y-1/2 rounded-[20px] tablet:left-0 tablet:top-full tablet:translate-x-8 tablet:translate-y-[calc(-100%+92px)] tablet:rounded-r-none tablet:rounded-bl-none desktop:static desktop:top-auto desktop:translate-x-10 desktop:translate-y-10 desktop:rounded-tl-[40px]"
         quality={100}
         loading="eager"
       />
       <Image
-        alt="Products seal"
-        placeholder="blur"
-        src={bpi === 0 ? ProductsSeals2Mobile : ProductsSeals2}
+        alt="Products stake"
+        // TODO: Uncomment once we have the PNG images
+        // placeholder="blur"
+        src={bpi === 0 ? ProductsStake2Mobile : ProductsStake2}
         className="absolute top-1/2 h-auto w-full -translate-y-1/2 rounded-[20px] tablet:left-0 tablet:top-full tablet:translate-x-8 tablet:translate-y-[calc(-100%+92px)] tablet:rounded-r-none tablet:rounded-bl-none desktop:static desktop:top-auto desktop:translate-x-10 desktop:translate-y-10 desktop:rounded-tl-[40px]"
         quality={100}
         loading="eager"
       />
       <Image
-        alt="Products seal"
-        placeholder="blur"
-        src={bpi === 0 ? ProductsSeals3Mobile : ProductsSeals3}
+        alt="Products stake"
+        // TODO: Uncomment once we have the PNG images
+        // placeholder="blur"
+        src={bpi === 0 ? ProductsStake3Mobile : ProductsStake3}
         className="absolute top-1/2 h-auto w-full -translate-y-1/2 rounded-[20px] tablet:left-0 tablet:top-full tablet:translate-x-8 tablet:translate-y-[calc(-100%+92px)] tablet:rounded-r-none tablet:rounded-bl-none desktop:static desktop:top-auto desktop:translate-x-10 desktop:translate-y-10 desktop:rounded-tl-[40px]"
         quality={100}
         loading="eager"
       />
       <Image
-        alt="Products seal"
-        placeholder="blur"
-        src={bpi === 0 ? ProductsSeals4Mobile : ProductsSeals4}
+        alt="Products stake"
+        // TODO: Uncomment once we have the PNG images
+        // placeholder="blur"
+        src={bpi === 0 ? ProductsStake4Mobile : ProductsStake4}
         className="absolute top-1/2 h-auto w-full -translate-y-1/2 rounded-[20px] tablet:left-0 tablet:top-full tablet:translate-x-8 tablet:translate-y-[calc(-100%+92px)] tablet:rounded-r-none tablet:rounded-bl-none desktop:static desktop:top-auto desktop:translate-x-10 desktop:translate-y-10 desktop:rounded-tl-[40px]"
         quality={100}
         loading="eager"
       />
       <Image
-        alt="Products seal"
-        placeholder="blur"
-        src={bpi === 0 ? ProductsSeals5Mobile : ProductsSeals5}
+        alt="Products stake"
+        // TODO: Uncomment once we have the PNG images
+        // placeholder="blur"
+        src={bpi === 0 ? ProductsStake5Mobile : ProductsStake5}
+        className="absolute top-1/2 h-auto w-full -translate-y-1/2 rounded-[20px] tablet:left-0 tablet:top-full tablet:translate-x-8 tablet:translate-y-[calc(-100%+92px)] tablet:rounded-r-none tablet:rounded-bl-none desktop:static desktop:top-auto desktop:translate-x-10 desktop:translate-y-10 desktop:rounded-tl-[40px]"
+        quality={100}
+        loading="eager"
+      />
+      <Image
+        alt="Products stake"
+        // TODO: Uncomment once we have the PNG images
+        // placeholder="blur"
+        src={bpi === 0 ? ProductsStake6Mobile : ProductsStake6}
         className="absolute top-1/2 h-auto w-full -translate-y-1/2 rounded-[20px] tablet:left-0 tablet:top-full tablet:translate-x-8 tablet:translate-y-[calc(-100%+92px)] tablet:rounded-r-none tablet:rounded-bl-none desktop:static desktop:top-auto desktop:translate-x-10 desktop:translate-y-10 desktop:rounded-tl-[40px]"
         quality={100}
         loading="eager"
