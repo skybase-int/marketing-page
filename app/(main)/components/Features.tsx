@@ -485,50 +485,51 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           href={`${baseUrl}/?widget=stake`}
           descriptionElement={
             <Text variant="p3">
-              The Staking Engine replaces the Seal Engine and supports only SKY tokens, with no exit fee.
-              Stake SKY to earn rewards, delegate <PopoverSealInfo type="delegate" /> governance voting rights
-              or borrow <PopoverSealInfo type="borrow" /> USDS.
+              The Staking Engine has replaced the Seal Engine of the Sky Protocol. It offers the same
+              features, but it has no exit fee and only supports SKY tokens, not MKR.
               <br />
               <br />
-              You can open or close positions and claim rewards anytime.
+              Stake SKY to earn rewards, delegate <PopoverSealInfo type="delegate" /> governance voting
+              rights, and borrow <PopoverSealInfo type="borrow" /> USDS. You can stake or un-stake your SKY,
+              and claim rewards, anytime.
               <br />
               <br />
-              Have positions in the Seal Engine?
-              <br />
-              <br />
-              Migrate them via the Sky.money web app, your MKR will be upgraded to SKY during the process.
+              If you currently have one or more positions in the Seal Engine, you can use the Sky.money web
+              app to migrate to the Staking Engine. Your sealed MKR will be upgraded to SKY during the Seal to
+              Staking migration process.
             </Text>
           }
           postTitle="Staking Engine"
           postTextElement={
             <>
-              <Text variant="p2">
-                Staking SKY in the Staking Engine gives you access to:
+              <Text variant="p2" className="mb-4 desktop:mb-[18px] desktop-xl:mb-[20px]">
+                The SKY tokens you supply to the Staking Engine provide access to Seal Rewards, and more. Your
+                staked SKY enables you to create one or more positions through which you can:
                 <br />
                 <br />
-                <List tag="ol" variant="ordered">
-                  <li>
-                    <Text variant="p2">Rewards – Earn Staking Rewards, starting with USDS.</Text>
-                  </li>
+                <ul className="list-disc pl-7">
                   <li>
                     <Text variant="p2">
-                      Borrowing – Use SKY as collateral to borrow{' '}
-                      <PopoverSealInfo type="borrow" className="z-[1000]" />
-                      USDS. You can exit your borrow position and repay or withdraw USDS anytime.
+                      Access Rewards. Access Staking Rewards, initially in the form of USDS.
                     </Text>
                   </li>
                   <li>
                     <Text variant="p2">
-                      Delegation – Assign your voting power to a delegate
-                      <PopoverSealInfo type="delegate" className="z-[1000]" /> or your own contract. that you
-                      own.
+                      Borrow. Borrow
+                      <PopoverSealInfo type="borrow" className="z-[1000]" /> USDS against your supplied SKY.
+                      You can exit your borrow position at any time and withdraw or pay back USDS whenever you
+                      would like.
                     </Text>
                   </li>
-                </List>
-                Withdraw your SKY or claim rewards anytime, no exit fee.
-                <br />
-                <br />
-                With Sky, you always remain in control of your funds.
+                  <li>
+                    <Text variant="p2">
+                      Delegate. Transfer the voting power of your supplied SKY tokens to a recognized delegate
+                      <PopoverSealInfo type="delegate" className="z-[1000]" /> or a contract that you own.
+                      Your chosen delegate can then participate in the Sky Ecosystem Governance voting process
+                      on your behalf.
+                    </Text>
+                  </li>
+                </ul>
               </Text>
             </>
           }
