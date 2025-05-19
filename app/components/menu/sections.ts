@@ -29,8 +29,8 @@ export const menuSections: Record<
       href: 'features#savings'
     },
     {
-      title: 'Seal Engine',
-      href: 'features#seal'
+      title: 'Staking Engine',
+      href: 'features#stake'
     },
     {
       title: 'SkyLink',
@@ -63,8 +63,8 @@ export const menuSections: Record<
 };
 
 export const internalLinks: Record<string, string> = {
-  ['FAQs']: '/faq',
-  mkrUpgradeHub: 'https://upgrademkrtosky.sky.money/'
+  mkrUpgradeHub: 'https://upgrademkrtosky.sky.money/',
+  ['FAQs']: '/faq'
 };
 
 export const sections = [...Object.keys(menuSections), ...Object.keys(internalLinks)];
