@@ -249,8 +249,8 @@ export const StakeCard = ({ data }: { data: FetchedData }) => {
               </TextFeatureCard>
             </>
           ),
-          buttonCta: 'Create a position',
-          url: `?widget=stake`,
+          buttonCta: 'Migrate position',
+          url: `?widget=balances`,
           buttonVariant: 'twilight-1',
           illustration: !bpiLoading ? (
             <div className="h-full w-full px-3 tablet:px-0">
