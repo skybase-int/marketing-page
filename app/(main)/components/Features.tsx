@@ -503,8 +503,8 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           postTextElement={
             <>
               <Text variant="p2" className="mb-4 desktop:mb-[18px] desktop-xl:mb-[20px]">
-                The SKY tokens you supply to the Staking Engine provide access to Seal Rewards, and more. Your
-                staked SKY enables you to create one or more positions through which you can:
+                The SKY tokens you supply to the Staking Engine provide access to Staking Rewards, and more.
+                Your staked SKY enables you to create one or more positions through which you can:
                 <br />
                 <br />
                 <ul className="list-disc pl-7">
