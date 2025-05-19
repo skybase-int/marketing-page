@@ -533,9 +533,8 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
               </Text>
             </>
           }
-          imgSrc="/products_stake_1.svg"
-          imgWidths={[310, 390, 590]}
-          mobileImgSrc="/products_stake_1_mobile.svg"
+          imgSrc="/products_stake_1.png"
+          mobileImgSrc="/products_stake_1_mobile.png"
           buttonVariant="twilight-2"
           buttonText="Stake your SKY"
           emphasis="Access Staking rewards"

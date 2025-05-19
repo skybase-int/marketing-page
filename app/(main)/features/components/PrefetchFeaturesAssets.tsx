@@ -15,18 +15,18 @@ import ProductsSavingsMobile from '@/public/products_savings_mobile.png';
 import WhatIsSave from '@/public/savings-what-is-it.png';
 import HowItWorksSavings from '@/public/savings-how-it-works.png';
 import { useBreakpointIndex } from '@/app/hooks/useBreakpointIndex';
-import ProductsStake1 from '@/public/products_stake_1.svg';
-import ProductsStake2 from '@/public/products_stake_2.svg';
-import ProductsStake3 from '@/public/products_stake_3.svg';
-import ProductsStake4 from '@/public/products_stake_4.svg';
-import ProductsStake5 from '@/public/products_stake_5.svg';
-import ProductsStake6 from '@/public/products_stake_6.svg';
-import ProductsStake1Mobile from '@/public/products_stake_1_mobile.svg';
-import ProductsStake2Mobile from '@/public/products_stake_2_mobile.svg';
-import ProductsStake3Mobile from '@/public/products_stake_3_mobile.svg';
-import ProductsStake4Mobile from '@/public/products_stake_4_mobile.svg';
-import ProductsStake5Mobile from '@/public/products_stake_5_mobile.svg';
-import ProductsStake6Mobile from '@/public/products_stake_6_mobile.svg';
+import ProductsStake1 from '@/public/products_stake_1.png';
+import ProductsStake2 from '@/public/products_stake_2.png';
+import ProductsStake3 from '@/public/products_stake_3.png';
+import ProductsStake4 from '@/public/products_stake_4.png';
+import ProductsStake5 from '@/public/products_stake_5.png';
+import ProductsStake6 from '@/public/products_stake_6.png';
+import ProductsStake1Mobile from '@/public/products_stake_1_mobile.png';
+import ProductsStake2Mobile from '@/public/products_stake_2_mobile.png';
+import ProductsStake3Mobile from '@/public/products_stake_3_mobile.png';
+import ProductsStake4Mobile from '@/public/products_stake_4_mobile.png';
+import ProductsStake5Mobile from '@/public/products_stake_5_mobile.png';
+import ProductsStake6Mobile from '@/public/products_stake_6_mobile.png';
 
 export const PrefetchFeaturesAssets = () => {
   const { bpi } = useBreakpointIndex();
@@ -128,8 +128,7 @@ export const PrefetchFeaturesAssets = () => {
       />
       <Image
         alt="Products stake"
-        // TODO: Uncomment once we have the PNG images
-        // placeholder="blur"
+        placeholder="blur"
         src={bpi === 0 ? ProductsStake1Mobile : ProductsStake1}
         className="absolute top-1/2 h-auto w-full -translate-y-1/2 rounded-[20px] tablet:left-0 tablet:top-full tablet:translate-x-8 tablet:translate-y-[calc(-100%+92px)] tablet:rounded-r-none tablet:rounded-bl-none desktop:static desktop:top-auto desktop:translate-x-10 desktop:translate-y-10 desktop:rounded-tl-[40px]"
         quality={100}
@@ -137,8 +136,7 @@ export const PrefetchFeaturesAssets = () => {
       />
       <Image
         alt="Products stake"
-        // TODO: Uncomment once we have the PNG images
-        // placeholder="blur"
+        placeholder="blur"
         src={bpi === 0 ? ProductsStake2Mobile : ProductsStake2}
         className="absolute top-1/2 h-auto w-full -translate-y-1/2 rounded-[20px] tablet:left-0 tablet:top-full tablet:translate-x-8 tablet:translate-y-[calc(-100%+92px)] tablet:rounded-r-none tablet:rounded-bl-none desktop:static desktop:top-auto desktop:translate-x-10 desktop:translate-y-10 desktop:rounded-tl-[40px]"
         quality={100}
@@ -146,8 +144,7 @@ export const PrefetchFeaturesAssets = () => {
       />
       <Image
         alt="Products stake"
-        // TODO: Uncomment once we have the PNG images
-        // placeholder="blur"
+        placeholder="blur"
         src={bpi === 0 ? ProductsStake3Mobile : ProductsStake3}
         className="absolute top-1/2 h-auto w-full -translate-y-1/2 rounded-[20px] tablet:left-0 tablet:top-full tablet:translate-x-8 tablet:translate-y-[calc(-100%+92px)] tablet:rounded-r-none tablet:rounded-bl-none desktop:static desktop:top-auto desktop:translate-x-10 desktop:translate-y-10 desktop:rounded-tl-[40px]"
         quality={100}
@@ -155,8 +152,7 @@ export const PrefetchFeaturesAssets = () => {
       />
       <Image
         alt="Products stake"
-        // TODO: Uncomment once we have the PNG images
-        // placeholder="blur"
+        placeholder="blur"
         src={bpi === 0 ? ProductsStake4Mobile : ProductsStake4}
         className="absolute top-1/2 h-auto w-full -translate-y-1/2 rounded-[20px] tablet:left-0 tablet:top-full tablet:translate-x-8 tablet:translate-y-[calc(-100%+92px)] tablet:rounded-r-none tablet:rounded-bl-none desktop:static desktop:top-auto desktop:translate-x-10 desktop:translate-y-10 desktop:rounded-tl-[40px]"
         quality={100}
@@ -164,8 +160,7 @@ export const PrefetchFeaturesAssets = () => {
       />
       <Image
         alt="Products stake"
-        // TODO: Uncomment once we have the PNG images
-        // placeholder="blur"
+        placeholder="blur"
         src={bpi === 0 ? ProductsStake5Mobile : ProductsStake5}
         className="absolute top-1/2 h-auto w-full -translate-y-1/2 rounded-[20px] tablet:left-0 tablet:top-full tablet:translate-x-8 tablet:translate-y-[calc(-100%+92px)] tablet:rounded-r-none tablet:rounded-bl-none desktop:static desktop:top-auto desktop:translate-x-10 desktop:translate-y-10 desktop:rounded-tl-[40px]"
         quality={100}
@@ -173,8 +168,7 @@ export const PrefetchFeaturesAssets = () => {
       />
       <Image
         alt="Products stake"
-        // TODO: Uncomment once we have the PNG images
-        // placeholder="blur"
+        placeholder="blur"
         src={bpi === 0 ? ProductsStake6Mobile : ProductsStake6}
         className="absolute top-1/2 h-auto w-full -translate-y-1/2 rounded-[20px] tablet:left-0 tablet:top-full tablet:translate-x-8 tablet:translate-y-[calc(-100%+92px)] tablet:rounded-r-none tablet:rounded-bl-none desktop:static desktop:top-auto desktop:translate-x-10 desktop:translate-y-10 desktop:rounded-tl-[40px]"
         quality={100}
