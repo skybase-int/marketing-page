@@ -43,9 +43,9 @@ export const existingFeatures: Feature[] = [
   },
   {
     icon: SealedActivation,
-    title: 'Seal Engine',
+    title: 'Staking Engine',
     card: StakeCard,
-    id: 'seal',
+    id: 'stake',
     isAlpha: true
   },
   {
