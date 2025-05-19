@@ -23,7 +23,7 @@ const linksA: LinkSection[] = [
       { title: 'Trade', url: '/features#trade' },
       { title: 'Sky Token Rewards', url: '/features#rewards' },
       { title: 'Sky Savings Rate', url: '/features#savings' },
-      { title: 'Seal Engine', url: '/features#seal' },
+      { title: 'Staking Engine', url: '/features#stake' },
       { title: 'SkyLink', url: '/features#skylink' }
     ]
   ],

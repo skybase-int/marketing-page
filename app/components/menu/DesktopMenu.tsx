@@ -18,7 +18,7 @@ export const DesktopMenu = ({ tone }: { tone: Tone }) => {
 
   return (
     <motion.nav
-      className={`pointer-events-auto top-0 mt-2 inline-block w-[650px] rounded-xl backdrop-blur-3xl ${
+      className={`pointer-events-auto top-0 mt-2 inline-block w-[675px] rounded-xl backdrop-blur-3xl ${
         isMenuOpen
           ? ''
           : tone === 'dark'
@@ -61,6 +61,7 @@ export const DesktopMenu = ({ tone }: { tone: Tone }) => {
                 setSelectedSection={setSelectedSection}
                 text={sectionsTitle[section]}
                 link={internalLinks[section]}
+                isExternal={internalLinks[section].startsWith('https://')}
               />
             )
           )}

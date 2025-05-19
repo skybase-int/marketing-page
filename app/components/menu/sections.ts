@@ -29,8 +29,8 @@ export const menuSections: Record<
       href: 'features#savings'
     },
     {
-      title: 'Seal Engine',
-      href: 'features#seal'
+      title: 'Staking Engine',
+      href: 'features#stake'
     },
     {
       title: 'SkyLink',
@@ -63,8 +63,8 @@ export const menuSections: Record<
 };
 
 export const internalLinks: Record<string, string> = {
+  mkrUpgradeHub: 'https://upgrademkrtosky.sky.money/',
   ['FAQs']: '/faq'
-  // about: '/about'
 };
 
 export const sections = [...Object.keys(menuSections), ...Object.keys(internalLinks)];
@@ -72,6 +72,7 @@ export const sectionsTitle: Record<string, string> = {
   explore: 'Explore',
   participate: 'Participate',
   build: 'Build',
+  mkrUpgradeHub: 'MKR to SKY Upgrade Hub',
   FAQs: 'FAQs'
   // about: 'About'
 };
