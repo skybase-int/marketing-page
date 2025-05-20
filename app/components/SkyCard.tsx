@@ -27,8 +27,8 @@ export const SkyCard = ({ data }: { data: FetchedData }) => {
           <>
             <Text variant="p3-medium">SKY. The upgrade of MKR.</Text>
             <Text variant="p3" className="mt-1 text-black/80">
-              SKY joins MKR as a Sky ecosystem governance token, representing an evolution in accessibility,
-              user experience and scalability.
+              SKY is now the sole governance token of Sky Protocol, representing an evolution in
+              accessibility, user experience and scalability.
             </Text>
           </>
         }
@@ -51,16 +51,20 @@ export const SkyCard = ({ data }: { data: FetchedData }) => {
         emphasisHeading="The upgrade of MKR."
         content={
           <Text variant="p1">
-            SKY joins MKR as a Sky ecosystem governance token. By upgrading MKR to SKY at a rate of 1:24,000,
-            you can start your Sky journey with more than just a fraction of the SKY token. 
+            Access rewards and reserve your voice in governance with SKY, the technical and functional
+            evolution of MKR. 
             <br />
             <br />
-            While only MKR can currently be used to vote onchain for governance proposals, decentralised SKY
-            token voting is around the corner.  
+            SKY inherits the governance rights and privileges previously held by MKR. Use SKY to vote directly
+            or to delegate your voting power, just as you once did with MKR.
             <br />
             <br />
-            You’ll also soon be able to Activate and Stake your SKY to accumulate Activation Token Rewards.
-            With the Sky Protocol, you can receive rewards without giving up control of your supplied funds. 
+            Upgrading in a timely fashion ensures reduced governance complexity and a more effective,
+            efficient and resilient ecosystem for all. For upgrade details and step-by-step upgrade
+            instructions, please visit the{' '}
+            <ExternalLink href={'https://upgrademkrtosky.sky.money/'} className="text-black/80 underline">
+              MKR to SKY Upgrade Hub.
+            </ExternalLink>
             <br />
             <br />
             Upgrading is optional.
