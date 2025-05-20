@@ -22,7 +22,7 @@ export const StakeCard = ({ data }: { data: FetchedData }) => {
 
   return (
     <FeaturesPageCard
-      id="seal"
+      id="stake"
       isAlpha
       tabs={[
         {
