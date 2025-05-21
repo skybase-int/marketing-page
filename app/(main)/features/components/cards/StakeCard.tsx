@@ -22,7 +22,7 @@ export const StakeCard = ({ data }: { data: FetchedData }) => {
 
   return (
     <FeaturesPageCard
-      id="seal"
+      id="stake"
       isAlpha
       tabs={[
         {
@@ -73,7 +73,7 @@ export const StakeCard = ({ data }: { data: FetchedData }) => {
           content: (
             <>
               <TextFeatureCard>
-                Staking Rewards, in the form of USDS are accessed when you supply SKY tokens to the Staking
+                Staking Rewards in the form of USDS are accessed when you supply SKY tokens to the Staking
                 Engine of the decentralized Sky Protocol.
               </TextFeatureCard>
               <TextFeatureCard>
@@ -165,7 +165,7 @@ export const StakeCard = ({ data }: { data: FetchedData }) => {
                 This means that you are always able to actively manage your positions.
               </TextFeatureCard>
               <TextFeatureCard>
-                The debt ceiling and Borrow Rate <PopoverSealInfo type="borrowRate" /> are parameters
+                The Debt Ceiling and Borrow Rate <PopoverSealInfo type="borrowRate" /> are parameters
                 determined by Sky Ecosystem Governance through a process of decentralized, community-driven
                 onchain voting. Your total debt increases each block according to the Borrow Rate.
               </TextFeatureCard>
