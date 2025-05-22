@@ -64,7 +64,7 @@ For details on the risks associated with soft-pegged stablecoins, review the Use
     question: 'What is SKY, and how can I get it and use it?',
     answer: `SKY is the governance token of the Sky Ecosystem and the technical and functional evolution of MKR. 
 
-SKY is freely transferable and can be acquired on crypto exchanges or via dApps that support the token. Eligible users of the [Sky.money web app](https://app.sky.money) can trade USDC, USDT, ETH and USDC for SKY within that app. Those users can also supply USDS to the Sky Token Reward module of the Sky Protocol via the app and access SKY tokens as a reward.
+SKY is freely transferable and can be acquired on crypto exchanges or via dApps that support the token. Eligible users of the [Sky.money web app](https://app.sky.money) can trade USDC, USDT, ETH, or USDS for SKY within that app. Those users can also supply USDS to the Sky Token Reward module of the Sky Protocol via the app and access SKY tokens as a reward.
 
 Importantly, all SKY holders can use their SKY tokens to participate directly in Sky Ecosystem Governance through a system of onchain voting, and/or to transfer the voting power of their SKY tokens to a recognized delegate or a contract that they own. Here's how: 
  
