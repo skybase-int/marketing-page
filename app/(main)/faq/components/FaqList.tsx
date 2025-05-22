@@ -32,7 +32,7 @@ export default function FaqList() {
   const [category, setCategory] = useState(ALL_FAQS);
   const debouncedSearchTerm = useDebounce(searchTerm.trim(), 500);
   const [page, setPage] = useState(1);
-  const [openItem, setOpenItem] = useState<string | undefined>(undefined);
+  const [openItems, setOpenItems] = useState<string[]>([]);
   const { items: results, totalItems } = useSearchFaq({
     searchTerm: searchTerm ? debouncedSearchTerm : '',
     category: category === ALL_FAQS ? '' : category,
@@ -132,17 +132,16 @@ export default function FaqList() {
               <>
                 <Accordion
                   key={results[0]?.item.question}
-                  collapsible
-                  type="single"
-                  defaultValue={''}
+                  type="multiple"
+                  defaultValue={[]}
                   className={!!results[0] ? 'border-t border-black pt-8' : ''}
-                  onValueChange={value => setOpenItem(value)}
+                  onValueChange={setOpenItems}
                 >
                   {results.map((result, index) => (
                     <SearchResult
                       key={result.item.question}
                       item={result.item}
-                      showPreview={!!searchTerm && openItem !== result.item.question}
+                      showPreview={!!searchTerm && !openItems.includes(result.item.question)}
                       onCategorySelected={cat => {
                         setCategory(cat);
                         setSearchTerm('');
