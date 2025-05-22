@@ -134,7 +134,7 @@ export default function FaqList() {
                   key={results[0]?.item.question}
                   collapsible
                   type="single"
-                  defaultValue={searchTerm ? '' : results[0]?.item.question}
+                  defaultValue={''}
                   className={!!results[0] ? 'border-t border-black pt-8' : ''}
                   onValueChange={value => setOpenItem(value)}
                 >
