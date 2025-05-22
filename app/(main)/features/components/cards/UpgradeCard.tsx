@@ -44,19 +44,21 @@ export const UpgradeCard = ({ data }: { data: FetchedData }) => (
               Upgrade is a non-custodial feature. With Sky.money, you always remain in control of your funds.
             </TextFeatureCard>
             <TextFeatureCard>
-              *To facilitate a smooth and prompt transition, Sky Ecosystem Governance{' '}
-              <ExternalLink
-                href="https://vote.makerdao.com/polling/QmTVd4iq"
-                className="text-black/80 underline"
-              >
-                voted to introduce a time-based Delayed Upgrade Penalty
-              </ExternalLink>
-              , which will the amount of SKY received per MKR upgraded, depending on when you choose to
-              upgrade. For details, please visit the{' '}
-              <ExternalLink href="https://upgrademkrtosky.sky.money" className="text-black/80 underline">
-                MKR to SKY Upgrade Hub
-              </ExternalLink>
-              .
+              <span className="text-sm italic">
+                *To facilitate a smooth and prompt transition, Sky Ecosystem Governance{' '}
+                <ExternalLink
+                  href="https://vote.makerdao.com/polling/QmTVd4iq"
+                  className="text-black/80 underline"
+                >
+                  voted to introduce a time-based Delayed Upgrade Penalty
+                </ExternalLink>
+                , which will reduce the amount of SKY received per MKR upgraded, depending on when you choose
+                to upgrade. For details, please visit the{' '}
+                <ExternalLink href="https://upgrademkrtosky.sky.money" className="text-black/80 underline">
+                  MKR to SKY Upgrade Hub
+                </ExternalLink>
+                .
+              </span>
             </TextFeatureCard>
           </>
         ),

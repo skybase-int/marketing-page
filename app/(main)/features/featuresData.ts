@@ -1,9 +1,8 @@
-import { Save, Upgrade, Rewards, Trade, Activation, SealedActivation, SkyLink } from '@/app/components/icons';
+import { Save, Upgrade, Rewards, Trade, Activation, SkyLink } from '@/app/components/icons';
 import { UpgradeCard } from './components/cards/UpgradeCard';
 import { TradeCard } from './components/cards/TradeCard';
 import { RewardsCard } from './components/cards/RewardsCard';
 import { SaveCard } from './components/cards/SaveCard';
-import { ActivationCard } from './components/cards/ActivationCard';
 import { SkyLinkCard } from './components/cards/SkyLinkCard';
 import { StakeCard } from './components/cards/StakeCard';
 
@@ -46,7 +45,7 @@ export const existingFeatures: Feature[] = [
     title: 'Staking Engine',
     card: StakeCard,
     id: 'stake',
-    isAlpha: true
+    isAlpha: false
   },
   {
     icon: SkyLink,

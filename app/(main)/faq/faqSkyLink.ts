@@ -10,7 +10,7 @@ SkyLink is the Sky system that provides the rails for Sky Ecosystem projects to 
   },
   {
     question: 'What is SkyLink and how does it work?',
-    answer: `SkyLink is the Sky system that provides the rails for Sky Ecosystem projects, such as Spark, to link assets between the Sky Protocol on Ethereum Mainnet and supported L2 networks. This enables end users on L2s, such as Base and Arbitrum for example, to tap into Sky Protocol features via the Sky Ecosystem projects' rails. 
+    answer: `SkyLink is the Sky system that provides the rails for Sky Ecosystem projects, such as [Spark](https://spark.fi/), to link assets between the Sky Protocol on Ethereum Mainnet and supported L2 networks. This enables end users on L2s, such as Base and Arbitrum for example, to tap into Sky Protocol features via the Sky Ecosystem projects' rails. 
 
 If you have shied away from the Ethereum blockchain due to the high price of gas, SkyLink introduces reduced fees and faster transaction speeds.`,
     categories: ['SkyLink']
@@ -28,7 +28,7 @@ L2s used with Ethereum not only offer users much lower fees and much faster spee
   },
   {
     question: 'What can I do with my assets once they are linked to an L2 network?',
-    answer: `On many L2s, you can perform the same types of transactions as on Ethereum Mainnet—i.e., trade tokens, use DeFi applications (dApps), etc.— but with reduced fees and faster transaction speeds. Many popular dApps have L2 versions, though not all are available on every L2. Please note that some features of the Sky.money web app or the Sky Protocol will not be available on L2s.`,
+    answer: `On many L2s, you can perform the same types of transactions as on Ethereum Mainnet—i.e., trade tokens, use DeFi applications (dApps), etc.— but with reduced fees and faster transaction speeds. Many popular dApps have L2 versions, though not all are available on every L2. Please note that some features of the [Sky.money web app](https://app.sky.money/) or the Sky Protocol will not be available on L2s.`,
     categories: ['SkyLink']
   }
 ];
