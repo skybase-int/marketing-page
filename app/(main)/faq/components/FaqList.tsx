@@ -1,5 +1,5 @@
 import { useSearchFaq } from '../hooks/useSearchFaq';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState, useRef } from 'react';
 import { useDebounce } from '@/app/hooks/useDebounce';
 import { EmphasisHeading } from '@/app/components/EmphasisHeading';
 import SearchHistory from './SearchHistory';
@@ -80,28 +80,48 @@ export default function FaqList() {
     }
   }, [debouncedSearchTerm]);
 
+  const searchHeaderRef = useRef<HTMLDivElement>(null);
+
+  // Scroll to SearchHeader when the category changes and is not ALL_FAQS
+  useEffect(() => {
+    if (category !== ALL_FAQS && searchHeaderRef.current) {
+      searchHeaderRef.current.scrollIntoView({ block: 'start' });
+      window.scrollBy({ top: -16 }); //16px buffer above the header
+    }
+  }, [category]);
+
+  // Scroll to SearchHeader when the page changes and is not 1
+  useEffect(() => {
+    if (page !== 1 && searchHeaderRef.current) {
+      searchHeaderRef.current.scrollIntoView({ block: 'start' });
+      window.scrollBy({ top: -16 }); //16px buffer above the header
+    }
+  }, [page]);
+
   return (
     <div className="mt-10 text-left">
-      <SearchHeader
-        category={category}
-        categories={categories}
-        isSearchFocused={isSearchFocused}
-        searchTerm={searchTerm}
-        onCategoryClick={handleCategoryClick}
-        onSearchChange={handleSearchChange}
-        onInputFocus={() => {
-          setIsSearchFocused(true);
-          setCategory('');
-        }}
-        onCloseClick={() => {
-          setIsSearchFocused(false);
-          setSearchTerm('');
-          setCategory(ALL_FAQS);
-        }}
-        onClearClick={() => {
-          setSearchTerm('');
-        }}
-      />
+      <div ref={searchHeaderRef}>
+        <SearchHeader
+          category={category}
+          categories={categories}
+          isSearchFocused={isSearchFocused}
+          searchTerm={searchTerm}
+          onCategoryClick={handleCategoryClick}
+          onSearchChange={handleSearchChange}
+          onInputFocus={() => {
+            setIsSearchFocused(true);
+            setCategory('');
+          }}
+          onCloseClick={() => {
+            setIsSearchFocused(false);
+            setSearchTerm('');
+            setCategory(ALL_FAQS);
+          }}
+          onClearClick={() => {
+            setSearchTerm('');
+          }}
+        />
+      </div>
       <div className="flex flex-col desktop:flex-row desktop:justify-between">
         <div className="w-full">
           <EmphasisHeading
