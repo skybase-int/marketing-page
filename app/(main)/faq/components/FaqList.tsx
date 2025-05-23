@@ -63,7 +63,7 @@ export default function FaqList() {
 
   const titleParts = getTitleParts(
     category,
-    results.length,
+    totalItems,
     searchTerm ? debouncedSearchTerm : searchTerm,
     isSearchFocused
   );
