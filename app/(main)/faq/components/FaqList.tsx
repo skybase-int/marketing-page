@@ -1,5 +1,5 @@
 import { useSearchFaq } from '../hooks/useSearchFaq';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState, useRef } from 'react';
 import { useDebounce } from '@/app/hooks/useDebounce';
 import { EmphasisHeading } from '@/app/components/EmphasisHeading';
 import SearchHistory from './SearchHistory';
@@ -32,7 +32,7 @@ export default function FaqList() {
   const [category, setCategory] = useState(ALL_FAQS);
   const debouncedSearchTerm = useDebounce(searchTerm.trim(), 500);
   const [page, setPage] = useState(1);
-  const [openItem, setOpenItem] = useState<string | undefined>(undefined);
+  const [openItems, setOpenItems] = useState<string[]>([]);
   const { items: results, totalItems } = useSearchFaq({
     searchTerm: searchTerm ? debouncedSearchTerm : '',
     category: category === ALL_FAQS ? '' : category,
@@ -63,7 +63,7 @@ export default function FaqList() {
 
   const titleParts = getTitleParts(
     category,
-    results.length,
+    totalItems,
     searchTerm ? debouncedSearchTerm : searchTerm,
     isSearchFocused
   );
@@ -80,28 +80,48 @@ export default function FaqList() {
     }
   }, [debouncedSearchTerm]);
 
+  const searchHeaderRef = useRef<HTMLDivElement>(null);
+
+  // Scroll to SearchHeader when the category changes and is not ALL_FAQS
+  useEffect(() => {
+    if (category !== ALL_FAQS && searchHeaderRef.current) {
+      searchHeaderRef.current.scrollIntoView({ block: 'start' });
+      window.scrollBy({ top: -16 }); //16px buffer above the header
+    }
+  }, [category]);
+
+  // Scroll to SearchHeader when the page changes and is not 1
+  useEffect(() => {
+    if (page !== 1 && searchHeaderRef.current) {
+      searchHeaderRef.current.scrollIntoView({ block: 'start' });
+      window.scrollBy({ top: -16 }); //16px buffer above the header
+    }
+  }, [page]);
+
   return (
     <div className="mt-10 text-left">
-      <SearchHeader
-        category={category}
-        categories={categories}
-        isSearchFocused={isSearchFocused}
-        searchTerm={searchTerm}
-        onCategoryClick={handleCategoryClick}
-        onSearchChange={handleSearchChange}
-        onInputFocus={() => {
-          setIsSearchFocused(true);
-          setCategory('');
-        }}
-        onCloseClick={() => {
-          setIsSearchFocused(false);
-          setSearchTerm('');
-          setCategory(ALL_FAQS);
-        }}
-        onClearClick={() => {
-          setSearchTerm('');
-        }}
-      />
+      <div ref={searchHeaderRef}>
+        <SearchHeader
+          category={category}
+          categories={categories}
+          isSearchFocused={isSearchFocused}
+          searchTerm={searchTerm}
+          onCategoryClick={handleCategoryClick}
+          onSearchChange={handleSearchChange}
+          onInputFocus={() => {
+            setIsSearchFocused(true);
+            setCategory('');
+          }}
+          onCloseClick={() => {
+            setIsSearchFocused(false);
+            setSearchTerm('');
+            setCategory(ALL_FAQS);
+          }}
+          onClearClick={() => {
+            setSearchTerm('');
+          }}
+        />
+      </div>
       <div className="flex flex-col desktop:flex-row desktop:justify-between">
         <div className="w-full">
           <EmphasisHeading
@@ -132,17 +152,16 @@ export default function FaqList() {
               <>
                 <Accordion
                   key={results[0]?.item.question}
-                  collapsible
-                  type="single"
-                  defaultValue={searchTerm ? '' : results[0]?.item.question}
+                  type="multiple"
+                  defaultValue={[]}
                   className={!!results[0] ? 'border-t border-black pt-8' : ''}
-                  onValueChange={value => setOpenItem(value)}
+                  onValueChange={setOpenItems}
                 >
                   {results.map((result, index) => (
                     <SearchResult
                       key={result.item.question}
                       item={result.item}
-                      showPreview={!!searchTerm && openItem !== result.item.question}
+                      showPreview={!!searchTerm && !openItems.includes(result.item.question)}
                       onCategorySelected={cat => {
                         setCategory(cat);
                         setSearchTerm('');

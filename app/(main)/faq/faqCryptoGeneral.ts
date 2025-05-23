@@ -174,7 +174,7 @@ With the [Sky.money web app](https://app.sky.money/), you always remain in contr
     question: 'What is an example of a crypto-collateralized stablecoin?',
     answer: `A crypto-collateralized stablecoin is a type of decentralized digital currency that is typically soft-pegged to the value of a fiat currency, such as the U.S. dollar, and backed (collateralized) by other cryptocurrencies locked in a reserve or in a smart contract, which may sometimes be referred to as a cryptocurrency vault. 
 
-    To maintain stability of crypto-collateralized stablecoins, algorithms and overcollateralization are probably the most widely used mechanisms. Examples of crypto-collateralized stablecoins are USDS and DAI. USDS powers the Sky Ecosystem.
+To maintain stability of crypto-collateralized stablecoins, algorithms and overcollateralization are probably the most widely used mechanisms. Examples of crypto-collateralized stablecoins are USDS and DAI. USDS powers the Sky Ecosystem.
 `,
     categories: ['Crypto (General)']
   },
@@ -256,7 +256,7 @@ The importance of smart contracts to decentralized governance can’t be oversta
     question: 'Are smart contracts secure?',
     answer: `Smart contracts are agreements written in computer code and deployed to a blockchain, where they self-execute automatically when called upon. No centralized entity or intermediary is needed to complete the steps laid out in those agreements. Smart contacts must be written correctly in order to work as expected. If there's a coding error in a smart contract, it might not perform as it should. Any vulnerabilities in a smart contract could cause security issues. Even meticulously written smart contracts can have vulnerabilities, which can manifest through complex interactions and economic attack vectors. For example, hackers might find errors and use them to their advantage, causing harm to users. Smart contract audits can help mitigate risks caused by developer error. 
 
-    For details on the risks associated with smart contracts, please review the [User Risk Documentation](https://docs.sky.money/user-risks).`,
+For details on the risks associated with smart contracts, please review the [User Risk Documentation](https://docs.sky.money/user-risks).`,
     categories: ['Crypto (General)']
   },
   {
@@ -301,9 +301,9 @@ Both types of bridges have associated risks. See the [User Risk Documentation](h
     question: 'What is decentralized finance?',
     answer: `Decentralized finance (DeFi) refers to a sector of the cryptocurrency economy that aims to provide open and permissionless financial applications, products and services built on and accessed via blockchains. The term ‘permissionless’ in this context generally means that users do not need permission to join an open blockchain network, and are in complete and direct control of their assets and financial activities. ‘Open’ speaks to the complete transparency of public blockchains. 
 
-    DeFi applications typically aim to enable fast, borderless transactions, via self-executing, autonomous smart contracts, often at a fraction of the cost of traditional wire services, as a result of being disintermediated (in direct control of their activities). 
+DeFi applications typically aim to enable fast, borderless transactions, via self-executing, autonomous smart contracts, often at a fraction of the cost of traditional wire services, as a result of being disintermediated (in direct control of their activities). 
 
-    Finally, DeFi offerings are often managed by decentralized ecosystems that operate with the help of rules and agreements embedded in the smart contracts. Smart contracts are programs written in computer code and deployed to a blockchain. Ecosystem projects are controlled not by one person or entity, but by a global community of ecosystem participants, subject to their specific terms and technical limitations.
+Finally, DeFi offerings are often managed by decentralized ecosystems that operate with the help of rules and agreements embedded in the smart contracts. Smart contracts are programs written in computer code and deployed to a blockchain. Ecosystem projects are controlled not by one person or entity, but by a global community of ecosystem participants, subject to their specific terms and technical limitations.
 `,
     categories: ['Crypto (General)']
   },
