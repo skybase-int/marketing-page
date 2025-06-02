@@ -9,7 +9,7 @@ USDS is freely transferable and can be used in connection with any software prot
 
 The Sky Protocol is governed by a community of broad and diversified individuals and entities from around the world, who hold SKY tokens and support the Sky Ecosystem by participating in a system of decentralized onchain voting. USDS powers the open Sky Ecosystem.
 
-USDS is also currently available on networks other than Ethereum Mainnet, including Solana, Base and Arbitrum. You can follow the health of USDS and all Sky Protocol tokens using the [Sky Ecosystem Dashboard](https://info.sky.money).`,
+USDS is also currently available on networks other than Ethereum Mainnet, including Solana, Base, Arbitrum, Optimism and Unichain. You can follow the health of USDS and all Sky Protocol tokens using the [Sky Ecosystem Dashboard](https://info.sky.money).`,
     categories: ['Sky Tokens']
   },
   {
