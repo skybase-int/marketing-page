@@ -223,12 +223,11 @@ export function Tokens({
           <Text variant="p2" className="text-black/80">
             {/* TODO add etherscan links for USDS and SKY */}
             USDS and SKY are native currencies of the decentralized Sky Protocol. A dynamic duo, these tokens
-            are the supercharged upgrades of DAI and MKR, MakerDAO legacy tokens. Both tokens power the open
-            and sustainable Sky ecosystem and its expansion.
+            are the supercharged upgrades of DAI and MKR.
             <br />
             <br />
-            Explore USDS and SKY to make the most of the Protocol&apos;s next-level DeFi opportunities,
-            including the Sky Savings Rate and Sky Token Rewards.
+            Explore them to make the most of the Sky Protocol&apos;s next-level DeFi opportunities, including
+            the Sky Savings Rate, Sky Token Rewards, and the Staking Engine.
             <br />
             <br />
             With Sky tokens, you remain in full control of your funds.

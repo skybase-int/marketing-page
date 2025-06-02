@@ -37,7 +37,7 @@ Eligible Sky.money web app users can:
   You may exit your position(s) at any time; no exit fee applies.
 
 
-* **Connect with SkyLink.** SkyLink is the Sky system that provides the rails for Sky Ecosystem projects, such as [Spark](https://spark.fi/), to link assets between the Sky Protocol on Ethereum Mainnet and supported L2 networks. This enables end users on L2s, such as Base and Arbitrum for example, to tap into Sky Protocol features via the Sky Ecosystem projects’ rails.
+* **Connect with SkyLink.** SkyLink is the Sky system that provides the rails for Sky Ecosystem projects, such as [Spark](https://spark.fi/), to link assets between the Sky Protocol on Ethereum Mainnet and supported L2 networks. This enables end users on L2s, such as Base, Arbitrum, Optimism and Unichain for example, to tap into Sky Protocol features via the Sky Ecosystem projects’ rails.
 
 
 With Sky.money, you always remain in control of your supplied assets.`,

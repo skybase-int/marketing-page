@@ -460,7 +460,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                 <li>
                   <Text variant="p2">
                     Trade USDC, USDT, ETH and USDS for SKY, and vice versa. Subject to governance approval,
-                    you’ll soon be able to use SKY to get Activation Token Rewards and vote on proposed
+                    you&apos;ll soon be able to use SKY to get Activation Token Rewards and vote on proposed
                     changes and additions to the Sky Protocol.
                   </Text>
                 </li>
@@ -494,9 +494,12 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
               and claim rewards, anytime.
               <br />
               <br />
-              If you currently have one or more positions in the Seal Engine, you can use the Sky.money web
-              app to migrate to the Staking Engine. Your sealed MKR will be upgraded to SKY during the Seal to
-              Staking migration process.
+              If you currently have one or more positions in the Seal Engine, you can use the{' '}
+              <ExternalLink href="https://app.sky.money/?widget=stake" className="text-black/80 underline">
+                Sky.money
+              </ExternalLink>{' '}
+              web app to migrate to the Staking Engine. Your sealed MKR will be upgraded to SKY during the
+              Seal-to-Staking migration process.
             </Text>
           }
           postTitle="Staking Engine"
@@ -510,12 +513,12 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                 <ul className="list-disc pl-7">
                   <li>
                     <Text variant="p2">
-                      Access Rewards. Access Staking Rewards, initially in the form of USDS.
+                      <strong>Access Rewards.</strong> Access Staking Rewards, initially in the form of USDS.
                     </Text>
                   </li>
                   <li>
                     <Text variant="p2">
-                      Borrow. Borrow
+                      <strong>Borrow.</strong> Borrow
                       <PopoverSealInfo type="borrow" className="z-[1000]" /> USDS against your supplied SKY.
                       You can exit your borrow position at any time and withdraw or pay back USDS whenever you
                       would like.
@@ -523,7 +526,8 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                   </li>
                   <li>
                     <Text variant="p2">
-                      Delegate. Transfer the voting power of your supplied SKY tokens to a recognized delegate
+                      <strong>Delegate.</strong> Transfer the voting power of your supplied SKY tokens to a
+                      recognized delegate
                       <PopoverSealInfo type="delegate" className="z-[1000]" /> or a contract that you own.
                       Your chosen delegate can then participate in the Sky Ecosystem Governance voting process
                       on your behalf.
@@ -563,11 +567,15 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                 <ExternalLink href="https://app.sky.money/" className="text-text underline">
                   Sky.money
                 </ExternalLink>{' '}
-                web app and Sky Ecosystem projects, such as Spark, to bridge assets between the Sky Protocol
-                on Ethereum Mainnet and a growing number of supported Layer 2 (L2) networks. SkyLink enables
-                end users on L2s, such as Base and Arbitrum, to tap into Sky Protocol features via the Sky
-                Ecosystem projects’ rails. SkyLink seamlessly connects your Ethereum-based Sky Protocol tokens
-                and features to supported L2 networks.
+                web app and Sky Ecosystem projects, such as{' '}
+                <ExternalLink href="https://spark.fi/" className="text-black/80 underline">
+                  Spark,
+                </ExternalLink>{' '}
+                to bridge assets between the Sky Protocol on Ethereum Mainnet and a growing number of
+                supported Layer 2 (L2) networks. SkyLink enables end users on L2s, such as Base, Arbitrum,
+                Optimism and Unichain to tap into Sky Protocol features via the Sky Ecosystem projects&apos;
+                rails. SkyLink seamlessly connects your Ethereum-based Sky Protocol tokens and features to
+                supported L2 networks.
                 <br />
                 <br />
                 If you have shied away from the Ethereum blockchain due to the high price of gas, SkyLink

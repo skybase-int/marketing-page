@@ -33,13 +33,13 @@ const content = {
     title: 'Choose your delegate',
     description: (
       <Text className="leading-5 text-white/80" variant="ui-small-regular">
-        When you hold SKY tokens, you maintain the right to participate in the process of Sky ecosystem
-        governance voting. That means that you have the ability to contribute to the community-driven,
+        When you hold SKY tokens, you maintain the right to participate in the process of Sky Ecosystem
+        Governance voting. That means that you have the ability to contribute to the community-driven,
         decentralised ecosystem decision-making process, which occurs through onchain voting.
         <br />
         <br />
         The voting power delegation feature of the Staking Engine of the Sky Protocol enables you to entrust
-        your voting power to a delegate of your choosing, who can then vote in the Sky ecosystem governance
+        your voting power to a delegate of your choosing, who can then vote in the Sky Ecosystem Governance
         process on your behalf. You can choose one delegate per staked SKY position. If you want to entrust
         your SKY to two delegates using the Staking Engine, you will need to create two separate positions.
         <br />
@@ -48,7 +48,7 @@ const content = {
         including staked tokens. Throughout the delegation process, you always own and are in control of your
         staked tokens, and you can change your delegate at any time. Staking to delegate your voting power may
         be a useful option for governance token holders who have limited time to allocate to the process, who
-        want to save on the cost of gas involved in voting on their own, and who also want to earn Stake
+        want to save on the cost of gas involved in voting on their own, and who also want to earn Staking
         Rewards.
       </Text>
     )
