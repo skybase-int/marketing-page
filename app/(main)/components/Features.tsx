@@ -573,9 +573,9 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                 </ExternalLink>{' '}
                 to bridge assets between the Sky Protocol on Ethereum Mainnet and a growing number of
                 supported Layer 2 (L2) networks. SkyLink enables end users on L2s, such as Base, Arbitrum,
-                Optimism and Unichain to tap into Sky Protocol features via the Sky Ecosystem projects' rails.
-                SkyLink seamlessly connects your Ethereum-based Sky Protocol tokens and features to supported
-                L2 networks.
+                Optimism and Unichain to tap into Sky Protocol features via the Sky Ecosystem projects&apos;
+                rails. SkyLink seamlessly connects your Ethereum-based Sky Protocol tokens and features to
+                supported L2 networks.
                 <br />
                 <br />
                 If you have shied away from the Ethereum blockchain due to the high price of gas, SkyLink
