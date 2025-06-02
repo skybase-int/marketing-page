@@ -39,7 +39,7 @@ PSMs are smart contracts that allow users to convert certain stablecoins directl
   },
   {
     question: 'Which native Sky tokens can I trade on supported L2s?',
-    answer: 'Currently, USDS and sUSDS are available to trade on Arbitrum.',
+    answer: 'Currently, USDS and sUSDS are available to trade on supported L2s.',
     categories: ['Network Integrations']
   },
   {
