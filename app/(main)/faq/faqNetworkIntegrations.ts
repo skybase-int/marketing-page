@@ -19,14 +19,14 @@ SkyLink, the Sky system that provides the rails for Sky Ecosystem projects to li
     question: 'What is the Optimism L2 Solution?',
     answer: `Optimism is a Layer 2 (L2) scaling solution designed to improve the scalability and efficiency of Ethereum. Specifically, it uses optimistic rollups, which enable transactions to be processed offchain and then submitted to Ethereum in a compressed form to complete transactions more quickly and at a lower cost than on Ethereum Mainnet.
   
-  SkyLink, the Sky system that provides the rails for Sky Ecosystem projects to link assets between the Sky Protocol on Ethereum Mainnet and supported L2 networks, enhances your ability to manage your digital assets efficiently by seamlessly connecting your Ethereum L1-based Sky Protocol tokens and features to L2s. If you have shied away from the Ethereum blockchain due to the high price of gas, SkyLink introduces reduced fees and faster transaction speeds.`,
+SkyLink, the Sky system that provides the rails for Sky Ecosystem projects to link assets between the Sky Protocol on Ethereum Mainnet and supported L2 networks, enhances your ability to manage your digital assets efficiently by seamlessly connecting your Ethereum L1-based Sky Protocol tokens and features to L2s. If you have shied away from the Ethereum blockchain due to the high price of gas, SkyLink introduces reduced fees and faster transaction speeds.`,
     categories: ['Network Integrations']
   },
   {
     question: 'What is the Unichain L2 Solution?',
     answer: `Unichain is a Layer 2 (L2) scaling solution designed by Uniswap Labs to improve the scalability and efficiency of Ethereum. Specifically designed to optimize DeFi applications, it uses optimistic rollups, which enable transactions to be processed off-chain and then submitted to Ethereum in a compressed form to complete transactions more quickly and at a lower cost than on Ethereum Mainnet.
     
-    SkyLink, the Sky system that provides the rails for Sky Ecosystem projects to link assets between the Sky Protocol on Ethereum Mainnet and supported L2 networks, enhances your ability to manage your digital assets efficiently by seamlessly connecting your Ethereum L1-based Sky Protocol tokens and features to L2s. If you have shied away from the Ethereum blockchain due to the high price of gas, SkyLink introduces reduced fees and faster transaction speeds. 
+SkyLink, the Sky system that provides the rails for Sky Ecosystem projects to link assets between the Sky Protocol on Ethereum Mainnet and supported L2 networks, enhances your ability to manage your digital assets efficiently by seamlessly connecting your Ethereum L1-based Sky Protocol tokens and features to L2s. If you have shied away from the Ethereum blockchain due to the high price of gas, SkyLink introduces reduced fees and faster transaction speeds. 
     `,
     categories: ['Network Integrations']
   },

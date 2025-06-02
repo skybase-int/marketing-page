@@ -460,7 +460,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                 <li>
                   <Text variant="p2">
                     Trade USDC, USDT, ETH and USDS for SKY, and vice versa. Subject to governance approval,
-                    you'll soon be able to use SKY to get Activation Token Rewards and vote on proposed
+                    you&apos;ll soon be able to use SKY to get Activation Token Rewards and vote on proposed
                     changes and additions to the Sky Protocol.
                   </Text>
                 </li>
