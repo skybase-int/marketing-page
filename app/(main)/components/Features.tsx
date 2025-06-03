@@ -460,7 +460,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                 <li>
                   <Text variant="p2">
                     Trade USDC, USDT, ETH and USDS for SKY, and vice versa. Subject to governance approval,
-                    you’ll soon be able to use SKY to get Activation Token Rewards and vote on proposed
+                    you&apos;ll soon be able to use SKY to get Activation Token Rewards and vote on proposed
                     changes and additions to the Sky Protocol.
                   </Text>
                 </li>
@@ -572,9 +572,10 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                   Spark,
                 </ExternalLink>{' '}
                 to bridge assets between the Sky Protocol on Ethereum Mainnet and a growing number of
-                supported Layer 2 (L2) networks. SkyLink enables end users on L2s, such as Base and Arbitrum,
-                to tap into Sky Protocol features via the Sky Ecosystem projects’ rails. SkyLink seamlessly
-                connects your Ethereum-based Sky Protocol tokens and features to supported L2 networks.
+                supported Layer 2 (L2) networks. SkyLink enables end users on L2s, such as Base, Arbitrum,
+                Optimism and Unichain to tap into Sky Protocol features via the Sky Ecosystem projects&apos;
+                rails. SkyLink seamlessly connects your Ethereum-based Sky Protocol tokens and features to
+                supported L2 networks.
                 <br />
                 <br />
                 If you have shied away from the Ethereum blockchain due to the high price of gas, SkyLink
