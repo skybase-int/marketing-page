@@ -31,7 +31,7 @@ jobs:
   setup:
     name: Setup workflow
     runs-on: ubuntu-latest
-    environment: ${{ github.ref == 'refs/heads/main' && 'prod' || ( github.ref == 'refs/heads/staging' && 'staging' || 'development' ) }}
+    environment: ${{ github.ref_name == 'main' && 'prod' || ( github.ref_name == 'staging' && 'staging' || 'development' ) }}
     outputs:
       short_sha: ${{ steps.set_outputs.outputs.short_sha }}
       skip_build: '${{ steps.set_outputs.outputs.skip_build }}'
@@ -51,7 +51,7 @@ jobs:
   build:
     name: Build image
     runs-on: ubuntu-latest
-    environment: ${{ github.ref == 'refs/heads/main' && 'prod' || ( github.ref == 'refs/heads/staging' && 'staging' || 'development' ) }}
+    environment: ${{ github.ref_name == 'main' && 'prod' || ( github.ref_name == 'staging' && 'staging' || 'development' ) }}
     needs:
       - setup
     if: always() && !cancelled() && !failure() && needs.setup.outputs.skip_build == 'false'
@@ -86,7 +86,7 @@ jobs:
   deploy:
     name: Deploy image
     runs-on: ubuntu-latest
-    environment: ${{ github.ref == 'refs/heads/main' && 'prod' || ( github.ref == 'refs/heads/staging' && 'staging' || 'development' ) }}
+    environment: ${{ github.ref_name == 'main' && 'prod' || ( github.ref_name == 'staging' && 'staging' || 'development' ) }}
     needs:
       - setup
       - build
@@ -121,3 +121,38 @@ jobs:
           ROLE_SESSION_NAME: ${{ env.ROLE_SESSION_NAME }}
           ROLE_TO_ASSUME: ${{ secrets.GA_OIDC_EKS_ROLE_ARN }}
           IMAGE_TAG: ${{ ( needs.setup.outputs.skip_build == 'true' ) && 'latest' || needs.setup.outputs.short_sha }} # If the build was skipped, use the `latest` image
+
+  alert:
+    name: Send an alert on any failure
+    runs-on: ubuntu-latest
+    environment: ${{ github.ref_name == 'main' && 'prod' || ( github.ref_name == 'staging' && 'staging' || 'development' ) }}
+    needs:
+      - setup
+      - build
+      - deploy
+    if: ${{ failure() }}
+    steps:
+      - name: Send an alert to PagerDuty
+        id: alert
+        run: |
+          echo "Sending an alert to PagerDuty..."
+          curl -X POST https://events.pagerduty.com/v2/enqueue \
+            -H 'Content-Type: application/json' \
+            -d '{
+              "routing_key": "${{ secrets.PD_ROUTING_KEY_JETSTREAM }}",
+              "event_action": "trigger",
+              "payload": {
+                "summary": "${{ github.repository }} deployment failed (${{ github.ref_name }})",
+                "timestamp": "'$(date -u +"%Y-%m-%dT%H:%M:%S")'",
+                "source": "GitHub Actions",
+                "component": "Endgame",
+                "severity": "error",
+                "priority": ${{ github.ref_name == 'main' && '"P1"' || '"P3"' }},
+                "custom_details": {
+                  "repository": "${{ github.repository }}",
+                  "branch": "${{ github.ref_name }}",
+                  "workflow": "${{ github.workflow }}",
+                  "link": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+                }
+              }
+            }'
