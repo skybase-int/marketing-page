@@ -108,8 +108,6 @@ For the most current information regarding the SKY token, the Sky Protocol and S
   
 Eligible users of the [Sky.money web app](https://app.sky.money) can upgrade their MKR to SKY using the Upgrade feature of the app. Some users may also choose to upgrade their MKR using [one of the frontends that support the upgrade](https://upgrademkrtosky.sky.money). Please see the [Terms of Use](https://docs.sky.money/legal-terms) for more information on third-party services.
 
-If you currently have one or more positions in the Seal Engine, you can migrate to the Staking Engine. Your sealed MKR will be upgraded to SKY during the Seal to Staking migration process. The process, via the Sky.money web app, makes manually exiting your current Seal positions and creating new positions in the Staking Engine as simple as possible.
-
 For upgrade details and step-by-step upgrade instructions, please visit the [MKR to SKY Upgrade Hub](https://upgrademkrtosky.sky.money).`,
     categories: ['Upgrade & Trade']
   },
@@ -295,13 +293,6 @@ When you supply SKY tokens to the Staking Engine using the [Sky.money web app](h
 You may exit your Staking positions at any time; no exit fee applies. The Staking Reward rate and Borrow rate are determined by Sky Ecosystem Governance through the process of decentralized onchain voting.
 
 Your SKY, as well as any Staking Rewards that you accumulate, are supplied to a non-custodial smart contract, such that no intermediary ever takes custody of those tokens. With Sky, you always remain in control of your assets.`,
-    categories: ['Upgrade & Trade']
-  },
-  {
-    question: 'Will the MKR I have locked in Staking Positions be automatically upgraded to SKY?',
-    answer: `No, but your sealed MKR will be upgraded to SKY during the Seal to Staking migration process. The process, via the [Sky.money web app](https://app.sky.money), makes manually exiting your current Seal positions and creating new positions in the Staking Engine as simple as possible. The Staking Engine offers all of the same features as the Seal Engine, but it has no exit fee and only supports SKY, not MKR.
-
-For upgrade details and step-by-step upgrade instructions, please visit the [MKR to SKY Upgrade Hub](https://upgrademkrtosky.sky.money).`,
     categories: ['Upgrade & Trade']
   },
   {

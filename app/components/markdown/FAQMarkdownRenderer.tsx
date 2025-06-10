@@ -1,4 +1,5 @@
 import { ExternalLink } from '../ExternalLink';
+import { PopoverRateInfo } from '../PopoverRateInfo';
 import { Heading, Text, List, ListVariant, TextVariant } from '../Typography';
 import { SafeMarkdownRenderer } from './SafeMarkdownRenderer';
 
@@ -45,11 +46,25 @@ export const FAQMarkdownRenderer = ({
           {children}
         </Text>
       ),
-      a: ({ children, ...props }) => (
-        <ExternalLink className="text-[#947EFF] hover:underline" href={props.href || ''} {...props}>
-          <Text tag="span">{children}</Text>
-        </ExternalLink>
-      ),
+      a: ({ children, href, ...props }) => {
+        // Handle tooltip syntax: [text](#tooltip-type)
+        if (href?.startsWith('#tooltip-')) {
+          const tooltipType = href.replace('#tooltip-', '') as 'str' | 'ssr' | 'psm';
+          return (
+            <span className="inline-flex items-center gap-1">
+              {children}
+              <PopoverRateInfo type={tooltipType} />
+            </span>
+          );
+        }
+
+        // Handle regular links
+        return (
+          <ExternalLink className="text-[#947EFF] hover:underline" href={href || ''} {...props}>
+            <Text tag="span">{children}</Text>
+          </ExternalLink>
+        );
+      },
       ul: ({ children, ...props }) => (
         <List className="pb-3" variant={ulVariant} {...props}>
           {children}

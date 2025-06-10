@@ -6,7 +6,7 @@ import {
   PopoverTrigger
 } from '@/app/components/ui/popover';
 import { Close, Info } from './icons';
-import { Text } from './Typography';
+import { Heading, Text } from './Typography';
 import { ExternalLink } from './ExternalLink';
 
 const content = {
@@ -45,10 +45,23 @@ const content = {
         ). This figure does not represent or guarantee future results.
       </Text>
     )
+  },
+  psm: {
+    title: 'Peg Stability Module (PSM)',
+    description: (
+      <Text className="leading-5 text-white/80" variant="ui-small-regular">
+        PSMs are smart contracts that allow users to convert certain stablecoins directly with the Sky
+        Protocol for USDS or DAI at a fixed rate, with zero protocol fees; however, gas fees will apply. They
+        are designed to maintain the stability of USDS and DAI. Unlike decentralized exchange (DEX)
+        transactions, PSM operations do not involve trading between users. Instead, they are direct,
+        non-custodial conversions (generate and burn) executed with the decentralized smart contracts of the
+        Sky Protocol.
+      </Text>
+    )
   }
 };
 
-export const PopoverRateInfo = ({ type }: { type: 'str' | 'ssr' }) => {
+export const PopoverRateInfo = ({ type }: { type: 'str' | 'ssr' | 'psm' }) => {
   if (!(type in content)) return null;
 
   return (
@@ -57,8 +70,13 @@ export const PopoverRateInfo = ({ type }: { type: 'str' | 'ssr' }) => {
         <Info />
       </PopoverTrigger>
       <PopoverContent align="center" side="top" className="backdrop-blur-lg">
+        {content[type].title && (
+          <Text variant="ui-medium" className="text-[16px] leading-6">
+            {content[type].title}
+          </Text>
+        )}
         <div className="flex w-full justify-end pb-2">
-          <PopoverClose>
+          <PopoverClose className="absolute right-4 top-4">
             <Close className="h-5 w-5 cursor-pointer" />
           </PopoverClose>
         </div>
