@@ -44,12 +44,12 @@ export const menuSections: Record<
     // },
     {
       title: 'Governance',
-      href: 'https://vote.makerdao.com/',
+      href: 'https://vote.sky.money/',
       isExternal: true
     },
     {
       title: 'Community',
-      href: 'https://forum.makerdao.com/',
+      href: 'https://forum.sky.money/',
       isExternal: true
     }
   ],
