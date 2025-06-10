@@ -492,14 +492,6 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
               Stake SKY to earn rewards, delegate <PopoverSealInfo type="delegate" /> governance voting
               rights, and borrow <PopoverSealInfo type="borrow" /> USDS. You can stake or un-stake your SKY,
               and claim rewards, anytime.
-              <br />
-              <br />
-              If you currently have one or more positions in the Seal Engine, you can use the{' '}
-              <ExternalLink href="https://app.sky.money/?widget=stake" className="text-black/80 underline">
-                Sky.money
-              </ExternalLink>{' '}
-              web app to migrate to the Staking Engine. Your sealed MKR will be upgraded to SKY during the
-              Seal-to-Staking migration process.
             </Text>
           }
           postTitle="Staking Engine"
