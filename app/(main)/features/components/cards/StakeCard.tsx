@@ -227,45 +227,6 @@ export const StakeCard = ({ data }: { data: FetchedData }) => {
               </div>
             </div>
           ) : null
-        },
-        {
-          label: 'How to migrate an existing Seal position',
-          title: 'How to migrate an existing Seal position',
-          content: (
-            <>
-              <TextFeatureCard>
-                The Staking Engine offers all of the same features as the Seal Engine, but it has no exit fee
-                and only supports SKY, not MKR.
-              </TextFeatureCard>
-              <TextFeatureCard>
-                If you currently have one or more positions in the Seal Engine, you can migrate to the Staking
-                Engine. Your sealed MKR will be upgraded to SKY during the Seal to Staking migration process.
-                The process, via the{' '}
-                <ExternalLink href="https://app.sky.money/" className="text-black/80 underline">
-                  Sky.money web app
-                </ExternalLink>
-                , makes manually exiting your current Seal positions and creating new positions in the Staking
-                Engine as simple as possible.
-              </TextFeatureCard>
-            </>
-          ),
-          buttonCta: 'Migrate position',
-          url: `?widget=balances`,
-          buttonVariant: 'twilight-1',
-          illustration: !bpiLoading ? (
-            <div className="h-full w-full px-3 tablet:px-0">
-              <div className="relative flex h-full w-full flex-col">
-                <div className="grow" />
-                <Image
-                  alt="Products seal"
-                  placeholder="blur"
-                  src={bpi === 0 ? ProductsStakes6Mobile : ProductsStakes6}
-                  className="absolute top-1/2 h-auto w-full -translate-y-1/2 rounded-[20px] tablet:left-0 tablet:top-full tablet:translate-x-8 tablet:translate-y-[calc(-100%+92px)] tablet:rounded-r-none tablet:rounded-bl-none desktop:static desktop:top-auto desktop:translate-x-10 desktop:translate-y-10 desktop:rounded-tl-[40px]"
-                  quality={100}
-                />
-              </div>
-            </div>
-          ) : null
         }
       ]}
     />
