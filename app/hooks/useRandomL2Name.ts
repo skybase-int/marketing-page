@@ -5,7 +5,9 @@ export const useRandomL2Name = (): string | undefined => {
 
   useEffect(() => {
     // Generate the random name only once on the client after mount
-    setRandomL2Name(Math.random() > 0.5 ? 'base' : 'arbitrum one');
+    const l2Names = ['base', 'arbitrum one', 'op mainnet', 'unichain'];
+    const randomIndex = Math.floor(Math.random() * l2Names.length);
+    setRandomL2Name(l2Names[randomIndex]);
   }, []);
 
   return randomL2Name;
