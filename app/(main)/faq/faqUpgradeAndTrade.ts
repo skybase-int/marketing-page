@@ -17,7 +17,7 @@ For upgrade details and step-by-step upgrade instructions, visit the [MKR to SKY
     question: 'Why should I upgrade my MKR to SKY?',
     answer: `The governance-aligned vote to upgrade MKR to SKY, establishing SKY as the sole governance token of the Sky Protocol, reflects the community's desire to streamline governance, increase voter participation, and support the ecosystem's long-term growth and scalability. Simply put, SKY is the technical and functional evolution of MKR, inheriting the governance functionalities previously held by MKR. 
 
-SKY holders can use the token to vote directly on Sky Ecosystem Governance proposals and/or to transfer the voting power of their SKY tokens to a recognized delegate or a contract that they own, just as they once could with MKR. SKY also enables users to access Staking Rewards via the [Sky.money web app](https://app.sky.money). When users supply SKY to the Staking Engine of the Sky Protocol, they can access those rewards and choose to create one or more positions, including positions that enable them to generate and borrow USDS against their supplied SKY, and to delegate the voting power their supplied SKY tokens provide.
+SKY holders can use the token to vote directly on Sky Ecosystem Governance proposals and/or to transfer the voting power of their SKY tokens to a recognized delegate or a contract that they own, just as they once could with MKR. SKY also enables users to access Staking Rewards via the [Sky.money web app](https://app.sky.money). When users supply SKY to the Staking Engine of the Sky Protocol, they can access those rewards and may alsochoose to create one or more positions, including positions that enable them to generate and borrow USDS against their supplied SKY, and to delegate the voting power their supplied SKY tokens provide.
 
 For upgrade details and step-by-step upgrade instructions, please visit the [MKR to SKY Upgrade Hub](https://upgrademkrtosky.sky.money).`,
     categories: ['Upgrade & Trade']
@@ -57,7 +57,7 @@ The upgrade of MKR to SKY establishes SKY as the technical and functional evolut
 
 SKY holders can use the token to vote directly on Sky Ecosystem Governance proposals and/or to transfer their voting power to a recognized delegate or a contract that they own, just as they once could with MKR.
 
-SKY also enables users to access Staking Rewards via the Sky.money web app. When users supply SKY to the Staking Engine of the Sky Protocol, they can access those rewards and choose to create one or more positions, including positions that enable them to generate and borrow USDS against their supplied SKY, and to delegate the voting power their supplied SKY tokens provide.
+SKY also enables users to access Staking Rewards via the Sky.money web app. When users supply SKY to the Staking Engine of the Sky Protocol, they can access those rewards and may also choose to create one or more positions, including positions that enable them to generate and borrow USDS against their supplied SKY, and to delegate the voting power their supplied SKY tokens provide.
 
 **Why upgrade**
 
@@ -108,6 +108,8 @@ For the most current information regarding the SKY token, the Sky Protocol and S
   
 Eligible users of the [Sky.money web app](https://app.sky.money) can upgrade their MKR to SKY using the Upgrade feature of the app. Some users may also choose to upgrade their MKR using [one of the frontends that support the upgrade](https://upgrademkrtosky.sky.money). Please see the [Terms of Use](https://docs.sky.money/legal-terms) for more information on third-party services.
 
+If you have one or more positions in the Seal Engine, you can migrate to the Staking Engine. Your sealed MKR will be upgraded to SKY during the Seal to Staking migration process. The process, via the Sky.money web app, makes manually exiting your current Seal positions and creating new positions in the Staking Engine as simple as possible.
+
 For upgrade details and step-by-step upgrade instructions, please visit the [MKR to SKY Upgrade Hub](https://upgrademkrtosky.sky.money).`,
     categories: ['Upgrade & Trade']
   },
@@ -140,7 +142,7 @@ Delegates in receipt of token voting power can never directly access any SKY tok
 
 **Staking SKY**
 
-When you supply SKY tokens to the Staking Engine using the [Sky.money web app](https://app.sky.money), you can access Staking Rewards and choose to create one or more positions, including positions that enable you to generate and borrow USDS against your supplied SKY and to delegate the voting power your SKY tokens provide. Here's a brief overview:
+When you supply SKY tokens to the Staking Engine using the [Sky.money web app](https://app.sky.money), you can access Staking Rewards and may also choose to create one or more positions, including positions that enable you to generate and borrow USDS against your supplied SKY and to delegate the voting power your SKY tokens provide. Here's a brief overview:
 
 * **Access Rewards.** Supply SKY tokens to access Staking Rewards, initially in the form of USDS. Staking Reward rates are determined by Sky Ecosystem Governance through the process of decentralized onchain voting.
 
@@ -282,7 +284,7 @@ Delegates in receipt of token voting power can never directly access any SKY tok
 
 **Staking SKY**
 
-When you supply SKY tokens to the Staking Engine using the [Sky.money web app](https://app.sky.money), you can access Staking Rewards and choose to create one or more positions, including positions that enable you to generate and borrow USDS against your supplied SKY and to delegate the voting power your SKY tokens provide. Here's a brief overview:
+When you supply SKY tokens to the Staking Engine using the [Sky.money web app](https://app.sky.money), you can access Staking Rewards and may also choose to create one or more positions, including positions that enable you to generate and borrow USDS against your supplied SKY and to delegate the voting power your SKY tokens provide. Here's a brief overview:
 
 * **Access Rewards.** Supply SKY tokens to access Staking Rewards, initially in the form of USDS. Staking Reward rates are determined by Sky Ecosystem Governance through the process of decentralized onchain voting.
 

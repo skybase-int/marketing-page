@@ -3,7 +3,7 @@ import { FAQItem } from './faqData';
 export const skyLink: FAQItem[] = [
   {
     question: 'On what chains can I access USDS and other Sky Protocol tokens?',
-    answer: `Currently, USDS is available on the Solana blockchain, the Base network, Arbitrum, Optimism and Unichain.
+    answer: `USDS is available on the Solana blockchain, the Base network, Arbitrum, Optimism and Unichain.
 On Solana, only USDS is available. On supported L2 networks, you can trade between USDS, sUSDS and USDC, and access the Sky Savings Rate. 
 SkyLink is the Sky system that provides the rails for Sky Ecosystem projects to link assets between the Sky Protocol on Ethereum Mainnet and supported L2 networks.`,
     categories: ['SkyLink']
