@@ -48,6 +48,12 @@ L2s used with Ethereum not only offer users much lower fees and much faster spee
     categories: ['Network Integrations']
   },
   {
+    question: 'Which native Sky tokens can I trade on supported L2s?',
+    answer:
+      'USDS and sUSDS are available to trade on supported Layer 2 (L2) networks using the Sky.money web app.',
+    categories: ['Network Integrations']
+  },
+  {
     question: 'Which tokens can I trade on supported L2s?',
     answer: `Using the Sky.money web app, you can interact with the Peg Stability Module [(PSM)](#tooltip-psm) for conversions to/from USDS, sUSDS and USDC. The PSM handles conversions programmatically, driven at your direction, between these pairs directly. 
 
@@ -55,11 +61,6 @@ On some supported L2s, you can also access the Sky Savings Rate.
 
 SkyLink is the Sky system that provides the rails for Sky Ecosystem projects to link assets between the Sky Protocol on Ethereum Mainnet and supported L2 networks. If you have shied away from the Ethereum blockchain due to the high price of gas, SkyLink introduces reduced fees and faster transaction speeds.
 `,
-    categories: ['Network Integrations']
-  },
-  {
-    question: 'Which native Sky tokens can I trade on supported L2s?',
-    answer: 'Currently, USDS and sUSDS are available to trade on supported L2s.',
     categories: ['Network Integrations']
   },
   {
