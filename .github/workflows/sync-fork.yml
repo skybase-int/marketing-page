@@ -19,6 +19,7 @@ on:
       - manual-trigger-by-devs
 
 env:
+  BRANCHES: 'main staging development'
   UPSTREAM_REPO: 'jetstreamgg/marketing-page'
 
 jobs:
