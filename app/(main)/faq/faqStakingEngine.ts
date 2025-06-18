@@ -3,12 +3,12 @@ import { FAQItem } from './faqData';
 export const stakingEngine: FAQItem[] = [
   {
     question: 'What is the Staking Engine?',
-    answer: `The Staking Engine is a feature of the decentralized Sky Protocol. It has replaced the Seal Engine, offering the same features but it has no exit fee and it only supports SKY tokens, not MKR. 
+    answer: `The Staking Engine is a feature of the decentralized Sky Protocol. It has replaced the Seal Engine, offering the same features but it has no exit fee and it only supports SKY tokens, not MKR. If you currently have one or more positions in the Seal Engine, you will need to manually exit and, if you choose, upgrade your MKR to SKY, and then supply your SKY to the Staking Engine.  The process, via the Sky.money web app, makes manually exiting your current Seal positions and creating new positions in the Staking Engine as simple as possible. 
 
 For upgrade details and step-by-step upgrade instructions, please visit the [MKR to SKY Upgrade Hub](https://upgrademkrtosky.sky.money). 
 
 Overview of the Staking Engine
-When you supply SKY tokens to the Staking Engine using the Sky.money web app, you can access Staking Rewards and choose to create one or more positions, including positions that enable you to generate and borrow USDS against your supplied SKY and to delegate the voting power the SKY token provides. Here's a brief overview:
+When you supply SKY tokens to the Staking Engine using the Sky.money web app, you can access Staking Rewards and may also choose to create one or more positions, including positions that enable you to generate and borrow USDS against your supplied SKY and to delegate the voting power the SKY token provides. Here's a brief overview:
 
 * **Access Rewards.** Supply SKY tokens to access Staking Rewards, initially in the form of USDS. Staking Reward rates are determined by Sky Ecosystem Governance through the process of decentralized onchain voting.
 
@@ -22,10 +22,18 @@ Your SKY, as well as any Staking Rewards that you accumulate, are supplied to a 
     categories: ['Staking Engine']
   },
   {
+    question: 'What will happen to the MKR and/or SKY I’ve supplied to the Seal Engine?',
+    answer: `If you currently have one or more positions in the Seal Engine, you will need to manually exit and, if you choose, upgrade your MKR to SKY, and then supply your SKY to the Staking Engine.  The process, via the Sky.money web app, makes manually exiting your current Seal positions and creating new positions in the Staking Engine as simple as possible.
+    
+    For upgrade details and step-by-step upgrade instructions, please visit the [MKR to SKY Upgrade Hub](https://upgrademkrtosky.sky.money).
+    `,
+    categories: ['Staking Engine']
+  },
+  {
     question: 'What are Staking Rewards?',
     answer: `Staking Rewards can be accessed when you supply SKY tokens to the Staking Engine of the decentralized Sky Protocol.
 
-The Staking Engine is a feature of the Sky Protocol. When you supply SKY tokens to the Staking Engine using the [Sky.money web app](https://app.sky.money), you can access Staking Rewards and choose to create one or more positions, including positions that enable you to generate and borrow USDS against your supplied SKY and to delegate the voting power your SKY tokens provide. Here's a brief overview:
+The Staking Engine is a feature of the Sky Protocol. When you supply SKY tokens to the Staking Engine using the [Sky.money web app](https://app.sky.money), you can access Staking Rewards and may also choose to create one or more positions, including positions that enable you to generate and borrow USDS against your supplied SKY and to delegate the voting power your SKY tokens provide. Here's a brief overview:
 
 * **Access Rewards.** Supply SKY tokens to access Staking Rewards, initially in the form of USDS. Staking Reward rates are determined by Sky Ecosystem Governance through the process of decentralized onchain voting.
 
@@ -46,7 +54,7 @@ Your SKY, as well as any Staking Rewards that you accumulate, are supplied to a 
   },
   {
     question: 'How does the Staking Engine enable borrowing?',
-    answer: `The Staking Engine is a feature of the decentralized Sky Protocol. When you supply SKY tokens to the Staking Engine using the [Sky.money web app](https://app.sky.money), you can access Staking Rewards and choose to create one or more positions, including a position that enables you to generate and borrow USDS stablecoins against your supplied SKY.
+    answer: `The Staking Engine is a feature of the decentralized Sky Protocol. When you supply SKY tokens to the Staking Engine using the [Sky.money web app](https://app.sky.money), you can access Staking Rewards and may also choose to create one or more positions, including a position that enables you to generate and borrow USDS stablecoins against your supplied SKY.
 
 You can exit your borrow position at any time—no exit fee applies—and withdraw or pay back USDS whenever you would like. 
 
@@ -112,9 +120,9 @@ For more information, see the [User Risk Documentation](https://docs.sky.money/u
   },
   {
     question: 'What is the difference between Sky Token Rewards and Staking Rewards?',
-    answer: `Sky Token Rewards are what you can access when you supply USDS stablecoins to the Sky Token Rewards module of the Sky Protocol. Sky Token Rewards currently take the form of SKY tokens. Both USDS and SKY are native tokens of the Sky Protocol.
+    answer: `Sky Token Rewards are what you can access when you supply USDS stablecoins to the Sky Token Rewards module of the Sky Protocol. Sky Token Rewards take the form of SKY tokens. Both USDS and SKY are native tokens of the Sky Protocol.
 
-Staking Rewards are what you can access when you supply SKY to the Staking Engine of the Sky Protocol. Staking Rewards currently take the form of USDS.`,
+Staking Rewards are what you can access when you supply SKY to the Staking Engine of the Sky Protocol. Staking Rewards take the form of USDS.`,
     categories: ['Staking Engine']
   },
   {
