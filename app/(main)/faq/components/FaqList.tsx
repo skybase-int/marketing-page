@@ -18,11 +18,11 @@ const categories = [
   'Crypto (General)',
   'Sky Protocol & Ecosystem',
   'Sky Tokens',
-  'Upgrade & Trade',
+  'Upgrade',
+  'Trade',
   'Sky Savings Rate',
   'Sky Token Rewards',
   'Staking Engine',
-  'SkyLink',
   'Network Integrations'
 ];
 const PAGE_SIZE = 10;
@@ -44,7 +44,8 @@ export default function FaqList() {
   const [searchedTerms, setSearchedTerms] = useState([
     'Sky Protocol & Ecosystem',
     'Sky Tokens',
-    'Upgrade & Trade',
+    'Upgrade',
+    'Trade',
     'Sky Savings Rate',
     'Sky Token Rewards'
   ]);
@@ -159,7 +160,7 @@ export default function FaqList() {
                 >
                   {results.map((result, index) => (
                     <SearchResult
-                      key={result.item.question}
+                      key={`${category}-${result.item.question}`}
                       item={result.item}
                       showPreview={!!searchTerm && !openItems.includes(result.item.question)}
                       onCategorySelected={cat => {
