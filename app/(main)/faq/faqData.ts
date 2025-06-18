@@ -5,7 +5,6 @@ import { upgrade } from './faqUpgrade';
 import { skySavingsRate } from './faqSkySavingsRate';
 import { skyTokenRewards } from './faqSkyTokenRewards';
 import { stakingEngine } from './faqStakingEngine';
-import { skyLink } from './faqSkyLink';
 import { networkIntegrations } from './faqNetworkIntegrations';
 import { trade } from './faqTrade';
 
@@ -20,7 +19,6 @@ type Category =
   | 'Sky Token Rewards'
   | 'Seal Engine'
   | 'Staking Engine'
-  | 'SkyLink'
   | 'Network Integrations';
 
 export type FAQItem = {
@@ -38,6 +36,5 @@ export const faqDataset: FAQItem[] = [
   ...skySavingsRate,
   ...skyTokenRewards,
   ...stakingEngine,
-  ...skyLink,
   ...networkIntegrations
 ];
