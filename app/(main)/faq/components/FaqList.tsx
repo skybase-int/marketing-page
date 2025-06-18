@@ -23,8 +23,7 @@ const categories = [
   'Sky Savings Rate',
   'Sky Token Rewards',
   'Staking Engine',
-  'Network Integrations',
-  'SkyLink'
+  'Network Integrations'
 ];
 const PAGE_SIZE = 10;
 

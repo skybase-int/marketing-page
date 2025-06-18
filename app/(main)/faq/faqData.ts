@@ -20,7 +20,6 @@ type Category =
   | 'Sky Token Rewards'
   | 'Seal Engine'
   | 'Staking Engine'
-  | 'SkyLink'
   | 'Network Integrations';
 
 export type FAQItem = {
