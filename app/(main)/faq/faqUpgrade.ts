@@ -108,7 +108,7 @@ For the most current information regarding the SKY token, the Sky Protocol and S
   
 Eligible users of the [Sky.money web app](https://app.sky.money) can upgrade their MKR to SKY using the Upgrade feature of the app. Some users may also choose to upgrade their MKR using [one of the frontends that support the upgrade](https://upgrademkrtosky.sky.money). Please see the [Terms of Use](https://docs.sky.money/legal-terms) for more information on third-party services.
 
-If you have one or more positions in the Seal Engine, you can migrate to the Staking Engine. Your sealed MKR will be upgraded to SKY during the Seal to Staking migration process. The process, via the Sky.money web app, makes manually exiting your current Seal positions and creating new positions in the Staking Engine as simple as possible.
+If you currently have one or more positions in the Seal Engine, you will need to manually exit and, if you choose, upgrade your MKR to SKY, and then supply your SKY to the Staking Engine. The process, via the Sky.money web app, makes manually exiting your current Seal positions and creating new positions in the Staking Engine as simple as possible.
 
 For upgrade details and step-by-step upgrade instructions, please visit the [MKR to SKY Upgrade Hub](https://upgrademkrtosky.sky.money).`,
     categories: ['Upgrade']
@@ -197,11 +197,6 @@ Please note that blockchain, or gas, fees for using the Ethereum network apply w
 Eligible users of the [Sky.money web app](https://app.sky.money) can upgrade their MKR to SKY using the Upgrade feature of the app. Some users may also choose to upgrade their MKR using [one of the frontends that support the upgrade](https://upgrademkrtosky.sky.money). Please see the [Terms of Use](https://docs.sky.money/legal-terms) for more information on third-party services.
 
 For upgrade details and step-by-step upgrade instructions, please visit the [MKR to SKY Upgrade Hub](https://upgrademkrtosky.sky.money).`,
-    categories: ['Upgrade']
-  },
-  {
-    question: 'How much does it cost to upgrade DAI to USDS?',
-    answer: `Upgrading DAI to USDS is free and instant using the [Sky.money web app](https://app.sky.money); however, you will likely pay a transaction—or gas—fee for using the Ethereum blockchain network. That fee is neither controlled, imposed nor received by Sky.money or the Sky Protocol. It is calculated based on current Ethereum network demand and the amount of gas required to process the upgrade transaction. Be sure to have ETH in your wallet anytime you transact using the Sky Protocol.`,
     categories: ['Upgrade']
   },
   {
@@ -295,6 +290,13 @@ When you supply SKY tokens to the Staking Engine using the [Sky.money web app](h
 You may exit your Staking positions at any time; no exit fee applies. The Staking Reward rate and Borrow rate are determined by Sky Ecosystem Governance through the process of decentralized onchain voting.
 
 Your SKY, as well as any Staking Rewards that you accumulate, are supplied to a non-custodial smart contract, such that no intermediary ever takes custody of those tokens. With Sky, you always remain in control of your assets.`,
+    categories: ['Upgrade']
+  },
+  {
+    question: 'Will the MKR I have locked in the Seal Engine be automatically upgraded to SKY?',
+    answer: `No. If you currently have one or more positions in the Seal Engine, you will need to manually exit and, if you choose, upgrade your MKR to SKY, and then supply your SKY to the Staking Engine.  The process, via the Sky.money web app, makes manually exiting your current Seal positions and creating new positions in the Staking Engine as simple as possible.
+
+For upgrade details and step-by-step upgrade instructions, please visit the [MKR to SKY Upgrade Hub](https://upgrademkrtosky.sky.money).`,
     categories: ['Upgrade']
   },
   {
