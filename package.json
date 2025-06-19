@@ -17,7 +17,6 @@
     "knip": "knip"
   },
   "dependencies": {
-    "@jetstreamgg/hooks": "^1.0.31",
     "@jetstreamgg/sky-hooks": "^1.0.1",
     "@radix-ui/react-accordion": "^1.2.0",
     "@radix-ui/react-dialog": "1.0.4",
