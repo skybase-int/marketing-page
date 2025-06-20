@@ -25,7 +25,7 @@ Your SKY, as well as any Staking Rewards that you accumulate, are supplied to a 
     question: 'What will happen to the MKR and/or SKY I’ve supplied to the Seal Engine?',
     answer: `If you currently have one or more positions in the Seal Engine, you will need to manually exit and, if you choose, upgrade your MKR to SKY, and then supply your SKY to the Staking Engine.  The process, via the Sky.money web app, makes manually exiting your current Seal positions and creating new positions in the Staking Engine as simple as possible.
     
-    For upgrade details and step-by-step upgrade instructions, please visit the [MKR to SKY Upgrade Hub](https://upgrademkrtosky.sky.money).
+For upgrade details and step-by-step upgrade instructions, please visit the [MKR to SKY Upgrade Hub](https://upgrademkrtosky.sky.money).
     `,
     categories: ['Staking Engine']
   },
