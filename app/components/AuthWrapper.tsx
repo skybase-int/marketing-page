@@ -1,6 +1,6 @@
 'use client';
 
-import { useVpnCheck } from '@jetstreamgg/hooks';
+import { useVpnCheck } from '@jetstreamgg/sky-hooks';
 import { ReactNode, useMemo } from 'react';
 import { UnauthorizedPage } from './checks/UnauthorizedPage';
 
