@@ -55,14 +55,6 @@ readinessProbe:
   periodSeconds: 20
 
 affinity:
-  nodeAffinity:
-    requiredDuringSchedulingIgnoredDuringExecution:
-      nodeSelectorTerms:
-      - matchExpressions:
-        - key: karpenter.sh/capacity-type
-          operator: In
-          values:
-          - on-demand
   podAntiAffinity:
     preferredDuringSchedulingIgnoredDuringExecution:
     - weight: 100
@@ -85,7 +77,7 @@ topologySpreadConstraints:
 
 autoscaling:
   enabled: true
-  minReplicas: 1
+  minReplicas: 2
   maxReplicas: ${MAX_REPLICAS}
   targetCPUUtilizationPercentage: 85
   targetMemoryUtilizationPercentage: 85
