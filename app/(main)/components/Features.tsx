@@ -543,7 +543,6 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           APYDescription=""
           TVLDescription=""
           // TVLDescription="Stake Engine TVL"
-          isAlpha
         />
 
         {/* Section 4 */}
