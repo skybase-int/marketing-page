@@ -1,4 +1,4 @@
-import { FAQItem } from './faqData';
+import { FAQItem } from './types';
 
 export const skyEcosystem: FAQItem[] = [
   {
