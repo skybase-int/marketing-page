@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# Exit on any error
-set -e
+# Don't exit on error - we'll handle errors gracefully
+set +e
 
 # Colors for output
 RED='\033[0;31m'
@@ -56,14 +56,35 @@ fi
 
 # Clone the repository at the specific version
 print_status "Cloning content repository..."
-git clone --quiet "$CONTENT_REPO" "$TEMP_DIR"
+git clone --quiet "$CONTENT_REPO" "$TEMP_DIR" 2>/dev/null
+
+# Check if clone was successful
+if [ $? -ne 0 ]; then
+    print_warning "Failed to clone content repository. This might be due to:"
+    print_warning "  - Missing SSH keys or authentication"
+    print_warning "  - Network connectivity issues"
+    print_warning "  - Repository access permissions"
+    print_warning ""
+    print_warning "Skipping content sync. The build will continue with existing content."
+    rm -rf "$TEMP_DIR" 2>/dev/null
+    exit 0
+fi
 
 # Navigate to the temp directory
 cd "$TEMP_DIR"
 
 # Checkout the specific version
 print_status "Checking out version: $CONTENT_VERSION"
-git checkout --quiet "$CONTENT_VERSION"
+git checkout --quiet "$CONTENT_VERSION" 2>/dev/null
+
+# Check if checkout was successful
+if [ $? -ne 0 ]; then
+    print_warning "Failed to checkout version: $CONTENT_VERSION"
+    print_warning "Skipping content sync. The build will continue with existing content."
+    cd ..
+    rm -rf "$TEMP_DIR"
+    exit 0
+fi
 
 # Check if the extract script exists
 if [ ! -f "$EXTRACT_SCRIPT" ]; then
