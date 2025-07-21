@@ -12,7 +12,9 @@ export type Category =
   | 'Placeholder display name for Chronicle section'
   | 'Sky Governance'
   | 'Placeholder display name for risk and terms section'
-  | 'Placeholder display name for miscellaneous section';
+  | 'Placeholder display name for miscellaneous section'
+  | 'Upgrade'
+  | 'Staking Engine';
 
 export type FAQItem = {
   question: string;
@@ -36,5 +38,7 @@ export const categories: Category[] = [
   'Placeholder display name for Chronicle section',
   'Sky Governance',
   'Placeholder display name for risk and terms section',
-  'Placeholder display name for miscellaneous section'
+  'Placeholder display name for miscellaneous section',
+  'Upgrade',
+  'Staking Engine'
 ];

@@ -15,7 +15,7 @@ CONTENT_REPO="${CONTENT_REPO_URL:-git@github.com:archon-research/sky-data.git}"
 CONTENT_VERSION_FILE=".content-version"
 TEMP_DIR=".tmp-content-repo"
 OUTPUT_SOURCE_PATH="output/website"
-DESTINATION_PATH="app/(main)/faq"
+DESTINATION_PATH="app/(main)/faq/faqData"
 EXTRACT_SCRIPT="scripts/extract_website_faqs.js"
 
 # Function to print colored output
@@ -134,7 +134,7 @@ print_status "Content sync completed successfully!"
 
 # List the synced files
 echo ""
-print_status "Synced files:"
-find "$DESTINATION_PATH" -type f -name "*.json" -o -name "*.md" | sort | while read file; do
+print_status "Synced files to $DESTINATION_PATH:"
+find "$DESTINATION_PATH" -type f \( -name "*.json" -o -name "*.ts" -o -name "*.md" \) | sort | while read file; do
     echo "  - $file"
 done
