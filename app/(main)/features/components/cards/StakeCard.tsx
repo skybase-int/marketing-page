@@ -70,8 +70,8 @@ export const StakeCard = ({ data }: { data: FetchedData }) => {
           content: (
             <>
               <TextFeatureCard>
-                Staking Rewards in the form of USDS are accessed when you supply SKY tokens to the Staking
-                Engine of the decentralized Sky Protocol.
+                Staking Rewards are accessed when you supply SKY tokens to the Staking Engine of the
+                decentralized Sky Protocol.
               </TextFeatureCard>
               <TextFeatureCard>
                 Your supplied SKY tokens, as well as any accumulated Staking Rewards, automatically enter a

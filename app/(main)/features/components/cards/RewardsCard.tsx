@@ -6,6 +6,7 @@ import { useBreakpointIndex } from '@/app/hooks/useBreakpointIndex';
 import { FetchedData } from '@/app/(main)/fetchData';
 import HowItWorks from '@/public/rewards-how-it-works.png';
 import UseRewards from '@/public/rewards-use.png';
+import { ExternalLink } from '@/app/components/ExternalLink';
 
 export const RewardsCard = ({ data }: { data: FetchedData }) => {
   const { bpi, isLoading: bpiLoading } = useBreakpointIndex();
@@ -24,8 +25,7 @@ export const RewardsCard = ({ data }: { data: FetchedData }) => {
               </TextFeatureCard>
               <TextFeatureCard>
                 When you supply USDS to the Sky Token Rewards module of the decentralised Sky Protocol, you
-                access Sky Token Rewards over time in the form of SKY governance tokens. Subject to governance
-                approval, you&apos;ll soon be able to receive rewards in the form of Sky Star tokens, too.
+                get Sky Token Rewards over time in the form of SKY governance tokens and Sky Star tokens.
               </TextFeatureCard>
               <TextFeatureCard>With Sky.money, you always remain in control of your funds.</TextFeatureCard>
             </>
@@ -57,23 +57,17 @@ export const RewardsCard = ({ data }: { data: FetchedData }) => {
           title: 'Use Sky Token Rewards to govern',
           content: (
             <>
-              <TextFeatureCard>Sky Token Rewards are powerful yet designed for ease of use.</TextFeatureCard>
               <TextFeatureCard>
-                Soon, subject to governance approval, you&apos;ll be able to use your SKY tokens to:
+                Use your SKY rewards to participate directly in Sky ecosystem governance through a system of
+                decentralised onchain voting, or to transfer the voting power of your SKY tokens to a
+                recognized delegate or a contract that you own.
               </TextFeatureCard>
-              <ul className="list-disc pl-7">
-                <LiFeatureCard>
-                  Participate in Sky ecosystem governance through a system of decentralised onchain voting.
-                </LiFeatureCard>
-                <LiFeatureCard>
-                  Access the upcoming Activation and Sealed Activation features of the Sky Protocol to
-                  accumulate Activation Token Rewards
-                </LiFeatureCard>
-              </ul>
               <TextFeatureCard>
-                In the near future, you&apos;ll be able to opt for Sky Token Rewards in the form of various
-                Sky Star tokens. Sky Stars are independent, smaller decentralized projects within the larger
-                Sky ecosystem.
+                Visit{' '}
+                <ExternalLink href="https://spark.fi/" className="text-black/80 underline">
+                  Spark.fi
+                </ExternalLink>{' '}
+                to see what your SPK rewards can do.
               </TextFeatureCard>
             </>
           ),
