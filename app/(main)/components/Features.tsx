@@ -369,14 +369,9 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
               <br />
               <br />
               With{' '}
-              <a
-                href="https://app.sky.money"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sky-700 underline"
-              >
+              <ExternalLink href="https://app.sky.money" className="text-sky-700 underline">
                 Sky.money
-              </a>
+              </ExternalLink>
               , it&apos;s easy to build a diversified Sky Token Rewards portfolio while always remaining in
               control of your funds.
             </Text>
