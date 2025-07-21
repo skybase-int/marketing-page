@@ -359,20 +359,21 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           postTitle="Rewards"
           postTextElement={
             <Text variant="p2">
-              Today, you can supply USDS to the Sky Token Rewards (STRs) module of the Sky Protocol to get Sky
-              Token Rewards in the form of SKY governance tokens.
+              Supply USDS to the Sky Token Rewards (STRs) module of the Sky Protocol to get Sky Token Rewards
+              in the form of SKY governance tokens and Sky Star tokens.
               <br />
               <br />
-              Subject to governance approval, you&apos;ll soon be able to use USDS to access Sky Token Rewards
-              in the form of Sky Star tokens.
+              The Sky Token Rewards Rate is different for each type of token rewarded, and always fluctuates,
+              dependent upon several factors, including the issuance rate of each Sky Token Reward, which is
+              determined by Sky ecosystem governance.
               <br />
               <br />
-              The Sky Token Rewards rate is variable, dependent upon several factors, including the issuance
-              rate of each Sky Token Reward, which is determined by Sky ecosystem governance.
-              <br />
-              <br />
-              With Sky.money, it&apos;s easy to build a diversified Sky Token Rewards portfolio while always
-              remaining in control of your funds.
+              With{' '}
+              <ExternalLink href="https://app.sky.money" className="text-sky-700 underline">
+                Sky.money
+              </ExternalLink>
+              , it&apos;s easy to build a diversified Sky Token Rewards portfolio while always remaining in
+              control of your funds.
             </Text>
           }
           imgSrc="/products_rewards.png"
@@ -459,9 +460,8 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                 </li>
                 <li>
                   <Text variant="p2">
-                    Trade USDC, USDT, ETH and USDS for SKY, and vice versa. Subject to governance approval,
-                    you&apos;ll soon be able to use SKY to get Activation Token Rewards and vote on proposed
-                    changes and additions to the Sky Protocol.
+                    Trade USDC, USDT, ETH and USDS for SKY, and vice versa. Once you have SKY, you can use it
+                    to access Staking Rewards and participate in Sky Ecosystem Governance.
                   </Text>
                 </li>
               </ul>
@@ -505,7 +505,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                 <ul className="list-disc pl-7">
                   <li>
                     <Text variant="p2">
-                      <strong>Access Rewards.</strong> Access Staking Rewards, initially in the form of USDS.
+                      <strong>Access Staking Rewards.</strong> Access USDS or Sky Star tokens as rewards.
                     </Text>
                   </li>
                   <li>
