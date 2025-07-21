@@ -16,21 +16,21 @@ For more details on this and other risks associated with cryptocurrencies, pleas
     question: 'What are the benefits of cryptocurrency?',
     answer: `There are thousands of cryptocurrencies in circulation, and they vary in purpose, functionality and value. Some of the benefits crypto can offer are:
 
-- **Inclusivity.** People in many regions of the world, regardless of their economic standing, can use crypto to transact freely and to access decentralized financial (DeFi) services that let them retain complete control of their assets.
+* **Inclusivity.** People in many regions of the world, regardless of their economic standing, can use crypto to transact freely and to access decentralized financial (DeFi) services that let them retain complete control of their assets.
 
-- **Availability.** Many cryptocurrencies are easily exchanged on an expanding variety of both decentralized exchanges (DEXs) and centralized exchanges (CEXs).
+* **Availability.** Many cryptocurrencies are easily exchanged on an expanding variety of both decentralized exchanges (DEXs) and centralized exchanges (CEXs).
 
-- **Speed and affordability.** Users can transfer crypto across the globe within seconds and at a fraction of the cost of traditional wire services.
+* **Speed and affordability.** Users can transfer crypto across the globe within seconds and at a fraction of the cost of traditional wire services.
 
-- **Transparency.** On public blockchains, such as Ethereum, all transactions and smart contracts are publicly viewable. This helps promote trust and accountability.
+* **Transparency.** On public blockchains, such as Ethereum, all transactions and smart contracts are publicly viewable. This helps promote trust and accountability.
 
-- **Privacy without secrecy.** While public blockchains are transparent, they don’t reveal your real-world identity in a straightforward manner unless you choose to expose that information. Instead, they reveal your wallet address(es) and transaction history. Please note, however, that your identity can be tied to your wallet address using IP addresses or other information you may not "choose" to disclose.
+* **Privacy without secrecy.** While public blockchains are transparent, they don’t reveal your real-world identity in a straightforward manner unless you choose to expose that information. Instead, they reveal your wallet address(es) and transaction history. Please note, however, that your identity can be tied to your wallet address using IP addresses or other information you may not "choose" to disclose.
 
-- **Immutability.** Once a transaction is recorded on a blockchain, it cannot be altered, which reinforces the integrity of the transaction data.
+* **Immutability.** Once a transaction is recorded on a blockchain, it cannot be altered, which reinforces the integrity of the transaction data.
 
-- **Security.** The code behind DeFi protocols is often open source, allowing for public visibility and analysis. This transparency _may_ enable vulnerabilities to be identified and addressed by a global community of open source contributors. Over time, publicly available and largely unchanged code _could_ provide additional security assurances. Additionally, some DeFi protocols _may_ undergo audits by reputable firms within the industry, which can contribute to enhanced security, though the extent and effectiveness of such measures may vary.
+* **Security.** The code behind DeFi protocols is often open source, allowing for public visibility and analysis. This transparency *may* enable vulnerabilities to be identified and addressed by a global community of open source contributors. Over time, publicly available and largely unchanged code *could* provide additional security assurances. Additionally, some DeFi protocols *may* undergo audits by reputable firms within the industry, which can contribute to enhanced security, though the extent and effectiveness of such measures may vary.
 
-- **Round-the-clock accessibility.** Blockchains operate 24/7.`,
+* **Round-the-clock accessibility.** Blockchains operate 24/7.`,
     categories: ['Crypto (General)']
   },
   {
@@ -62,7 +62,7 @@ Because a public key is made up of a long, unique series of alphanumeric charact
   },
   {
     question: 'What is a decentralized exchange?',
-    answer: `A decentralized exchange (DEX) is a peer-to-peer marketplace made up of smart contracts where users can buy, sell and trade cryptocurrencies without having to share any personal information. No financial institution or third party is needed to facilitate DEX transactions. An example of a DEX is [CoW Swap](https://swap.cow.fi/#/1/swap/WETH).
+    answer: `A decentralized exchange (DEX) is a peer-to-peer marketplace made up of smart contracts where users can buy, sell and trade cryptocurrencies without having to share any personal information. No financial institution or third party is needed to facilitate DEX transactions. An example of a DEX is  [CoW Swap](https://swap.cow.fi/#/1/swap/WETH).
 
 DEX users interact directly with smart contracts using crypto wallets that are secured by private keys. Because DEXs are non-custodial, users are fully responsible for their own assets. That means if you lose access to your private keys, your assets are irrecuperable. Additionally, because no bank or financial institution is involved in facilitating DEX transactions, a DEX can’t be used to trade fiat currency for cryptocurrency (or vice versa).
 
@@ -87,13 +87,13 @@ Generally, CEXs operate in similar ways, but to learn how to use a specific CEX,
     question: 'Why do token prices vary between different DEXs and CEXs?',
     answer: `Token prices vary between different exchanges due to key market dynamics, such as:
 
-- **Market Structure.** DEXs typically use automated market makers (AMMs), which price based on algorithms. CEXs typically use order books, which price based on actual bids/asks. The different mechanisms can lead to different price discoveries.
+* **Market Structure.** DEXs typically use automated market makers (AMMs), which price based on algorithms. CEXs typically use order books, which price based on actual bids/asks. The different mechanisms can lead to different price discoveries.
 
-- **Market Segmentation.** Not all traders can access all exchanges for various reasons, including jurisdiction restrictions and Know Your Customer (KYC) requirements. Some exchanges may have more institutional flow versus retail flow, and different user bases can lead to different price dynamics.
+* **Market Segmentation.** Not all traders can access all exchanges for various reasons, including jurisdiction restrictions and Know Your Customer (KYC) requirements. Some exchanges may have more institutional flow versus retail flow, and different user bases can lead to different price dynamics.
 
-- **Market Making and Liquidity.** Every exchange has its own separate liquidity pools and market makers. Different depths of liquidity pools affect how much the prices impact trades. Market makers provide buy and sell quotes in a market and attempt to profit from the spread between the bid and ask prices. Market makers may also help ensure smooth trading by absorbing temporary imbalances between buyers and sellers. Some exchanges may have tighter spreads due to better market making.
+* **Market Making and Liquidity.** Every exchange has its own separate liquidity pools and market makers. Different depths of liquidity pools affect how much the prices impact trades. Market makers provide buy and sell quotes in a market and attempt to profit from the spread between the bid and ask prices. Market makers may also help ensure smooth trading by absorbing temporary imbalances between buyers and sellers. Some exchanges may have tighter spreads due to better market making.
 
-- **Arbitrage Opportunities.** Price differences may create profit opportunities for traders. Arbitrageurs buy on cheaper exchanges and sell on more expensive ones. That process helps prices converge, but differences persist due to transaction costs (e.g., gas and trading fees), execution speed, capital requirements and the technical complexity of the arbitrage.`,
+* **Arbitrage Opportunities.** Price differences may create profit opportunities for traders. Arbitrageurs buy on cheaper exchanges and sell on more expensive ones. That process helps prices converge, but differences persist due to transaction costs (e.g., gas and trading fees), execution speed, capital requirements and the technical complexity of the arbitrage.`,
     categories: ['Crypto (General)']
   },
   {
@@ -164,23 +164,23 @@ Note that both public and private blockchain networks use nodes to verify transa
 
 The unique characteristics of public blockchains are as follows:
 
-- **Accessibility.** Anyone with internet access can participate in a public blockchain network, 24-7.
+* **Accessibility.** Anyone with internet access can participate in a public blockchain network, 24-7.
 
-- **Decentralization.** Public blockchains are decentralized. No single entity controls public networks, which helps to reduce—not eliminate—the risk of fraud or manipulation.
+* **Decentralization.** Public blockchains are decentralized. No single entity controls public networks, which helps to reduce—not eliminate—the risk of fraud or manipulation.
 
-- **Speed and affordability.** The lack of an intermediary in public blockchains increases transaction speed and reduces cost.
+* **Speed and affordability.** The lack of an intermediary in public blockchains increases transaction speed and reduces cost.
 
-- **Mechanization.** Smart contracts—programmed functionalities written in computer code—self-execute, enabling the automation of complex financial transactions and operations.
+* **Mechanization.** Smart contracts—programmed functionalities written in computer code—self-execute, enabling the automation of complex financial transactions and operations.
 
-- **Security.** Data is stored across a network of computers, making information difficult to tamper with.
+* **Security.** Data is stored across a network of computers, making information difficult to tamper with.
 
-- **Transparency.** All transactions on permissionless blockchains are visible to the public; therefore, anyone in any region with an internet connection can track blockchain activity.
+* **Transparency.** All transactions on permissionless blockchains are visible to the public; therefore, anyone in any region with an internet connection can track blockchain activity.
 
-- **Trustlessness.** decentralized blockchain technology ensures that all transactions are accurate, without having to put trust in a centralized third party to verify their accuracy.
+* **Trustlessness.** decentralized blockchain technology ensures that all transactions are accurate, without having to put trust in a centralized third party to verify their accuracy.
 
-- **Immutability.** Generally, blockchain transactions are immutable, meaning that once executed, they are irreversible.
+* **Immutability.** Generally, blockchain transactions are immutable, meaning that once executed, they are irreversible.
 
-- **Ingenuity.** In the same way blockchain networks have opened the door to decentralized finance (DeFi) they can open the door to apps and services not yet conceived.
+* **Ingenuity.** In the same way blockchain networks have opened the door to decentralized finance (DeFi) they can open the door to apps and services not yet conceived.
 
 Due to the characteristics listed above, blockchain networks may allow for worldwide coordination and collaboration without intermediaries. They add an ownership layer to the internet, which not only enables peer-to-peer finance, but also allows for communities to coordinate and self-manage through ecosystem governance processes using smart contracts and onchain incentives.`,
     categories: ['Crypto (General)']
@@ -200,17 +200,17 @@ The importance of smart contracts to decentralized governance can’t be oversta
     question: 'How are smart contracts being explored across different sectors?',
     answer: `Smart contracts are programs written in computer code and deployed to a blockchain. They can execute automatically when specific conditions are met. These programs aim to reduce or eliminate the need for traditional intermediaries in certain processes. While smart contracts are frequently associated with the decentralized finance (DeFi) sector, various industries are exploring their potential applications, including:
 
-- **Traditional Finance (TradFi):** Some financial institutions are exploring smart contracts to potentially offer blockchain-based products and services.
+* **Traditional Finance (TradFi):** Some financial institutions are exploring smart contracts to potentially offer blockchain-based products and services.
 
-- **Gaming:** Smart contracts may be used to manage digital asset ownership, facilitate in-game transactions, and automate reward distributions, subject to specific game implementations.
+* **Gaming:** Smart contracts may be used to manage digital asset ownership, facilitate in-game transactions, and automate reward distributions, subject to specific game implementations.
 
-- **Real Estate:** Organizations are investigating smart contract applications for property transactions, including lease automation, property financing, and asset tokenization, though regulatory and legal requirements vary by jurisdiction.
+* **Real Estate:** Organizations are investigating smart contract applications for property transactions, including lease automation, property financing, and asset tokenization, though regulatory and legal requirements vary by jurisdiction.
 
-- **Healthcare:** Smart contracts could potentially assist with healthcare data management and HIPAA compliance. Proposed applications include secure sharing of patient records, claims processing, and supply chain management, subject to applicable regulations and security requirements.
+* **Healthcare:** Smart contracts could potentially assist with healthcare data management and HIPAA compliance. Proposed applications include secure sharing of patient records, claims processing, and supply chain management, subject to applicable regulations and security requirements.
 
-- **Insurance:** Smart contracts may be used to automate certain operational tasks and claims processing, within applicable regulatory frameworks.
+* **Insurance:** Smart contracts may be used to automate certain operational tasks and claims processing, within applicable regulatory frameworks.
 
-- **Government:** Some governments are exploring blockchain technology for data management and security purposes, though implementation faces various regulatory and technical considerations.`,
+* **Government:** Some governments are exploring blockchain technology for data management and security purposes, though implementation faces various regulatory and technical considerations.`,
     categories: ['Crypto (General)']
   },
   {
@@ -233,35 +233,35 @@ For details on the risks associated with stablecoins, please review the [User Ri
 
 Stablecoins are commonly used for:
 
-- **Peer-to-peer, cross-border transfers**. Stablecoin (and other crypto) holders can send their tokens directly to anyone, anywhere, using networks powered by blockchain technology.
+* **Peer-to-peer, cross-border transfers**. Stablecoin (and other crypto) holders can send their tokens directly to anyone, anywhere, using networks powered by blockchain technology.
 
-- **Trading.** Users can buy, sell and trade crypto using a centralized exchange (CEX), which acts as a trusted middleman and requires users to verify their identity, or a decentralized exchange (DEX), which allows users to trade directly from their own crypto wallets without sharing personal information.
+* **Trading.** Users can buy, sell and trade crypto using a centralized exchange (CEX), which acts as a trusted middleman and requires users to verify their identity, or a decentralized exchange (DEX), which allows users to trade directly from their own crypto wallets without sharing personal information.
 
   Sky Protocol tokens are available to trade on crypto exchanges that list them. Eligible users of the Sky.money web app can access the non-custodial Sky Protocol to trade some SKY on Ethereum Mainnet via an API integration with the third-party decentralized exchange (DEX) [CoW Swap](https://swap.cow.fi/#/1/swap/WETH).
 
-- **Saving.** Some people use crypto as a way to save. For example, eligible users of the Sky.money web app can access the Sky Protocol to supply USDS to the Sky Savings Rate module to access the Sky Savings Rate and accumulate additional USDS over time.
+* **Saving.** Some people use crypto as a way to save. For example, eligible users of the Sky.money web app can access the Sky Protocol to supply USDS to the Sky Savings Rate module to access the Sky Savings Rate and accumulate additional USDS over time.
 
-- **Borrowing.** Some DeFi protocols allow users to borrow stablecoins using their crypto as collateral. Eligible users of the Sky.money web app can borrow USDS against SKY that they supply to the Staking Engine of the Sky Protocol. Additionally, [Spark](https://spark.fi/), a gateway to the Sky Protocol and the first Star Agent (Star) in the Sky Ecosystem, enables users to generate and borrow USDS when supplying certain types of crypto assets to its Borrow module. Spark, like all Stars, is a type of SubDAO, an independent decentralized project within the larger Sky Ecosystem. For more information regarding Spark, see its [detailed documentation](https://docs.spark.fi/).
+* **Borrowing.** Some DeFi protocols allow users to borrow stablecoins using their crypto as collateral. Eligible users of the Sky.money web app can borrow USDS against SKY that they supply to the Staking Engine of the Sky Protocol. Additionally, [Spark](https://spark.fi/), a gateway to the Sky Protocol and the first Star Agent (Star) in the Sky Ecosystem, enables users to generate and borrow USDS when supplying certain types of crypto assets to its Borrow module. Spark, like all Stars, is a type of SubDAO, an independent decentralized project within the larger Sky Ecosystem. For more information regarding Spark, see its [detailed documentation](https://docs.spark.fi/).
 
-- **Lending.** Some DeFi protocols enable users to supply crypto to a smart contract that acts as a pool from which others can borrow. Those crypto suppliers become liquidity providers, who earn rewards in the form of liquidity pool tokens (LPTs). The LPTs they receive represent their share of assets in the pool or a percentage of fees charged to those accessing the pool tokens.
+* **Lending.** Some DeFi protocols enable users to supply crypto to a smart contract that acts as a pool from which others can borrow. Those crypto suppliers become liquidity providers, who earn rewards in the form of liquidity pool tokens (LPTs). The LPTs they receive represent their share of assets in the pool or a percentage of fees charged to those accessing the pool tokens.
 
-- **Accessing Rewards.** Some people use crypto to access rewards without giving up control of their assets. For example, eligible Sky.money web app users can tap into the Sky Protocol to access Sky Tokens Rewards when they supply USDS to the Sky Token Rewards module. When eligible users supply SKY to the Staking Engine of the Protocol, they can access rewards in the form of USDS or, eventually, upon approval by Sky Ecosystem Governance Sky Star tokens
+* **Accessing Rewards.** Some people use crypto to access rewards without giving up control of their assets. For example, eligible Sky.money web app users can tap into the Sky Protocol to access Sky Tokens Rewards when they supply USDS to the Sky Token Rewards module. When eligible users supply SKY to the Staking Engine of the Protocol, they can access rewards in the form of USDS or, eventually, upon approval by Sky Ecosystem Governance Sky Star tokens
 
-- **Risk management**. Stablecoins may offer a safe haven during market turbulence, allowing traders to quickly exit volatile positions without leaving the crypto ecosystem.
+* **Risk management**. Stablecoins may offer a safe haven during market turbulence, allowing traders to quickly exit volatile positions without leaving the crypto ecosystem.
 
-- **Cross-project integration**: Stablecoins enable seamless value transfer between different DeFi protocols and applications, creating interoperability across the ecosystem.
+* **Cross-project integration**: Stablecoins enable seamless value transfer between different DeFi protocols and applications, creating interoperability across the ecosystem.
 
 Stablecoins typically enable DeFi growth by:
 
-- **Reducing barriers to entry for Traditional Finance (TradFi) users**: The fact that decentralized stablecoins are soft-pegged to the U. S. dollar makes it easier for newcomers to understand and use DeFi without first mastering cryptocurrency price dynamics.
+* **Reducing barriers to entry for Traditional Finance (TradFi) users**: The fact that decentralized stablecoins are soft-pegged to the U. S. dollar makes it easier for newcomers to understand and use DeFi without first mastering cryptocurrency price dynamics.
 
-- **Enabling complex financial products and strategies**: The stable value of stablecoins allows for the creation of predictable derivatives, synthetic assets and structured products.
+* **Enabling complex financial products and strategies**: The stable value of stablecoins allows for the creation of predictable derivatives, synthetic assets and structured products.
 
-- **Supporting the growth of decentralized lending markets**: Stablecoins provide the stable foundation needed for lending protocols to perhaps offer reliable savings rates and borrowing terms.
+* **Supporting the growth of decentralized lending markets**: Stablecoins provide the stable foundation needed for lending protocols to perhaps offer reliable savings rates and borrowing terms.
 
-- **Facilitating price stability in exchanges**: Stablecoins reduce overall market volatility and improve price discovery mechanisms in exchanges.
+* **Facilitating price stability in exchanges**: Stablecoins reduce overall market volatility and improve price discovery mechanisms in exchanges.
 
-- **Creating bridges between TradFi and DeFi**: Stablecoins can serve as a familiar entry and exit point between the traditional financial system and decentralized applications.
+* **Creating bridges between TradFi and DeFi**: Stablecoins can serve as a familiar entry and exit point between the traditional financial system and decentralized applications.
 
 With the Sky.money web app, you always remain in control of your assets. You alone are responsible for managing your private keys and digital wallet access.`,
     categories: ['Crypto (General)']
@@ -277,9 +277,9 @@ With the Sky.money web app, you always remain in control of your assets. You alo
 
 There are generally two broad categories of stablecoin structures:
 
-- **Centralized stablecoins.** Centralized stablecoins are typically issued and managed by a centralized entity, such as a regulated financial institution. These entities generally claim to maintain reserves of backing assets.
+* **Centralized stablecoins.** Centralized stablecoins are typically issued and managed by a centralized entity, such as a regulated financial institution. These entities generally claim to maintain reserves of backing assets.
 
-- **Decentralized stablecoins.** Decentralized stablecoins typically operate through smart contracts and community-driven governance systems, where token holders may participate in decisions about the protocol's operation.
+* **Decentralized stablecoins.** Decentralized stablecoins typically operate through smart contracts and community-driven governance systems, where token holders may participate in decisions about the protocol's operation.
 
 In order for a stablecoin to maintain its value over time, a method or mechanism that works to demonstrate long-term sustainability is typically employed. The choice of mechanism can depend on whether a stablecoin is centralized or decentralized.
 
@@ -289,11 +289,11 @@ Often, for stablecoins that are crypto-collateralized, overcollateralization com
 
 Other types of stability mechanisms include the following:
 
-- **Algorithmic:** Algorithmic stablecoins maintain stability using algorithms and smart contracts to automatically adjust their supply based on demand. For example, if the market price of an algorithmic stablecoin is above its target value, a smart contract increases the supply of the stablecoin to decrease its price. If the market price is below its target value, a smart contract decreases the supply of the stablecoin to increase its price.
+* **Algorithmic:** Algorithmic stablecoins maintain stability using algorithms and smart contracts to automatically adjust their supply based on demand. For example, if the market price of an algorithmic stablecoin is above its target value, a smart contract increases the supply of the stablecoin to decrease its price. If the market price is below its target value, a smart contract decreases the supply of the stablecoin to increase its price.
 
-- **Real-world asset (RWA):** RWA-collateralized stablecoins are backed by tangible, physical assets, including gold, government bonds, real estate and artwork.
+* **Real-world asset (RWA):** RWA-collateralized stablecoins are backed by tangible, physical assets, including gold, government bonds, real estate and artwork.
 
-- **Hybrid:** Hybrid stablecoins use a mix of methods to maintain stability.`,
+* **Hybrid:** Hybrid stablecoins use a mix of methods to maintain stability.`,
     categories: ['Crypto (General)']
   },
   {
@@ -358,7 +358,7 @@ Some onchain actions might require multiple wallet signatures to authorize them.
     question: 'Explain the types of crypto wallets',
     answer: `There are several types of crypto wallets and theoretically no limit to the number of wallets a user can generate. But not all wallets are compatible with all blockchains. Therefore, depending on the cryptocurrencies you hold, you might need to use more than one wallet.
 
-From a security perspective, crypto wallets can be classified under two broad categories: hot and cold. Hot wallets are those connected to the internet most of the time (i.e., software-based mobile, desktop, and browser wallets), making it easy to access and use for transactions but also potentially more vulnerable to hacking and cyber threats. Two popular software-based wallets are Metamask and Rainbow. Cold wallets include hardware wallets, which are physical appliances that connect to a computer, laptop, or mobile device via a cable or Bluetooth, further enhancing their security against hacking and cyber threats; and paper wallets, which consist simply of a piece of paper on which the public and private keys of a cryptocurrency address or a QR code are written. Cold wallets are completely offline. Two examples of cole wallets include Ledger and GridPlus. Each wallet type has specific advantages, so you’ll want to do your own research to choose the one that best meets your security and performance needs. SkyWing does not endorse products. For more info, see the [User Risk Documentation](https://docs.sky.money/user-risks).`,
+From a security perspective, crypto wallets can be classified under two broad categories: hot and cold. Hot wallets are those connected to the internet most of the time (i.e., software-based mobile, desktop, and browser wallets), making it easy to access and use for transactions but also potentially more vulnerable to hacking and cyber threats. Two popular software-based wallets are Metamask and Rainbow. Cold wallets include hardware wallets, which are physical appliances that connect to a computer, laptop, or mobile device via a cable or Bluetooth, further enhancing their security against hacking and cyber threats; and paper wallets, which consist simply of a piece of paper on which the public and private keys of a cryptocurrency address or a QR code are written. Cold wallets are completely offline. Two examples of cole wallets include Ledger and GridPlus.  Each wallet type has specific advantages, so you’ll want to do your own research to choose the one that best meets your security and performance needs. SkyWing does not endorse products. For more info, see the  [User Risk Documentation](https://docs.sky.money/user-risks).`,
     categories: ['Crypto (General)']
   },
   {

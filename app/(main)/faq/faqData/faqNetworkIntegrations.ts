@@ -23,29 +23,29 @@ L2s used with Ethereum not only offer users much lower fees and much faster spee
 
 **Centralized Bridges:**
 
-- Rely on a trusted intermediary/entity to custody assets and manage transfers
+* Rely on a trusted intermediary/entity to custody assets and manage transfers
 
-- Use centralized validators or a single entity to verify transactions
+* Use centralized validators or a single entity to verify transactions
 
-- Are more vulnerable to single points of failure (custodial risk)
+* Are more vulnerable to single points of failure (custodial risk)
 
-- Typically require Know Your Customer (KYC) and Anti-Money Laundering (AML) verifications
+* Typically require Know Your Customer (KYC) and Anti-Money Laundering (AML) verifications
 
-- Trade security for speed and lower costs
+* Trade security for speed and lower costs
 
 **Decentralized Bridges:**
 
-- Use smart contracts and decentralized validator networks
+* Use smart contracts and decentralized validator networks
 
-- Lock assets in smart contracts
+* Lock assets in smart contracts
 
-- Ensure the user is always in control of their assets (assets are non-custodial)
+* Ensure the user is always in control of their assets (assets are non-custodial)
 
-- Prioritize security and trustlessnes
+* Prioritize security and trustlessnes
 
-- Typically do not require KYC/AML if they are permissionless
+* Typically do not require KYC/AML if they are permissionless
 
-- Typically more expensive due to consensus requirements
+* Typically more expensive due to consensus requirements
 
 Both types of bridges have associated risks. See the [User Risk Documentation](https://docs.sky.money/user-risks).`,
     categories: ['Network Integrations']
@@ -58,11 +58,11 @@ On Solana, only USDS is available. On Base, you can trade between USDS, sUSDS an
 
 Subject to Sky Ecosystem governance approval, Base (and other L2) users may soon be able to use the Sky Protocol’s bridge system SkyLink to access:
 
-- Other Sky Ecosystem tokens, including SKY, the native governance token of the Sky Protocol
+* Other Sky Ecosystem tokens, including SKY, the native governance token of the Sky Protocol
 
-- Sky Token Rewards
+* Sky Token Rewards
 
-- Rewards in the form of Star Agent tokens
+* Rewards in the form of Star Agent tokens
 
 SkyLink is the Sky system that provides the rails for Sky Ecosystem projects to bridge assets between the Sky Protocol on Ethereum Mainnet and supported L2 networks.`,
     categories: ['Network Integrations']

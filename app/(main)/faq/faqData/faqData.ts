@@ -12,8 +12,6 @@ import { placeholderDisplayNameForChronicleSection } from './faqPlaceholderDispl
 import { skyGovernance } from './faqSkyGovernance';
 import { placeholderDisplayNameForRiskAndTermsSection } from './faqPlaceholderDisplayNameForRiskAndTermsSection';
 import { placeholderDisplayNameForMiscellaneousSection } from './faqPlaceholderDisplayNameForMiscellaneousSection';
-import { upgrade } from './faqUpgrade';
-import { stakingEngine } from './faqStakingEngine';
 
 export const faqDataset: FAQItem[] = [
   ...cryptoGeneral,
@@ -28,7 +26,5 @@ export const faqDataset: FAQItem[] = [
   ...placeholderDisplayNameForChronicleSection,
   ...skyGovernance,
   ...placeholderDisplayNameForRiskAndTermsSection,
-  ...placeholderDisplayNameForMiscellaneousSection,
-  ...upgrade,
-  ...stakingEngine
+  ...placeholderDisplayNameForMiscellaneousSection
 ];

@@ -34,11 +34,11 @@ Overcollateralization means that the total value of the collateral that backs a 
 
 Other mechanisms of the decentralized Sky Protocol that are used to keep USDS stable are Peg Stability Modules (PSMs) and the Smart Burn Engine (SBE):
 
-- **Peg Stability Modules (PSMs).** Peg Stability Modules (PSMs) are smart contracts that allow users to convert certain stablecoins directly with the Sky Protocol for USDS or DAI at a fixed rate and with relatively low fees. They are designed to maintain the stability of USDS and DAI.
+* **Peg Stability Modules (PSMs).** Peg Stability Modules (PSMs) are smart contracts that allow users to convert certain stablecoins directly with the Sky Protocol for USDS or DAI at a fixed rate and with relatively low fees. They are designed to maintain the stability of USDS and DAI.
   Unlike decentralized exchange (DEX) transactions, PSM operations do not involve trading between users. Instead, they are direct, non-custodial conversions (generate and burn) executed with the decentralized smart contracts of the Sky Protocol. PSMs effectively create a "price ceiling" and "price floor" for the stablecoins, keeping around $1, as users can always swap directly with the protocol when profitable.
   Through PSMs, USDS or DAI is obtained via predictable-rate conversion (typically a 1:1 ratio with certain stablecoins, or, in the case of sUSDS, for an amount reflecting its current price) rather than through borrowing. For example, given the existence of a USDC-backed PSM, a user could supply 100 USDC stablecoins to generate100 USDS or 100 DAI (minus fees), without taking on any debt. Given that PSM operations are facilitated on the Sky Protocol directly and not on a DEX, price slippage (i.e., the difference between the expected price of a token and the actual price when traded) is not a concern. Low (or zero) fees and no slippage are some of the benefits of using PSM, which adds liquidity to the assets backing the PSM. That liquidity helps to keep the value of USDS and DAI stable.
 
-- **USDS, SKY and the Smart Burn Engine (SBE).** USDS and SKY work together with the help of the Smart Burn Engine to maintain their stability. The Smart Burn Engine is a Sky Protocol module that uses System Surplus income to buy and burn Sky Ecosystem Governance tokens. Moreover, it uses permissionless DEX markets on Ethereum, which also creates liquidity.
+* **USDS, SKY and the Smart Burn Engine (SBE).** USDS and SKY work together with the help of the Smart Burn Engine to maintain their stability. The Smart Burn Engine is a Sky Protocol module that uses System Surplus income to buy and burn Sky Ecosystem Governance tokens. Moreover, it uses permissionless DEX markets on Ethereum, which also creates liquidity.
 
 Importantly, the [Sky Ecosystem Dashboard](https://info.sky.money/), designed by [Block Analitica](https://blockanalitica.com/), allows anyone to examine the health of the decentralized Sky Protocol in real time. Users can view the total value locked (TVL) in the Protocol, TVL in the Sky Savings Rate module, TVL in the Sky Token Rewards module, the total collateral backing the system, an estimation of annual profits, and much more. For more on the Dashboard, see this [Substack post](https://blockanalitica.substack.com/p/the-sky-risk-and-analytics-dashboard) by Block Analitica.
 
@@ -49,19 +49,19 @@ For details on the risks associated with soft-pegged stablecoins, review the [Us
     question: 'What are the characteristics of USDS?',
     answer: `USDS is a native stablecoin of the Sky Protocol. It contributes significantly to the stability and economic value the Protocol and to the Sky Ecosystem due to several of its key characteristics, including:
 
-- **Accessibility.** USDS is inclusive. Regardless of economic standing, anyone with internet access can access the Ethereum blockchain and use USDS. Eligible Sky.money web app users can participate in the Sky Savings Rate and access Sky Token Rewards without giving up control of their assets.
+* **Accessibility.** USDS is inclusive. Regardless of economic standing, anyone with internet access can access the Ethereum blockchain and use USDS. Eligible Sky.money web app users can participate in the Sky Savings Rate and access Sky Token Rewards without giving up control of their assets.
 
-- **Round-the-clock availability.** USDS is attainable 24/7.
+* **Round-the-clock availability.** USDS is attainable 24/7.
 
-- **Speed and affordability.** Because USDS moves on the blockchain, users can transfer it across the globe within seconds and at a fraction of the cost of wire services via traditional finance (TradFi). Users only pay a blockchain transaction, or gas, fee.
+* **Speed and affordability.** Because USDS moves on the blockchain, users can transfer it across the globe within seconds and at a fraction of the cost of wire services via traditional finance (TradFi). Users only pay a blockchain transaction, or gas, fee.
 
-- **Transparency.** The Sky Protocol is transparent. Smart contracts are open source and all blockchain data is public, so users have complete insight into all USDS and other Sky Protocol token transactions.
+* **Transparency.** The Sky Protocol is transparent. Smart contracts are open source and all blockchain data is public, so users have complete insight into all USDS and other Sky Protocol token transactions.
 
-- **Security.** The design of the blockchain and its network of nodes, miners and validators, combined with the fact that cryptocurrencies like USDS are rooted in cryptography, enhance user security.
+* **Security.** The design of the blockchain and its network of nodes, miners and validators, combined with the fact that cryptocurrencies like USDS are rooted in cryptography, enhance user security.
 
-- **Trading options.** Popular tokens can be traded for USDS at current market prices using permissionless rails. With the non-custodial Sky.money web app, you can access the decentralized Sky Protocol to directly trade on the blockchain instead of relying on centralized entities.
+* **Trading options.** Popular tokens can be traded for USDS at current market prices using permissionless rails. With the non-custodial Sky.money web app, you can access the decentralized Sky Protocol to directly trade on the blockchain instead of relying on centralized entities.
 
-- **Ecosystem builder.** USDS is a key component of the Sky Ecosystem and the decentralized finance (DeFi) movement. The more people use USDS, the more the Sky Protocol and DeFi ecosystems, generally, expand.`,
+* **Ecosystem builder.** USDS is a key component of the Sky Ecosystem and the decentralized finance (DeFi) movement. The more people use USDS, the more the Sky Protocol and DeFi ecosystems, generally, expand.`,
     categories: ['Sky Tokens']
   },
   {
