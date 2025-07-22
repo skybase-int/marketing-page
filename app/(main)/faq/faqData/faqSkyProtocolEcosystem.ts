@@ -27,11 +27,11 @@ Through PSMs, USDS or DAI is obtained via predictable-rate conversion (typically
     question: 'What are oracles?',
     answer: `The decentralized, non-custodial Sky Protocol relies on oracles, which are third-party services that provide offchain price feed data to the blockchain. Oracles support DeFi protocols in a number of ways, and offer users and end users the following:
 
-* **Increased stability:** Reliable price data ensures efficient collateralization of stablecoins and minimises the risk of under-collateralized borrowing, safeguarding pegs.
+- **Increased stability:** Reliable price data ensures efficient collateralization of stablecoins and minimises the risk of under-collateralized borrowing, safeguarding pegs.
 
-* **Transparency and decentralization:** The use of multiple independent oracle feeds reduces a protocol’s or decentralized exchange’s reliance on any single source, promoting transparency and trust in a system.
+- **Transparency and decentralization:** The use of multiple independent oracle feeds reduces a protocol’s or decentralized exchange’s reliance on any single source, promoting transparency and trust in a system.
 
-* **Flexibility and innovation:** The modular design of an oracle system allows for both integration of new data sources and feeds, and separation. In other words, oracles can be on- and off-boarded when needs arise.
+- **Flexibility and innovation:** The modular design of an oracle system allows for both integration of new data sources and feeds, and separation. In other words, oracles can be on- and off-boarded when needs arise.
 
 Sky Core currently uses oracles provided by [Chronicle](https://chroniclelabs.org/).
 
@@ -46,9 +46,9 @@ Sky Core currently uses oracles provided by [Chronicle](https://chroniclelabs.or
 
 Oracles can introduce risks related to data integrity, centralization and latency— each of which can significantly impact DeFi protocols.
 
-* **Data Integrity Risks**: A compromised oracle can feed false data into a DeFi system, which can lead to manipulated prices, faulty liquidations or incorrect smart contract executions.
+- **Data Integrity Risks**: A compromised oracle can feed false data into a DeFi system, which can lead to manipulated prices, faulty liquidations or incorrect smart contract executions.
 
-* **Latency Risks**: Some oracles may not provide real-time data updates, which can distort price discovery, impact trading strategies, and create arbitrage inefficiencies.
+- **Latency Risks**: Some oracles may not provide real-time data updates, which can distort price discovery, impact trading strategies, and create arbitrage inefficiencies.
 
 To mitigate these risks, many DeFi projects rely on decentralized oracles, which aggregate data from multiple sources to improve accuracy, reliability and enhanced resilience against manipulation.`,
     categories: ['Sky Protocol & Ecosystem']

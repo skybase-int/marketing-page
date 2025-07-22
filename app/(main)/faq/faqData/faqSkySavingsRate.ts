@@ -49,14 +49,14 @@ The Sky Savings Rate is one of the most impactful Sky Ecosystem Governance-contr
   },
   {
     question: 'Is the Sky Savings Rate always the same?',
-    answer: `The Sky Savings Rate percentage is variable, determined  by Sky Ecosystem Governance through a process of decentralized onchain voting. It is calculated based on various risk parameters evaluated and monitored by the Sky Risk Management Team. Through the voting process, Sky Ecosystem Governance is able, at any time, at its sole discretion, and without notice, to adapt the Sky Savings Rate and other relevant Sky Protocol parameters based on market conditions, the Surplus Buffer of the Sky Protocol, and other factors.`,
+    answer: `The Sky Savings Rate percentage is variable, determined by Sky Ecosystem Governance through a process of decentralized onchain voting. It is calculated based on various risk parameters evaluated and monitored by the Sky Risk Management Team. Through the voting process, Sky Ecosystem Governance is able, at any time, at its sole discretion, and without notice, to adapt the Sky Savings Rate and other relevant Sky Protocol parameters based on market conditions, the Surplus Buffer of the Sky Protocol, and other factors.`,
     categories: ['Sky Savings Rate']
   },
   {
     question: 'Does it cost anything to access the Sky Savings Rate?',
     answer: `Accessing the Sky Savings Rate via the Sky.money web app is free. However, any time you supply or withdraw assets to/from the Sky Savings Rate module of the Sky Protocol, you will incur a transaction fee, called a gas fee, for using the Ethereum blockchain network. That fee is neither controlled, imposed nor received by Sky.money or the Sky Protocol.
 
-If you have shied away from the Ethereum blockchain due to the high price of gas, note that the average price of gas on Ethereum has dropped significantly  as a result of the 2024 Dencun upgrade. Note, too, that. you can use the Sky.money web app to access the Sky Savings Rate on the Base network with reduced transaction costs.`,
+If you have shied away from the Ethereum blockchain due to the high price of gas, note that the average price of gas on Ethereum has dropped significantly as a result of the 2024 Dencun upgrade. Note, too, that. you can use the Sky.money web app to access the Sky Savings Rate on the Base network with reduced transaction costs.`,
     categories: ['Sky Savings Rate']
   },
   {
