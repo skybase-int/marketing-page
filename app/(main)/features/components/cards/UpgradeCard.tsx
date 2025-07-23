@@ -35,9 +35,9 @@ export const UpgradeCard = ({ data }: { data: FetchedData }) => (
                 Voting Portal.
               </LiFeatureCard>
               <LiFeatureCard>
-                Access the Staking Engine of the Sky Protocol to create positions that enable you to generate
-                and borrow USDS against your supplied SKY and to delegate the voting power the SKY token
-                provides.
+                Access the Staking Engine of the Sky Protocol to create a position that enables you to receive
+                Staking Rewards, generate and borrow USDS against your supplied SKY, and delegate the voting
+                power the SKY token provides.
               </LiFeatureCard>
             </ul>
             <TextFeatureCard>
