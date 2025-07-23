@@ -22,7 +22,7 @@ export const UpgradeCard = ({ data }: { data: FetchedData }) => (
               experiences. Use USDS to:
             </TextFeatureCard>
             <ul className="list-disc pl-7">
-              <LiFeatureCard>Access Sky Token Rewards</LiFeatureCard>
+              <LiFeatureCard>Access Sky Token Rewards and support Sky Stars</LiFeatureCard>
               <LiFeatureCard>Access the Sky Savings Rate to accumulate additional USDS</LiFeatureCard>
             </ul>
             <TextFeatureCard>

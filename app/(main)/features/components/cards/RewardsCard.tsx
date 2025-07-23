@@ -57,6 +57,7 @@ export const RewardsCard = ({ data }: { data: FetchedData }) => {
           title: 'Use Sky Token Rewards to govern',
           content: (
             <>
+              <TextFeatureCard>Sky Token Rewards are powerful yet designed for ease of use.</TextFeatureCard>
               <TextFeatureCard>
                 Use your SKY rewards to participate directly in Sky ecosystem governance through a system of
                 decentralised onchain voting, or to transfer the voting power of your SKY tokens to a
