@@ -48,15 +48,22 @@ const FeatureCardStats = ({
         {APY && (
           <div className="flex w-full" style={isMobile ? {} : { maxWidth: `${cardWidth * 0.42}px` }}>
             <Heading tag="h6">
-              <span>{APY}</span> <span className="text-black/40">{APYDescription}</span>
+              <span className="text-black/40">{APYDescription}</span>{' '}
+              <span>
+                {APY}
+                {type && (
+                  <span className="ml-1 inline-flex align-baseline">
+                    <PopoverRateInfo type={type} />
+                  </span>
+                )}
+              </span>
             </Heading>
-            <div className="flex pl-1">{type && <PopoverRateInfo type={type} />}</div>
           </div>
         )}
         {TVL && (
           <Heading tag="h6">
-            <span>{TVL}</span>{' '}
-            <span className="text-black/40">{cardWidth < 596 ? 'TVL' : TVLDescription}</span>
+            <span className="text-black/40">{cardWidth < 596 ? 'TVL' : TVLDescription}</span>{' '}
+            <span>{TVL}</span>
           </Heading>
         )}
       </div>
@@ -387,7 +394,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           APY={data.rewardsApy}
           TVL={data.rewardsTvl}
           type="str"
-          APYDescription="With: USDS Get: SKY — Sky Token Rewards Rate"
+          APYDescription="Sky Token Rewards Rates up to:"
           TVLDescription="Sky Token Rewards TVL"
         />
         <FeatureCardLg
