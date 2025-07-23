@@ -31,7 +31,7 @@ export const RewardsCard = ({ data }: { data: FetchedData }) => {
             </>
           ),
           stats: [
-            { id: 'rate', label: 'With: USDS Get: SKY — Sky Token Rewards Rate', value: data.rewardsApy },
+            { id: 'rate', label: 'Sky Token Rewards Rate', value: data.rewardsApy, prefix: 'Up to: ' },
             { id: 'tvl', label: 'Sky Token Rewards TVL', value: data.rewardsTvl }
           ],
           buttonCta: 'Access Sky Token Rewards',

@@ -37,15 +37,19 @@ export const fetchData = async (): Promise<FetchedData> => {
         flattenedData.sky_ecosystem_tvl !== undefined
           ? '$' + formatNumber(parseFloat(flattenedData.sky_ecosystem_tvl))
           : '',
-      rewardsApy:
-        flattenedData.sky_farm_apy !== undefined ? formatPercent(parseFloat(flattenedData.sky_farm_apy)) : '',
+      rewardsApy: (() => {
+        const skyApy = flattenedData.sky_farm_apy ? parseFloat(flattenedData.sky_farm_apy) : 0;
+        const spkApy = flattenedData.spk_farm_apy ? parseFloat(flattenedData.spk_farm_apy) : 0;
+        const higherApy = Math.max(skyApy, spkApy);
+        return higherApy > 0 ? formatPercent(higherApy) : '';
+      })(),
       skyPrice:
         flattenedData.sky_price_usd !== undefined
           ? '$' + formatNumber(parseFloat(flattenedData.sky_price_usd))
           : '',
       rewardsTvl:
         flattenedData.total_reward_tvl !== undefined
-          ? '$' + formatNumber(parseFloat(flattenedData.total_reward_tvl), { compact: true, maxDecimals: 0 })
+          ? '$' + formatNumber(parseFloat(flattenedData.total_reward_tvl), { compact: true, maxDecimals: 2 })
           : '',
       saveApy:
         flattenedData.sky_savings_rate_apy !== undefined
