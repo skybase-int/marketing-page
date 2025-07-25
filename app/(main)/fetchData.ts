@@ -12,6 +12,8 @@ export interface FetchedData {
   ethPrice: string;
   usdcPrice: string;
   usdtPrice: string;
+  stakeApy: string;
+  stakeTvl: string;
 }
 
 export const fetchData = async (): Promise<FetchedData> => {
@@ -75,6 +77,16 @@ export const fetchData = async (): Promise<FetchedData> => {
       usdtPrice:
         flattenedData.usdt_price_usd !== undefined
           ? '$' + formatNumber(parseFloat(flattenedData.usdt_price_usd), { maxDecimals: 2 })
+          : '',
+      stakeApy: (() => {
+        const skySpkApy = flattenedData.sky_spk_apy ? parseFloat(flattenedData.sky_spk_apy) : 0;
+        const skyUsdsApy = flattenedData.sky_usds_apy ? parseFloat(flattenedData.sky_usds_apy) : 0;
+        const higherApy = Math.max(skySpkApy, skyUsdsApy);
+        return higherApy > 0 ? formatPercent(higherApy) : '';
+      })(),
+      stakeTvl:
+        flattenedData.lse_total_tvl !== undefined
+          ? '$' + formatNumber(parseFloat(flattenedData.lse_total_tvl), { compact: true, maxDecimals: 0 })
           : ''
     };
   } catch (error) {
@@ -90,7 +102,9 @@ export const fetchData = async (): Promise<FetchedData> => {
       usdsPrice: '',
       ethPrice: '',
       usdcPrice: '',
-      usdtPrice: ''
+      usdtPrice: '',
+      stakeApy: '',
+      stakeTvl: ''
     };
   }
 };

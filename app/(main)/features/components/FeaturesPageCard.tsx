@@ -150,9 +150,12 @@ export function FeaturesPageCard({
                                         <Text variant="p3" className="pr-2">
                                           {label}
                                         </Text>
-                                        {['rewards', 'savings'].includes(id) && statId === 'rate' && (
-                                          <PopoverRateInfo type={id === 'savings' ? 'ssr' : 'str'} />
-                                        )}
+                                        {['rewards', 'savings', 'stake'].includes(id) &&
+                                          statId === 'rate' && (
+                                            <PopoverRateInfo
+                                              type={id === 'savings' ? 'ssr' : id === 'stake' ? 'srr' : 'str'}
+                                            />
+                                          )}
                                       </div>
                                       <div className="flex items-baseline">
                                         {prefix && (

@@ -38,7 +38,7 @@ const FeatureCardStats = ({
   shortenedAPYDescription?: string;
   TVLDescription: string;
   className?: string;
-  type?: 'ssr' | 'str';
+  type?: 'ssr' | 'str' | 'srr';
   cardWidth: number;
   isMobile?: boolean;
 }) => {
@@ -46,7 +46,7 @@ const FeatureCardStats = ({
     <div className={className}>
       <div className="flex flex-col justify-center space-y-2 desktop-xl:space-y-3">
         {APY && (
-          <div className="flex w-full" style={isMobile ? {} : { maxWidth: `${cardWidth * 0.42}px` }}>
+          <div className="flex w-full" style={isMobile ? {} : { maxWidth: `${cardWidth * 0.5}px` }}>
             <Heading tag="h6">
               <span className="text-black/40">{APYDescription}</span>{' '}
               <span>
@@ -109,7 +109,7 @@ const FeatureCardLg = ({
   featurePageId: string;
   APY: string;
   TVL: string;
-  type?: 'ssr' | 'str';
+  type?: 'ssr' | 'str' | 'srr';
   APYDescription: string;
   TVLDescription: string;
   href: string;
@@ -544,12 +544,11 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           title="with SKY"
           className="col-span-1 tablet:col-span-2 desktop:col-span-1 desktop:mb-32 desktop-xl:mb-0"
           featurePageId="stake" // TODO: Check it works
-          APY=""
-          TVL="" // TODO:
-          type="ssr" // TODO:
-          APYDescription=""
-          TVLDescription=""
-          // TVLDescription="Stake Engine TVL"
+          APY={data.stakeApy}
+          TVL={data.stakeTvl}
+          type="srr"
+          APYDescription="Staking Rewards Rates up to:"
+          TVLDescription="Staking Engine TVL"
         />
 
         {/* Section 4 */}
