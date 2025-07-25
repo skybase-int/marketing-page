@@ -25,7 +25,7 @@ export const TradeCard = ({ data }: { data: FetchedData }) => {
                 Trade USDC, USDT, ETH and SKY for USDS, and vice versa. Use USDS to:
               </TextFeatureCard>
               <ul className="list-disc pl-7">
-                <LiFeatureCard>Access Sky Token Rewards</LiFeatureCard>
+                <LiFeatureCard>Access Sky Token Rewards and support Sky Stars</LiFeatureCard>
                 <LiFeatureCard>Access the Sky Savings Rate to accumulate additional USDS</LiFeatureCard>
               </ul>
               <TextFeatureCard>
