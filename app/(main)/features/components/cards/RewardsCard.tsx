@@ -31,7 +31,7 @@ export const RewardsCard = ({ data }: { data: FetchedData }) => {
             </>
           ),
           stats: [
-            { id: 'rate', label: 'With: USDS Get: SKY — Sky Token Rewards Rate', value: data.rewardsApy },
+            { id: 'rate', label: 'Sky Token Rewards Rate', value: data.rewardsApy, prefix: 'Up to: ' },
             { id: 'tvl', label: 'Sky Token Rewards TVL', value: data.rewardsTvl }
           ],
           buttonCta: 'Access Sky Token Rewards',
@@ -57,6 +57,7 @@ export const RewardsCard = ({ data }: { data: FetchedData }) => {
           title: 'Use Sky Token Rewards to govern',
           content: (
             <>
+              <TextFeatureCard>Sky Token Rewards are powerful yet designed for ease of use.</TextFeatureCard>
               <TextFeatureCard>
                 Use your SKY rewards to participate directly in Sky ecosystem governance through a system of
                 decentralised onchain voting, or to transfer the voting power of your SKY tokens to a
