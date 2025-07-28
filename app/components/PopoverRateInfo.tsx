@@ -6,7 +6,7 @@ import {
   PopoverTrigger
 } from '@/app/components/ui/popover';
 import { Close, Info } from './icons';
-import { Heading, Text } from './Typography';
+import { Text } from './Typography';
 import { ExternalLink } from './ExternalLink';
 
 const content = {
@@ -46,6 +46,21 @@ const content = {
       </Text>
     )
   },
+  srr: {
+    title: 'Staking Rewards Rates (SRR)',
+    description: (
+      <Text className="leading-5 text-white/80" variant="ui-small-regular">
+        Staking Rewards Rates (SRRs) are variable and may fluctuate. They are determined by: (1) the current
+        issuance rate of the rewards set through onchain governance processes, and (2) the market price of the
+        staked SKY at the time of each calculation. The SRRs shown are estimated annual rates, updated using
+        data provided by a third party (
+        <ExternalLink href="https://blockanalitica.com/" className="hover:text-white hover:underline">
+          BlockAnalitica
+        </ExternalLink>
+        ). These figures are for informational purposes only and do not guarantee future results.
+      </Text>
+    )
+  },
   psm: {
     title: 'Peg Stability Module (PSM)',
     description: (
@@ -61,7 +76,7 @@ const content = {
   }
 };
 
-export const PopoverRateInfo = ({ type }: { type: 'str' | 'ssr' | 'psm' }) => {
+export const PopoverRateInfo = ({ type }: { type: 'str' | 'ssr' | 'psm' | 'srr' }) => {
   if (!(type in content)) return null;
 
   return (
