@@ -287,9 +287,9 @@ Here are some examples of how the Delayed Upgrade Penalty works:
 
   * If a user upgrades 1 MKR before the Delayed Upgrade Penalty takes effect, the user will not pay a penalty and will receive 24,000 SKY.
 
-  * If a user upgrades 1 MKR three months after the Delayed Upgrade Penalty takes effect, the penalty applies at 1%. So, the amount the user will receive as a result of the upgrade will be 23,760 SKY (24,000 minus 1%).  
+  * If a user upgrades 1 MKR within three months after the Delayed Upgrade Penalty takes effect, the penalty applies at 1%. So, the amount the user will receive as a result of the upgrade will be 23,760 SKY (24,000 minus 1%).  
 
-  * If a user upgrades 1 MKR six months after the Delayed Upgrade Penalty takes effect, the penalty applies at 2%, meaning the user will receive 23,520 SKY (24,000 minus 2%).
+  * If a user upgrades 1 MKR within three to six months after the Delayed Upgrade Penalty takes effect, the penalty applies at 2%, meaning the user will receive 23,520 SKY (24,000 minus 2%).
 
 Please note that blockchain, or gas, fees for using the Ethereum network apply when upgrading. Blockchain transaction fees are neither controlled, imposed nor received by Sky.money or the Sky Protocol. 
 
@@ -307,9 +307,9 @@ Here are some examples of how the Delayed Upgrade Penalty works:
 
   * If a user upgrades 1 MKR before the Delayed Upgrade Penalty takes effect, the user will not pay a penalty and will receive 24,000 SKY.
 
-  * If a user upgrades 1 MKR three months after the Delayed Upgrade Penalty takes effect, the penalty applies at 1%. So, the amount the user will receive as a result of the upgrade will be 23,760 SKY (24,000 minus 1%).  
+  * If a user upgrades 1 MKR within three months after the Delayed Upgrade Penalty takes effect, the penalty applies at 1%. So, the amount the user will receive as a result of the upgrade will be 23,760 SKY (24,000 minus 1%).  
 
-  * If a user upgrades 1 MKR six months after the Delayed Upgrade Penalty takes effect, the penalty applies at 2%, meaning the user will receive 23,520 SKY (24,000 minus 2%).
+  * If a user upgrades 1 MKR within three to six months after the Delayed Upgrade Penalty takes effect, the penalty applies at 2%, meaning the user will receive 23,520 SKY (24,000 minus 2%).
 
 Please note that blockchain, or gas, fees for using the Ethereum network apply when upgrading. Blockchain transaction fees are neither controlled, imposed nor received by Sky.money or the Sky Protocol. 
 
