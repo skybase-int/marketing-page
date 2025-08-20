@@ -11,11 +11,11 @@ NC='\033[0m' # No Color
 
 # Configuration
 # Use SSH URL for authentication, or override with CONTENT_REPO_URL env var
-CONTENT_REPO="${CONTENT_REPO_URL:-git@github.com:archon-research/sky-data.git}"
+CONTENT_REPO="${CONTENT_REPO_URL:-git@github.com:sky-ecosystem/corpus.git}"
 CONTENT_VERSION_FILE=".content-version"
 TEMP_DIR=".tmp-content-repo"
 OUTPUT_SOURCE_PATH="output/website"
-DESTINATION_PATH="app/(main)/faq/faqData"
+FAQS_DESTINATION_PATH="app/(main)/faq/faqData"
 EXTRACT_SCRIPT="scripts/extract_website_faqs.js"
 
 # Function to print colored output
@@ -110,31 +110,64 @@ fi
 cd ..
 
 # Ensure destination directory exists
-mkdir -p "$DESTINATION_PATH"
+mkdir -p "$FAQS_DESTINATION_PATH"
 
-# Copy generated files to destination
-print_status "Copying generated files to $DESTINATION_PATH..."
+# Copy FAQ files specifically from output/website/faqs/
+print_status "Copying FAQ files to $FAQS_DESTINATION_PATH..."
 
-# Use rsync for better control over the copy process
-# This will copy all files from output/website/* to app/(main)/faq/
-# Without --delete flag, existing files will be preserved
-if command -v rsync &> /dev/null; then
-    rsync -av "$TEMP_DIR/$OUTPUT_SOURCE_PATH/" "$DESTINATION_PATH/"
+# Check if FAQs directory exists in the output
+if [ -d "$TEMP_DIR/$OUTPUT_SOURCE_PATH/faqs" ]; then
+    # Use rsync for better control over the copy process
+    # This will copy all files from output/website/faqs/* to app/(main)/faq/faqData/
+    # Without --delete flag, existing files will be preserved
+    if command -v rsync &> /dev/null; then
+        rsync -av "$TEMP_DIR/$OUTPUT_SOURCE_PATH/faqs/" "$FAQS_DESTINATION_PATH/"
+    else
+        # Fallback to cp if rsync is not available
+        print_warning "rsync not found, using cp instead"
+        cp -r "$TEMP_DIR/$OUTPUT_SOURCE_PATH/faqs/"* "$FAQS_DESTINATION_PATH/"
+    fi
 else
-    # Fallback to cp if rsync is not available
-    print_warning "rsync not found, using cp instead"
-    cp -r "$TEMP_DIR/$OUTPUT_SOURCE_PATH/"* "$DESTINATION_PATH/"
+    print_warning "No FAQs directory found in output, skipping FAQ sync"
 fi
 
 # Clean up temp directory
 print_status "Cleaning up temporary files..."
 rm -rf "$TEMP_DIR"
 
+# Collect generated files for formatting
+GENERATED_FILES=()
+
+# Add FAQ files if they exist
+if [ -d "$FAQS_DESTINATION_PATH" ]; then
+    while IFS= read -r -d '' file; do
+        GENERATED_FILES+=("$file")
+    done < <(find "$FAQS_DESTINATION_PATH" -type f \( -name "*.ts" -o -name "*.json" -o -name "*.md" \) -print0)
+fi
+
+# Format only the generated files
+if [ ${#GENERATED_FILES[@]} -gt 0 ]; then
+    print_status "Formatting ${#GENERATED_FILES[@]} generated files with prettier..."
+    
+    # Check if prettier is available
+    if command -v npx &> /dev/null && npx --no-install prettier --version &> /dev/null; then
+        # Format each file individually to avoid running prettier on the entire repo
+        for file in "${GENERATED_FILES[@]}"; do
+            npx --no-install prettier --write "$file" 2>/dev/null || true
+        done
+        print_status "Files formatted successfully"
+    else
+        print_warning "Prettier not available, skipping formatting"
+    fi
+else
+    print_warning "No files to format"
+fi
+
 print_status "Content sync completed successfully!"
 
-# List the synced files
+# List the synced FAQ files
 echo ""
-print_status "Synced files to $DESTINATION_PATH:"
-find "$DESTINATION_PATH" -type f \( -name "*.json" -o -name "*.ts" -o -name "*.md" \) | sort | while read file; do
+print_status "Synced FAQ files to $FAQS_DESTINATION_PATH:"
+find "$FAQS_DESTINATION_PATH" -type f \( -name "*.json" -o -name "*.ts" -o -name "*.md" \) | sort | while read file; do
     echo "  - $file"
 done
