@@ -40,7 +40,7 @@ The conversion rate between USDS and sUSDS is determined programmatically by sma
   },
   {
     question: 'How is the Sky Savings Rate determined?',
-    answer: `The Sky Savings Rate takes into account the effect of accumulated USDS compounded in real time. In other words, the USDS you supply to the Sky Savings Rate module of the decentralized, Sky Protocol enables you to get you more USDS.
+    answer: `The Sky Savings Rate takes into account the effect of accumulated USDS compounded in real time. In other words, the USDS you supply to the Sky Savings Rate module of the decentralized Sky Protocol enables you to get more USDS.
 
 The Sky Savings Rate percentage is variable, determined by Sky Ecosystem Governance through a process of decentralized onchain voting. It is calculated based on various risk parameters evaluated and monitored by the Sky Risk Management Team. Through the voting process, Sky Ecosystem Governance is able, at any time, at its sole discretion, and without notice, to adapt the Sky Savings Rate and other relevant Sky Protocol parameters based on market conditions, the Surplus Buffer of the Sky Protocol, and other factors.
 
@@ -49,7 +49,8 @@ The Sky Savings Rate is one of the most impactful Sky Ecosystem Governance-contr
   },
   {
     question: 'Is the Sky Savings Rate always the same?',
-    answer: `The Sky Savings Rate percentage is variable, determined by Sky Ecosystem Governance through a process of decentralized onchain voting. It is calculated based on various risk parameters evaluated and monitored by the Sky Risk Management Team. Through the voting process, Sky Ecosystem Governance is able, at any time, at its sole discretion, and without notice, to adapt the Sky Savings Rate and other relevant Sky Protocol parameters based on market conditions, the Surplus Buffer of the Sky Protocol, and other factors.`,
+    answer:
+      'The Sky Savings Rate percentage is variable, determined by Sky Ecosystem Governance through a process of decentralized onchain voting. It is calculated based on various risk parameters evaluated and monitored by the Sky Risk Management Team. Through the voting process, Sky Ecosystem Governance is able, at any time, at its sole discretion, and without notice, to adapt the Sky Savings Rate and other relevant Sky Protocol parameters based on market conditions, the Surplus Buffer of the Sky Protocol, and other factors.',
     categories: ['Sky Savings Rate']
   },
   {
@@ -61,18 +62,14 @@ If you have shied away from the Ethereum blockchain due to the high price of gas
   },
   {
     question: 'Can I supply and withdraw USDS to the Sky Savings Rate module at any time?',
-    answer: `Yes, you can supply USDS tokens to the Sky Savings Rate module of the Sky Protocol at any time. You can also withdraw your original supply of USDS, as well as any accumulated sUSDS, from the module at any time. sUSDS is the savings token of the Sky Savings Rate module of the Protocol .`,
+    answer:
+      'Yes, you can supply USDS tokens to the Sky Savings Rate module of the Sky Protocol at any time. You can also withdraw your original supply of USDS, as well as any accumulated sUSDS, from the module at any time. sUSDS is the savings token of the Sky Savings Rate module of the Protocol.',
     categories: ['Sky Savings Rate']
   },
   {
     question: 'Can I trade sUSDS on the open market?',
-    answer: `Yes, eligible sUSDS holders can access the Sky.money web app to trade the tokens via an API integration with the third-party decentralized exchange [CoW Swap](https://swap.cow.fi/#/1/swap/WETH). sUSDS holders are also free to access any other protocol or exchange that supports sUSDS trading; however, users do so at their own risk. Sky.money is not responsible for any loss or damages incurred while using such third-party platforms.`,
-    categories: ['Sky Savings Rate']
-  },
-  {
-    question:
-      'Why do I see activity in my Savings transaction history in the Sky.money web app if I’ve never used the Savings feature?',
-    answer: `When you trade sUSDS for another token (or vice versa), sUSDS is automatically supplied to (or withdrawn from) the Sky Savings Rate module. These transactions are recorded in your Savings transaction history as a “supply” or “withdrawal.” Your Savings balance will also update automatically to reflect the increase or decrease in the amount of sUSDS you hold.`,
+    answer:
+      'Yes, eligible sUSDS holders can access the Sky.money web app to trade the tokens via an API integration with the third-party decentralized exchange [CoW Swap](https://swap.cow.fi/#/1/swap/WETH). sUSDS holders are also free to access any other protocol or exchange that supports sUSDS trading; however, users do so at their own risk. Sky.money is not responsible for any loss or damages incurred while using such third-party platforms. Please see the [Terms of Use](https://docs.sky.money/legal-terms) for more information on third-party services.',
     categories: ['Sky Savings Rate']
   }
 ];
