@@ -12,7 +12,7 @@ NC='\033[0m' # No Color
 
 # Configuration
 # Use SSH URL for authentication, or override with CONTENT_REPO_URL env var
-CONTENT_REPO="${CONTENT_REPO_URL:-git@github.com:archon-research/sky-data.git}"
+CONTENT_REPO="${CONTENT_REPO_URL:-git@github.com:sky-ecosystem/corpus.git}"
 CONTENT_VERSION_FILE=".content-version"
 TEMP_DIR=".tmp-version-check"
 
