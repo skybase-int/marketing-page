@@ -2,6 +2,10 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Repository Overview
+
+This is the Sky ecosystem marketing website, a Next.js 15 application that serves as the public-facing marketing site. The site integrates with the Sky Protocol and provides information about USDS stablecoin, Sky Token rewards, and various DeFi features. Content is synchronized from a centralized corpus repository to maintain consistency across the ecosystem.
+
 ## Common Development Commands
 
 ### Development
@@ -30,6 +34,12 @@ To run a specific test file:
 ```bash
 pnpm playwright test e2e/homepage.spec.ts
 ```
+
+### Content Synchronization
+
+- `./scripts/sync-content.sh` - Sync FAQ content from the corpus repository
+- Content version controlled via `.content-version` file (contains commit hash/tag)
+- FAQs are synced to `app/(main)/faq/faqData/`
 
 ## Architecture Overview
 
@@ -106,6 +116,31 @@ The AppContext (`/app/context/AppContext.tsx`) manages global UI state. When add
 3. Use mock wallet (`pnpm dev:mock`) when testing wallet features
 4. Check responsive design at all breakpoints
 5. Test animations on slower devices/connections
+
+## Content Management
+
+### FAQ Content
+
+The marketing site's FAQ content is managed externally in the corpus repository and synced via automation:
+
+1. **Content Source**: FAQ content originates from `github.com/sky-ecosystem/corpus`
+2. **Version Control**: The `.content-version` file specifies which corpus version to use
+3. **Sync Process**: The `scripts/sync-content.sh` script:
+   - Clones the corpus repo at the specified version
+   - Runs the website extraction script to generate FAQ files
+   - Copies FAQ content from `output/website/faqs/` to `app/(main)/faq/faqData/`
+   - Formats files with Prettier for consistency
+4. **Location**: Synced FAQ data lives in `app/(main)/faq/faqData/`
+
+### Updating Content
+
+To update FAQ content:
+
+1. Update the commit hash/tag in `.content-version`
+2. Run `./scripts/sync-content.sh`
+3. Commit the updated FAQ files
+
+Note: The sync script will gracefully skip if authentication or network issues occur, using existing content as fallback.
 
 ## Code Style Guidelines
 
