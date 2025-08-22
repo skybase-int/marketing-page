@@ -12,6 +12,7 @@ type Stat = {
   id: 'tvl' | 'rate' | 'price';
   label: string;
   value: string;
+  prefix?: string;
 };
 
 type CardTab = {
@@ -141,7 +142,7 @@ export function FeaturesPageCard({
                           {/* Stats */}
                           {stats && (
                             <div className="flex w-full flex-col gap-6 tablet:flex-row tablet:flex-wrap">
-                              {stats.map(({ id: statId, label, value }) => {
+                              {stats.map(({ id: statId, label, value, prefix }) => {
                                 if (value) {
                                   return (
                                     <div key={'stat-' + label} className="grow">
@@ -149,11 +150,27 @@ export function FeaturesPageCard({
                                         <Text variant="p3" className="pr-2">
                                           {label}
                                         </Text>
-                                        {['rewards', 'savings'].includes(id) && statId === 'rate' && (
-                                          <PopoverRateInfo type={id === 'savings' ? 'ssr' : 'str'} />
-                                        )}
+                                        {['rewards', 'savings', 'stake'].includes(id) &&
+                                          statId === 'rate' && (
+                                            <PopoverRateInfo
+                                              type={id === 'savings' ? 'ssr' : id === 'stake' ? 'srr' : 'str'}
+                                            />
+                                          )}
                                       </div>
-                                      <Text variant="n1">{value}</Text>
+                                      <div className="flex items-baseline">
+                                        {prefix && (
+                                          <Text tag="span" variant="p3" className="mr-2">
+                                            {prefix}
+                                          </Text>
+                                        )}
+                                        <Text
+                                          tag="span"
+                                          variant="n1"
+                                          className="text-[32px] tablet:text-[40px] desktop:text-[48px] desktop-xl:text-[64px]"
+                                        >
+                                          {value}
+                                        </Text>
+                                      </div>
                                     </div>
                                   );
                                 }

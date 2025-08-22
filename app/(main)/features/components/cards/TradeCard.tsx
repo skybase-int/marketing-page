@@ -25,16 +25,18 @@ export const TradeCard = ({ data }: { data: FetchedData }) => {
                 Trade USDC, USDT, ETH and SKY for USDS, and vice versa. Use USDS to:
               </TextFeatureCard>
               <ul className="list-disc pl-7">
-                <LiFeatureCard>Access Sky Token Rewards</LiFeatureCard>
+                <LiFeatureCard>Access Sky Token Rewards and support Sky Stars</LiFeatureCard>
                 <LiFeatureCard>Access the Sky Savings Rate to accumulate additional USDS</LiFeatureCard>
               </ul>
               <TextFeatureCard>
-                Trade USDC, USDT, ETH and USDS for SKY, and vice versa. You&apos;ll soon be able to use SKY
-                to:
+                Trade USDC, USDT, ETH and USDS for SKY, and vice versa. Use SKY to:
               </TextFeatureCard>
               <ul className="list-disc pl-7">
-                <LiFeatureCard>Accumulate Activation Token Rewards</LiFeatureCard>
-                <LiFeatureCard>Participate in decentralized onchain voting</LiFeatureCard>
+                <LiFeatureCard>
+                  Access the Staking Engine, where you can get Staking Rewards, borrow USDS, and delegate your
+                  voting power
+                </LiFeatureCard>
+                <LiFeatureCard>Participate directly in decentralized onchain voting</LiFeatureCard>
               </ul>
               <TextFeatureCard>
                 With Sky.money, it&apos;s easy to quickly trade, utilizing smart contracts on the blockchain

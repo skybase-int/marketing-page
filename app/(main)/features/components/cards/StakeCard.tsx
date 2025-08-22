@@ -46,6 +46,10 @@ export const StakeCard = ({ data }: { data: FetchedData }) => {
               <TextFeatureCard>With Sky, you always remain in control of your assets.</TextFeatureCard>
             </>
           ),
+          stats: [
+            { id: 'rate', label: 'Staking Rewards Rate', value: data.stakeApy, prefix: 'Up to: ' },
+            { id: 'tvl', label: 'Staking TVL', value: data.stakeTvl }
+          ],
           buttonCta: 'Access Staking Rewards',
           url: `?widget=stake`,
           buttonVariant: 'twilight-1',
@@ -70,8 +74,8 @@ export const StakeCard = ({ data }: { data: FetchedData }) => {
           content: (
             <>
               <TextFeatureCard>
-                Staking Rewards in the form of USDS are accessed when you supply SKY tokens to the Staking
-                Engine of the decentralized Sky Protocol.
+                Staking Rewards are accessed when you supply SKY tokens to the Staking Engine of the
+                decentralized Sky Protocol.
               </TextFeatureCard>
               <TextFeatureCard>
                 Your supplied SKY tokens, as well as any accumulated Staking Rewards, automatically enter a

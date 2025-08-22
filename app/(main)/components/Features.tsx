@@ -38,7 +38,7 @@ const FeatureCardStats = ({
   shortenedAPYDescription?: string;
   TVLDescription: string;
   className?: string;
-  type?: 'ssr' | 'str';
+  type?: 'ssr' | 'str' | 'srr';
   cardWidth: number;
   isMobile?: boolean;
 }) => {
@@ -46,17 +46,24 @@ const FeatureCardStats = ({
     <div className={className}>
       <div className="flex flex-col justify-center space-y-2 desktop-xl:space-y-3">
         {APY && (
-          <div className="flex w-full" style={isMobile ? {} : { maxWidth: `${cardWidth * 0.42}px` }}>
+          <div className="flex w-full" style={isMobile ? {} : { maxWidth: `${cardWidth * 0.5}px` }}>
             <Heading tag="h6">
-              <span>{APY}</span> <span className="text-black/40">{APYDescription}</span>
+              <span className="text-black/40">{APYDescription}</span>{' '}
+              <span>
+                {APY}
+                {type && (
+                  <span className="ml-1 inline-flex align-baseline">
+                    <PopoverRateInfo type={type} />
+                  </span>
+                )}
+              </span>
             </Heading>
-            <div className="flex pl-1">{type && <PopoverRateInfo type={type} />}</div>
           </div>
         )}
         {TVL && (
           <Heading tag="h6">
-            <span>{TVL}</span>{' '}
-            <span className="text-black/40">{cardWidth < 596 ? 'TVL' : TVLDescription}</span>
+            <span className="text-black/40">{cardWidth < 596 ? 'TVL' : TVLDescription}</span>{' '}
+            <span>{TVL}</span>
           </Heading>
         )}
       </div>
@@ -102,7 +109,7 @@ const FeatureCardLg = ({
   featurePageId: string;
   APY: string;
   TVL: string;
-  type?: 'ssr' | 'str';
+  type?: 'ssr' | 'str' | 'srr';
   APYDescription: string;
   TVLDescription: string;
   href: string;
@@ -359,20 +366,21 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           postTitle="Rewards"
           postTextElement={
             <Text variant="p2">
-              Today, you can supply USDS to the Sky Token Rewards (STRs) module of the Sky Protocol to get Sky
-              Token Rewards in the form of SKY governance tokens.
+              Supply USDS to the Sky Token Rewards (STRs) module of the Sky Protocol to get Sky Token Rewards
+              in the form of SKY governance tokens and Sky Star tokens.
               <br />
               <br />
-              Subject to governance approval, you&apos;ll soon be able to use USDS to access Sky Token Rewards
-              in the form of Sky Star tokens.
+              The Sky Token Rewards Rate is different for each type of token rewarded, and always fluctuates,
+              dependent upon several factors, including the issuance rate of each Sky Token Reward, which is
+              determined by Sky ecosystem governance.
               <br />
               <br />
-              The Sky Token Rewards rate is variable, dependent upon several factors, including the issuance
-              rate of each Sky Token Reward, which is determined by Sky ecosystem governance.
-              <br />
-              <br />
-              With Sky.money, it&apos;s easy to build a diversified Sky Token Rewards portfolio while always
-              remaining in control of your funds.
+              With{' '}
+              <ExternalLink href="https://app.sky.money" className="text-sky-700 underline">
+                Sky.money
+              </ExternalLink>
+              , it&apos;s easy to build a diversified Sky Token Rewards portfolio while always remaining in
+              control of your funds.
             </Text>
           }
           imgSrc="/products_rewards.png"
@@ -386,7 +394,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           APY={data.rewardsApy}
           TVL={data.rewardsTvl}
           type="str"
-          APYDescription="With: USDS Get: SKY — Sky Token Rewards Rate"
+          APYDescription="Sky Token Rewards Rates up to:"
           TVLDescription="Sky Token Rewards TVL"
         />
         <FeatureCardLg
@@ -459,9 +467,8 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                 </li>
                 <li>
                   <Text variant="p2">
-                    Trade USDC, USDT, ETH and USDS for SKY, and vice versa. Subject to governance approval,
-                    you&apos;ll soon be able to use SKY to get Activation Token Rewards and vote on proposed
-                    changes and additions to the Sky Protocol.
+                    Trade USDC, USDT, ETH and USDS for SKY, and vice versa. Once you have SKY, you can use it
+                    to access Staking Rewards and participate in Sky Ecosystem Governance.
                   </Text>
                 </li>
               </ul>
@@ -505,7 +512,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                 <ul className="list-disc pl-7">
                   <li>
                     <Text variant="p2">
-                      <strong>Access Rewards.</strong> Access Staking Rewards, initially in the form of USDS.
+                      <strong>Access Staking Rewards.</strong> Access USDS or Sky Star tokens as rewards.
                     </Text>
                   </li>
                   <li>
@@ -537,12 +544,11 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           title="with SKY"
           className="col-span-1 tablet:col-span-2 desktop:col-span-1 desktop:mb-32 desktop-xl:mb-0"
           featurePageId="stake" // TODO: Check it works
-          APY=""
-          TVL="" // TODO:
-          type="ssr" // TODO:
-          APYDescription=""
-          TVLDescription=""
-          // TVLDescription="Stake Engine TVL"
+          APY={data.stakeApy}
+          TVL={data.stakeTvl}
+          type="srr"
+          APYDescription="Staking Rewards Rates up to:"
+          TVLDescription="Staking Engine TVL"
         />
 
         {/* Section 4 */}
