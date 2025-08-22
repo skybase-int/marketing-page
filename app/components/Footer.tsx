@@ -47,8 +47,8 @@ const linksB: LinkSection[] = [
   [
     'Participate',
     [
-      { title: 'Governance', url: 'https://vote.makerdao.com' },
-      { title: 'Community', url: 'https://forum.makerdao.com/' }
+      { title: 'Governance', url: 'https://vote.sky.money' },
+      { title: 'Community', url: 'https://forum.sky.money/' }
     ]
   ],
   [
