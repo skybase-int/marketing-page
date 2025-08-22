@@ -50,9 +50,9 @@ Understanding this distinction helps in navigating the ecosystem, whether you ar
   },
   {
     question: 'Who is behind the Sky Protocol?',
-    answer: `Sky Ecosystem Governance relies on a decentralized, multi-faceted, detailed and transparent system of decision-making that includes discussion in the [Sky Forum](https://forum.sky.money/) and polling and onchain voting in the [Sky Governance Voting Portal](https://vote.makerdao.com/) to maintain the non-custodial Sky Protocol and the Sky Ecosystem. Governance is shared among a broad and diversified community, comprising individuals and entities from around the world.
+    answer: `Sky Ecosystem Governance relies on a decentralized, multi-faceted, detailed and transparent system of decision-making that includes discussion in the [Sky Forum](https://forum.sky.money/) and polling and onchain voting in the [Sky Governance Voting Portal](https://vote.sky.money/) to maintain the non-custodial Sky Protocol and the Sky Ecosystem. Governance is shared among a broad and diversified community, comprising individuals and entities from around the world.
 
-For a deeper dive into the facets and checks and balances of governance, please refer to the [Sky Forum](https://forum.sky.money/), the [Sky Governance Voting Portal](https://vote.makerdao.com/) and the [Sky Atlas](https://sky-atlas.powerhouse.io/).`,
+For a deeper dive into the facets and checks and balances of governance, please refer to the [Sky Forum](https://forum.sky.money/), the [Sky Governance Voting Portal](https://vote.sky.money/) and the [Sky Atlas](https://sky-atlas.powerhouse.io/).`,
     categories: ['Sky Protocol & Ecosystem']
   },
   {
