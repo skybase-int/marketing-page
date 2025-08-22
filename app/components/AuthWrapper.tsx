@@ -4,7 +4,8 @@ import { useVpnCheck } from '@jetstreamgg/sky-hooks';
 import { ReactNode, useMemo } from 'react';
 import { UnauthorizedPage } from './checks/UnauthorizedPage';
 
-// It needs to be inside the wagmi & rainbow provider to get the address from the hook
+// It needs to be inside the wagmi & rainbow provider to get the address from the hook if checking address
+// We only check VPN, not address
 export const AuthWrapper = ({ children }: { children: ReactNode }) => {
   const authUrl = process.env.NEXT_PUBLIC_AUTH_URL || '';
 
