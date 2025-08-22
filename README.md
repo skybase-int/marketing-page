@@ -65,3 +65,16 @@ or download the [Playwright VS Code extension](https://playwright.dev/docs/getti
 The VS code extension can also help with [generating tests](https://playwright.dev/docs/codegen)
 
 to run the app locally with the mock wallet, run `pnpm dev:mock`. And to open a playwright browser to manaully test something, run `pnpm playwright:open`.
+
+### Content Synchronization
+
+The marketing site's FAQ content is managed externally and synchronized from the [corpus repository](https://github.com/sky-ecosystem/corpus). To sync content:
+
+1. Update the commit hash or tag in `.content-version` file
+2. Run the sync script: `./scripts/sync-content.sh`
+3. The script will:
+   - Clone the corpus repository at the specified version
+   - Extract website-specific FAQ content
+   - Copy FAQs to `app/(main)/faq/faqData/`
+   - Format files with Prettier
+4. Commit the updated FAQ files
