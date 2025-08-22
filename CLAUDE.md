@@ -75,11 +75,6 @@ This is a Next.js 15 marketing website built with the App Router pattern. The co
    - CSS animations via Tailwind for simple transitions
    - Video backgrounds with performance optimizations
 
-6. **Web3 Integration**:
-   - Wagmi for wallet connections
-   - Mock wallet support for development/testing
-   - Sky.money ecosystem integration
-
 ### Important Context Patterns
 
 The AppContext (`/app/context/AppContext.tsx`) manages global UI state. When adding new global state:
