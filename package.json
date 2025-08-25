@@ -14,7 +14,10 @@
     "playwright": "pnpm exec playwright test --trace on",
     "playwright:open": "pnpm exec playwright open --browser=chromium",
     "typecheck": "tsc --noEmit",
-    "knip": "knip"
+    "knip": "knip",
+    "sync-content": "./scripts/sync-content.sh",
+    "bump-content-version": "./scripts/bump-content-version.sh",
+    "prebuild": "pnpm sync-content"
   },
   "dependencies": {
     "@jetstreamgg/sky-hooks": "^1.0.1",
@@ -38,8 +41,7 @@
     "sharp": "^0.33.5",
     "tailwind-merge": "^2.6.0",
     "tailwind-variants": "^0.3.0",
-    "tailwindcss-animate": "^1.0.7",
-    "wagmi": "^2.15.6"
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@playwright/test": "^1.39.0",
