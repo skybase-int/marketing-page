@@ -1,40 +1,28 @@
+import type { FAQItem } from './types';
 import { cryptoGeneral } from './faqCryptoGeneral';
-import { skyEcosystem } from './faqSkyEcosystem';
+import { skyProtocolEcosystem } from './faqSkyProtocolEcosystem';
+import { skyStars } from './faqSkyStars';
+import { skymoney } from './faqSkymoney';
 import { skyTokens } from './faqSkyTokens';
 import { upgrade } from './faqUpgrade';
+import { trade } from './faqTrade';
 import { skySavingsRate } from './faqSkySavingsRate';
 import { skyTokenRewards } from './faqSkyTokenRewards';
 import { stakingEngine } from './faqStakingEngine';
 import { networkIntegrations } from './faqNetworkIntegrations';
-import { trade } from './faqTrade';
-
-type Category =
-  | 'All FAQs'
-  | 'Crypto (General)'
-  | 'Sky Protocol & Ecosystem'
-  | 'Sky Tokens'
-  | 'Upgrade'
-  | 'Trade'
-  | 'Sky Savings Rate'
-  | 'Sky Token Rewards'
-  | 'Seal Engine'
-  | 'Staking Engine'
-  | 'Network Integrations';
-
-export type FAQItem = {
-  question: string;
-  answer: string;
-  categories: Category[];
-};
+import { skyGovernance } from './faqSkyGovernance';
 
 export const faqDataset: FAQItem[] = [
   ...cryptoGeneral,
-  ...skyEcosystem,
+  ...skyProtocolEcosystem,
+  ...skyStars,
+  ...skymoney,
   ...skyTokens,
   ...upgrade,
   ...trade,
   ...skySavingsRate,
   ...skyTokenRewards,
   ...stakingEngine,
-  ...networkIntegrations
+  ...networkIntegrations,
+  ...skyGovernance
 ];
