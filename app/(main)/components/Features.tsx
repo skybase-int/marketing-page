@@ -554,7 +554,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
         {/* Section 4 */}
         <Card
           variant="glass"
-          className="col-span-1 grid grid-cols-1 gap-5 rounded-3xl border p-4 tablet:col-span-2"
+          className="col-span-1 grid grid-cols-1 gap-5 rounded-3xl border p-4 tablet:col-span-2 tablet:grid-cols-2"
         >
           <FeatureCardLg
             href={`${baseUrl}/?network=${randomL2Name}`}
@@ -599,16 +599,16 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
             emphasis="SkyLink"
             reverse={false}
             postTitle="SkyLink"
-            className={cn('col-span-1', soonSectionClassName)}
+            className="col-span-1"
             featurePageId="skylink"
             APY=""
             TVL=""
             APYDescription=""
             TVLDescription=""
           />
-          {/* <FeatureCard
+          <FeatureCard
             href=""
-            cardClassName={soonSectionClassName}
+            cardClassName={cn('h-full')}
             descriptionElement={
               <Text variant="p3">
                 Activation is on the way.
@@ -643,10 +643,10 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
             title="Get rewards with"
             reverse={false}
             isNotLaunched={true}
-            isMediumSize={true}
-            className="col-span-1 tablet:col-span-2 desktop:col-span-1"
+            isMediumSize={false}
+            className="col-span-1"
             featurePageId="activation"
-          /> */}
+          />
         </Card>
       </div>
     </div>
