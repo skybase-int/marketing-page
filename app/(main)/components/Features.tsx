@@ -606,46 +606,67 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
             APYDescription=""
             TVLDescription=""
           />
-          <FeatureCard
-            href=""
-            cardClassName={cn('h-full')}
+          <FeatureCardLg
+            href={`${baseUrl}/?widget=stake`}
             descriptionElement={
               <Text variant="p3">
-                Activation is on the way.
+                The Staking Engine has replaced the Seal Engine of the Sky Protocol. It offers the same
+                features, but it has no exit fee and only supports SKY tokens, not MKR.
                 <br />
                 <br />
-                Subject to governance approval, you&apos;ll be able to supply SKY tokens to the Activation
-                module of the decentralised Sky Protocol to begin accumulating Activation Token Rewards in the
-                form of USDS or various Sky Star tokens—you choose.
-                <br />
-                <br />
-                Activate or Deactivate your SKY anytime, with no restrictions or fees. With Sky.money, you
-                always remain in control of funds.
+                Stake SKY to earn rewards, delegate <PopoverSealInfo type="delegate" /> governance voting
+                rights, and borrow <PopoverSealInfo type="borrow" /> USDS. You can stake or un-stake your SKY,
+                and claim rewards, anytime.
               </Text>
             }
+            postTitle="Staking Engine"
             postTextElement={
-              <Text variant="p2">
-                When you supply SKY tokens to the Activation module, you begin to accumulate Activation Token
-                Rewards over time in the form of USDS or Sky Star tokens—you choose.
-                <br />
-                <br />
-                SKY supplied to Activation Rewards does not support delegation or voting.
-                <br />
-                <br />
-                You can Activate or Deactivate your SKY anytime, with no restrictions or fees. With Sky.money,
-                you always remain in control of funds.
-              </Text>
+              <>
+                <Text variant="p2" className="mb-4 desktop:mb-[18px] desktop-xl:mb-[20px]">
+                  The SKY tokens you supply to the Staking Engine provide access to Staking Rewards, and more.
+                  Your staked SKY enables you to create one or more positions through which you can:
+                  <br />
+                  <br />
+                  <ul className="list-disc pl-7">
+                    <li>
+                      <Text variant="p2">
+                        <strong>Access Staking Rewards.</strong> Access USDS or Sky Star tokens as rewards.
+                      </Text>
+                    </li>
+                    <li>
+                      <Text variant="p2">
+                        <strong>Borrow.</strong> Borrow
+                        <PopoverSealInfo type="borrow" className="z-[1000]" /> USDS against your supplied SKY.
+                        You can exit your borrow position at any time and withdraw or pay back USDS whenever
+                        you would like.
+                      </Text>
+                    </li>
+                    <li>
+                      <Text variant="p2">
+                        <strong>Delegate.</strong> Transfer the voting power of your supplied SKY tokens to a
+                        recognized delegate
+                        <PopoverSealInfo type="delegate" className="z-[1000]" /> or a contract that you own.
+                        Your chosen delegate can then participate in the Sky Ecosystem Governance voting
+                        process on your behalf.
+                      </Text>
+                    </li>
+                  </ul>
+                </Text>
+              </>
             }
-            imgSrc="/features-activation.png"
-            imgClassname="-translate-y-[20%]"
-            buttonVariant="azure-2"
-            emphasis="Activation"
-            title="Get rewards with"
-            reverse={false}
-            isNotLaunched={true}
-            isMediumSize={false}
-            className="col-span-1"
-            featurePageId="activation"
+            imgSrc="/products_stake_1.png"
+            mobileImgSrc="/products_stake_1_mobile.png"
+            buttonVariant="twilight-2"
+            buttonText="Stake your SKY"
+            emphasis="Access Staking rewards"
+            title="with SKY"
+            className="col-span-1 tablet:col-span-2 desktop:col-span-1 desktop:mb-32 desktop-xl:mb-0"
+            featurePageId="stake" // TODO: Check it works
+            APY={data.stakeApy}
+            TVL={data.stakeTvl}
+            type="srr"
+            APYDescription="Staking Rewards Rates up to:"
+            TVLDescription="Staking Engine TVL"
           />
         </Card>
       </div>
