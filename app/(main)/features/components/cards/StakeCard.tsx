@@ -5,13 +5,11 @@ import ProductsStakes2 from '@/public/products_stake_2.png';
 import ProductsStakes3 from '@/public/products_stake_3.png';
 import ProductsStakes4 from '@/public/products_stake_4.png';
 import ProductsStakes5 from '@/public/products_stake_5.png';
-import ProductsStakes6 from '@/public/products_stake_6.png';
 import ProductsStakes1Mobile from '@/public/products_stake_1_mobile.png';
 import ProductsStakes2Mobile from '@/public/products_stake_2_mobile.png';
 import ProductsStakes3Mobile from '@/public/products_stake_3_mobile.png';
 import ProductsStakes4Mobile from '@/public/products_stake_4_mobile.png';
 import ProductsStakes5Mobile from '@/public/products_stake_5_mobile.png';
-import ProductsStakes6Mobile from '@/public/products_stake_6_mobile.png';
 import { useBreakpointIndex } from '@/app/hooks/useBreakpointIndex';
 import { FetchedData } from '@/app/(main)/fetchData';
 import { ExternalLink } from '@/app/components/ExternalLink';
@@ -23,7 +21,6 @@ export const StakeCard = ({ data }: { data: FetchedData }) => {
   return (
     <FeaturesPageCard
       id="stake"
-      isAlpha
       tabs={[
         {
           label: 'Create a position, access rewards',
@@ -49,6 +46,10 @@ export const StakeCard = ({ data }: { data: FetchedData }) => {
               <TextFeatureCard>With Sky, you always remain in control of your assets.</TextFeatureCard>
             </>
           ),
+          stats: [
+            { id: 'rate', label: 'Staking Rewards Rate', value: data.stakeApy, prefix: 'Up to: ' },
+            { id: 'tvl', label: 'Staking TVL', value: data.stakeTvl }
+          ],
           buttonCta: 'Access Staking Rewards',
           url: `?widget=stake`,
           buttonVariant: 'twilight-1',
@@ -73,8 +74,8 @@ export const StakeCard = ({ data }: { data: FetchedData }) => {
           content: (
             <>
               <TextFeatureCard>
-                Staking Rewards in the form of USDS are accessed when you supply SKY tokens to the Staking
-                Engine of the decentralized Sky Protocol.
+                Staking Rewards are accessed when you supply SKY tokens to the Staking Engine of the
+                decentralized Sky Protocol.
               </TextFeatureCard>
               <TextFeatureCard>
                 Your supplied SKY tokens, as well as any accumulated Staking Rewards, automatically enter a
