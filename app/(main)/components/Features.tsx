@@ -542,7 +542,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           buttonText="Stake your SKY"
           emphasis="Access Staking rewards"
           title="with SKY"
-          className="col-span-1 tablet:col-span-2 desktop:col-span-1 desktop:mb-32 desktop-xl:mb-0"
+          className="col-span-1 tablet:col-span-2 desktop:col-span-1"
           featurePageId="stake" // TODO: Check it works
           APY={data.stakeApy}
           TVL={data.stakeTvl}
@@ -624,7 +624,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
             emphasis="StUSDS"
             title="Expert Module"
             reverse={false}
-            className="col-span-1 tablet:col-span-2 desktop:col-span-1 desktop:mb-32 desktop-xl:mb-0"
+            className="col-span-1 tablet:col-span-2 desktop:col-span-1"
             featurePageId="expert"
             APY={data.stusdsApy}
             TVL={data.stusdsTvl}
