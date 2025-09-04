@@ -599,7 +599,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
             emphasis="SkyLink"
             reverse={false}
             postTitle="SkyLink"
-            className="col-span-1"
+            className="col-span-1 tablet:col-span-2 desktop:col-span-1"
             featurePageId="skylink"
             APY=""
             TVL=""
