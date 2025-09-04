@@ -5,8 +5,9 @@ import ProductsSkyBridgeMobile from '@/public/features-skylink-mobile.png';
 import { useBreakpointIndex } from '@/app/hooks/useBreakpointIndex';
 import { useRandomL2Name } from '@/app/hooks/useRandomL2Name';
 import { ExternalLink } from '@/app/components/ExternalLink';
+import { FetchedData } from '@/app/(main)/fetchData';
 
-export const ExpertCard = () => {
+export const ExpertCard = ({ data }: { data: FetchedData }) => {
   const { bpi, isLoading: isLoadingBreakpointIndex } = useBreakpointIndex();
   const randomL2Name = useRandomL2Name();
 
@@ -21,6 +22,10 @@ export const ExpertCard = () => {
               <TextFeatureCard>Expert</TextFeatureCard>
             </>
           ),
+          stats: [
+            { id: 'rate', label: 'StUSDS Rate', value: data.stusdsApy },
+            { id: 'tvl', label: 'StUSDS TVL', value: data.stusdsTvl }
+          ],
           buttonCta: 'Access Expert',
           url: `?widget=expert`,
           buttonVariant: 'azure-2',

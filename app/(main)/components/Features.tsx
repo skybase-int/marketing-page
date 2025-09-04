@@ -38,7 +38,7 @@ const FeatureCardStats = ({
   shortenedAPYDescription?: string;
   TVLDescription: string;
   className?: string;
-  type?: 'ssr' | 'str' | 'srr';
+  type?: 'ssr' | 'str' | 'srr' | 'stusds';
   cardWidth: number;
   isMobile?: boolean;
 }) => {
@@ -109,7 +109,7 @@ const FeatureCardLg = ({
   featurePageId: string;
   APY: string;
   TVL: string;
-  type?: 'ssr' | 'str' | 'srr';
+  type?: 'ssr' | 'str' | 'srr' | 'stusds';
   APYDescription: string;
   TVLDescription: string;
   href: string;
@@ -626,11 +626,11 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
             reverse={false}
             className="col-span-1 tablet:col-span-2 desktop:col-span-1 desktop:mb-32 desktop-xl:mb-0"
             featurePageId="expert"
-            APY={data.stakeApy}
-            TVL={data.stakeTvl}
-            type="srr"
-            APYDescription="Staking Rewards Rates up to:"
-            TVLDescription="Staking Engine TVL"
+            APY={data.stusdsApy}
+            TVL={data.stusdsTvl}
+            type="stusds"
+            APYDescription="StUSDS Rate:"
+            TVLDescription="StUSDS TVL"
           />
         </Card>
       </div>
