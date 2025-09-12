@@ -1,4 +1,4 @@
-import { Save, Upgrade, Rewards, Trade, Activation, SkyLink } from '@/app/components/icons';
+import { Save, Upgrade, Rewards, Trade, Activation, SkyLink, Expert } from '@/app/components/icons';
 import { UpgradeCard } from './components/cards/UpgradeCard';
 import { TradeCard } from './components/cards/TradeCard';
 import { RewardsCard } from './components/cards/RewardsCard';
@@ -55,7 +55,7 @@ export const existingFeatures: Feature[] = [
     id: 'skylink'
   },
   {
-    icon: SkyLink,
+    icon: Expert,
     title: 'Expert',
     card: ExpertCard,
     id: 'expert'
