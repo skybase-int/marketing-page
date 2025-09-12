@@ -41,11 +41,11 @@ Your SKY, as well as any Staking Rewards that you accumulate, are supplied to a 
   {
     question: 'How are Staking Rewards rates determined?',
     answer: `Staking Rewards rates are variable and may fluctuate.  
-Staking Rewards rates are determined by: 1) the current issuance rate of rewards (how many rewards are issued, as determined by Sky Ecosystem Governance), and 2) the current market price of SKY tokens at the time of calculation. 
+Staking Rewards rates are determined by: 1) the current issuance rate of rewards (how many rewards are issued, as determined by Sky Ecosystem Governance), and 2) the current market price of SKY tokens at the time of calculation.
 
 When you stake SKY tokens and choose to access USDS as a reward, the Staking Rewards you earn depend on the total USDS rewards issued divided by the total value of all SKY tokens staked at that moment. The value here is based on the current market price of SKY. If the price of SKY increases, the same amount of USDS rewards spread over higher-priced SKY means the percentage rate appears lower. Conversely, if the price of SKY goes down, the rate appears higher because the rewards are divided by a smaller total value.
 
-The rates shown in Sky.money are estimated annual rates that can change over time due to both Sky Ecosystem Governance decisions on reward issuance and fluctuations in the market price of  SKY. Rates are updated using data from a third-party provider (i.e., [BlockAnalitica](https://blockanalitica.com/)). Therefore, rates shown do not guarantee future results.`,
+The rates shown in Sky.money are estimated annual rates that can change over time due to both Sky Ecosystem Governance decisions on reward issuance and fluctuations in the market price of SKY. Rates are updated using data from a third-party provider (i.e., [BlockAnalitica](https://blockanalitica.com/)). Therefore, rates shown do not guarantee future results.`,
     categories: ['Staking Engine']
   },
   {
