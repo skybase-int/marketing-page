@@ -6,7 +6,7 @@
 version: 2
 updates:
   # Combined updates with prioritization for security updates
-  - package-ecosystem: "pnpm"
+  - package-ecosystem: "npm"
     directory: "/"
     target-branch: "development"
     schedule:
