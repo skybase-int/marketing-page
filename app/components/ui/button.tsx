@@ -110,7 +110,7 @@ IconButtonClose.displayName = 'IconButtonClose';
 
 const IconButton = React.forwardRef<
   HTMLButtonElement,
-  ButtonProps & { icon: (props: IconProps) => JSX.Element }
+  ButtonProps & { icon: (props: IconProps) => React.JSX.Element }
 >(({ icon, className, variant, size, disabled, asChild = false, ...props }, ref) => {
   const Comp = asChild ? Slot : 'button';
   const Icon = icon;
