@@ -37,9 +37,9 @@ export const Expert = ({
               gradientUnits="userSpaceOnUse"
             >
               <stop stopColor="#FFD2B9" />
-              <stop offset="0.289583" stop-color="#C99BED" />
-              <stop offset="1" stop-color="#0075FF" />
-              <stop offset="1" stop-color="#0075FF" />
+              <stop offset="0.289583" stopColor="#C99BED" />
+              <stop offset="1" stopColor="#0075FF" />
+              <stop offset="1" stopColor="#0075FF" />
             </linearGradient>
           </defs>
         </>
