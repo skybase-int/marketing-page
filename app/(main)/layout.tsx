@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/social_media.png',
-        width: 1200,
-        height: 630,
+        width: 2400,
+        height: 1260,
         alt: 'Sky - Your future in DeFi starts now'
       }
     ],
