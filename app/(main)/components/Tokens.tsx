@@ -37,7 +37,7 @@ export function Tokens({
   childrenRef,
   data
 }: {
-  childrenRef: React.RefObject<HTMLDivElement>;
+  childrenRef: React.RefObject<HTMLDivElement | null>;
   data: FetchedData;
 }) {
   const [frameIndex, setFrameIndex] = useState(0);
@@ -216,7 +216,7 @@ export function Tokens({
       )}
       <Div
         ref={sectionFiveRef}
-        className="sticky left-0 top-0 w-full  py-28 desktop:flex desktop:justify-between desktop:py-20 desktop-xl:py-[60px]"
+        className="sticky left-0 top-0 w-full py-28 desktop:flex desktop:justify-between desktop:py-20 desktop-xl:py-[60px]"
         style={{ opacity: opacityFive, x: xFive } as any}
       >
         <div className="mb-16 tablet:w-3/4 desktop:mb-0 desktop:mt-7 desktop:w-[363px] desktop-xl:mt-10 desktop-xl:w-[483]">

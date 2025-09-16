@@ -23,8 +23,8 @@ interface ContextProps {
   readonly setExternalLinkModalUrl: (val: string) => void;
   readonly visibleAreaTone: Tone;
   readonly setVisibleAreaTone: (val: Tone) => void;
-  readonly scrollContainerRef: React.RefObject<HTMLDivElement> | undefined;
-  readonly setScrollContainerRef: (val: React.RefObject<HTMLDivElement> | undefined) => void;
+  readonly scrollContainerRef: React.RefObject<HTMLDivElement | null> | undefined;
+  readonly setScrollContainerRef: (val: React.RefObject<HTMLDivElement | null> | undefined) => void;
 }
 
 const AppContext = React.createContext<ContextProps | undefined>(undefined);
@@ -42,9 +42,9 @@ export const AppProvider = ({ children }: PropTypes) => {
   const [externalLinkModalOpened, setExternalLinkModalOpened] = useState(false);
   const [externalLinkModalUrl, setExternalLinkModalUrl] = useState('');
   const [visibleAreaTone, setVisibleAreaTone] = useState<'dark' | 'light'>('dark');
-  const [scrollContainerRef, setScrollContainerRef] = useState<React.RefObject<HTMLDivElement> | undefined>(
-    undefined
-  );
+  const [scrollContainerRef, setScrollContainerRef] = useState<
+    React.RefObject<HTMLDivElement | null> | undefined
+  >(undefined);
   const [localStorageLoaded, setLocalStorageLoaded] = useState(false);
 
   //check session storage to see if video has already been played
