@@ -80,9 +80,9 @@ const FirstSectionBackgrounds = ({ opacity }: { opacity: MotionValue<number> }) 
   );
 };
 
-export function Ecosystem({ childrenRef }: { childrenRef: React.RefObject<HTMLDivElement> }) {
+export function Ecosystem({ childrenRef }: { childrenRef: React.RefObject<HTMLDivElement | null> }) {
   const { bpi } = useBreakpointIndex();
-  const targetRef = useRef(null);
+  const targetRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     layoutEffect: false,
     target: targetRef,

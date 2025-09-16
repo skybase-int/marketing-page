@@ -26,7 +26,7 @@ export function Header() {
     const previous = scrollY.getPrevious();
     const isTop = latest <= 150;
     setIsTopOfPage(isTop);
-    setShowHeader(isTop || latest < previous);
+    setShowHeader(isTop || previous === undefined || latest < previous);
   });
 
   if (modalOpened) return null;

@@ -14,7 +14,10 @@ const Card = React.forwardRef<
         const childDisplayName = childType.displayName || '';
         // This ensures that only these card slots are affected by the variant
         if (['CardHeader', 'CardTitle', 'CardContent', 'CardFooter'].includes(childDisplayName)) {
-          return React.cloneElement(child, { ...child.props, variant });
+          return React.cloneElement(child, {
+            ...(child.props || {}),
+            variant
+          } as React.HTMLAttributes<HTMLElement> & VariantProps<typeof cardVariants>);
         }
       }
       return child;
@@ -34,9 +37,12 @@ const CardHeader = React.forwardRef<
           const childType = child.type as React.ComponentType;
           const childDisplayName = childType.displayName || '';
           if (['CardTitle', 'CardDescription'].includes(childDisplayName)) {
-            return React.cloneElement(child, { ...child.props, variant });
+            return React.cloneElement(child, {
+              ...(child.props || {}),
+              variant
+            } as React.HTMLAttributes<HTMLElement> & VariantProps<typeof cardVariants>);
           }
-          return React.cloneElement(child, child.props);
+          return React.cloneElement(child, { ...(child.props || {}) });
         }
         return child;
       })}
