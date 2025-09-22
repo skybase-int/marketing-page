@@ -18,7 +18,7 @@ export function FeaturesMain({
   data,
   marginTopPx
 }: {
-  childrenRef: React.RefObject<HTMLDivElement>;
+  childrenRef: React.RefObject<HTMLDivElement | null>;
   data: FetchedData;
   marginTopPx?: number;
 }) {
