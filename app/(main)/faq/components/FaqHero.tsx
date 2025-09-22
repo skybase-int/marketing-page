@@ -8,7 +8,7 @@ import { FAQPageTransition } from '@/app/components/PageTransition';
 import { Banner } from '@/app/components/Banner';
 import { getTermsLink } from '@/app/lib/utils';
 
-export default function FaqHero({ trigger }: { trigger: RefObject<HTMLDivElement> }) {
+export default function FaqHero({ trigger }: { trigger: RefObject<HTMLDivElement | null> }) {
   const cardRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const TERMS_LINK = getTermsLink();
