@@ -22,8 +22,10 @@ export default function FaqList() {
   const [openItems, setOpenItems] = useState<string[]>([]);
   const {
     items: results,
-    totalItems,
-    exactItems
+    exactItems: exactResults,
+    otherItems: otherResults,
+    exactCount,
+    totalCount
   } = useSearchFaq({
     searchTerm: searchTerm ? debouncedSearchTerm : '',
     category: category === ALL_FAQS ? '' : category,
@@ -55,8 +57,8 @@ export default function FaqList() {
 
   const titleParts = getTitleParts(
     category,
-    exactItems,
-    totalItems,
+    exactCount,
+    totalCount,
     searchTerm ? debouncedSearchTerm : searchTerm,
     isSearchFocused
   );
@@ -143,30 +145,100 @@ export default function FaqList() {
           <div className="mt-10">
             {showResults ? (
               <>
-                <Accordion
-                  key={results[0]?.item.question}
-                  type="multiple"
-                  defaultValue={[]}
-                  className={!!results[0] ? 'border-t border-black pt-8' : ''}
-                  onValueChange={setOpenItems}
-                >
-                  {results.map((result, index) => (
-                    <SearchResult
-                      key={`${category}-${result.item.question}`}
-                      item={result.item}
-                      showPreview={!!searchTerm && !openItems.includes(result.item.question)}
-                      onCategorySelected={cat => {
-                        setCategory(cat);
-                        setSearchTerm('');
-                        setIsSearchFocused(false);
-                      }}
-                      isLast={index === results.length - 1}
-                    />
-                  ))}
-                </Accordion>
+                {/* Exact Matches Section */}
+                {exactResults.length > 0 && (
+                  <>
+                    <Accordion
+                      key={`exact-${exactResults[0]?.item.question}`}
+                      type="multiple"
+                      defaultValue={[]}
+                      className="border-t border-black pt-8"
+                      onValueChange={setOpenItems}
+                    >
+                      {exactResults.map((result, index) => (
+                        <SearchResult
+                          key={`exact-${category}-${result.item.question}`}
+                          item={result.item}
+                          showPreview={!!searchTerm && !openItems.includes(result.item.question)}
+                          onCategorySelected={cat => {
+                            setCategory(cat);
+                            setSearchTerm('');
+                            setIsSearchFocused(false);
+                          }}
+                          isLast={index === exactResults.length - 1 && otherResults.length === 0}
+                        />
+                      ))}
+                    </Accordion>
+                  </>
+                )}
+
+                {/* Vertical Separation */}
+                {exactResults.length > 0 && otherResults.length > 0 && <div className="my-12" />}
+
+                {/* Other Matches Section */}
+                {otherResults.length > 0 && (
+                  <>
+                    {otherResults.length > 0 && exactResults.length > 0 && (
+                      <Text className="mb-6 text-lg font-semibold">Other related results</Text>
+                    )}
+                    <Accordion
+                      key={`other-${otherResults[0]?.item.question}`}
+                      type="multiple"
+                      defaultValue={[]}
+                      className={
+                        exactResults.length === 0
+                          ? 'border-t border-black pt-8'
+                          : 'border-t border-black pt-8'
+                      }
+                      onValueChange={setOpenItems}
+                    >
+                      {otherResults.map((result, index) => (
+                        <SearchResult
+                          key={`other-${category}-${result.item.question}`}
+                          item={result.item}
+                          showPreview={!!searchTerm && !openItems.includes(result.item.question)}
+                          onCategorySelected={cat => {
+                            setCategory(cat);
+                            setSearchTerm('');
+                            setIsSearchFocused(false);
+                          }}
+                          isLast={index === otherResults.length - 1}
+                        />
+                      ))}
+                    </Accordion>
+                  </>
+                )}
+
+                {/* Show results if no search term (all FAQs) */}
+                {!searchTerm && results.length > 0 && (
+                  <>
+                    <Accordion
+                      key={results[0]?.item.question}
+                      type="multiple"
+                      defaultValue={[]}
+                      className="border-t border-black pt-8"
+                      onValueChange={setOpenItems}
+                    >
+                      {results.map((result, index) => (
+                        <SearchResult
+                          key={`${category}-${result.item.question}`}
+                          item={result.item}
+                          showPreview={!!searchTerm && !openItems.includes(result.item.question)}
+                          onCategorySelected={cat => {
+                            setCategory(cat);
+                            setSearchTerm('');
+                            setIsSearchFocused(false);
+                          }}
+                          isLast={index === results.length - 1}
+                        />
+                      ))}
+                    </Accordion>
+                  </>
+                )}
+
                 <CustomPagination
                   key={`${category}-${searchTerm}`}
-                  dataLength={totalItems}
+                  dataLength={totalCount}
                   itemsPerPage={PAGE_SIZE}
                   onPageChange={setPage}
                 />
