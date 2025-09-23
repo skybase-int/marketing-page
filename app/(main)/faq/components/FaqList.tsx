@@ -56,6 +56,7 @@ export default function FaqList() {
   const titleParts = getTitleParts(
     category,
     exactItems,
+    totalItems,
     searchTerm ? debouncedSearchTerm : searchTerm,
     isSearchFocused
   );
@@ -193,7 +194,8 @@ export default function FaqList() {
 
 const getTitleParts = (
   category: string,
-  resultsCount: number,
+  exactCount: number,
+  totalCount: number,
   searchTerm: string,
   isSearchFocused: boolean
 ) => {
@@ -205,13 +207,18 @@ const getTitleParts = (
     return { text: 'Search', emphasis: 'all FAQs' };
   }
 
-  if (searchTerm && resultsCount === 0) {
+  if (searchTerm && totalCount === 0) {
     return { text: 'No answers matching your request were found.', emphasis: '' };
   }
 
-  if (searchTerm && resultsCount > 0) {
-    const answerText = resultsCount === 1 ? 'answer' : 'answers';
-    return { text: `${resultsCount} ${answerText} containing`, emphasis: `'${searchTerm}'` };
+  if (searchTerm && exactCount > 0) {
+    const answerText = exactCount === 1 ? 'answer' : 'answers';
+    return { text: `${exactCount} ${answerText} containing`, emphasis: `'${searchTerm}'` };
+  }
+
+  if (searchTerm && exactCount === 0 && totalCount > 0) {
+    const answerText = totalCount === 1 ? '1 answer' : 'Some answers';
+    return { text: `${answerText} related to your search term`, emphasis: `'${searchTerm}'` };
   }
 
   return { text: 'Crypto is hard.', emphasis: 'Sky.money makes it easier.' };
