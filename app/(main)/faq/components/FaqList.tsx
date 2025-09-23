@@ -185,11 +185,7 @@ export default function FaqList() {
                       key={`other-${otherResults[0]?.item.question}`}
                       type="multiple"
                       defaultValue={[]}
-                      className={
-                        exactResults.length === 0
-                          ? 'border-t border-black pt-8'
-                          : 'border-t border-black pt-8'
-                      }
+                      className="border-t border-black pt-8"
                       onValueChange={setOpenItems}
                     >
                       {otherResults.map((result, index) => (
