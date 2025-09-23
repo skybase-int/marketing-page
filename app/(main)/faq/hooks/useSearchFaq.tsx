@@ -35,6 +35,7 @@ export const useSearchFaq = ({
   }, [fuse, searchTerm, category]);
 
   const totalItems = results.length;
+  const exactItems = results.filter(result => !!result.score && result.score <= 0.1).length;
   const totalPages = Math.ceil(totalItems / pageSize);
   const startIndex = (page - 1) * pageSize;
   const endIndex = startIndex + pageSize;
@@ -45,6 +46,7 @@ export const useSearchFaq = ({
     page,
     pageSize,
     totalItems,
+    exactItems,
     totalPages
   };
 };

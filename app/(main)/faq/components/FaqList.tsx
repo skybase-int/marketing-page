@@ -20,7 +20,11 @@ export default function FaqList() {
   const debouncedSearchTerm = useDebounce(searchTerm.trim(), 500);
   const [page, setPage] = useState(1);
   const [openItems, setOpenItems] = useState<string[]>([]);
-  const { items: results, totalItems } = useSearchFaq({
+  const {
+    items: results,
+    totalItems,
+    exactItems
+  } = useSearchFaq({
     searchTerm: searchTerm ? debouncedSearchTerm : '',
     category: category === ALL_FAQS ? '' : category,
     page,
@@ -51,7 +55,7 @@ export default function FaqList() {
 
   const titleParts = getTitleParts(
     category,
-    totalItems,
+    exactItems,
     searchTerm ? debouncedSearchTerm : searchTerm,
     isSearchFocused
   );
