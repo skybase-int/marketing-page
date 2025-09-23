@@ -21,7 +21,9 @@ export const useSearchFaq = ({
         keys: category ? ['categories'] : searchTerm?.length ? ['question', 'answer'] : [],
         ignoreLocation: !category,
         threshold: category ? 0 : 0.3,
-        includeMatches: true
+        includeMatches: true,
+        includeScore: true,
+        fieldNormWeight: 0.4
       }),
     [category, searchTerm]
   );
