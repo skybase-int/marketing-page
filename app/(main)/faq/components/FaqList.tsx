@@ -60,7 +60,8 @@ export default function FaqList() {
     exactCount,
     totalCount,
     searchTerm ? debouncedSearchTerm : searchTerm,
-    isSearchFocused
+    isSearchFocused,
+    exactResults.length
   );
 
   const showResults = !isSearchFocused || debouncedSearchTerm !== '';
@@ -267,7 +268,8 @@ const getTitleParts = (
   exactCount: number,
   totalCount: number,
   searchTerm: string,
-  isSearchFocused: boolean
+  isSearchFocused: boolean,
+  currentPageExactResults: number
 ) => {
   if (category && category !== ALL_FAQS) {
     return { text: category, emphasis: '' };
@@ -281,12 +283,12 @@ const getTitleParts = (
     return { text: 'No answers matching your request were found.', emphasis: '' };
   }
 
-  if (searchTerm && exactCount > 0) {
+  if (searchTerm && currentPageExactResults > 0) {
     const answerText = exactCount === 1 ? 'answer' : 'answers';
     return { text: `${exactCount} ${answerText} containing`, emphasis: `'${searchTerm}'` };
   }
 
-  if (searchTerm && exactCount === 0 && totalCount > 0) {
+  if (searchTerm && currentPageExactResults === 0 && totalCount > 0) {
     const answerText = totalCount === 1 ? '1 answer' : 'Some answers';
     return { text: `${answerText} related to your search term`, emphasis: `'${searchTerm}'` };
   }
