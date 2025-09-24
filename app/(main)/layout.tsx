@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: 'Sky',
     images: [
       {
-        url: '/social_media.png',
+        url: 'https://sky.money/social_media.png',
         width: 2400,
         height: 1260,
         alt: 'Sky - Your future in DeFi starts now'
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'sky.money',
     description: 'Your future in DeFi starts now',
-    images: ['/social_media.png']
+    images: ['https://sky.money/social_media.png']
   }
 };
 
