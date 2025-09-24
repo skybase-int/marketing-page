@@ -146,7 +146,7 @@ export default function FaqList() {
             {showResults ? (
               <>
                 {/* Exact Matches Section */}
-                {exactResults.length > 0 && (
+                {!!searchTerm && exactResults.length > 0 && (
                   <>
                     <Accordion
                       key={`exact-${exactResults[0]?.item.question}`}
@@ -173,10 +173,12 @@ export default function FaqList() {
                 )}
 
                 {/* Vertical Separation */}
-                {exactResults.length > 0 && otherResults.length > 0 && <div className="my-12" />}
+                {!!searchTerm && exactResults.length > 0 && otherResults.length > 0 && (
+                  <div className="my-12" />
+                )}
 
                 {/* Other Matches Section */}
-                {otherResults.length > 0 && (
+                {!!searchTerm && otherResults.length > 0 && (
                   <>
                     {otherResults.length > 0 && exactResults.length > 0 && (
                       <Text className="mb-6 text-lg font-semibold">Other related results</Text>
