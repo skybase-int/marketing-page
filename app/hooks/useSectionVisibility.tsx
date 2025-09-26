@@ -1,8 +1,8 @@
 import { useEffect, useState, useCallback } from 'react';
 
 interface ToggleSectionTransitionOptions {
-  bottomDivRef: React.RefObject<HTMLDivElement>;
-  topDivRef: React.RefObject<HTMLDivElement>;
+  bottomDivRef: React.RefObject<HTMLDivElement | null>;
+  topDivRef: React.RefObject<HTMLDivElement | null>;
 }
 
 const SECTION_TRANSITION_DELAY = 1000;
@@ -32,7 +32,7 @@ export const useSectionVisibility = ({ bottomDivRef, topDivRef }: ToggleSectionT
   useEffect(() => {
     const observer = new IntersectionObserver(observerCallback, { threshold: 0.1 });
 
-    const observeRef = (ref: React.RefObject<HTMLDivElement>) => {
+    const observeRef = (ref: React.RefObject<HTMLDivElement | null>) => {
       if (ref.current) {
         observer.observe(ref.current);
       }
