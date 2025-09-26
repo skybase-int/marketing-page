@@ -20,7 +20,13 @@ export default function FaqList() {
   const debouncedSearchTerm = useDebounce(searchTerm.trim(), 500);
   const [page, setPage] = useState(1);
   const [openItems, setOpenItems] = useState<string[]>([]);
-  const { items: results, totalItems } = useSearchFaq({
+  const {
+    items: results,
+    exactItems: exactResults,
+    otherItems: otherResults,
+    exactCount,
+    totalCount
+  } = useSearchFaq({
     searchTerm: searchTerm ? debouncedSearchTerm : '',
     category: category === ALL_FAQS ? '' : category,
     page,
@@ -51,9 +57,11 @@ export default function FaqList() {
 
   const titleParts = getTitleParts(
     category,
-    totalItems,
+    exactCount,
+    totalCount,
     searchTerm ? debouncedSearchTerm : searchTerm,
-    isSearchFocused
+    isSearchFocused,
+    exactResults.length
   );
 
   const showResults = !isSearchFocused || debouncedSearchTerm !== '';
@@ -138,30 +146,98 @@ export default function FaqList() {
           <div className="mt-10">
             {showResults ? (
               <>
-                <Accordion
-                  key={results[0]?.item.question}
-                  type="multiple"
-                  defaultValue={[]}
-                  className={!!results[0] ? 'border-t border-black pt-8' : ''}
-                  onValueChange={setOpenItems}
-                >
-                  {results.map((result, index) => (
-                    <SearchResult
-                      key={`${category}-${result.item.question}`}
-                      item={result.item}
-                      showPreview={!!searchTerm && !openItems.includes(result.item.question)}
-                      onCategorySelected={cat => {
-                        setCategory(cat);
-                        setSearchTerm('');
-                        setIsSearchFocused(false);
-                      }}
-                      isLast={index === results.length - 1}
-                    />
-                  ))}
-                </Accordion>
+                {/* Exact Matches Section */}
+                {!!searchTerm && exactResults.length > 0 && (
+                  <>
+                    <Accordion
+                      key={`exact-${exactResults[0]?.item.question}`}
+                      type="multiple"
+                      defaultValue={[]}
+                      className="border-t border-black pt-8"
+                      onValueChange={setOpenItems}
+                    >
+                      {exactResults.map((result, index) => (
+                        <SearchResult
+                          key={`exact-${category}-${result.item.question}`}
+                          item={result.item}
+                          showPreview={!!searchTerm && !openItems.includes(result.item.question)}
+                          onCategorySelected={cat => {
+                            setCategory(cat);
+                            setSearchTerm('');
+                            setIsSearchFocused(false);
+                          }}
+                          isLast={index === exactResults.length - 1 && otherResults.length === 0}
+                        />
+                      ))}
+                    </Accordion>
+                  </>
+                )}
+
+                {/* Vertical Separation */}
+                {!!searchTerm && exactResults.length > 0 && otherResults.length > 0 && (
+                  <div className="my-12" />
+                )}
+
+                {/* Other Matches Section */}
+                {!!searchTerm && otherResults.length > 0 && (
+                  <>
+                    {otherResults.length > 0 && exactResults.length > 0 && (
+                      <Text className="mb-6 text-lg font-semibold">Other related results</Text>
+                    )}
+                    <Accordion
+                      key={`other-${otherResults[0]?.item.question}`}
+                      type="multiple"
+                      defaultValue={[]}
+                      className="border-t border-black pt-8"
+                      onValueChange={setOpenItems}
+                    >
+                      {otherResults.map((result, index) => (
+                        <SearchResult
+                          key={`other-${category}-${result.item.question}`}
+                          item={result.item}
+                          showPreview={!!searchTerm && !openItems.includes(result.item.question)}
+                          onCategorySelected={cat => {
+                            setCategory(cat);
+                            setSearchTerm('');
+                            setIsSearchFocused(false);
+                          }}
+                          isLast={index === otherResults.length - 1}
+                        />
+                      ))}
+                    </Accordion>
+                  </>
+                )}
+
+                {/* Show results if no search term (all FAQs) */}
+                {!searchTerm && results.length > 0 && (
+                  <>
+                    <Accordion
+                      key={results[0]?.item.question}
+                      type="multiple"
+                      defaultValue={[]}
+                      className="border-t border-black pt-8"
+                      onValueChange={setOpenItems}
+                    >
+                      {results.map((result, index) => (
+                        <SearchResult
+                          key={`${category}-${result.item.question}`}
+                          item={result.item}
+                          showPreview={!!searchTerm && !openItems.includes(result.item.question)}
+                          onCategorySelected={cat => {
+                            setCategory(cat);
+                            setSearchTerm('');
+                            setIsSearchFocused(false);
+                          }}
+                          isLast={index === results.length - 1}
+                        />
+                      ))}
+                    </Accordion>
+                  </>
+                )}
+
                 <CustomPagination
                   key={`${category}-${searchTerm}`}
-                  dataLength={totalItems}
+                  dataLength={totalCount}
                   itemsPerPage={PAGE_SIZE}
                   onPageChange={setPage}
                 />
@@ -189,9 +265,11 @@ export default function FaqList() {
 
 const getTitleParts = (
   category: string,
-  resultsCount: number,
+  exactCount: number,
+  totalCount: number,
   searchTerm: string,
-  isSearchFocused: boolean
+  isSearchFocused: boolean,
+  currentPageExactResults: number
 ) => {
   if (category && category !== ALL_FAQS) {
     return { text: category, emphasis: '' };
@@ -201,13 +279,18 @@ const getTitleParts = (
     return { text: 'Search', emphasis: 'all FAQs' };
   }
 
-  if (searchTerm && resultsCount === 0) {
+  if (searchTerm && totalCount === 0) {
     return { text: 'No answers matching your request were found.', emphasis: '' };
   }
 
-  if (searchTerm && resultsCount > 0) {
-    const answerText = resultsCount === 1 ? 'answer' : 'answers';
-    return { text: `${resultsCount} ${answerText} containing`, emphasis: `'${searchTerm}'` };
+  if (searchTerm && currentPageExactResults > 0) {
+    const answerText = exactCount === 1 ? 'answer' : 'answers';
+    return { text: `${exactCount} ${answerText} containing`, emphasis: `'${searchTerm}'` };
+  }
+
+  if (searchTerm && currentPageExactResults === 0 && totalCount > 0) {
+    const answerText = totalCount === 1 ? '1 answer' : 'Some answers';
+    return { text: `${answerText} related to your search term`, emphasis: `'${searchTerm}'` };
   }
 
   return { text: 'Crypto is hard.', emphasis: 'Sky.money makes it easier.' };
