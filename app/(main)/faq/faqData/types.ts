@@ -11,7 +11,9 @@ export type Category =
   | 'Network Integrations'
   | 'Sky Governance'
   | 'Upgrade'
-  | 'Staking Engine';
+  | 'Staking Engine'
+  | 'stUSDS'
+  | 'Expert Modules';
 
 export type FAQItem = {
   question: string;
@@ -34,5 +36,7 @@ export const categories: Category[] = [
   'Network Integrations',
   'Sky Governance',
   'Upgrade',
-  'Staking Engine'
+  'Staking Engine',
+  'stUSDS',
+  'Expert Modules'
 ];

@@ -269,11 +269,11 @@
       },
       {
         "question": "What is Spark?",
-        "answer": "[Spark.fi](http://Spark.fi), the very first Star in the Sky Ecosystem, is focused on building on USDS in the Ethereum and adjacent DeFi ecosystem. It is a gateway to the non-custodial Sky Protocol and, like all Sky Stars, an independent decentralized project. Spark offers users—especially USDS holders—products around saving, borrowing and liquidity provision. Spark.fi is more than just another DeFi app, it is the core liquidity and yield infrastructure layer for onchain finance."
+        "answer": "[Spark.fi](https://spark.fi/), the very first Star in the Sky Ecosystem, is focused on building on USDS in the Ethereum and adjacent DeFi ecosystem. It is a gateway to the non-custodial Sky Protocol and, like all Sky Stars, an independent decentralized project. Spark offers users—especially USDS holders—products around saving, borrowing and liquidity provision. Spark.fi is more than just another DeFi app, it is the core liquidity and yield infrastructure layer for onchain finance."
       },
       {
         "question": "What is the SPK token?",
-        "answer": "SPK is the native governance and staking token of [Spark.fi](http://Spark.fi). Designed with a long-term vision for sustainability, decentralization and ecosystem alignment, SPK enables protocol governance, protocol security via staking, and reward access to participants. For more information on Spark Governance, please see the [Spark Artifact](https://sky-atlas.powerhouse.io/A.AG1_Spark/1c1f2ff0-8d73-8157-a4b8-f568e2f09fe3%7C7896ed332638)."
+        "answer": "SPK is the native governance and staking token of [Spark.fi](https://spark.fi/). Designed with a long-term vision for sustainability, decentralization and ecosystem alignment, SPK enables protocol governance, protocol security via staking, and reward access to participants. For more information on Spark Governance, please see the [Spark Artifact](https://sky-atlas.powerhouse.io/A.AG1_Spark/1c1f2ff0-8d73-8157-a4b8-f568e2f09fe3%7C7896ed332638)."
       },
       {
         "question": "What is the Spark Liquidity Layer",
@@ -299,7 +299,7 @@
       },
       {
         "question": "Can I borrow assets using the Sky.money web app?",
-        "answer": "Eligible users of the Sky.money web app can supply SKY tokens to the Staking Engine of the Sky Protocol to access Staking Rewards and may also choose to create one or more positions, including a position that enables them to generate and borrow USDS against supplied SKY.\n\nIf you create a borrow position, you can stake or un-stake your SKY collateral anytime, and withdraw or pay back USDS whenever you'd like. This means you are always able to actively manage your positions.\n\nThe Debt Ceiling and Borrow Rate are parameters determined by Sky Ecosystem Governance through a process of decentralized, community-driven onchain voting. The total debt increases each block according to the Borrow Rate.\n\nUSDS borrow positions are subject to liquidation risk if at any time the value of supplied collateral drops below the required threshold (liquidation price) and the position becomes undercollateralized. If this were to occur, the smart contract would automatically liquidate and auction the collateral, and any leftover collateral may be claimed through the [Unified Auctions portal](https://unified-auctions.makerdao.com/)."
+        "answer": "Eligible users of the Sky.money web app can supply SKY tokens to the Staking Engine of the Sky Protocol to access Staking Rewards and may also choose to create one or more positions, including a position that enables them to generate and borrow USDS against supplied SKY.\n\nIf you create a borrow position, you can stake or un-stake your SKY collateral anytime, and withdraw or pay back USDS whenever you'd like. This means you are always able to actively manage your positions.\n\nThe debt ceiling and Borrow Rate are parameters determined by Sky Ecosystem Governance through a process of decentralized, community-driven onchain voting. The total debt increases each block according to the Borrow Rate.\n\nUSDS borrow positions are subject to liquidation risk if at any time the value of supplied collateral drops below the required threshold (liquidation price) and the position becomes undercollateralized. If this were to occur, the smart contract would automatically liquidate and auction the collateral, and any leftover collateral may be claimed through the [Unified Auctions portal](https://unified-auctions.makerdao.com/)."
       },
       {
         "question": "Is the Sky.money web app affiliated with an exchange?",
@@ -393,7 +393,7 @@
       },
       {
         "question": "Are SKY and MKR tokens the same?",
-        "answer": "Think of SKY not as different from MKR, but as the technical and functional evolution of MKR, with SKY inheriting the governance functionalities previously held by MKR. The upgrade is at the rate of 1:24,000 (1 MKR = 24,000 SKY).\n\n### **Voting with SKY**\n\nSKY is now the sole governance token of the Sky Protocol and Ecosystem. You can use your SKY to participate directly in governance through a system of decentralized onchain voting and/or to entrust your voting power to one or more delegates or a contract that you own. Voting with MKR is no longer possible.\n\n### **Staking SKY**\n\nWhen you stake SKY tokens to the Staking Engine using the Sky.money web app, you can access Staking Rewards and may also choose to create one or more positions, including positions that enable you to generate and borrow USDS against your supplied SKY and to delegate the voting power your SKY tokens provide.\n\nYou may exit your Staking positions at any time; no exit fee applies. Staking Reward rates and the Borrow rate are determined by Sky Ecosystem Governance through the process of decentralized onchain voting.\n\nYour SKY, as well as any Staking Rewards that you accumulate, is supplied to a non-custodial smart contract, such that no intermediary ever takes custody of those tokens."
+        "answer": "Think of SKY not as different from MKR, but as the technical and functional evolution of MKR, with SKY inheriting the governance functionalities previously held by MKR. The upgrade is at the rate of 1:24,000 (1 MKR = 24,000 SKY).\n\n### **Voting with SKY**\n\nSKY is now the sole governance token of the Sky Protocol and Ecosystem. You can use your SKY to participate directly in governance through a system of decentralized onchain voting and/or to entrust your voting power to one or more delegates or a contract that you own. Voting with MKR is no longer possible.\n\n### **Staking SKY**\n\nWhen you stake SKY tokens to the Staking Engine using the Sky.money web app, you can access Staking Rewards and may also choose to create one or more positions, including positions that enable you to generate and borrow USDS against your supplied SKY and to delegate the voting power your SKY tokens provide.\n\nYou may exit your Staking positions at any time; no exit fee applies. Staking Rewards Rates and the Borrow Rate are determined by Sky Ecosystem Governance through the process of decentralized onchain voting.\n\nYour SKY, as well as any Staking Rewards that you accumulate, is supplied to a non-custodial smart contract, such that no intermediary ever takes custody of those tokens."
       }
     ]
   },
@@ -455,7 +455,7 @@
       },
       {
         "question": "Will the MKR I have locked in Staking positions be automatically upgraded to SKY?",
-        "answer": "No, but your sealed MKR will be upgraded to SKY during the Seal to Staking migration process. The process, via the Sky.money web app, makes manually exiting your current Seal positions and creating new positions in the Staking Engine as simple as possible.\n\nThe Staking Engine offers all of the same features as the Seal Engine, but it has no exit fee and only supports SKY, not MKR.\n\nFor upgrade details and step-by-step upgrade instructions, please visit the [MKR to SKY Upgrade Hub](https://upgrademkrtosky.sky.money)."
+        "answer": "No, but your sealed MKR will be upgraded to SKY during the Seal to Staking migration process. The process, via the Sky.money web app, makes manually exiting your current Seal positions and creating new positions in the Staking Engine as simple as possible. The Staking Engine offers all of the same features as the Seal Engine, but it has no exit fee and only supports SKY, not MKR.\n\nFor upgrade details and step-by-step upgrade instructions, please visit the [MKR to SKY Upgrade Hub](https://upgrademkrtosky.sky.money)."
       },
       {
         "question": "Will the MKR I have supplied to DeFi applications like DeFI Saver automatically upgrade SKY?",
@@ -637,13 +637,77 @@
       }
     ]
   },
+  "expertModules": {
+    "title": "EXPERT MODULES",
+    "displayName": "Expert Modules",
+    "questions": [
+      {
+        "question": "What are Expert modules and how do they work?",
+        "answer": "Expert modules enable users to access a variable rate on USDS by participating in SKY-backed borrowing. Advanced strategies may carry increased risk. They are intended and designed for experienced users who understand the complexities of DeFi, including factors like market volatility and liquidity constraints."
+      },
+      {
+        "question": "Is there a minimum amount of USDS I must supply to access Expert module rewards?",
+        "answer": "No minimum amount of USDS is required."
+      },
+      {
+        "question": "Does it cost anything to access Expert modules?",
+        "answer": "Accessing Expert modules via the Sky.money web app is free and neither controlled, imposed nor received by Skybase International nor the Sky Protocol. However, any time you supply or withdraw assets to/from the stUSDS module of the Sky Protocol, you will incur a transaction fee, called a gas fee, for using the Ethereum blockchain network."
+      },
+      {
+        "question": "What is the stUSDS Rate, and how is it calculated?",
+        "answer": "The stUSDS rate is variable and calculated using the following formula:\n\nstUSDS Rate = Utilization * (SKY Borrow Rate - stUSDS Accessibility Reward) + (1 - Utilization) * Sky Savings Rate\n\nThe rate is derived from the SKY Borrow Rate less the stUSDS Accessibility Reward on the utilized portion of your capital and the Sky Savings Rate on the unutilized portion. Utilization is the percent of funds in the stUSDS contract that are used to fund borrowing against staked SKY.\n\nThe SKY Borrow Rate is the current interest rate charged to SKY-backed borrowers and is dynamic and market-driven, based on the utilization of funds within the stUSDS contract."
+      },
+      {
+        "question": "Does it cost anything to access Expert modules?",
+        "answer": "Accessing Expert modules via the Sky.money web app is free and neither controlled, imposed nor received by Skybase International nor the Sky Protocol. However, any time you supply or withdraw assets to/from the stUSDS module of the Sky Protocol, you will incur a transaction fee, called a gas fee, for using the Ethereum blockchain network."
+      }
+    ]
+  },
+  "stusdsModule": {
+    "title": "stUSDS MODULE",
+    "displayName": "stUSDS",
+    "questions": [
+      {
+        "question": "What is stUSDS?",
+        "answer": "stUSDS is a senior risk capital token designed for more expert users, who wish to engage with higher-risk modules. It is structured to absorb a greater share of system risk in exchange for the potential to capture a larger portion of protocol rewards; the asset mix of stUSDS can be viewed on the [Sky Ecosystem Dashboard](https://info.sky.money/stusds).\n\nstUSDS funds and supports liquidity for SKY stakers, encouraging more participation in SKY governance by active token holders, delegators and voters, leading to a more secure Sky Ecosystem. Prospective users of stUSDS are encouraged to familiarize themselves and understand the risks associated with participating in a token that takes a senior risk position before participating."
+      },
+      {
+        "question": "What is the SKY Borrow Rate?",
+        "answer": "The SKY Borrow Rate is the current interest rate charged to SKY-backed borrowers and is dynamic and market-driven, based on the utilization of funds within the stUSDS contract."
+      },
+      {
+        "question": "Does it cost anything to access the stUSDS Rate?",
+        "answer": "Accessing the stUSDS Rate via the Sky.money web app is free and neither controlled, imposed nor received by Skybase International nor the Sky Protocol. However, any time you supply or withdraw assets to/from the stUSDS module of the Sky Protocol, you will incur a transaction fee, called a gas fee, for using the Ethereum blockchain network."
+      },
+      {
+        "question": "Is there a minimum amount of USDS I must supply to access stUSDS rewards?",
+        "answer": "No minimum supply amount is required to access the stUSDS Rate; however, there is a cap, set by Sky Ecosystem Governance, on how much USDS the stUSDS vault can accept. Withdrawals are available as long as the stUSDS pool has sufficient idle USDS. Since deposits fund SKY‑backed loans, withdrawal capacity depends on current utilization: when most liquidity is lent out, withdrawals may be limited until repayments occur or liquidity returns."
+      },
+      {
+        "question": "What is the conversion rate for stUSDS?",
+        "answer": "The stUSDS conversion rate floats and generally increases over time as yield accrues. At launch it is typically 1.0 and rises as earnings accumulate. Loss events (e.g., liquidation shortfalls) reduce the exchange rate via a proportional haircut."
+      },
+      {
+        "question": "Can I supply/withdraw USDS to/from the stUSDS module anytime?",
+        "answer": "Generally, yes—deposits and withdrawals are designed to be available at any time, but there are a couple of caveats:\n\nLiquidity availability: Withdrawals depend on the module having enough liquid USDS. If utilization is very high, you may need to wait for borrowers to repay or for liquidity to return, or withdraw partially.\nRate/fee changes: Sky Ecosystem Governance can update parameters (rates, caps) and may impose temporary safeguards during stress."
+      },
+      {
+        "question": "Why are the risks and the rewards associated with stUSDS different to that of sUSDS?",
+        "answer": "stUSDS holders earn yield but also take on the risk of funding SKY‑backed borrowing. If a borrower’s staked SKY collateral is liquidated and the proceeds don’t fully cover the debt, the stUSDS vault absorbs the shortfall via a proportional haircut to the vault’s exchange rate (i.e., each stUSDS redeems for fewer USDS). This design ring‑fences losses to the stUSDS module, so the broader Sky Protocol is insulated from deficits arising in the SKY‑backed borrowing facility. So, sUSDS carries protocol-level risk but not borrower-shortfall risk, whereas stUSDS does bear that shortfall risk."
+      },
+      {
+        "question": "Can I trade stUSDS on the open market?",
+        "answer": "Yes, eligible users of the Sky.money web app can access the Trade feature to trade stUSDS via an API integration with the third-party decentralized exchange CoW Swap. stUSDS holders are also free to access any other protocol or exchange that supports stUSDS trading; however, users do so at their own risk. Sky.money is not responsible for any loss or damages incurred while using such third-party platforms. Please see the [User Risk Documentation](https://docs.sky.money/user-risks) for more information on third-party services."
+      }
+    ]
+  },
   "stakingEngine": {
     "title": "STAKING ENGINE",
     "displayName": "Staking Engine",
     "questions": [
       {
         "question": "What is the Staking Engine?",
-        "answer": "The Staking Engine is a feature of the decentralized Sky Protocol. When you stake SKY tokens using the Sky.money web app, you can access Staking Rewards and may also choose to create one or more positions, including positions that enable you to generate and borrow USDS against your supplied SKY and to delegate the voting power the SKY token provides. Here's a brief overview:\n\n• **Access Rewards.** Supply SKY tokens to access Staking Rewards. Staking Reward rates are determined by Sky Ecosystem Governance through the process of decentralized onchain voting.\n\n• **Borrow.** Borrow USDS against your supplied SKY. You can exit your borrow position at any time and withdraw or pay back USDS whenever you would like. The USDS Borrow Rate and Debt Ceiling are determined by Sky Ecosystem Governance through the process of decentralized onchain voting. Your total debt increases each block according to the Borrow Rate.\n\n• **Delegate.** Transfer the voting power of your supplied SKY tokens to a recognized delegate or a contract that you own. Your chosen delegate can then participate in the Sky Ecosystem Governance voting process on your behalf. You can choose one delegate per position, meaning if you want to entrust your SKY to two different delegates using the Staking Engine, you will need to create two separate positions.\n\nYou may exit your Staking positions at any time; no exit fee applies. The Staking Reward rate and Borrow Rate are determined by Sky Ecosystem Governance through the process of decentralized onchain voting.\n\nYour SKY, as well as any Staking Rewards that you accumulate, are supplied to a non-custodial smart contract, such that no intermediary ever takes custody of those tokens. With Sky, you always remain in control of your assets."
+        "answer": "The Staking Engine is a feature of the decentralized Sky Protocol. When you stake SKY tokens using the Sky.money web app, you can access Staking Rewards and may also choose to create one or more positions, including positions that enable you to generate and borrow USDS against your supplied SKY and to delegate the voting power the SKY token provides. Here's a brief overview:\n\n• **Access Rewards.** Supply SKY tokens to access Staking Rewards. Staking Reward rates are determined by Sky Ecosystem Governance through the process of decentralized onchain voting.\n\n• **Borrow.** Borrow USDS against your supplied SKY. You can exit your borrow position at any time and withdraw or pay back USDS whenever you would like. The USDS Borrow Rate and debt ceiling are determined by Sky Ecosystem Governance through the process of decentralized onchain voting. Your total debt increases each block according to the Borrow Rate.\n\n• **Delegate.** Transfer the voting power of your supplied SKY tokens to a recognized delegate or a contract that you own. Your chosen delegate can then participate in the Sky Ecosystem Governance voting process on your behalf. You can choose one delegate per position, meaning if you want to entrust your SKY to two different delegates using the Staking Engine, you will need to create two separate positions.\n\nYou may exit your Staking positions at any time; no exit fee applies. Staking Rewards Rates and the Borrow Rate are determined by Sky Ecosystem Governance through the process of decentralized onchain voting.\n\nYour SKY, as well as any Staking Rewards that you accumulate, are supplied to a non-custodial smart contract, such that no intermediary ever takes custody of those tokens. With Sky, you always remain in control of your assets."
       },
       {
         "question": "How do I stake my SKY using the Sky.money web app.",
@@ -659,11 +723,11 @@
       },
       {
         "question": "How does the Staking Engine enable borrowing?",
-        "answer": "The Staking Engine is a feature of the decentralized Sky Protocol. When you stake SKY tokens, you can access Staking Rewards and may also choose to create one or more positions, including a position that enables you to generate and borrow USDS stablecoins against your supplied SKY.\n\nYou can exit your borrow position at any time—no exit fee applies—and withdraw or pay back USDS whenever you would like.\n\nThe USDS Borrow Rate and Debt Ceiling are determined by Sky Ecosystem Governance through the process of decentralized onchain voting. Your total debt increases each block according to the Borrow Rate.\n\nPlease note that opening a USDS borrow position subjects you to liquidation risk if at any time the value of your supplied collateral drops below the required threshold (liquidation price) and your position becomes undercollateralized. If this were to occur, the smart contract would automatically liquidate and auction your collateral, and any leftover collateral may be claimed through the [Unified Auctions portal](https://unified-auctions.makerdao.com/).\n\nFor more information, see the [User Risk Documentation](https://docs.sky.money/user-risks)."
+        "answer": "The Staking Engine is a feature of the decentralized Sky Protocol. When you stake SKY tokens, you can access Staking Rewards and may also choose to create one or more positions, including a position that enables you to generate and borrow USDS stablecoins against your supplied SKY.\n\nYou can exit your borrow position at any time—no exit fee applies—and withdraw or pay back USDS whenever you would like.\n\nThe USDS Borrow Rate and debt ceiling are determined by Sky Ecosystem Governance through the process of decentralized onchain voting. Your total debt increases each block according to the Borrow Rate.\n\nPlease note that opening a USDS borrow position subjects you to liquidation risk if at any time the value of your supplied collateral drops below the required threshold (liquidation price) and your position becomes undercollateralized. If this were to occur, the smart contract would automatically liquidate and auction your collateral, and any leftover collateral may be claimed through the [Unified Auctions portal](https://unified-auctions.makerdao.com/).\n\nFor more information, see the [User Risk Documentation](https://docs.sky.money/user-risks)."
       },
       {
         "question": "How is the USDS Borrow Rate determined?",
-        "answer": "The USDS Borrow Rate and Debt Ceiling are parameters determined by Sky Ecosystem Governance through a process of decentralized, community-driven onchain voting."
+        "answer": "The USDS Borrow Rate and debt ceiling are parameters determined by Sky Ecosystem Governance through a process of decentralized, community-driven onchain voting."
       },
       {
         "question": "Can I borrow USDS using ETH?",
@@ -739,7 +803,7 @@
       },
       {
         "question": "What is the Sky Atlas?",
-        "answer": "The [Sky Atlas](https://sky-atlas.powerhouse.io/) is the definitive rulebook of the Sky Ecosystem, as determined by Sky Ecosystem Governance. It is a Sky artifact—a data structure encompassing Sky documents—which exists to stabilize and streamline the governance process to serve the evolving needs of the ecosystem. The Atlas is a partially immutable work in progress that will continue to be refined through an improvement proposal and decentralized voting framework until Sky Ecosystem Governance determines that modifications are no longer necessary."
+        "answer": "The [Sky Atlas](https://sky-atlas.powerhouse.io/) is the definitive rulebook of the Sky Ecosystem, as determined by Sky Ecosystem Governance. It is a Sky artifact—a data structure encompassing Sky documents—which exists to stabilize and streamline the governance process to serve the evolving needs of the ecosystem.\n\nThe Atlas defines important words and phrases, including [Universal Alignment](https://sky-atlas.powerhouse.io/A.0.1.1.4_Universal_Alignment/fa84d113-a62b-4acc-9c67-23945d7efcdd|693d9aad490a), [Ecosystem Intelligence](https://sky-atlas.powerhouse.io/A.0.1.1.2_Ecosystem_Intelligence/1be87264-19ef-42c2-8bfd-2bc710c21fe4|693d9aad490a), and [Governance Equilibrium](https://sky-atlas.powerhouse.io/A.0.1.1.26_Governance_Equilibrium/2c954983-a296-4ebd-845c-c24af0454743|693d9aad490a). It also defines roles, such as [Alignment Conserver](<https://sky-atlas.powerhouse.io/A.0.1.1.17_Alignment_Conserver_(AC)/f8ca466f-2bd4-45e7-868a-b3099a4ebd26|693d9aad490a>), [Aligned Delegate](<https://sky-atlas.powerhouse.io/A.0.1.1.18_Aligned_Delegate_(AD)/31f68f91-4194-4d71-8f21-5c9882cc4871|693d9aad490a>), and [Facilitator](https://sky-atlas.powerhouse.io/A.0.1.1.19_Facilitator/0478f2ff-3408-4c3f-b6f9-d403e2bd4131|693d9aad490a).\n\nThe Atlas is a partially immutable work in progress that will continue to be refined through an improvement proposal and decentralized voting framework until Sky Ecosystem Governance determines that modifications are no longer necessary."
       },
       {
         "question": "How do I vote with SKY?",
