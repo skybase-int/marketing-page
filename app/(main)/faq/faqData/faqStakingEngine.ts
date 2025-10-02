@@ -7,11 +7,11 @@ export const stakingEngine: FAQItem[] = [
 
 • **Access Rewards.** Supply SKY tokens to access Staking Rewards. Staking Reward rates are determined by Sky Ecosystem Governance through the process of decentralized onchain voting.
 
-• **Borrow.** Borrow USDS against your supplied SKY. You can exit your borrow position at any time and withdraw or pay back USDS whenever you would like. The USDS Borrow Rate and Debt Ceiling are determined by Sky Ecosystem Governance through the process of decentralized onchain voting. Your total debt increases each block according to the Borrow Rate.
+• **Borrow.** Borrow USDS against your supplied SKY. You can exit your borrow position at any time and withdraw or pay back USDS whenever you would like. The USDS Borrow Rate and debt ceiling are determined by Sky Ecosystem Governance through the process of decentralized onchain voting. Your total debt increases each block according to the Borrow Rate.
 
 • **Delegate.** Transfer the voting power of your supplied SKY tokens to a recognized delegate or a contract that you own. Your chosen delegate can then participate in the Sky Ecosystem Governance voting process on your behalf. You can choose one delegate per position, meaning if you want to entrust your SKY to two different delegates using the Staking Engine, you will need to create two separate positions.
 
-You may exit your Staking positions at any time; no exit fee applies. The Staking Reward rate and Borrow Rate are determined by Sky Ecosystem Governance through the process of decentralized onchain voting.
+You may exit your Staking positions at any time; no exit fee applies. Staking Rewards Rates and the Borrow Rate are determined by Sky Ecosystem Governance through the process of decentralized onchain voting.
 
 Your SKY, as well as any Staking Rewards that you accumulate, are supplied to a non-custodial smart contract, such that no intermediary ever takes custody of those tokens. With Sky, you always remain in control of your assets.`,
     categories: ['Staking Engine']
@@ -54,7 +54,7 @@ The rates shown in Sky.money are estimated annual rates that can change over tim
 
 You can exit your borrow position at any time—no exit fee applies—and withdraw or pay back USDS whenever you would like.
 
-The USDS Borrow Rate and Debt Ceiling are determined by Sky Ecosystem Governance through the process of decentralized onchain voting. Your total debt increases each block according to the Borrow Rate.
+The USDS Borrow Rate and debt ceiling are determined by Sky Ecosystem Governance through the process of decentralized onchain voting. Your total debt increases each block according to the Borrow Rate.
 
 Please note that opening a USDS borrow position subjects you to liquidation risk if at any time the value of your supplied collateral drops below the required threshold (liquidation price) and your position becomes undercollateralized. If this were to occur, the smart contract would automatically liquidate and auction your collateral, and any leftover collateral may be claimed through the [Unified Auctions portal](https://unified-auctions.makerdao.com/).
 
@@ -64,7 +64,7 @@ For more information, see the [User Risk Documentation](https://docs.sky.money/u
   {
     question: 'How is the USDS Borrow Rate determined?',
     answer:
-      'The USDS Borrow Rate and Debt Ceiling are parameters determined by Sky Ecosystem Governance through a process of decentralized, community-driven onchain voting.',
+      'The USDS Borrow Rate and debt ceiling are parameters determined by Sky Ecosystem Governance through a process of decentralized, community-driven onchain voting.',
     categories: ['Staking Engine']
   },
   {
