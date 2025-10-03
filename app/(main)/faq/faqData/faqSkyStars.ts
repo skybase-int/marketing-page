@@ -36,13 +36,13 @@ Some Star Artifact documents are high-level, focusing on vision, principles and 
   {
     question: 'What is Spark?',
     answer:
-      '[Spark.fi](http://Spark.fi), the very first Star in the Sky Ecosystem, is focused on building on USDS in the Ethereum and adjacent DeFi ecosystem. It is a gateway to the non-custodial Sky Protocol and, like all Sky Stars, an independent decentralized project. Spark offers users—especially USDS holders—products around saving, borrowing and liquidity provision. Spark.fi is more than just another DeFi app, it is the core liquidity and yield infrastructure layer for onchain finance.',
+      '[Spark.fi](https://spark.fi/), the very first Star in the Sky Ecosystem, is focused on building on USDS in the Ethereum and adjacent DeFi ecosystem. It is a gateway to the non-custodial Sky Protocol and, like all Sky Stars, an independent decentralized project. Spark offers users—especially USDS holders—products around saving, borrowing and liquidity provision. Spark.fi is more than just another DeFi app, it is the core liquidity and yield infrastructure layer for onchain finance.',
     categories: ['Sky Stars']
   },
   {
     question: 'What is the SPK token?',
     answer:
-      'SPK is the native governance and staking token of [Spark.fi](http://Spark.fi). Designed with a long-term vision for sustainability, decentralization and ecosystem alignment, SPK enables protocol governance, protocol security via staking, and reward access to participants. For more information on Spark Governance, please see the [Spark Artifact](https://sky-atlas.powerhouse.io/A.AG1_Spark/1c1f2ff0-8d73-8157-a4b8-f568e2f09fe3%7C7896ed332638).',
+      'SPK is the native governance and staking token of [Spark.fi](https://spark.fi/). Designed with a long-term vision for sustainability, decentralization and ecosystem alignment, SPK enables protocol governance, protocol security via staking, and reward access to participants. For more information on Spark Governance, please see the [Spark Artifact](https://sky-atlas.powerhouse.io/A.AG1_Spark/1c1f2ff0-8d73-8157-a4b8-f568e2f09fe3%7C7896ed332638).',
     categories: ['Sky Stars']
   },
   {
