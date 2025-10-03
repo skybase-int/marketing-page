@@ -310,7 +310,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
         </div>
       </div>
       {/* Container */}
-      <div className="tablet:grid-rows-auto grid-rows-auto desktop:grid-rows-auto mb-24 grid auto-rows-min grid-cols-1 gap-5  p-1.5 tablet:grid-cols-2 tablet:p-2.5 desktop:gap-y-10 desktop:p-5 desktop-xl:p-10">
+      <div className="tablet:grid-rows-auto grid-rows-auto desktop:grid-rows-auto mb-24 grid auto-rows-min grid-cols-1 gap-5 p-1.5 tablet:grid-cols-2 tablet:p-2.5 desktop:gap-y-10 desktop:p-5 desktop-xl:p-10">
         {/* Section 1 */}
         <Card
           variant="glass"
@@ -608,29 +608,57 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           />
           <FeatureCardLg
             href={`${baseUrl}/?widget=expert`}
-            descriptionElement={<Text variant="p3">Expert widget</Text>}
-            postTitle="Expert"
+            descriptionElement={
+              <Text variant="p3">
+                Expert modules unlock high-level functionality tailored to experienced users. stUSDS, the
+                first Expert token of the Sky Protocol, is a senior risk capital token that funds and supports
+                liquidity for SKY stakers.
+                <br />
+                <br />
+                Use USDS to access the stUSDS Rate (i) and encourage more participation in SKY governance. No
+                minimum supply amount is required.
+              </Text>
+            }
+            postTitle="stUSDS Rewards"
             postTextElement={
               <>
-                <Text variant="p2" className="mb-4 desktop:mb-[18px] desktop-xl:mb-[20px]">
-                  expert text
+                <Text variant="p3" className="mb-4 desktop:mb-[18px] desktop-xl:mb-[20px]">
+                  stUSDS is a senior risk capital token structured to absorb a greater share of system risk in
+                  exchange for the potential to capture a larger portion of protocol rewards.
+                  <br />
+                  <br />
+                  When you supply USDS to the stUSDS module of the Protocol, you fund SKY-back borrowing to
+                  access the stUSDS Rate(i) and receive stUSDS tokens. The stUSDS tokens serve as a digital
+                  record of your USDS interaction with the stUSDS module and any value accrued to your
+                  position.
+                  <br />
+                  <br />
+                  stUSDS funds and supports liquidity for SKY stakers, encouraging more participation in SKY
+                  governance, leading to a more secure ecosystem.
+                  <br />
+                  <br />
+                  The asset mix of stUSDS can be viewed on the{' '}
+                  <ExternalLink href="https://info.sky.money/stusds" className="text-sky-700 underline">
+                    Sky Ecosystem Dashboard
+                  </ExternalLink>
+                  .
                 </Text>
               </>
             }
             imgSrc="/products_stake_1.png"
             mobileImgSrc="/products_stake_1_mobile.png"
             buttonVariant="azure-2"
-            buttonText="Expert Module"
-            emphasis="StUSDS"
-            title="Expert Module"
-            reverse={false}
+            buttonText="Get stUSDS"
+            emphasis="Access stUSDS tokens"
+            title="with USDS"
+            reverse={true}
             className="col-span-1 tablet:col-span-2 desktop:col-span-1"
             featurePageId="expert"
             APY={data.stusdsApy}
             TVL={data.stusdsTvl}
             type="stusds"
-            APYDescription="StUSDS Rate:"
-            TVLDescription="StUSDS TVL"
+            APYDescription="stUSDS Rate"
+            TVLDescription="stUSDS TVL"
           />
         </Card>
       </div>
