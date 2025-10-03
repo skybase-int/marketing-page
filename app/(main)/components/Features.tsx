@@ -645,8 +645,8 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                 </Text>
               </>
             }
-            imgSrc="/products_stake_1.png"
-            mobileImgSrc="/products_stake_1_mobile.png"
+            imgSrc="/products_stUSDS.png"
+            mobileImgSrc="/products_stUSDS_mobile.png"
             buttonVariant="azure-2"
             buttonText="Get stUSDS"
             emphasis="Access stUSDS tokens"
