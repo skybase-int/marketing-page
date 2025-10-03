@@ -31,12 +31,12 @@ export const ExpertCard = ({ data }: { data: FetchedData }) => {
             </>
           ),
           stats: [
-            { id: 'rate', label: 'StUSDS Rate', value: data.stusdsApy },
-            { id: 'tvl', label: 'StUSDS TVL', value: data.stusdsTvl }
+            { id: 'rate', label: 'stUSDS Rate', value: data.stusdsApy },
+            { id: 'tvl', label: 'stUSDS TVL', value: data.stusdsTvl }
           ],
-          buttonCta: 'Access Expert',
+          buttonCta: 'Access stUSDS Rewards',
           url: `?widget=expert`,
-          buttonVariant: 'azure-2',
+          buttonVariant: 'nocturnal-2',
           illustration: isLoadingBreakpointIndex ? null : (
             <div className="h-full w-full px-3 tablet:px-0">
               <div className="relative flex h-full w-full flex-col">
