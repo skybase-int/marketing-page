@@ -310,7 +310,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
         </div>
       </div>
       {/* Container */}
-      <div className="tablet:grid-rows-auto grid-rows-auto desktop:grid-rows-auto mb-24 grid auto-rows-min grid-cols-1 gap-5  p-1.5 tablet:grid-cols-2 tablet:p-2.5 desktop:gap-y-10 desktop:p-5 desktop-xl:p-10">
+      <div className="tablet:grid-rows-auto grid-rows-auto desktop:grid-rows-auto mb-24 grid auto-rows-min grid-cols-1 gap-5 p-1.5 tablet:grid-cols-2 tablet:p-2.5 desktop:gap-y-10 desktop:p-5 desktop-xl:p-10">
         {/* Section 1 */}
         <Card
           variant="glass"
@@ -346,6 +346,97 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
         </Card>
 
         {/* Section 2 */}
+        <FeatureCardLg
+          href={`${baseUrl}/?widget=trade`}
+          descriptionElement={
+            <Text variant="p3">
+              Trade popular tokens for USDS and SKY, quickly and simply, utilising smart contracts on the
+              blockchain instead of relying on centralised entities. Trades are powered by{' '}
+              <ExternalLink href="https://swap.cow.fi/" className="text-black">
+                CoW Swap
+              </ExternalLink>
+              .
+            </Text>
+          }
+          postTextElement={
+            <>
+              <Text variant="p2" className="mb-4 desktop:mb-[18px] desktop-xl:mb-[20px]">
+                Directly trade popular tokens for Sky ecosystem tokens at current market prices.
+                <br />
+              </Text>
+              <ul className="list-disc pl-7">
+                <li>
+                  <Text variant="p2">
+                    Trade USDC, USDT, ETH and SKY for USDS, and vice versa. Once you have USDS, you can use it
+                    to access Sky Token Rewards and to access the Sky Savings Rate to accumulate more USDS.
+                  </Text>
+                </li>
+                <li>
+                  <Text variant="p2">
+                    Trade USDC, USDT, ETH and USDS for SKY, and vice versa. Once you have SKY, you can use it
+                    to access Staking Rewards and participate in Sky Ecosystem Governance.
+                  </Text>
+                </li>
+              </ul>
+            </>
+          }
+          imgSrc="/products_trade.png"
+          mobileImgSrc="/products_trade_mobile.png"
+          buttonVariant="twilight-3"
+          buttonText="Start Trading"
+          emphasis="Trade"
+          title="crypto for USDS"
+          postTitle="Trade crypto for USDS"
+          className="col-span-1 h-[500px] overflow-y-auto tablet:col-span-2 tablet:h-[600px] desktop:col-span-1"
+          featurePageId="trade"
+          APY=""
+          TVL=""
+          APYDescription=""
+          TVLDescription=""
+        />
+        <FeatureCardLg
+          href={`${baseUrl}/?widget=savings`}
+          descriptionElement={
+            <Text variant="p3">
+              Use USDS to access the Sky Savings Rate (SSR) and accumulate additional USDS over time.
+              <br />
+              <br />
+              No minimum USDS supply amount is required; withdraw anytime.
+              <br />
+              <br />
+              The Sky Savings Rate is variable, determined by ecosystem governance through a process of
+              decentralised onchain voting.
+              <br />
+              <br />
+              With Sky, you always remain in full control of your savings.
+            </Text>
+          }
+          postTitle="Savings"
+          postTextElement={
+            <Text variant="p2">
+              Supply USDS to the Sky Savings Rate module of the Sky Protocol to access the Sky Savings Rate
+              and accumulate additional USDS over time. Start in seconds; no minimum supply amount is
+              required.
+              <br />
+              <br />
+              Tap into Sky and the unique power of the blockchain to always remain in full control of your
+              money.
+            </Text>
+          }
+          imgSrc="/products_savings.png"
+          mobileImgSrc="/products_savings_mobile.png"
+          buttonVariant="aurora-2"
+          buttonText="Start Saving"
+          emphasis="Save"
+          title="USDS"
+          className="col-span-1 tablet:col-span-2 desktop:col-span-1"
+          featurePageId="savings"
+          APY={data.saveApy}
+          TVL={data.saveTvl}
+          type="ssr"
+          APYDescription="SSR Rate"
+          TVLDescription="Sky Savings Rate TVL"
+        />
         <FeatureCardLg
           href={`${baseUrl}/?widget=rewards`}
           descriptionElement={
@@ -396,97 +487,6 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           type="str"
           APYDescription="Sky Token Rewards Rates up to:"
           TVLDescription="Sky Token Rewards TVL"
-        />
-        <FeatureCardLg
-          href={`${baseUrl}/?widget=savings`}
-          descriptionElement={
-            <Text variant="p3">
-              Use USDS to access the Sky Savings Rate (SSR) and accumulate additional USDS over time.
-              <br />
-              <br />
-              No minimum USDS supply amount is required; withdraw anytime.
-              <br />
-              <br />
-              The Sky Savings Rate is variable, determined by ecosystem governance through a process of
-              decentralised onchain voting.
-              <br />
-              <br />
-              With Sky, you always remain in full control of your savings.
-            </Text>
-          }
-          postTitle="Savings"
-          postTextElement={
-            <Text variant="p2">
-              Supply USDS to the Sky Savings Rate module of the Sky Protocol to access the Sky Savings Rate
-              and accumulate additional USDS over time. Start in seconds; no minimum supply amount is
-              required.
-              <br />
-              <br />
-              Tap into Sky and the unique power of the blockchain to always remain in full control of your
-              money.
-            </Text>
-          }
-          imgSrc="/products_savings.png"
-          mobileImgSrc="/products_savings_mobile.png"
-          buttonVariant="aurora-2"
-          buttonText="Start Saving"
-          emphasis="Save"
-          title="USDS"
-          className="col-span-1 tablet:col-span-2 desktop:col-span-1"
-          featurePageId="savings"
-          APY={data.saveApy}
-          TVL={data.saveTvl}
-          type="ssr"
-          APYDescription="SSR Rate"
-          TVLDescription="Sky Savings Rate TVL"
-        />
-        <FeatureCardLg
-          href={`${baseUrl}/?widget=trade`}
-          descriptionElement={
-            <Text variant="p3">
-              Trade popular tokens for USDS and SKY, quickly and simply, utilising smart contracts on the
-              blockchain instead of relying on centralised entities. Trades are powered by{' '}
-              <ExternalLink href="https://swap.cow.fi/" className="text-black">
-                CoW Swap
-              </ExternalLink>
-              .
-            </Text>
-          }
-          postTextElement={
-            <>
-              <Text variant="p2" className="mb-4 desktop:mb-[18px] desktop-xl:mb-[20px]">
-                Directly trade popular tokens for Sky ecosystem tokens at current market prices.
-                <br />
-              </Text>
-              <ul className="list-disc pl-7">
-                <li>
-                  <Text variant="p2">
-                    Trade USDC, USDT, ETH and SKY for USDS, and vice versa. Once you have USDS, you can use it
-                    to access Sky Token Rewards and to access the Sky Savings Rate to accumulate more USDS.
-                  </Text>
-                </li>
-                <li>
-                  <Text variant="p2">
-                    Trade USDC, USDT, ETH and USDS for SKY, and vice versa. Once you have SKY, you can use it
-                    to access Staking Rewards and participate in Sky Ecosystem Governance.
-                  </Text>
-                </li>
-              </ul>
-            </>
-          }
-          imgSrc="/products_trade.png"
-          mobileImgSrc="/products_trade_mobile.png"
-          buttonVariant="twilight-3"
-          buttonText="Start Trading"
-          emphasis="Trade"
-          title="crypto for USDS"
-          postTitle="Trade crypto for USDS"
-          className="col-span-1 h-[500px] overflow-y-auto tablet:col-span-2 tablet:h-[600px] desktop:col-span-1"
-          featurePageId="trade"
-          APY=""
-          TVL=""
-          APYDescription=""
-          TVLDescription=""
         />
         <FeatureCardLg
           href={`${baseUrl}/?widget=stake`}
@@ -543,7 +543,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           emphasis="Access Staking rewards"
           title="with SKY"
           className="col-span-1 tablet:col-span-2 desktop:col-span-1"
-          featurePageId="stake" // TODO: Check it works
+          featurePageId="stake"
           APY={data.stakeApy}
           TVL={data.stakeTvl}
           type="srr"
@@ -556,6 +556,60 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           variant="glass"
           className="col-span-1 grid grid-cols-1 gap-5 rounded-3xl border p-4 tablet:col-span-2 tablet:grid-cols-2"
         >
+          <FeatureCardLg
+            href={`${baseUrl}/?widget=expert`}
+            descriptionElement={
+              <Text variant="p3">
+                Expert modules unlock high-level functionality tailored to experienced users. stUSDS, the
+                first Expert token of the Sky Protocol, is a senior risk capital token that funds and supports
+                liquidity for SKY stakers.
+                <br />
+                <br />
+                Use USDS to access the stUSDS Rate <PopoverRateInfo type="stusds" /> and encourage more
+                participation in SKY governance. No minimum supply amount is required.
+              </Text>
+            }
+            postTitle="stUSDS Rewards"
+            postTextElement={
+              <>
+                <Text variant="p3" className="mb-4 desktop:mb-[18px] desktop-xl:mb-[20px]">
+                  stUSDS is a senior risk capital token structured to absorb a greater share of system risk in
+                  exchange for the potential to capture a larger portion of protocol rewards.
+                  <br />
+                  <br />
+                  When you supply USDS to the stUSDS module of the Protocol, you fund SKY-back borrowing to
+                  access the stUSDS Rate <PopoverRateInfo type="stusds" /> and receive stUSDS tokens. The
+                  stUSDS tokens serve as a digital record of your USDS interaction with the stUSDS module and
+                  any value accrued to your position.
+                  <br />
+                  <br />
+                  stUSDS funds and supports liquidity for SKY stakers, encouraging more participation in SKY
+                  governance, leading to a more secure ecosystem.
+                  <br />
+                  <br />
+                  The asset mix of stUSDS can be viewed on the{' '}
+                  <ExternalLink href="https://info.sky.money/stusds" className="text-sky-700 underline">
+                    Sky Ecosystem Dashboard
+                  </ExternalLink>
+                  .
+                </Text>
+              </>
+            }
+            imgSrc="/products_stUSDS.png"
+            mobileImgSrc="/products_stUSDS_mobile.png"
+            buttonVariant="azure-2"
+            buttonText="Get stUSDS"
+            emphasis="Access stUSDS tokens"
+            title="with USDS"
+            reverse={true}
+            className="col-span-1 tablet:col-span-2 desktop:col-span-1"
+            featurePageId="expert"
+            APY={data.stusdsApy}
+            TVL={data.stusdsTvl}
+            type="stusds"
+            APYDescription="stUSDS Rate"
+            TVLDescription="stUSDS TVL"
+          />
           <FeatureCardLg
             href={`${baseUrl}/?network=${randomL2Name}`}
             descriptionElement={
@@ -605,32 +659,6 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
             TVL=""
             APYDescription=""
             TVLDescription=""
-          />
-          <FeatureCardLg
-            href={`${baseUrl}/?widget=expert`}
-            descriptionElement={<Text variant="p3">Expert widget</Text>}
-            postTitle="Expert"
-            postTextElement={
-              <>
-                <Text variant="p2" className="mb-4 desktop:mb-[18px] desktop-xl:mb-[20px]">
-                  expert text
-                </Text>
-              </>
-            }
-            imgSrc="/products_stake_1.png"
-            mobileImgSrc="/products_stake_1_mobile.png"
-            buttonVariant="azure-2"
-            buttonText="Expert Module"
-            emphasis="StUSDS"
-            title="Expert Module"
-            reverse={false}
-            className="col-span-1 tablet:col-span-2 desktop:col-span-1"
-            featurePageId="expert"
-            APY={data.stusdsApy}
-            TVL={data.stusdsTvl}
-            type="stusds"
-            APYDescription="StUSDS Rate:"
-            TVLDescription="StUSDS TVL"
           />
         </Card>
       </div>

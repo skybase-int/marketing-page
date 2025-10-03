@@ -49,16 +49,16 @@ export const existingFeatures: Feature[] = [
     isAlpha: false
   },
   {
-    icon: SkyLink,
-    title: 'SkyLink',
-    card: SkyLinkCard,
-    id: 'skylink'
-  },
-  {
     icon: Expert,
     title: 'Expert',
     card: ExpertCard,
     id: 'expert'
+  },
+  {
+    icon: SkyLink,
+    title: 'SkyLink',
+    card: SkyLinkCard,
+    id: 'skylink'
   }
 ];
 
