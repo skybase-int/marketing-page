@@ -347,6 +347,97 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
 
         {/* Section 2 */}
         <FeatureCardLg
+          href={`${baseUrl}/?widget=trade`}
+          descriptionElement={
+            <Text variant="p3">
+              Trade popular tokens for USDS and SKY, quickly and simply, utilising smart contracts on the
+              blockchain instead of relying on centralised entities. Trades are powered by{' '}
+              <ExternalLink href="https://swap.cow.fi/" className="text-black">
+                CoW Swap
+              </ExternalLink>
+              .
+            </Text>
+          }
+          postTextElement={
+            <>
+              <Text variant="p2" className="mb-4 desktop:mb-[18px] desktop-xl:mb-[20px]">
+                Directly trade popular tokens for Sky ecosystem tokens at current market prices.
+                <br />
+              </Text>
+              <ul className="list-disc pl-7">
+                <li>
+                  <Text variant="p2">
+                    Trade USDC, USDT, ETH and SKY for USDS, and vice versa. Once you have USDS, you can use it
+                    to access Sky Token Rewards and to access the Sky Savings Rate to accumulate more USDS.
+                  </Text>
+                </li>
+                <li>
+                  <Text variant="p2">
+                    Trade USDC, USDT, ETH and USDS for SKY, and vice versa. Once you have SKY, you can use it
+                    to access Staking Rewards and participate in Sky Ecosystem Governance.
+                  </Text>
+                </li>
+              </ul>
+            </>
+          }
+          imgSrc="/products_trade.png"
+          mobileImgSrc="/products_trade_mobile.png"
+          buttonVariant="twilight-3"
+          buttonText="Start Trading"
+          emphasis="Trade"
+          title="crypto for USDS"
+          postTitle="Trade crypto for USDS"
+          className="col-span-1 h-[500px] overflow-y-auto tablet:col-span-2 tablet:h-[600px] desktop:col-span-1"
+          featurePageId="trade"
+          APY=""
+          TVL=""
+          APYDescription=""
+          TVLDescription=""
+        />
+        <FeatureCardLg
+          href={`${baseUrl}/?widget=savings`}
+          descriptionElement={
+            <Text variant="p3">
+              Use USDS to access the Sky Savings Rate (SSR) and accumulate additional USDS over time.
+              <br />
+              <br />
+              No minimum USDS supply amount is required; withdraw anytime.
+              <br />
+              <br />
+              The Sky Savings Rate is variable, determined by ecosystem governance through a process of
+              decentralised onchain voting.
+              <br />
+              <br />
+              With Sky, you always remain in full control of your savings.
+            </Text>
+          }
+          postTitle="Savings"
+          postTextElement={
+            <Text variant="p2">
+              Supply USDS to the Sky Savings Rate module of the Sky Protocol to access the Sky Savings Rate
+              and accumulate additional USDS over time. Start in seconds; no minimum supply amount is
+              required.
+              <br />
+              <br />
+              Tap into Sky and the unique power of the blockchain to always remain in full control of your
+              money.
+            </Text>
+          }
+          imgSrc="/products_savings.png"
+          mobileImgSrc="/products_savings_mobile.png"
+          buttonVariant="aurora-2"
+          buttonText="Start Saving"
+          emphasis="Save"
+          title="USDS"
+          className="col-span-1 tablet:col-span-2 desktop:col-span-1"
+          featurePageId="savings"
+          APY={data.saveApy}
+          TVL={data.saveTvl}
+          type="ssr"
+          APYDescription="SSR Rate"
+          TVLDescription="Sky Savings Rate TVL"
+        />
+        <FeatureCardLg
           href={`${baseUrl}/?widget=rewards`}
           descriptionElement={
             <Text variant="p3">
@@ -396,97 +487,6 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           type="str"
           APYDescription="Sky Token Rewards Rates up to:"
           TVLDescription="Sky Token Rewards TVL"
-        />
-        <FeatureCardLg
-          href={`${baseUrl}/?widget=savings`}
-          descriptionElement={
-            <Text variant="p3">
-              Use USDS to access the Sky Savings Rate (SSR) and accumulate additional USDS over time.
-              <br />
-              <br />
-              No minimum USDS supply amount is required; withdraw anytime.
-              <br />
-              <br />
-              The Sky Savings Rate is variable, determined by ecosystem governance through a process of
-              decentralised onchain voting.
-              <br />
-              <br />
-              With Sky, you always remain in full control of your savings.
-            </Text>
-          }
-          postTitle="Savings"
-          postTextElement={
-            <Text variant="p2">
-              Supply USDS to the Sky Savings Rate module of the Sky Protocol to access the Sky Savings Rate
-              and accumulate additional USDS over time. Start in seconds; no minimum supply amount is
-              required.
-              <br />
-              <br />
-              Tap into Sky and the unique power of the blockchain to always remain in full control of your
-              money.
-            </Text>
-          }
-          imgSrc="/products_savings.png"
-          mobileImgSrc="/products_savings_mobile.png"
-          buttonVariant="aurora-2"
-          buttonText="Start Saving"
-          emphasis="Save"
-          title="USDS"
-          className="col-span-1 tablet:col-span-2 desktop:col-span-1"
-          featurePageId="savings"
-          APY={data.saveApy}
-          TVL={data.saveTvl}
-          type="ssr"
-          APYDescription="SSR Rate"
-          TVLDescription="Sky Savings Rate TVL"
-        />
-        <FeatureCardLg
-          href={`${baseUrl}/?widget=trade`}
-          descriptionElement={
-            <Text variant="p3">
-              Trade popular tokens for USDS and SKY, quickly and simply, utilising smart contracts on the
-              blockchain instead of relying on centralised entities. Trades are powered by{' '}
-              <ExternalLink href="https://swap.cow.fi/" className="text-black">
-                CoW Swap
-              </ExternalLink>
-              .
-            </Text>
-          }
-          postTextElement={
-            <>
-              <Text variant="p2" className="mb-4 desktop:mb-[18px] desktop-xl:mb-[20px]">
-                Directly trade popular tokens for Sky ecosystem tokens at current market prices.
-                <br />
-              </Text>
-              <ul className="list-disc pl-7">
-                <li>
-                  <Text variant="p2">
-                    Trade USDC, USDT, ETH and SKY for USDS, and vice versa. Once you have USDS, you can use it
-                    to access Sky Token Rewards and to access the Sky Savings Rate to accumulate more USDS.
-                  </Text>
-                </li>
-                <li>
-                  <Text variant="p2">
-                    Trade USDC, USDT, ETH and USDS for SKY, and vice versa. Once you have SKY, you can use it
-                    to access Staking Rewards and participate in Sky Ecosystem Governance.
-                  </Text>
-                </li>
-              </ul>
-            </>
-          }
-          imgSrc="/products_trade.png"
-          mobileImgSrc="/products_trade_mobile.png"
-          buttonVariant="twilight-3"
-          buttonText="Start Trading"
-          emphasis="Trade"
-          title="crypto for USDS"
-          postTitle="Trade crypto for USDS"
-          className="col-span-1 h-[500px] overflow-y-auto tablet:col-span-2 tablet:h-[600px] desktop:col-span-1"
-          featurePageId="trade"
-          APY=""
-          TVL=""
-          APYDescription=""
-          TVLDescription=""
         />
         <FeatureCardLg
           href={`${baseUrl}/?widget=stake`}
@@ -557,56 +557,6 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           className="col-span-1 grid grid-cols-1 gap-5 rounded-3xl border p-4 tablet:col-span-2 tablet:grid-cols-2"
         >
           <FeatureCardLg
-            href={`${baseUrl}/?network=${randomL2Name}`}
-            descriptionElement={
-              <Text variant="p3">
-                SkyLink is the system that provides the rails for the{' '}
-                <ExternalLink href="https://app.sky.money/" className="text-text underline">
-                  Sky.money
-                </ExternalLink>{' '}
-                web app and Sky Ecosystem projects, such as{' '}
-                <ExternalLink href="https://spark.fi/" className="text-black/80 underline">
-                  Spark,
-                </ExternalLink>{' '}
-                to bridge assets between the Sky Protocol on Ethereum Mainnet and a growing number of
-                supported Layer 2 (L2) networks. SkyLink enables end users on L2s, such as Base, Arbitrum,
-                Optimism and Unichain to tap into Sky Protocol features via the Sky Ecosystem projects&apos;
-                rails. SkyLink seamlessly connects your Ethereum-based Sky Protocol tokens and features to
-                supported L2 networks.
-                <br />
-                <br />
-                If you have shied away from the Ethereum blockchain due to the high price of gas, SkyLink
-                introduces reduced fees and faster transaction speeds.
-              </Text>
-            }
-            postTextElement={
-              <Text variant="p2">
-                SkyLink enhances your ability to manage your digital assets efficiently by seamlessly
-                connecting your Ethereum L1-based Sky Protocol tokens and features, such as the Sky Savings
-                Rate, to supported L2 networks.
-                <br />
-                <br />
-                If you have shied away from the Ethereum blockchain due to the high price of gas, SkyLink
-                introduces reduced fees and faster transaction speeds.
-              </Text>
-            }
-            imgSrc="/products_skybridge.png"
-            mobileImgSrc="/features-skylink-mobile.png"
-            imgWidths={[200, 600, 800]}
-            buttonVariant="azure-2"
-            buttonText="Access SkyLink"
-            title="Connect with"
-            emphasis="SkyLink"
-            reverse={false}
-            postTitle="SkyLink"
-            className="col-span-1 tablet:col-span-2 desktop:col-span-1"
-            featurePageId="skylink"
-            APY=""
-            TVL=""
-            APYDescription=""
-            TVLDescription=""
-          />
-          <FeatureCardLg
             href={`${baseUrl}/?widget=expert`}
             descriptionElement={
               <Text variant="p3">
@@ -659,6 +609,56 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
             type="stusds"
             APYDescription="stUSDS Rate"
             TVLDescription="stUSDS TVL"
+          />
+          <FeatureCardLg
+            href={`${baseUrl}/?network=${randomL2Name}`}
+            descriptionElement={
+              <Text variant="p3">
+                SkyLink is the system that provides the rails for the{' '}
+                <ExternalLink href="https://app.sky.money/" className="text-text underline">
+                  Sky.money
+                </ExternalLink>{' '}
+                web app and Sky Ecosystem projects, such as{' '}
+                <ExternalLink href="https://spark.fi/" className="text-black/80 underline">
+                  Spark,
+                </ExternalLink>{' '}
+                to bridge assets between the Sky Protocol on Ethereum Mainnet and a growing number of
+                supported Layer 2 (L2) networks. SkyLink enables end users on L2s, such as Base, Arbitrum,
+                Optimism and Unichain to tap into Sky Protocol features via the Sky Ecosystem projects&apos;
+                rails. SkyLink seamlessly connects your Ethereum-based Sky Protocol tokens and features to
+                supported L2 networks.
+                <br />
+                <br />
+                If you have shied away from the Ethereum blockchain due to the high price of gas, SkyLink
+                introduces reduced fees and faster transaction speeds.
+              </Text>
+            }
+            postTextElement={
+              <Text variant="p2">
+                SkyLink enhances your ability to manage your digital assets efficiently by seamlessly
+                connecting your Ethereum L1-based Sky Protocol tokens and features, such as the Sky Savings
+                Rate, to supported L2 networks.
+                <br />
+                <br />
+                If you have shied away from the Ethereum blockchain due to the high price of gas, SkyLink
+                introduces reduced fees and faster transaction speeds.
+              </Text>
+            }
+            imgSrc="/products_skybridge.png"
+            mobileImgSrc="/features-skylink-mobile.png"
+            imgWidths={[200, 600, 800]}
+            buttonVariant="azure-2"
+            buttonText="Access SkyLink"
+            title="Connect with"
+            emphasis="SkyLink"
+            reverse={false}
+            postTitle="SkyLink"
+            className="col-span-1 tablet:col-span-2 desktop:col-span-1"
+            featurePageId="skylink"
+            APY=""
+            TVL=""
+            APYDescription=""
+            TVLDescription=""
           />
         </Card>
       </div>
