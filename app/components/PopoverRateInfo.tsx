@@ -77,8 +77,14 @@ const content = {
   stusds: {
     title: 'stUSDS',
     description: (
-      <Text className="leading-5 text-white/80" variant="ui-small-regular">
-        Stusds rate
+      <Text className="whitespace-pre-line leading-5 text-white/80" variant="ui-small-regular">
+        {`The stUSDS rate is variable and calculated using the following formula:
+
+stUSDS Rate = Utilization * (SKY Borrow Rate - stUSDS Accessibility Reward) + (1 - Utilization) * Sky Savings Rate
+
+The rate is derived from the SKY Borrow Rate less the stUSDS Accessibility Reward on the utilized portion of your capital and the Sky Savings Rate on the unutilized portion. Utilization is the percent of funds in the stUSDS contract that are used to fund borrowing against staked SKY.
+
+The SKY Borrow Rate is the current interest rate charged to SKY-backed borrowers and is dynamic and market-driven, based on the utilization of funds within the stUSDS contract.`}
       </Text>
     )
   }

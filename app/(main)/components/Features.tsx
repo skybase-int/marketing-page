@@ -543,7 +543,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
           emphasis="Access Staking rewards"
           title="with SKY"
           className="col-span-1 tablet:col-span-2 desktop:col-span-1"
-          featurePageId="stake" // TODO: Check it works
+          featurePageId="stake"
           APY={data.stakeApy}
           TVL={data.stakeTvl}
           type="srr"
@@ -565,8 +565,8 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                 liquidity for SKY stakers.
                 <br />
                 <br />
-                Use USDS to access the stUSDS Rate (i) and encourage more participation in SKY governance. No
-                minimum supply amount is required.
+                Use USDS to access the stUSDS Rate <PopoverRateInfo type="stusds" /> and encourage more
+                participation in SKY governance. No minimum supply amount is required.
               </Text>
             }
             postTitle="stUSDS Rewards"
@@ -578,9 +578,9 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                   <br />
                   <br />
                   When you supply USDS to the stUSDS module of the Protocol, you fund SKY-back borrowing to
-                  access the stUSDS Rate(i) and receive stUSDS tokens. The stUSDS tokens serve as a digital
-                  record of your USDS interaction with the stUSDS module and any value accrued to your
-                  position.
+                  access the stUSDS Rate <PopoverRateInfo type="stusds" /> and receive stUSDS tokens. The
+                  stUSDS tokens serve as a digital record of your USDS interaction with the stUSDS module and
+                  any value accrued to your position.
                   <br />
                   <br />
                   stUSDS funds and supports liquidity for SKY stakers, encouraging more participation in SKY
