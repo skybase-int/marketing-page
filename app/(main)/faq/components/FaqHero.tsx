@@ -56,15 +56,17 @@ export default function FaqHero({ trigger }: { trigger: RefObject<HTMLDivElement
 
   return (
     <div ref={containerRef} className="relative min-h-screen w-full">
-      <Image
-        src="/FaqBackground.png"
-        alt="Faq Background"
-        fill
-        priority
-        className="object-cover object-top"
-        placeholder="blur"
-        blurDataURL={faqBackgroundBlurDataURL100}
-      />
+      <div className="fixed inset-0 -z-10">
+        <Image
+          src="/FaqBackground.png"
+          alt="Faq Background"
+          fill
+          priority
+          className="object-cover object-top"
+          placeholder="blur"
+          blurDataURL={faqBackgroundBlurDataURL100}
+        />
+      </div>
       <FAQPageTransition>
         <div className="relative z-10 flex w-full flex-col items-center justify-center overflow-visible px-3 text-center tablet:px-5 desktop:px-10 desktop-xl:px-[60px]">
           <Heading tag="h4" className="mt-28 text-white tablet:mt-[144px] desktop:mt-[190px]">
