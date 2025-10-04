@@ -123,9 +123,7 @@ Upgrade MKR to SKY at the rate of 1:24,000 (1 MKR = 24,000 SKY) to unlock all th
   },
   {
     question: 'Will the MKR I have locked in Staking positions be automatically upgraded to SKY?',
-    answer: `No, but your sealed MKR will be upgraded to SKY during the Seal to Staking migration process. The process, via the Sky.money web app, makes manually exiting your current Seal positions and creating new positions in the Staking Engine as simple as possible.
-
-The Staking Engine offers all of the same features as the Seal Engine, but it has no exit fee and only supports SKY, not MKR.
+    answer: `No, but your sealed MKR will be upgraded to SKY during the Seal to Staking migration process. The process, via the Sky.money web app, makes manually exiting your current Seal positions and creating new positions in the Staking Engine as simple as possible. The Staking Engine offers all of the same features as the Seal Engine, but it has no exit fee and only supports SKY, not MKR.
 
 For upgrade details and step-by-step upgrade instructions, please visit the [MKR to SKY Upgrade Hub](https://upgrademkrtosky.sky.money).`,
     categories: ['Upgrade']

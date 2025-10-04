@@ -128,7 +128,7 @@ SKY is now the sole governance token of the Sky Protocol and Ecosystem. You can 
 
 When you stake SKY tokens to the Staking Engine using the Sky.money web app, you can access Staking Rewards and may also choose to create one or more positions, including positions that enable you to generate and borrow USDS against your supplied SKY and to delegate the voting power your SKY tokens provide.
 
-You may exit your Staking positions at any time; no exit fee applies. Staking Reward rates and the Borrow rate are determined by Sky Ecosystem Governance through the process of decentralized onchain voting.
+You may exit your Staking positions at any time; no exit fee applies. Staking Rewards Rates and the Borrow Rate are determined by Sky Ecosystem Governance through the process of decentralized onchain voting.
 
 Your SKY, as well as any Staking Rewards that you accumulate, is supplied to a non-custodial smart contract, such that no intermediary ever takes custody of those tokens.`,
     categories: ['Sky Tokens']
