@@ -1,9 +1,10 @@
-import { Save, Upgrade, Rewards, Trade, Activation, SkyLink } from '@/app/components/icons';
+import { Save, Upgrade, Rewards, Trade, Activation, SkyLink, Expert } from '@/app/components/icons';
 import { UpgradeCard } from './components/cards/UpgradeCard';
 import { TradeCard } from './components/cards/TradeCard';
 import { RewardsCard } from './components/cards/RewardsCard';
 import { SaveCard } from './components/cards/SaveCard';
 import { SkyLinkCard } from './components/cards/SkyLinkCard';
+import { ExpertCard } from './components/cards/ExpertCard';
 import { StakeCard } from './components/cards/StakeCard';
 
 type Feature = {
@@ -46,6 +47,12 @@ export const existingFeatures: Feature[] = [
     card: StakeCard,
     id: 'stake',
     isAlpha: false
+  },
+  {
+    icon: Expert,
+    title: 'Expert',
+    card: ExpertCard,
+    id: 'expert'
   },
   {
     icon: SkyLink,
