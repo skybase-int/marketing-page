@@ -561,7 +561,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
             descriptionElement={
               <Text variant="p3">
                 Expert modules unlock high-level functionality tailored to experienced users. stUSDS, the
-                first Expert token of the Sky Protocol, is a senior risk capital token that funds and supports
+                first Expert token of the Sky Protocol, is a risk token that funds and supports
                 liquidity for SKY stakers.
                 <br />
                 <br />
@@ -573,7 +573,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
             postTextElement={
               <>
                 <Text variant="p3" className="mb-4 desktop:mb-[18px] desktop-xl:mb-[20px]">
-                  stUSDS is a senior risk capital token structured to absorb a greater share of system risk in
+                  stUSDS is a risk token structured to absorb a greater share of system risk in
                   exchange for the potential to capture a larger portion of protocol rewards.
                   <br />
                   <br />
