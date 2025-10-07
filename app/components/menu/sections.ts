@@ -33,12 +33,12 @@ export const menuSections: Record<
       href: 'features#stake'
     },
     {
-      title: 'SkyLink',
-      href: 'features#skylink'
-    },
-    {
       title: 'Expert',
       href: 'features#expert'
+    },
+    {
+      title: 'SkyLink',
+      href: 'features#skylink'
     }
   ],
   participate: [
