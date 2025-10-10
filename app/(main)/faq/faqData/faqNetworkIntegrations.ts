@@ -29,9 +29,13 @@ L2s used with Ethereum not only offer users much lower fees and much faster spee
     answer: `Supported trading pairs vary by network:
 
 • **Ethereum Mainnet:** USDC, USDT, ETH, WETH, DAI, MKR, USDS, sUSDS, SKY, SPK
+
 • **Base:** USDC, USDT, ETH, WETH, DAI, USDS, sUSDS
+
 • **Arbitrum:** USDC, USDT, ETH, WETH, DAI, USDS, sUSDS
+
 • **Optimism:** USDC, USDS, sUSDS
+
 • **Unichain:** USDC, USDS, sUSDS
 
 Using the Sky.money web app, you can interact with the Peg Stability Module (PSM) for conversions to and from **USDS**, **sUSDS**, and **USDC**. The PSM handles conversions programmatically, driven at your direction, between these pairs directly.
