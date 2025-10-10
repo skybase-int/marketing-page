@@ -16,6 +16,7 @@ CONTENT_VERSION_FILE=".content-version"
 TEMP_DIR=".tmp-content-repo"
 OUTPUT_SOURCE_PATH="output/website"
 FAQS_DESTINATION_PATH="app/(main)/faq/faqData"
+TOOLTIPS_DESTINATION_PATH="app/data"
 EXTRACT_SCRIPT="scripts/extract_website_faqs.js"
 
 # Function to print colored output
@@ -109,8 +110,9 @@ fi
 # Go back to project root
 cd ..
 
-# Ensure destination directory exists
+# Ensure destination directories exist
 mkdir -p "$FAQS_DESTINATION_PATH"
+mkdir -p "$TOOLTIPS_DESTINATION_PATH"
 
 # Copy FAQ files specifically from output/website/faqs/
 print_status "Copying FAQ files to $FAQS_DESTINATION_PATH..."
@@ -131,6 +133,17 @@ else
     print_warning "No FAQs directory found in output, skipping FAQ sync"
 fi
 
+# Copy tooltips file from output/website/tooltips/tooltips.ts
+print_status "Copying tooltips file to $TOOLTIPS_DESTINATION_PATH..."
+
+# Check if tooltips file exists in the output
+if [ -f "$TEMP_DIR/$OUTPUT_SOURCE_PATH/tooltips/tooltips.ts" ]; then
+    cp "$TEMP_DIR/$OUTPUT_SOURCE_PATH/tooltips/tooltips.ts" "$TOOLTIPS_DESTINATION_PATH/tooltips.ts"
+    print_status "Tooltips file copied successfully"
+else
+    print_warning "No tooltips/tooltips.ts file found in output, skipping tooltips sync"
+fi
+
 # Clean up temp directory
 print_status "Cleaning up temporary files..."
 rm -rf "$TEMP_DIR"
@@ -143,6 +156,11 @@ if [ -d "$FAQS_DESTINATION_PATH" ]; then
     while IFS= read -r -d '' file; do
         GENERATED_FILES+=("$file")
     done < <(find "$FAQS_DESTINATION_PATH" -type f \( -name "*.ts" -o -name "*.json" -o -name "*.md" \) -print0)
+fi
+
+# Add tooltips file if it exists
+if [ -f "$TOOLTIPS_DESTINATION_PATH/tooltips.ts" ]; then
+    GENERATED_FILES+=("$TOOLTIPS_DESTINATION_PATH/tooltips.ts")
 fi
 
 # Format only the generated files
@@ -171,3 +189,10 @@ print_status "Synced FAQ files to $FAQS_DESTINATION_PATH:"
 find "$FAQS_DESTINATION_PATH" -type f \( -name "*.json" -o -name "*.ts" -o -name "*.md" \) | sort | while read file; do
     echo "  - $file"
 done
+
+# List the synced tooltips file
+if [ -f "$TOOLTIPS_DESTINATION_PATH/tooltips.ts" ]; then
+    echo ""
+    print_status "Synced tooltips file to $TOOLTIPS_DESTINATION_PATH:"
+    echo "  - $TOOLTIPS_DESTINATION_PATH/tooltips.ts"
+fi
