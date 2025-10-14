@@ -3,9 +3,44 @@ import type { FAQItem } from './types';
 export const stusdsModule: FAQItem[] = [
   {
     question: 'What is stUSDS?',
-    answer: `stUSDS is a risk token designed for more expert users, who wish to engage with higher-risk modules. It is structured to absorb a greater share of system risk in exchange for the potential to capture a larger portion of protocol rewards; the asset mix of stUSDS can be viewed on the [Sky Ecosystem Dashboard](https://info.sky.money/stusds).
+    answer: `stUSDS is a risk token designed for more expert users who wish to engage with higher-risk modules of the Sky Protocol. It is backed by staked SKY collateral and is structured to absorb a greater share of system risk in exchange for the potential to capture a larger portion of protocol rewards.
+stUSDS funds and supports liquidity for SKY stakers, encouraging more participation in SKY governance by active token holders, delegators, and voters, leading to a more secure Sky Ecosystem.
 
-stUSDS funds and supports liquidity for SKY stakers, encouraging more participation in SKY governance by active token holders, delegators and voters, leading to a more secure Sky Ecosystem. Prospective users of stUSDS are encouraged to familiarize themselves and understand the risks associated with participating in a token that takes a risk position before participating.`,
+Prospective users of stUSDS are encouraged to understand that it represents a risk-bearing position in the system, and to review all associated parameters carefully before participating.
+
+Key characteristics and current conditions:
+
+• **Backed by staked SKY:** stUSDS derives its value from positions collateralized by staked SKY within the Staking Engine.
+
+• **Haircut risk:** If liquidation of a borrower’s staked SKY collateral does not fully cover outstanding debt, stUSDS balances may incur a proportional haircut.
+
+• **Temporary deposit illiquidity:** During the initial launch of stUSDS, deposits may be temporarily illiquid when utilization exceeds 100 percent. This condition is expected to continue until total deposits in the stUSDS module surpass 55 million USDS.
+
+• **Bootstrapping phase rate:**  To compensate participants for the added illiquidity risk during the early phase, Sky Ecosystem Governance has set the stUSDS reward rate at a 40% as a short-term bootstrapping incentive. 
+
+• **Once total deposits reach 55 million USDS:**  Utilization is expected to fall below 100 percent, allowing withdrawals of available liquidity. The temporary elevated APY will be reduced from 40% to 20%. Following the reduction, rates will dynamically adjust based on market conditions as the module transitions to normal operation.
+
+• **Manual liquidations:** Automatic liquidations of staked SKY are temporarily disabled; any undercollateralized positions will be liquidated manually by Sky Ecosystem Governance to minimize market risk and liquidation malfunctions.
+
+• **[Capped OSM SKY price](#tooltip-capped-OSM-SKY-price):**  During the bootstrapping phase, the amount of leverage available to SKY stakers borrowing is significantly limited The SKY price reported by the Oracle Security Module (OSM) is capped at a governance-defined limit to prevent overvaluation during debt generation." This reduces the risk to the system while SKY liquidity is still low, and liquidations would have to be handled manually.
+
+As liquidity deepens and the system matures, stUSDS is expected to operate as a standard lending-market module, with dynamic rate adjustments and automated risk controls re-enabled by governance.`,
+    categories: ['stUSDS']
+  },
+  {
+    question: 'What are some additional risks that stUSDS holders face?',
+    answer: `stUSDS is a risk token that derives its value from positions collateralized by staked SKY within the Staking Engine. During the initial launch of stUSDS, deposits may be temporarily illiquid when utilization exceeds 100 percent. This condition is expected to continue until total deposits in the stUSDS module surpass 55 million USDS.
+
+If liquidation of a borrower’s staked SKY collateral does not fully cover outstanding debt, stUSDS balances may incur a proportional haircut.
+
+Prospective users should understand that stUSDS is a risk-bearing position designed for expert participants who are comfortable with potential loss scenarios tied to system performance.`,
+    categories: ['stUSDS']
+  },
+  {
+    question: 'Why might stUSDS deposits become temporarily illiquid?',
+    answer: `During the initial launch of stUSDS, deposits may be temporarily illiquid when utilization exceeds 100 percent. This condition is expected to continue until total deposits in the stUSDS module surpass 55 million USDS.
+
+To compensate participants for the added illiquidity risk during the early phase, the stUSDS reward rate is temporarily set at a 40% APY as a short-term bootstrapping incentive. Once deposits exceed 55 million USDS, utilization should fall below 100 percent, withdrawals will resume normally, and rates will adjust dynamically based on market conditions.`,
     categories: ['stUSDS']
   },
   {
