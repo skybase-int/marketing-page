@@ -5,6 +5,7 @@ import ProductsStUSDSMobile from '@/public/features_stUSDS_mobile.png';
 import { useBreakpointIndex } from '@/app/hooks/useBreakpointIndex';
 import { FetchedData } from '@/app/(main)/fetchData';
 import { PopoverRateInfo } from '@/app/components/PopoverRateInfo';
+import Link from 'next/link';
 
 export const ExpertCard = ({ data }: { data: FetchedData }) => {
   const { bpi, isLoading: isLoadingBreakpointIndex } = useBreakpointIndex();
@@ -18,15 +19,19 @@ export const ExpertCard = ({ data }: { data: FetchedData }) => {
           content: (
             <>
               <TextFeatureCard>
-                stUSDS is a token designed for eligible Sky Protocol expert users. It funds and supports
+                stUSDS is a risk token designed for eligible Sky Protocol expert users. It funds and supports
                 liquidity for SKY stakers, encouraging more participation in SKY governance by active token
-                holders, delegators and voters, leading to a more secure Ecosystem.
+                holders, delegators and voters, leading to a more secure ecosystem.
               </TextFeatureCard>
               <TextFeatureCard>
                 When you supply USDS to the stUSDS module of the protocol, you fund SKY-back borrowing to
                 access the stUSDS Rate <PopoverRateInfo type="stusds" /> and receive stUSDS tokens. The stUSDS
                 tokens serve as a digital record of your USDS interaction with the stUSDS module and any value
-                accrued to your position.
+                accrued to your position. For details, see{' '}
+                <Link className="hover:underline hover:underline-offset-4" href="/faq">
+                  &quot;What is stUSDS?&quot;
+                </Link>{' '}
+                In the FAQs.
               </TextFeatureCard>
             </>
           ),
