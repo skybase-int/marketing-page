@@ -29,7 +29,7 @@ For more details on this and other risks associated with cryptocurrencies, pleas
 • **Accessing Rewards.** Some people use crypto to access rewards without giving up control of their assets. For example, eligible Sky.money web app users can tap into the Sky Protocol to access Sky Tokens Rewards when they supply USDS to the Sky Token Rewards module. When eligible users supply SKY tokens to the Staking Engine of the Protocol, they can access Staking Rewards.
 
 • **Borrowing.** Some DeFi protocols allow users to borrow stablecoins using their crypto as collateral. Eligible users of the Sky.money web app can borrow USDS against the SKY tokens that they supply to the Staking Engine of the Sky Protocol.
--
+
 • **Lending.** Some DeFi protocols enable users to supply crypto to a smart contract that acts as a pool from which others can borrow. Those suppliers become liquidity providers, who earn rewards in the form of liquidity pool tokens (LPTs). The LPTs they receive represent their share of assets in the pool or a percentage of fees charged to those accessing the pool tokens.`,
     categories: ['Crypto (General)']
   },

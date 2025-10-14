@@ -21,7 +21,9 @@ export const useSearchFaq = ({
         keys: category ? ['categories'] : searchTerm?.length ? ['question', 'answer'] : [],
         ignoreLocation: !category,
         threshold: category ? 0 : 0.3,
-        includeMatches: true
+        includeMatches: true,
+        includeScore: true,
+        fieldNormWeight: 0.4
       }),
     [category, searchTerm]
   );
@@ -32,17 +34,32 @@ export const useSearchFaq = ({
     return unrankedFaqItems;
   }, [fuse, searchTerm, category]);
 
-  const totalItems = results.length;
-  const totalPages = Math.ceil(totalItems / pageSize);
+  // Separate exact matches (score <= 0.1) from other matches
+  const exactMatches = results.filter(result => result.score !== undefined && result.score <= 0.1);
+
+  const exactTotalItems = exactMatches.length;
+
+  // Combined pagination logic - prioritize exact matches, then fill with other matches
+  const totalCount = results.length;
   const startIndex = (page - 1) * pageSize;
   const endIndex = startIndex + pageSize;
+
+  // Get the page slice from the combined results
   const paginatedResults = results.slice(startIndex, endIndex);
+
+  // Now separate the paginated results into exact and other
+  const paginatedExactMatches = paginatedResults.filter(
+    result => result.score !== undefined && result.score <= 0.1
+  );
+  const paginatedOtherMatches = paginatedResults.filter(
+    result => result.score === undefined || result.score > 0.1
+  );
 
   return {
     items: paginatedResults,
-    page,
-    pageSize,
-    totalItems,
-    totalPages
+    exactItems: paginatedExactMatches,
+    otherItems: paginatedOtherMatches,
+    totalCount,
+    exactCount: exactTotalItems
   };
 };

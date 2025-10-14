@@ -16,8 +16,11 @@ For a deep dive into the facets and checks and balances of governance, please re
   },
   {
     question: 'What is the Sky Atlas?',
-    answer:
-      'The [Sky Atlas](https://sky-atlas.powerhouse.io/) is the definitive rulebook of the Sky Ecosystem, as determined by Sky Ecosystem Governance. It is a Sky artifact—a data structure encompassing Sky documents—which exists to stabilize and streamline the governance process to serve the evolving needs of the ecosystem. The Atlas is a partially immutable work in progress that will continue to be refined through an improvement proposal and decentralized voting framework until Sky Ecosystem Governance determines that modifications are no longer necessary.',
+    answer: `The [Sky Atlas](https://sky-atlas.powerhouse.io/) is the definitive rulebook of the Sky Ecosystem, as determined by Sky Ecosystem Governance. It is a Sky artifact—a data structure encompassing Sky documents—which exists to stabilize and streamline the governance process to serve the evolving needs of the ecosystem.
+
+The Atlas defines important words and phrases, including [Universal Alignment](https://sky-atlas.powerhouse.io/A.0.1.1.4_Universal_Alignment/fa84d113-a62b-4acc-9c67-23945d7efcdd|693d9aad490a), [Ecosystem Intelligence](https://sky-atlas.powerhouse.io/A.0.1.1.2_Ecosystem_Intelligence/1be87264-19ef-42c2-8bfd-2bc710c21fe4|693d9aad490a), and [Governance Equilibrium](https://sky-atlas.powerhouse.io/A.0.1.1.26_Governance_Equilibrium/2c954983-a296-4ebd-845c-c24af0454743|693d9aad490a). It also defines roles, such as [Alignment Conserver](<https://sky-atlas.powerhouse.io/A.0.1.1.17_Alignment_Conserver_(AC)/f8ca466f-2bd4-45e7-868a-b3099a4ebd26|693d9aad490a>), [Aligned Delegate](<https://sky-atlas.powerhouse.io/A.0.1.1.18_Aligned_Delegate_(AD)/31f68f91-4194-4d71-8f21-5c9882cc4871|693d9aad490a>), and [Facilitator](https://sky-atlas.powerhouse.io/A.0.1.1.19_Facilitator/0478f2ff-3408-4c3f-b6f9-d403e2bd4131|693d9aad490a).
+
+The Atlas is a partially immutable work in progress that will continue to be refined through an improvement proposal and decentralized voting framework until Sky Ecosystem Governance determines that modifications are no longer necessary.`,
     categories: ['Sky Governance']
   },
   {
