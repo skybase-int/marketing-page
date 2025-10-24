@@ -18,7 +18,7 @@ export const DesktopMenu = ({ tone }: { tone: Tone }) => {
 
   return (
     <motion.nav
-      className={`pointer-events-auto top-0 mt-2 inline-block w-[780px] rounded-xl backdrop-blur-3xl ${
+      className={`pointer-events-auto top-0 mt-2 inline-block w-[700px] rounded-xl backdrop-blur-3xl ${
         isMenuOpen
           ? ''
           : tone === 'dark'
@@ -65,8 +65,6 @@ export const DesktopMenu = ({ tone }: { tone: Tone }) => {
               />
             )
           )}
-        </div>
-        <div className="ml-4">
           <DesktopNavItem
             tone={tone}
             text="Launch App"
@@ -77,6 +75,7 @@ export const DesktopMenu = ({ tone }: { tone: Tone }) => {
             iconRight={<SquareArrowRight className="h-5 w-5 rounded" />}
           />
         </div>
+        <div />
       </div>
       <AnimatePresence>
         {isMenuOpen && (
