@@ -18,12 +18,12 @@ export const DesktopMenu = ({ tone }: { tone: Tone }) => {
 
   return (
     <motion.nav
-      className={`pointer-events-auto top-0 mt-2 inline-block w-[675px] rounded-xl backdrop-blur-3xl ${
+      className={`pointer-events-auto top-0 mt-2 inline-block w-[700px] rounded-xl backdrop-blur-3xl ${
         isMenuOpen
           ? ''
           : tone === 'dark'
-          ? 'border-gradient-before before:bg-header-border bg-header-glass before:rounded-xl'
-          : 'border-gradient-before before:bg-header-border bg-header-glass before:rounded-xl'
+            ? 'border-gradient-before before:bg-header-border bg-header-glass before:rounded-xl'
+            : 'border-gradient-before before:bg-header-border bg-header-glass before:rounded-xl'
       }`}
       transition={{
         type: 'tween',
@@ -41,8 +41,8 @@ export const DesktopMenu = ({ tone }: { tone: Tone }) => {
         setSelectedSection('');
       }}
     >
-      <div className="mt-[11px] flex items-center justify-between pr-8">
-        <div className={`flex items-center space-x-6 ${tone === 'dark' ? 'text-white' : ''}`}>
+      <div className="mt-[11px] flex items-center px-6">
+        <div className={`flex items-center space-x-4 ${tone === 'dark' ? 'text-white' : ''}`}>
           {sections.map(section =>
             menuSections[section] ? (
               <MenuTrigger
@@ -65,16 +65,17 @@ export const DesktopMenu = ({ tone }: { tone: Tone }) => {
               />
             )
           )}
+          <DesktopNavItem
+            tone={tone}
+            text="Launch App"
+            link={url}
+            isExternal={true}
+            isMenuOpen={isMenuOpen}
+            setSelectedSection={setSelectedSection}
+            iconRight={<SquareArrowRight className="h-5 w-5 rounded" />}
+          />
         </div>
-        <DesktopNavItem
-          tone={tone}
-          text="Launch App"
-          link={url}
-          isExternal={true}
-          isMenuOpen={isMenuOpen}
-          setSelectedSection={setSelectedSection}
-          iconRight={<SquareArrowRight className="h-5 w-5 rounded" />}
-        />
+        <div />
       </div>
       <AnimatePresence>
         {isMenuOpen && (
