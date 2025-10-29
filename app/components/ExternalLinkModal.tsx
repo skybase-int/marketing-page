@@ -35,7 +35,7 @@ export const ExternalLinkModal: React.FC = () => {
   return (
     <Dialog open={externalLinkModalOpened} onOpenChange={handleCancel}>
       <DialogContent
-        className="terms-modal-background flex w-full flex-col items-center justify-center rounded-none p-5 tablet:w-[480px] tablet:rounded-2xl tablet:p-10"
+        className="terms-modal-background flex w-full flex-col items-center justify-center rounded-none p-5 tablet:w-[480px] tablet:rounded-2xl tablet:p-10 desktop-xl:w-[600px] desktop-xl:p-10"
         overlayClassName="z-[1000]"
         hideCloseArrow
       >
