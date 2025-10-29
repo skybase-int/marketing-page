@@ -41,7 +41,7 @@ export const DesktopNavItem = ({
         className={`${isOverDarkBg ? 'text-white hover:text-white' : 'text-black hover:text-black'}`}
       >
         <div className="flex h-10 items-center space-x-2">
-          <Text variant="ui-small" className="inline-block">
+          <Text variant="ui-small" className="inline-block whitespace-nowrap">
             {text}
           </Text>
           {iconRight}
