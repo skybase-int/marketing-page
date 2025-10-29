@@ -83,7 +83,7 @@ export const TabletMenu = ({
                     </AccordionItem>
                   ))}
                 </Accordion>
-                {sections.slice(3, 5).map(section => (
+                {sections.slice(3, 6).map(section => (
                   <MenuItem
                     className="my-0 -ml-3 -mr-5"
                     key={section}
