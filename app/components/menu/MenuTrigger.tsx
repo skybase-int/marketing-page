@@ -34,7 +34,7 @@ export const MenuTrigger = ({
           setIsTriggerHovered(false);
         }}
         onClick={onClick}
-        className={`flex-column ml-8 flex cursor-pointer items-center space-x-2 py-4 ${textColor}`}
+        className={`flex-column flex cursor-pointer items-center space-x-2 py-4 ${textColor}`}
       >
         <div id="group" className="relative flex items-center">
           <Text variant="ui-small" className={textColor}>
