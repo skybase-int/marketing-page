@@ -45,6 +45,15 @@ const nextConfig = {
         ]
       }
     ];
+  },
+  async redirects() {
+    return [
+      {
+        source: '/careers',
+        destination: 'https://jobs.ashbyhq.com/skyecosystem',
+        permanent: false
+      }
+    ];
   }
 };
 
