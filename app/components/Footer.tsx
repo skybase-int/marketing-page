@@ -165,23 +165,14 @@ export function Footer() {
             © {new Date().getFullYear()} All rights reserved
           </Text>
         </div>
-        {/* TODO: add these links to the footer */}
         <div className="flex w-full gap-3 tablet:w-1/2">
-          <ExternalLink href={footerLinks[0].url} className={externalClass}>
-            <Text variant="ui-small" className="text-white">
-              {footerLinks[0].name}
-            </Text>
-          </ExternalLink>
-          <ExternalLink href={footerLinks[1].url} className={externalClass}>
-            <Text variant="ui-small" className="text-white">
-              {footerLinks[1].name}
-            </Text>
-          </ExternalLink>
-          <ExternalLink href={footerLinks[2].url} className={externalClass}>
-            <Text variant="ui-small" className="text-white">
-              {footerLinks[2].name}
-            </Text>
-          </ExternalLink>
+          {footerLinks.map((link, index) => (
+            <ExternalLink key={index} href={link.url} className={externalClass}>
+              <Text variant="ui-small" className="text-white">
+                {link.name}
+              </Text>
+            </ExternalLink>
+          ))}
         </div>
       </div>
     </div>
