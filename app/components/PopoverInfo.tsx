@@ -71,7 +71,11 @@ const getContent = () => {
   };
 };
 
-export const PopoverInfo = ({ type }: { type: 'str' | 'ssr' | 'psm' | 'srr' | 'stusds' | string }) => {
+export const PopoverInfo = ({
+  type
+}: {
+  type: 'str' | 'ssr' | 'psm' | 'srr' | 'stusds' | 'sky-savings-rate' | 'liquidation-price-staking';
+}) => {
   const content = getContent();
 
   // Map FAQ tooltip IDs to existing IDs
@@ -79,12 +83,10 @@ export const PopoverInfo = ({ type }: { type: 'str' | 'ssr' | 'psm' | 'srr' | 's
     'sky-savings-rate': 'ssr' // FAQ uses 'sky-savings-rate' instead of 'ssr'
   };
 
-  // Use mapped type if available, otherwise use original type
   const actualType = typeMapping[type] || type;
 
   if (!(actualType in content)) return null;
 
-  // Type assertion is safe here because we check existence above
   const tooltipContent = content[actualType as keyof typeof content];
 
   return (
