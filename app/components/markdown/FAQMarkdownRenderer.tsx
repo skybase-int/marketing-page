@@ -49,7 +49,14 @@ export const FAQMarkdownRenderer = ({
       a: ({ children, href, ...props }) => {
         // Handle tooltip syntax: [text](#tooltip-type)
         if (href?.startsWith('#tooltip-')) {
-          const tooltipId = href.replace('#tooltip-', '');
+          const tooltipId = href.replace('#tooltip-', '') as
+            | 'str'
+            | 'ssr'
+            | 'psm'
+            | 'srr'
+            | 'stusds'
+            | 'sky-savings-rate'
+            | 'liquidation-price-staking';
           return (
             <span className="inline-flex items-center gap-1">
               {children}
