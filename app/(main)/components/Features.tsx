@@ -16,7 +16,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Banner } from '@/app/components/Banner';
 import { FetchedData } from '../fetchData';
 import { ExternalLink } from '@/app/components/ExternalLink';
-import { PopoverRateInfo } from '@/app/components/PopoverRateInfo';
+import { PopoverInfo } from '@/app/components/PopoverInfo';
 import { PopoverSealInfo } from '@/app/components/PopoverSealInfo';
 import { useSkyUrl } from '@/app/hooks/useSkyUrl';
 import { useHeaderInView } from '@/app/hooks/useHeaderInView';
@@ -53,7 +53,7 @@ const FeatureCardStats = ({
                 {APY}
                 {type && (
                   <span className="ml-1 inline-flex align-baseline">
-                    <PopoverRateInfo type={type} />
+                    <PopoverInfo type={type} />
                   </span>
                 )}
               </span>
@@ -512,7 +512,7 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                 <ul className="list-disc pl-7">
                   <li>
                     <Text variant="p2">
-                      <strong>Access Staking Rewards.</strong> Access USDS or Sky Star tokens as rewards.
+                      <strong>Access Staking Rewards.</strong> Access SKY or Sky Star tokens as rewards.
                     </Text>
                   </li>
                   <li>
@@ -561,11 +561,11 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
             descriptionElement={
               <Text variant="p3">
                 Expert modules unlock high-level functionality tailored to experienced users. stUSDS, the
-                first Expert token of the Sky Protocol, is a risk token that funds and supports
-                liquidity for SKY stakers.
+                first Expert token of the Sky Protocol, is a risk token that funds and supports liquidity for
+                SKY stakers.
                 <br />
                 <br />
-                Use USDS to access the stUSDS Rate <PopoverRateInfo type="stusds" /> and encourage more
+                Use USDS to access the stUSDS Rate <PopoverInfo type="stusds" /> and encourage more
                 participation in SKY governance. No minimum supply amount is required.
               </Text>
             }
@@ -573,14 +573,14 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
             postTextElement={
               <>
                 <Text variant="p3" className="mb-4 desktop:mb-[18px] desktop-xl:mb-[20px]">
-                  stUSDS is a risk token structured to absorb a greater share of system risk in
-                  exchange for the potential to capture a larger portion of protocol rewards.
+                  stUSDS is a risk token structured to absorb a greater share of system risk in exchange for
+                  the potential to capture a larger portion of protocol rewards.
                   <br />
                   <br />
-                  When you supply USDS to the stUSDS module of the Protocol, you fund SKY-back borrowing to
-                  access the stUSDS Rate <PopoverRateInfo type="stusds" /> and receive stUSDS tokens. The
-                  stUSDS tokens serve as a digital record of your USDS interaction with the stUSDS module and
-                  any value accrued to your position.
+                  When you supply USDS to the stUSDS module of the Protocol, you fund SKY-backed borrowing to
+                  access the stUSDS Rate <PopoverInfo type="stusds" /> and receive stUSDS tokens. The stUSDS
+                  tokens serve as a digital record of your USDS interaction with the stUSDS module and any
+                  value accrued to your position.
                   <br />
                   <br />
                   stUSDS funds and supports liquidity for SKY stakers, encouraging more participation in SKY
