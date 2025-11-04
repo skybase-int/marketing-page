@@ -9,6 +9,7 @@ import { Close, Info } from './icons';
 import { Text } from './Typography';
 import { getTooltipById } from '@/app/data';
 import { parseMarkdownLinks } from '@/app/utils/parseMarkdownLinks';
+import { cn } from '../lib/utils';
 
 const getContent = () => {
   // Get tooltips from centralized system
@@ -18,6 +19,9 @@ const getContent = () => {
   const stakingRewardsRateTooltip = getTooltipById('staking-rewards-rates-srrs');
   const stusdsRateTooltip = getTooltipById('stusds-rate');
   const liquidationPriceStakingTooltip = getTooltipById('liquidation-price-staking');
+  const borrowTooltip = getTooltipById('borrow');
+  const borrowRateTooltip = getTooltipById('borrow-rate');
+  const delegateTooltip = getTooltipById('choose-your-delegate');
 
   return {
     str: {
@@ -67,14 +71,50 @@ const getContent = () => {
           {parseMarkdownLinks(liquidationPriceStakingTooltip?.tooltip)}
         </Text>
       )
+    },
+    borrow: {
+      title: borrowTooltip?.title || '',
+      description: (
+        <Text className="leading-5 text-white/80" variant="ui-small-regular">
+          {parseMarkdownLinks(borrowTooltip?.tooltip)}
+        </Text>
+      )
+    },
+    'borrow-rate': {
+      title: borrowRateTooltip?.title || '',
+      description: (
+        <Text className="leading-5 text-white/80" variant="ui-small-regular">
+          {parseMarkdownLinks(borrowRateTooltip?.tooltip)}
+        </Text>
+      )
+    },
+    delegate: {
+      title: delegateTooltip?.title || '',
+      description: (
+        <Text className="leading-5 text-white/80" variant="ui-small-regular">
+          {parseMarkdownLinks(delegateTooltip?.tooltip)}
+        </Text>
+      )
     }
   };
 };
 
 export const PopoverInfo = ({
-  type
+  type,
+  className
 }: {
-  type: 'str' | 'ssr' | 'psm' | 'srr' | 'stusds' | 'sky-savings-rate' | 'liquidation-price-staking';
+  className?: string;
+  type:
+    | 'str'
+    | 'ssr'
+    | 'psm'
+    | 'srr'
+    | 'stusds'
+    | 'sky-savings-rate'
+    | 'liquidation-price-staking'
+    | 'borrow'
+    | 'borrow-rate'
+    | 'delegate';
 }) => {
   const content = getContent();
 
@@ -94,7 +134,7 @@ export const PopoverInfo = ({
       <PopoverTrigger>
         <Info />
       </PopoverTrigger>
-      <PopoverContent align="center" side="top" className="backdrop-blur-lg">
+      <PopoverContent align="center" side="top" className={cn('backdrop-blur-lg', className)}>
         {tooltipContent.title && (
           <Text variant="ui-medium" className="text-[16px] leading-6">
             {tooltipContent.title}
