@@ -13,7 +13,7 @@ import ProductsStakes5Mobile from '@/public/products_stake_5_mobile.png';
 import { useBreakpointIndex } from '@/app/hooks/useBreakpointIndex';
 import { FetchedData } from '@/app/(main)/fetchData';
 import { ExternalLink } from '@/app/components/ExternalLink';
-import { PopoverSealInfo } from '@/app/components/PopoverSealInfo';
+import { PopoverInfo } from '@/app/components/PopoverInfo';
 
 export const StakeCard = ({ data }: { data: FetchedData }) => {
   const { bpi, isLoading: bpiLoading } = useBreakpointIndex();
@@ -29,13 +29,13 @@ export const StakeCard = ({ data }: { data: FetchedData }) => {
             <>
               <TextFeatureCard>
                 Supply SKY tokens to the Staking Engine of the Sky Protocol to create one or more positions
-                and access Staking Rewards. The Staking Rewards rate <PopoverSealInfo type="srr" /> is
-                determined by Sky Ecosystem Governance through the process of decentralized onchain voting.
+                and access Staking Rewards. The Staking Rewards rate <PopoverInfo type="srr" /> is determined
+                by Sky Ecosystem Governance through the process of decentralized onchain voting.
               </TextFeatureCard>
               <TextFeatureCard>
-                You can use your staked SKY to delegate <PopoverSealInfo type="delegate" /> your Sky Ecosystem
-                Governance voting rights and as collateral to borrow <PopoverSealInfo type="borrow" /> USDS.
-                All positions are eligible to access Staking Rewards.
+                You can use your staked SKY to delegate <PopoverInfo type="delegate" className="w-96" /> your
+                Sky Ecosystem Governance voting rights and as collateral to borrow{' '}
+                <PopoverInfo type="borrow" /> USDS. All positions are eligible to access Staking Rewards.
               </TextFeatureCard>
               <TextFeatureCard>
                 No minimum supply is required, and you can stake or un-stake your SKY—and claim your
@@ -117,7 +117,7 @@ export const StakeCard = ({ data }: { data: FetchedData }) => {
               <TextFeatureCard>
                 You can use your SKY to participate directly in governance through a system of decentralized
                 onchain voting and/or to entrust your voting power to one or more delegates{' '}
-                <PopoverSealInfo type="delegate" /> or a contract that you own via the{' '}
+                <PopoverInfo type="delegate" className="w-96" /> or a contract that you own via the{' '}
                 <ExternalLink href="https://vote.sky.money/" className="text-black/80 underline">
                   Sky Governance Voting portal
                 </ExternalLink>{' '}
@@ -166,9 +166,9 @@ export const StakeCard = ({ data }: { data: FetchedData }) => {
                 This means that you are always able to actively manage your positions.
               </TextFeatureCard>
               <TextFeatureCard>
-                The Debt Ceiling and Borrow Rate <PopoverSealInfo type="borrowRate" /> are parameters
-                determined by Sky Ecosystem Governance through a process of decentralized, community-driven
-                onchain voting. Your total debt increases each block according to the Borrow Rate.
+                The Debt Ceiling and Borrow Rate <PopoverInfo type="borrow-rate" /> are parameters determined
+                by Sky Ecosystem Governance through a process of decentralized, community-driven onchain
+                voting. Your total debt increases each block according to the Borrow Rate.
               </TextFeatureCard>
               <TextFeatureCard>
                 Opening a USDS borrow position subjects you to liquidation risk if at any time the value of
