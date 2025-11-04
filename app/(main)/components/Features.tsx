@@ -495,9 +495,15 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
               features, but it has no exit fee and only supports SKY tokens, not MKR.
               <br />
               <br />
-              Stake SKY to earn rewards, delegate <PopoverInfo type="delegate" className="w-96" /> governance
-              voting rights, and borrow <PopoverInfo type="borrow" /> USDS. You can stake or un-stake your
-              SKY, and claim rewards, anytime.
+              Stake SKY to earn rewards, delegate{' '}
+              <span className="ml-1 inline-flex align-baseline">
+                <PopoverInfo type="delegate" className="w-96" />
+              </span>{' '}
+              governance voting rights, and borrow{' '}
+              <span className="ml-1 inline-flex align-baseline">
+                <PopoverInfo type="borrow" />
+              </span>{' '}
+              USDS. You can stake or un-stake your SKY, and claim rewards, anytime.
             </Text>
           }
           postTitle="Staking Engine"
@@ -510,25 +516,29 @@ export function HomepageFeatures({ data }: { data: FetchedData }) {
                 <br />
                 <ul className="list-disc pl-7">
                   <li>
-                    <Text variant="p2">
+                    <Text variant="p2" tag="span">
                       <strong>Access Staking Rewards.</strong> Access SKY or Sky Star tokens as rewards.
                     </Text>
                   </li>
                   <li>
-                    <Text variant="p2">
+                    <Text variant="p2" tag="span">
                       <strong>Borrow.</strong> Borrow
-                      <PopoverInfo type="borrow" className="z-[1000]" /> USDS against your supplied SKY. You
-                      can exit your borrow position at any time and withdraw or pay back USDS whenever you
-                      would like.
+                      <span className="ml-1 inline-flex align-baseline">
+                        <PopoverInfo type="borrow" className="z-[1000]" />
+                      </span>{' '}
+                      USDS against your supplied SKY. You can exit your borrow position at any time and
+                      withdraw or pay back USDS whenever you would like.
                     </Text>
                   </li>
                   <li>
-                    <Text variant="p2">
+                    <Text variant="p2" tag="span">
                       <strong>Delegate.</strong> Transfer the voting power of your supplied SKY tokens to a
                       recognized delegate
-                      <PopoverInfo type="delegate" className="z-[1000] w-96" /> or a contract that you own.
-                      Your chosen delegate can then participate in the Sky Ecosystem Governance voting process
-                      on your behalf.
+                      <span className="ml-1 inline-flex align-baseline">
+                        <PopoverInfo type="delegate" className="z-[1000] w-96" />
+                      </span>{' '}
+                      or a contract that you own. Your chosen delegate can then participate in the Sky
+                      Ecosystem Governance voting process on your behalf.
                     </Text>
                   </li>
                 </ul>
