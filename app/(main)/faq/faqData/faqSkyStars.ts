@@ -36,7 +36,7 @@ Some Star Artifact documents are high-level, focusing on vision, principles and 
   {
     question: 'What is Spark?',
     answer:
-      '[Spark.fi](https://spark.fi/), the very first Star in the Sky Ecosystem, is focused on building on USDS in the Ethereum and adjacent DeFi ecosystem. It is a gateway to the non-custodial Sky Protocol and, like all Sky Stars, an independent decentralized project. Spark offers users—especially USDS holders—products around saving, borrowing and liquidity provision. Spark.fi is more than just another DeFi app, it is the core liquidity and yield infrastructure layer for onchain finance.',
+      '[Spark.fi](https://spark.fi/), the very first Star in the Sky Ecosystem, is focused on building on USDS in the Ethereum and adjacent DeFi ecosystem. It is a gateway to the non-custodial Sky Protocol and, like all Sky Stars, an independent decentralized project. Spark offers users—especially USDS holders—products around saving, borrowing and liquidity provision. More than just another DeFi app, it is the core liquidity and yield infrastructure layer for onchain finance.',
     categories: ['Sky Stars']
   },
   {
@@ -53,9 +53,9 @@ For more information, see [Spark Documentation](https://docs.spark.fi/user-guide
     categories: ['Sky Stars']
   },
   {
-    question: 'Where can find the Spark analytics dashboard?',
+    question: 'Where can find the Spark Analytics Dashboard?',
     answer:
-      'View the most comprehensive information and data about Spark on the [Spark analytics dashboard](https://spark.blockanalitica.com/).',
+      'View the most comprehensive information and data about Spark on the [Spark Analytics Dashboard](https://spark.blockanalitica.com/).',
     categories: ['Sky Stars']
   }
 ];
