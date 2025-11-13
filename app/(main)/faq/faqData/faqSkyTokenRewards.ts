@@ -20,7 +20,7 @@ export const skyTokenRewards: FAQItem[] = [
   },
   {
     question: 'How are Sky Token Rewards Rates calculated?',
-    answer: `The Sky Token Reward Rate is different for each type of token rewarded, and always fluctuates, asdetermined by the following factors:
+    answer: `The Sky Token Reward Rate is different for each type of token rewarded, and always fluctuates, as determined by the following factors:
 
 • The issuance rate of the token rewarded, which is determined by Sky Ecosystem Governance;
 

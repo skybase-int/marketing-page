@@ -280,7 +280,7 @@
         "answer": "The Spark Liquidity Layer directly and automatically provides USDS, sUSDS and USDC liquidity across networks and DeFi markets. This enables users to access the Sky Savings Rate on their preferred network using sUSDS. Additionally, it allows Spark to automate liquidity provision into DeFi markets to optimize yield. Please see the [Spark Liquidity Layer documentation](https://docs.spark.fi/user-guides/spark-liquidity-layer) for more information.\n\nFor more information, see [Spark Documentation](https://docs.spark.fi/user-guides/spark-liquidity-layer)."
       },
       {
-        "question": "Where can find the Spark Analytics Dashboard?",
+        "question": "Where can I find the Spark Analytics Dashboard?",
         "answer": "View the most comprehensive information and data about Spark on the [Spark Analytics Dashboard](https://spark.blockanalitica.com/)."
       }
     ]
@@ -613,7 +613,7 @@
       },
       {
         "question": "How are Sky Token Rewards Rates calculated?",
-        "answer": "The Sky Token Reward Rate is different for each type of token rewarded, and always fluctuates, asdetermined by the following factors:\n\n• The issuance rate of the token rewarded, which is determined by Sky Ecosystem Governance;\n\n• The market price of the token rewarded; and\n\n• The user's proportional supply within the total pool of assets linked to the Sky Token Rewards module."
+        "answer": "The Sky Token Reward Rate is different for each type of token rewarded, and always fluctuates, as determined by the following factors:\n\n• The issuance rate of the token rewarded, which is determined by Sky Ecosystem Governance;\n\n• The market price of the token rewarded; and\n\n• The user's proportional supply within the total pool of assets linked to the Sky Token Rewards module."
       },
       {
         "question": "How are Sky Token Rewards funded?",
