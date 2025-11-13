@@ -26,7 +26,7 @@ For more details on this and other risks associated with cryptocurrencies, pleas
 
 • **Saving.** Some people use crypto as a way to save. For example, eligible users of Sky.money web app can access the decentralized Sky Protocol to supply USDS stablecoins to the Sky Savings Rate module to access the Sky Savings Rate and accumulate additional USDS over time.
 
-• **Accessing Rewards.** Some people use crypto to access rewards without giving up control of their assets. For example, eligible Sky.money web app users can tap into the Sky Protocol to access Sky Tokens Rewards when they supply USDS to the Sky Token Rewards module. When eligible users supply SKY tokens to the Staking Engine of the Protocol, they can access Staking Rewards.
+• **Accessing Rewards.** Some people use crypto to access rewards without giving up control of their assets. For example, eligible Sky.money web app users can tap into the Sky Protocol to access Sky Token Rewards when they supply USDS to the Sky Token Rewards module. When eligible users supply SKY tokens to the Staking Engine of the Protocol, they can access Staking Rewards.
 
 • **Borrowing.** Some DeFi protocols allow users to borrow stablecoins using their crypto as collateral. Eligible users of the Sky.money web app can borrow USDS against the SKY tokens that they supply to the Staking Engine of the Sky Protocol.
 
@@ -35,7 +35,7 @@ For more details on this and other risks associated with cryptocurrencies, pleas
   },
   {
     question: 'What are the benefits of cryptocurrency?',
-    answer: `There are thousands of cryptocurrencies in circulation, and they vary in purpose, functionality and value. Some of the benefits crypto can offer are:
+    answer: `There are thousands of cryptocurrencies in circulation, and they vary in purpose, functionality and value. Some of the benefits that crypto can offer are:
 
 • **Inclusivity.** People in many regions of the world, regardless of their economic standing, can use crypto to transact freely and to access decentralized financial (DeFi) services that let them retain complete control of their assets.
 
@@ -77,7 +77,7 @@ For risks associated with cryptocurrencies, please review the [User Risk Documen
   },
   {
     question: 'What is decentralized finance?',
-    answer: `Decentralized finance (DeFi) refers to a sector of the cryptocurrency economy that aims to provide open and permissionless financial applications, products and services built on and accessed via blockchains. The term ‘permissionless' in this context generally means that users do not need permission to join an open blockchain network, and are in complete and direct control of their assets and financial activities. ‘Open' speaks to the complete transparency of public blockchains.
+    answer: `Decentralized finance (DeFi) refers to a sector of the cryptocurrency economy that aims to provide open and permissionless financial applications, products and services built on and accessed via blockchains. The term "permissionless" in this context generally means that users do not need permission to join an open blockchain network, and are in complete and direct control of their assets and financial activities. "Open" speaks to the complete transparency of public blockchains.
 
 DeFi applications typically aim to enable fast, borderless transactions, via self-executing, autonomous smart contracts, often at a fraction of the cost of traditional wire services, as a result of being disintermediated (in direct control of their activities).
 
@@ -87,7 +87,7 @@ Finally, DeFi offerings are often managed by decentralized ecosystems that opera
   {
     question: 'What are dApps?',
     answer:
-      'Decentralized financial applications (dApps) are typically made up of software code deployed to a blockchain. This code usually takes the form of smart contracts that run automatically and independently. The smart contracts contain the rules and agreements that constitute the framework of the applications, and are what allow for the fast and efficient creation, transfer and validation of digital assets, as well as for decentralized community governance. The decentralized Sky Protocol is a dApp.',
+      'Decentralized applications (dApps) are typically made up of software code deployed to a blockchain. This code usually takes the form of smart contracts that run automatically and independently. The smart contracts contain the rules and agreements that constitute the framework of the applications, and are what allow for the fast and efficient creation, transfer and validation of digital assets, as well as for decentralized community governance. The decentralized Sky Protocol is a dApp.',
     categories: ['Crypto (General)']
   },
   {
@@ -96,7 +96,7 @@ Finally, DeFi offerings are often managed by decentralized ecosystems that opera
 
 DEX users interact directly with smart contracts using crypto wallets that are secured by private keys. Because DEXs are non-custodial, users are fully responsible for their own assets. That means if you lose access to your private keys, your assets are irrecuperable. Additionally, because no bank or financial institution is involved in facilitating DEX transactions, a DEX can't be used to trade fiat currency for cryptocurrency (or vice versa).
 
-Not all DEXs operate in the same way. To buy crypto on a specific DEX may require knowledge of that DEXs functions and/or underlying code base.`,
+Not all DEX's operate in the same way. To buy crypto on a specific DEX may require knowledge of that DEXs functions and/or underlying codebase.`,
     categories: ['Crypto (General)']
   },
   {
@@ -112,7 +112,7 @@ Generally, CEXs operate in similar ways, but to learn how to use a specific CEX,
     question: 'What is the relationship between TVL and token price?',
     answer: `TVL (Total Value Locked) generally represents the total value of cryptocurrency assets that are supplied to a protocol or reported as the total value locked in a contract representing a protocol's features (e.g., a lending contract or a savings contract).
 
-TVL is commonly measured in fiat currency, typically US dollars, not in a protocol's native token. For example, If a protocol has 100 ETH locked, and one ETH is worth $4,000, then the calculated TVL is $400,000. If the price of ETH falls or rises, the TVL fluctuates accordingly.`,
+TVL is commonly measured in fiat currency, typically U.S. dollars, not in a protocol's native token. For example, If a protocol has 100 ETH locked, and one ETH is worth $4,000, then the calculated TVL is $400,000. If the price of ETH falls or rises, the TVL fluctuates accordingly.`,
     categories: ['Crypto (General)']
   },
   {
@@ -123,7 +123,7 @@ For details on the risks associated with stablecoins, please review the [User Ri
     categories: ['Crypto (General)']
   },
   {
-    question: "What are the different mechanisms used to maintain the stability of a stablecoin's value.",
+    question: "What are the different mechanisms used to maintain the stability of a stablecoin's value?",
     answer: `Stablecoins are designed to attempt to maintain a stable value. They are typically pegged to the value of a fiat (government-issued) currency, such as the U.S. dollar or the euro. Stablecoins are backed either by fiat currencies, commodities (real-world assets) or other cryptocurrencies held in reserves, the presence of which is intended to make them more stable mediums of exchange. Stablecoins are most often used to make transfers, especially cross-border transfers, using networks powered by blockchain technology.
 
 There are generally two broad categories of stablecoin structures:
@@ -136,7 +136,7 @@ In order for a stablecoin to maintain its value over time, a method or mechanism
 
 Many stablecoins maintain their value through a process called asset-backed collateralization. These stablecoins aim to maintain reserves of assets intended to back the tokens in circulation. The actual value and composition of these reserves may vary and typically depend on the specific project's implementation.
 
-Often, for stablecoins that are crypto-collateralized, overcollateralization combined with algorithmic methods, in the form of smart contracts, is used. Overcollateralization means that the total value of the collateral that backs a specific stablecoin must always be higher than the total value of every one of those stablecoins in circulation. For example, if a protocol's governance community decides that its stablecoin must be overcollateralized by 20%, and the value of all its stablecoins in circulation is 1M, the collateral held in reserve must be worth at least $1.2M.
+Often, for stablecoins that are crypto-collateralized, overcollateralization combined with algorithmic methods, in the form of smart contracts, is used. Overcollateralization means that the total value of the collateral that backs a specific stablecoin must always be higher than the total value of every one of those stablecoins in circulation. For example, if a protocol's governance community decides that its stablecoin must be overcollateralized by 20%, and the value of all its stablecoins in circulation is $1M, the collateral held in reserve must be worth at least $1.2M.
 
 Other types of stability mechanisms include the following:
 
@@ -150,11 +150,11 @@ Other types of stability mechanisms include the following:
   {
     question: 'What happens when the value of the collateral backing a stablecoin falls significantly?',
     answer:
-      'The collateral that backs a stablecoin is what allows it to be a trusted store of value and stable medium of exchange. If the value of that collateral declines significantly, the stablecoin may become insufficiently backed and drop in value below its peg. Stablecoin values often deviate only marginally from their target price; however, significant market events can lead to larger price movements. Typically, minor fluctuations in the value of collateral do not cause immediate instability. However, in cases of substantial collateral value decline, market participants may react by selling their holdings, which could further impact prices. Moreover, if a de-pegged stablecoin has a high market cap, meaning that a lot of people depend on its stability, the sell-off could cause fear to spread regarding the stability of other stablecoins, and lead to off-loading of stable assets throughout the market.',
+      'The collateral that backs a stablecoin is what allows it to be a trusted store of value and stable medium of exchange. If the value of that collateral declines significantly, the stablecoin may become insufficiently backed and drop in value below its peg. Stablecoin values often deviate only marginally from their target price; however, significant market events can lead to larger price movements. Typically, minor fluctuations in the value of collateral do not cause immediate instability. However, in cases of substantial collateral value decline, market participants may react by selling their holdings, which could further impact prices. Moreover, if a depegged stablecoin has a high market cap, meaning that a lot of people depend on its stability, the sell-off could cause fear to spread regarding the stability of other stablecoins, and lead to off-loading of stable assets throughout the market.',
     categories: ['Crypto (General)']
   },
   {
-    question: 'What role do stablecoins play in the DeFI ecosystem?',
+    question: 'What role do stablecoins play in the DeFi ecosystem?',
     answer: `Stablecoins provide the foundation on which much of decentralized finance (DeFi) functions, and are essential to increasing DeFi adoption worldwide. They are typically pegged to the value of a fiat (government-issued) currency, such as the U.S. dollar or the euro.
 
 Stablecoins are commonly used for:
@@ -169,7 +169,7 @@ Stablecoins are commonly used for:
 
 • **Lending.** Some DeFi protocols enable users to supply crypto to a smart contract that acts as a pool from which others can borrow. Those crypto suppliers become liquidity providers, who access rewards in the form of liquidity pool tokens (LPTs). The LPTs they receive represent their share of assets in the pool or a percentage of fees charged to those accessing the pool tokens.
 
-• **Accessing Rewards.** Some people use crypto to access rewards without giving up control of their assets. For example, eligible Sky.money web app users can tap into the Sky Protocol to access Sky Tokens Rewards when they supply USDS to the Sky Token Rewards module. When eligible users supply SKY tokens to the Staking Engine of the Protocol, they can access Staking Rewards.
+• **Accessing Rewards.** Some people use crypto to access rewards without giving up control of their assets. For example, eligible Sky.money web app users can tap into the Sky Protocol to access Sky Token Rewards when they supply USDS to the Sky Token Rewards module. When eligible users supply SKY tokens to the Staking Engine of the Protocol, they can access Staking Rewards.
 
 • **Risk management**. Stablecoins may offer a safe haven during market turbulence, allowing traders to quickly exit volatile positions without leaving the crypto ecosystem.
 
@@ -204,9 +204,9 @@ With the Sky.money web app, you always remain in control of your assets. You alo
   },
   {
     question: 'What is an example of a crypto-collateralized stablecoin?',
-    answer: `A crypto-collateralized stablecoin is a type of decentralized digital currency that is typically soft-pegged to the value of a fiat currency, such as the U.S. dollar, and backed (collateralized) by other cryptocurrencies locked in a reserve or in a smart contract, which may sometimes be referred to as a cryptocurrency vault.
+    answer: `A crypto-collateralized stablecoin is a type of decentralized digital currency that is typically soft-pegged to the value of a fiat currency, such as the U.S. dollar, and backed (collateralized) by other cryptocurrencies locked in a reserve or in a smart contract, which is sometimes referred to as a cryptocurrency vault.
 
-To maintain stability of crypto-collateralized stablecoins, algorithms and overcollateralization are probably the most widely used mechanisms. Examples of crypto-collateralized stablecoins are USDS and DAI. USDS powers the Sky Ecosystem.`,
+To maintain stability of crypto-collateralized stablecoins, algorithms and overcollateralization are among the most widely used mechanisms. Examples of crypto-collateralized stablecoins are USDS and DAI. USDS powers the Sky Ecosystem.`,
     categories: ['Crypto (General)']
   },
   {
@@ -225,7 +225,7 @@ Both types of stablecoins strive to offer stability, but the degree of price sta
     question: 'What is a blockchain?',
     answer: `Crypto transactions occur on networks (blockchains) powered by blockchain technology, which transcend borders. A permissionless blockchain is a distributed ledger (list of transactions) that anyone can view and verify. In contrast, permissioned or private blockchains exist where transactions are not publicly visible to everyone. These blockchains are typically used by enterprises, governments, and organizations that require privacy. There are also privacy-enhanced blockchains, whereby transactions are encrypted or use advanced cryptographic techniques to hide details.
 
-Generally, blockchain transactions are immutable, meaning that once executed, they are typically irreversible. While Bitcoin and Ethereum are among the most well known blockchain networks, there are many others.
+Generally, blockchain transactions are immutable, meaning that once executed, they are typically irreversible. While Bitcoin and Ethereum are among the most well-known blockchain networks, there are many others.
 
 There are generally two types of blockchains—public and private. Private blockchains, also called "trusted" or "permissioned" blockchains, are typically designed to meet the specific needs of a project or organization; therefore, they are closed to all but authorized users. Public blockchains are just that—open and accessible by all.
 
@@ -234,9 +234,9 @@ Like traditional accounting ledgers, blockchain networks keep a record of transa
   },
   {
     question: 'What is blockchain data verification?',
-    answer: `Data verification is crucial to a blockchain network, as it confirms that all transactions added to the blockchain are valid. Verification prevents double-spending, helping to ensure the integrity of a chain.
+    answer: `Data verification is crucial to a blockchain network, as it confirms that all transactions added to the blockchain are valid. Verification prevents double spending, helping to ensure the integrity of a chain.
 
-Blockchain data is verified using a network of stakeholders called nodes, miners or validators. At the risk of oversimplifying a complicated process, nodes make sure that if you want to send $5 worth of a specific cryptocurrency to someone, you actually have $5 worth of that crypto in your possession. They also make sure that you follow the rules of the blockchain and don't attempt to spend that $5 more than once (i.e., the prevention of a concept referred to as "double-spend"). In addition to making sure all transaction data is processed properly, nodes all have exact copies of the blockchain, which enables them to maintain all blockchain data synchronously (at the same time).
+Blockchain data is verified using a network of stakeholders called nodes, miners or validators. In simple terms, nodes make sure that if you want to send $5 worth of a specific cryptocurrency to someone, you actually have $5 worth of that crypto in your possession. They also make sure that you follow the rules of the blockchain and don't attempt to spend that $5 more than once (i.e., preventing what is called "double spend"). In addition to making sure all transaction data is processed properly, nodes all have exact copies of the blockchain, which enables them to maintain all blockchain data synchronously (at the same time).
 
 Note that both public and private blockchain networks use nodes to verify transactions; however, with private blockchains, the nodes are permissioned nodes that are authorized/pre-approved by the entity running the permissioned chain to participate in verifying the transactions.`,
     categories: ['Crypto (General)']
@@ -249,11 +249,11 @@ Note that both public and private blockchain networks use nodes to verify transa
   },
   {
     question: 'What are the characteristics of public blockchain networks?',
-    answer: `Blockchain networks are decentralized accounting ledgers, of which there are two types—public and private. Private blockchains, also called "trusted" or "permissioned" blockchains, are designed to meet the specific needs of a project or organization, therefore they are closed to all but authorised users. Public blockchains are just that—open and accessible by all, meaning that anyone, anywhere can view the blockchain transactions at any time by using a blockchain explorer. Etherscan is the blockchain explorer for the Ethereum network.
+    answer: `Blockchain networks are decentralized accounting ledgers, of which there are two types—public and private. Private blockchains, also called "trusted" or "permissioned" blockchains, are designed to meet the specific needs of a project or organization, therefore they are closed to all but authorized users. Public blockchains are just that—open and accessible by all, meaning that anyone, anywhere can view the blockchain transactions at any time by using a blockchain explorer. Etherscan is the blockchain explorer for the Ethereum network.
 
 The unique characteristics of public blockchains are as follows:
 
-• **Accessibility.** Anyone with internet access can participate in a public blockchain network, 24-7.
+• **Accessibility.** Anyone with internet access can participate in a public blockchain network, 24/7.
 
 • **Decentralization.** Public blockchains are decentralized. No single entity controls public networks, which helps to reduce—not eliminate—the risk of fraud or manipulation.
 
@@ -278,12 +278,12 @@ Due to the characteristics listed above, blockchain networks may allow for world
     question: 'What is a blockchain bridge?',
     answer: `A blockchain bridge is a protocol or platform that allows users to transact data and digital assets between different blockchains.
 
-For example, if you have USDS, a native stablecoin of the Sky Protocol, which is built on the Ethereum blockchain, and you want to use it on another blockchain, you might use a bridge to make that transfer. The bridge infrastructure connects the two blockchains, handling the ‘messaging' that tells the destination chain that the USDS tokens are locked in a smart contract on Ethereum, and it's safe to generate the equivalent amount. Importantly, whether you receive a native version of USDS on the destination chain or an equivalent amount of a wrapped version depends on the destination chain's implementation.`,
+For example, if you have USDS, a native stablecoin of the Sky Protocol, which is built on the Ethereum blockchain, and you want to use it on another blockchain, you might use a bridge to make that transfer. The bridge infrastructure connects the two blockchains, handling the "messaging" that tells the destination chain that the USDS tokens are locked in a smart contract on Ethereum, and it's safe to generate the equivalent amount. Importantly, whether you receive a native version of USDS on the destination chain or an equivalent amount of a wrapped version depends on the destination chain's implementation.`,
     categories: ['Crypto (General)']
   },
   {
     question: 'What are smart contracts?',
-    answer: `Smart contracts are agreements written in computer code and deployed to a blockchain, where they self-execute automatically when called upon. No centralized entity or intermediary is needed to complete the steps laid out in those agreements. Smart contacts are key to the decentralized finance (DeFi) sector, as they are used to execute everything from simple transfers and trades to the governance of decentralized ecosystems in a peer-to-peer or peer-to-contract manner.
+    answer: `Smart contracts are agreements written in computer code and deployed to a blockchain, where they self-execute automatically when called upon. No centralized entity or intermediary is needed to complete the steps laid out in those agreements. Smart contracts are key to the decentralized finance (DeFi) sector, as they are used to execute everything from simple transfers and trades to the governance of decentralized ecosystems in a peer-to-peer or peer-to-contract manner.
 
 Smart contracts work a lot like vending machines. A vending machine automatically provides a product once you feed it a coin and choose the product you want. The machine does not call someone at the vending machine company to get permission or further instructions. Similarly, a smart contract automatically provides a specific output (O) when prompted by a specific input (I). For example, a smart contract deployed to serve an ecosystem can send money to contractors (O) on the first of every month (I), without any help or interference from a payroll manager, bank or other financial institution.
 
@@ -292,7 +292,7 @@ Most smart contracts are open source (transparent) and immutable in theory, mean
   },
   {
     question: 'Are smart contracts secure?',
-    answer: `Smart contracts are agreements written in computer code and deployed to a blockchain, where they self-execute automatically when called upon. No centralized entity or intermediary is needed to complete the steps laid out in those agreements. Smart contacts must be written correctly in order to work as expected. If there's a coding error in a smart contract, it might not perform as it should. Any vulnerabilities in a smart contract could cause security issues. Even meticulously written smart contracts can have vulnerabilities, which can manifest through complex interactions and economic attack vectors. For example, hackers might find errors and use them to their advantage, causing harm to users. Smart contract audits can help mitigate risks caused by developer error.
+    answer: `Smart contracts are agreements written in computer code and deployed to a blockchain, where they self-execute automatically when called upon. No centralized entity or intermediary is needed to complete the steps laid out in those agreements. Smart contracts must be written correctly in order to work as expected. If there's a coding error in a smart contract, it might not perform as it should. Any vulnerabilities in a smart contract could cause security issues. Even meticulously written smart contracts can have vulnerabilities, which can manifest through complex interactions and economic attack vectors. For example, hackers might find errors and use them to their advantage, causing harm to users. Smart contract audits can help mitigate risks caused by developer error.
 
 For details on the risks associated with smart contracts, please review the [User Risk Documentation](https://docs.sky.money/user-risks).`,
     categories: ['Crypto (General)']
@@ -303,7 +303,7 @@ For details on the risks associated with smart contracts, please review the [Use
 
 Your non-custodial wallet holds the private keys needed to sign crypto transactions, and gives you full control over those private keys, which are essential for accessing and managing your crypto. Unlike custodial wallets, where a third party holds the private keys, non-custodial wallets allow users to be the sole custodian of their keys. This means that only the user has the ability to sign transactions, making it more secure and private; however, it also means that if a user loses their private key or recovery phrase, they may permanently lose access to their assets. Because all crypto assets exist on a public or private blockchain, access to them depends on control of the corresponding private keys.
 
-Non-custodial wallets can be software-based, like mobile apps, or hardware devices designed for enhanced security. There are several types of crypto wallets and no limit to the number of wallets you can own. Two popular software-based wallets are Metamask and Rainbow.`,
+Non-custodial wallets can be software-based, like mobile apps, or hardware devices designed for enhanced security. There are several types of crypto wallets and no limit to the number of wallets you can own. Two popular software-based wallets are MetaMask and Rainbow.`,
     categories: ['Crypto (General)']
   },
   {
@@ -312,7 +312,7 @@ Non-custodial wallets can be software-based, like mobile apps, or hardware devic
 
 Typically, when setting up a new non-custodial digital wallet, the wallet software generates a "seed phrase," which is a sequence of 12, 18, or 24 seemingly random words used as a mnemonic device to access the underlying private key(s) related to that wallet. The seed phrase can be used to recover the public and private keys, and should therefore be stored somewhere safe and never shared with anyone.
 
-A private key is a randomly generated string of letters and numbers which acts as a sort of password that gives anyone that knows it the capability to control the wallet assets. It is known only to the user and should be kept secure and confidential to ensure that only the user has access to and can control any associated assets. The private key is used to sign transactions. For example, when a user wants to send crypto or access their assets on the blockchain, they would use the private key to authorize the transaction.
+A private key is a randomly generated string of letters and numbers which acts as a sort of password that gives anyone that knows it the ability to control the wallet assets. It is known only to the user and should be kept secure and confidential to ensure that only the user has access to and can control any associated assets. The private key is used to sign transactions. For example, when a user wants to send crypto or access their assets on the blockchain, they would use the private key to authorize the transaction.
 
 A public key is usually derived from the private key using a mathematical algorithm. It is a string of characters that can be shared openly without compromising a wallet's inherent security. The public key is used to generate wallet addresses and to encrypt data. For example, when someone wants to send digital assets to a user, they would use the user's public key or the associated wallet address.`,
     categories: ['Crypto (General)']
@@ -334,7 +334,7 @@ Hot wallets are those connected to the internet most of the time (i.e., software
 
 ### **Hot Wallet Types**
 
-• **Mobile wallets.** Mobile wallets— commonly used hot wallets—may present increased security concerns given that a smartphone is almost always connected to the internet and may be susceptible to viruses, loss or theft. With a mobile wallet, your private key is only as secure as your phone.
+• **Mobile wallets.** Mobile wallets—commonly used hot wallets—may present increased security concerns given that a smartphone is almost always connected to the internet and may be susceptible to viruses, loss or theft. With a mobile wallet, your private key is only as secure as your phone.
 
 • **Desktop and browser wallets.** Desktop and browser wallets are accessed on desktop and laptop computers via browser extensions. Importantly, these wallets cannot necessarily be accessed by mobile browsers. While laptops and computers are typically more difficult to steal than mobile phones, they, too, are susceptible to viruses and are only as safe as the device's security system.
 
@@ -356,14 +356,14 @@ A smart contract wallet, or "smart wallet," is a wallet managed through smart co
     categories: ['Crypto (General)']
   },
   {
-    question: 'Explain what a DAO is, and how it works',
+    question: 'What is a DAO, and how does it work?',
     answer:
       'A DAO, or Decentralized Autonomous Organization, is a term typically used to describe a group of individuals who collaborate and self-govern in a decentralized way using crypto and blockchain technology, and who often manage their rules and their finances collectively via a set of self-executing processes and collective decision-making. DAOs are community-governed and their members often elect to abide by rules that are voted on and ratified using crypto token-based voting, and then encoded in blockchain-based smart contracts. In other words, a DAO is not managed in a traditional sense by a CEO or president, or any other form of centralized leadership.',
     categories: ['Crypto (General)']
   },
   {
     question: 'What are the strengths and weaknesses of a DAO?',
-    answer: `A decentralized Autonomous Organization, or DAO, is the formal description of a structured group of disparate individuals responsible for a blockchain-based project. DAOs are community-governed and abide by rules that are voted on by consensus, ratified, and then encoded in blockchain-based smart contracts. In other words, a DAO is not managed in a traditional sense or by a CEO or president.
+    answer: `A Decentralized Autonomous Organization, or DAO, is the formal description of a structured group of disparate individuals responsible for a blockchain-based project. DAOs are community-governed and abide by rules that are voted on by consensus, ratified, and then encoded in blockchain-based smart contracts. In other words, a DAO is not managed in a traditional sense or by a CEO or president.
 
 ### **The strengths of decentralization**
 
@@ -392,7 +392,7 @@ A smart contract wallet, or "smart wallet," is a wallet managed through smart co
   },
   {
     question: 'What are governance tokens?',
-    answer: `Governance tokens are cryptocurrencies that may represent voting power within a decentralized autonomous organizations (DAOs) or ecosystem. Typically, anyone holding the governance tokens of a DeFi organization or community can vote on proposed changes affecting a project's protocol or ecosystem, including but not limited to, protocol upgrades, fee structures, risk management and treasury allocations. Governance tokens enable decentralized decision-making by providing the community of token holders with control over a project's future while fostering decentralization and user-driven development.
+    answer: `Governance tokens are cryptocurrencies that may represent voting power within decentralized autonomous organizations (DAOs) or ecosystems. Typically, anyone holding the governance tokens of a DeFi organization or community can vote on proposed changes affecting a project's protocol or ecosystem, including but not limited to, protocol upgrades, fee structures, risk management and treasury allocations. Governance tokens enable decentralized decision-making by providing the community of token holders with control over a project's future while fostering decentralization and user-driven development.
 
 Governance of the decentralized, non-custodial Sky Protocol and ecosystem is shared among a broad and diversified community comprising individuals and entities from around the world who hold SKY tokens, the native governance tokens of the Sky Ecosystem.`,
     categories: ['Crypto (General)']

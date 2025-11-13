@@ -37,7 +37,7 @@ To compensate participants for the added illiquidity risk during the early phase
   {
     question: 'How are stUSDS rewards funded?',
     answer:
-      'The rewards distributed to stUSDS holders come from the interest paid by SKY borrowers (the SKY Borrow Rate) and protocol revenues. The capital for SKY-backed borrowing is provided by Expert Module users who deposit USDS to access the stUSDS Rate and receive stUSDS in return. The stUSDS tokens serve as a digital record of their USDS interaction with the stUSDS module and any change to the value of their position.',
+      'The rewards distributed to stUSDS holders come from the interest paid by SKY borrowers (the SKY Borrow Rate) and protocol revenues. The capital for SKY-backed borrowing is provided by Expert Module users who deposit USDS to access the stUSDS Rate and receive stUSDS in return. The stUSDS tokens serve as a digital record of their USDS interaction with the stUSDS module and any change in the value of their position.',
     categories: ['stUSDS']
   },
   {

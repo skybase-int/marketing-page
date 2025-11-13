@@ -46,7 +46,7 @@ The conversion rate between USDS and sUSDS is determined programmatically by sma
   },
   {
     question: 'How is the Sky Savings Rate determined?',
-    answer: `The Sky Savings Rate takes into account the effect of accumulated USDS compounded in real time. In other words, the USDS you supply to the Sky Savings Rate module of the decentralized Sky Protocol enables you to get more USDS.
+    answer: `The Sky Savings Rate takes into account the effect of accumulated USDS compounded in real time. In other words, the USDS you supply to the Sky Savings Rate module of the decentralized Sky Protocol enables you to accumulate more USDS over time.
 
 The Sky Savings Rate percentage is variable, determined by Sky Ecosystem Governance through a process of decentralized onchain voting. It is calculated based on various risk parameters evaluated and monitored by the Sky Risk Management Team. Through the voting process, Sky Ecosystem Governance is able, at any time, at its sole discretion, and without notice, to adapt the Sky Savings Rate and other relevant Sky Protocol parameters based on market conditions, the Surplus Buffer of the Sky Protocol, and other factors.
 

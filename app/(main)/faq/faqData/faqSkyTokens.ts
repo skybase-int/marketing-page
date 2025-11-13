@@ -3,23 +3,8 @@ import type { FAQItem } from './types';
 export const skyTokens: FAQItem[] = [
   {
     question: 'What is SKY, and how can I get it and use it?',
-    answer: `SKY is the native governance token of the decentralized Sky Protocol and Ecosystem, and the upgrade of MKR.
-
-You can access SKY in several ways:
-
-• By upgrading your MKR tokens to SKY at a rate of 1:24,000 (1 MKR = 24,000 SKY) via the Sky.money web app.
-
-• By directly trading USDC, USDT, ETH and USDS for it via the Sky.money web app.
-
-• By supplying USDS to the Sky Token Rewards module of the Sky Protocol and accessing SKY as a reward.
-
-• On cryptocurrency exchanges that support the SKY token.
-
-SKY holders can use the token to:
-
-• Participate directly in Sky Ecosystem Governance through a system of onchain voting, and/or to entrust their voting power to one or more governance delegates.
-
-• Access Staking Rewards by supplying SKY to the Staking Engine of the Protocol.`,
+    answer: `SKY is the native governance token of the decentralized Sky Protocol and Ecosystem, and the upgrade of MKR. It is freely transferable and can be acquired on crypto exchanges or via dApps that support it. Depending on location or other criteria, eligible users of the Sky.money web app can trade USDS, USDT, ETH and USDC for SKY (and vice versa) within that app. Those users can also supply USDS to the Sky Token Reward module of the Sky Protocol via the app to access SKY (as well as other tokens) as a reward.
+Importantly, all SKY holders can use their SKY tokens to access the Staking Engine. The Staking Engine enables users to access Staking Rewards and create one or more positions, including positions that enable them to generate and [borrow](#tooltip-borrow) USDS against their supplied SKY, and to delegate the voting power the SKY token provides.`,
     categories: ['Sky Tokens']
   },
   {
@@ -35,11 +20,11 @@ USDS is also available on networks other than Ethereum Mainnet, including Solana
     question: 'What are the characteristics of USDS?',
     answer: `USDS is a native stablecoin of the Sky Protocol. It contributes significantly to the stability and economic value the Protocol and to the Sky Ecosystem due to several of its key characteristics, including:
 
-• **Accessibility.** USDS is inclusive. Regardless of economic standing, anyone with internet access can access the Ethereum blockchain and use USDS.
+• **Accessibility.** USDS is inclusive. Regardless of economic standing, anyone with internet access can connect the Ethereum blockchain and use USDS.
 
 • **Round-the-clock availability.** USDS is attainable 24/7.
 
-• **Speed and affordability.** Because USDS moves on the blockchain, users can transfer it across the globe within seconds and at a fraction of the cost of wire services via traditional finance (TradFi). Users only pay a blockchain transaction, or gas, fee.
+• **Speed and affordability.** Because USDS moves on the blockchain, users can transfer it across the globe within seconds and at a fraction of the cost of wire services via traditional finance (TradFi). Users only pay a blockchain transaction (gas) fee.
 
 • **Transparency.** The Sky Protocol is transparent. Users have complete insight into all USDS and other Sky Protocol token transactions.
 
@@ -53,13 +38,13 @@ USDS is also available on networks other than Ethereum Mainnet, including Solana
   {
     question: 'Is USDS pegged to the U.S. dollar or soft-pegged to the U.S. dollar?',
     answer:
-      "USDS is soft-pegged to the U.S. dollar, meaning that it is designed to stay close to $1 in value, but doesn't guarantee a strict 1:1 value ratio with the U.S. dollar. Its value can fluctuate based on market conditions. For example, USDS might trade at +/-$1, depending on supply and demand. Importantly, the stability of USDS is supported by various mechanisms within the Sky Protocol, including overcollateralization and the use of Peg Stability Modules (PSMs), which help manage its price relative to the dollar.",
+      "USDS is soft-pegged to the U.S. dollar, meaning that it is designed to stay close to $1 in value, but doesn't guarantee a strict 1:1 value ratio with the U.S. dollar. Its value can fluctuate based on market conditions. For example, USDS might trade at \+/-$1, depending on market supply and demand. Importantly, the stability of USDS is supported by various mechanisms within the Sky Protocol, including overcollateralization and the use of Peg Stability Modules (PSMs), which help manage its price relative to the dollar.",
     categories: ['Sky Tokens']
   },
   {
     question: 'Are DAI and USDS the same?',
     answer:
-      'USDS is the upgraded version of DAI. Like DAI, USDS is freely transferable; it can be used in connection with any software protocol or platform that supports it. You can use USDS to participate in the Sky Savings Rate to accumulate additional USDS, and to access Sky Token Rewards via the Sky.money web app.',
+      'USDS is the upgraded version of DAI. Like DAI, USDS is freely transferable and can be used in connection with any software protocol or platform that supports it. You can use USDS to participate in the Sky Savings Rate to accumulate additional USDS, and to access Sky Token Rewards via the Sky.money web app.',
     categories: ['Sky Tokens']
   },
   {
@@ -71,18 +56,18 @@ USDS is also available on networks other than Ethereum Mainnet, including Solana
   {
     question: 'How do I acquire USDS stablecoins?',
     answer:
-      'You can use the Sky.money web app, a non-custodial gateway to the decentralized Sky Protocol, to trade USDC, USDT, ETH or SKY for USDS (or vice versa). You can also upgrade your DAI to USDS, subject to any applicable blockchain transaction, or gas, fees. Gas fees are neither controlled, imposed nor received by Sky.money or the Sky Protocol. You can also obtain USDS on various crypto exchanges that decide to make it available on their platforms.',
+      'Depending on your location or other criteria, you can use the Sky.money web app, a non-custodial gateway to the decentralized Sky Protocol, to trade USDC, USDT, ETH or SKY for USDS (or vice versa). You can also upgrade your DAI to USDS, subject to any applicable blockchain transaction (gas) fees. Gas fees are neither controlled, imposed nor received by Sky.money or the Sky Protocol. You can also obtain USDS on various crypto exchanges that decide to make it available on their platforms.',
     categories: ['Sky Tokens']
   },
   {
     question: 'How can I use USDS?',
     answer:
-      'Like other decentralized stablecoins, USDS is freely transferable and can be used in connection with any software protocol or platform that supports it. Unlike other stablecoins, you can use USDS to participate in the Sky Savings Rate to accumulate additional USDS over time, and to access Sky Token Rewards, without giving up control of your digital assets. When you select SKY as your Sky Token Reward, you can participate—if you choose to do so—in the governance of the Sky Ecosystem.',
+      'Like other decentralized stablecoins, USDS is freely transferable and can be used in connection with any software protocol or platform that supports it. Unlike other stablecoins, you can use USDS to participate in the Sky Savings Rate to accumulate additional USDS over time, and to access Sky Token Rewards, without giving up control of your digital assets. When you select SKY as your token reward, you can participate—if you choose to do so—in the governance of the Sky Ecosystem.',
     categories: ['Sky Tokens']
   },
   {
     question: 'How do USDS and DAI maintain stability and benefit the ecosystem?',
-    answer: `Overcollateralization and other mechanisms helps USDS maintain stability while also helping to manage risk.
+    answer: `Overcollateralization and other mechanisms help USDS maintain stability while also supporting system stability and risk management.
 
 Overcollateralization means that the total value of the collateral that backs a specific stablecoin must always be higher than the aggregate value of all of those stablecoins in circulation.
 
@@ -106,14 +91,14 @@ For details on the risks associated with soft-pegged stablecoins, review the [Us
   {
     question: 'What is DAI?',
     answer:
-      'DAI is a stablecoin of the Sky Protocol. It is decentralized, backed by a surplus of collateral, soft-pegged to the value of the U.S. dollar, and easily user-generated and accessed. DAI is maintained by and will continue to be maintained by Sky Ecosystem Governance unless and until that body decides otherwise by vote. DAI can be upgraded to USDS, which powers the Sky Ecosystem.',
+      'DAI is a stablecoin of the Sky Protocol. It is decentralized, backed by a surplus of collateral, soft-pegged to the value of the U.S. dollar, and easily user-generated and accessed. DAI is maintained and will continue to be maintained by Sky Ecosystem Governance unless and until that body decides otherwise by vote. DAI can be upgraded to USDS, which powers the Sky Ecosystem.',
     categories: ['Sky Tokens']
   },
   {
     question: 'What is MKR?',
-    answer: `MKR was the governance token of MakerDAO, which was rebranded to the Sky Ecosystem in September 2024. For a brief period of time, MKR joined SKY as a governance token of the Sky Ecosystem. In the spring of 2025, the Sky Ecosystem Governance community approved the upgrade of MKR to SKY, establishing SKY as the sole governance token of the Sky Protocol. The upgrade is at the rate of 1:24,000 (1 MKR = 24,000 SKY).
+    answer: `MKR was the governance token of MakerDAO, which was rebranded to the Sky Ecosystem in September 2024. For a brief period of time, MKR coexisted with SKY as a governance token of the Sky Ecosystem. In the spring of 2025, the Sky Ecosystem Governance community approved the upgrade of MKR to SKY, establishing SKY as the sole governance token of the Sky Protocol. The upgrade is at the rate of 1:24,000 (1 MKR = 24,000 SKY).
 
-As the technical and functional evolution of MKR, SKY maintains the governance functionalities previously held by MKR. SKY holders can use the token to vote directly on Sky Ecosystem Governance proposals and/or to transfer the voting power of their SKY tokens to a recognized delegate or a contract that they own, just as they once could with MKR.`,
+As the technical and functional evolution of MKR, SKY maintains the governance functionalities previously held by MKR. Voting with MKR is no longer supported. SKY holders can use the token to vote directly on Sky Ecosystem Governance proposals and/or to transfer the voting power of their SKY tokens to a recognized delegate or a contract that they own, just as they once could with MKR.`,
     categories: ['Sky Tokens']
   },
   {

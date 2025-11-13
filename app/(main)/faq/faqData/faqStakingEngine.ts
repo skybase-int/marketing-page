@@ -61,11 +61,11 @@ Rates are updated using data from a third-party provider (i.e., [BlockAnalitica]
   },
   {
     question: 'How do I change my Staking Reward selection?',
-    answer: `Go to the Stake & Borrow widget in the Sky.money app There, you will see your Staking position(s) and your reward choice for each position.
+    answer: `Go to the Stake & Borrow widget in the Sky.money web app. There, you will see your Staking position(s) and your reward choice for each position.
 
 If you currently receive USDS as your reward, you will see a message informing you that USDS rewards have been disabled and SKY has been added as a Staking Reward option. If you do not currently receive USDS as a reward, you will not see this message.
 
-To change your reward selection quickly, bypassing the borrow and delegate steps, click on the drop-down beside your reward ticker symbol (e.g., USDS, SPK) to see the current options, including SKY. After making your selection, the app will fast-forward you to the last step of managing your Staking position, where you can confirm the changes to enable their new position
+To change your reward selection quickly, bypassing the borrow and delegate steps, click on the drop-down beside your reward ticker symbol (e.g., USDS, SPK) to see the current options, including SKY. After making your selection, the app will fast-forward you to the last step of managing your Staking position, where you can confirm the change to activate your updated reward choice.
 
 If you would rather manage your position(s) in the typical way, you would go to the Stake & Borrow widget and click on Manage Position to be taken through all of the Staking steps. At Step 2, you can change your reward choice. In the list of reward options, you’ll notice that USDS is shown, though it is disabled and the USDS reward rate is set to zero. Here, you can select your new reward.`,
     categories: ['Staking Engine']
