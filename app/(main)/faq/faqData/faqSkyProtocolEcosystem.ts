@@ -3,7 +3,7 @@ import type { FAQItem } from './types';
 export const skyProtocolEcosystem: FAQItem[] = [
   {
     question: 'What was Maker, who founded it, and why?',
-    answer: `Maker was co-founded by Rune Christensen and Nikolai Mushegian in late 2014. It was designed to develop an inclusive decentralized financial (DeFi) platform that aims to provide anyone, anywhere with equal access to an empowering global financial marketplace. Maker quickly grew to find success with the development of its native DAI stablecoin. DAI enabled the Maker Protocol to become the first DeFi liquidity protocol with a product-market fit, bringing real value to the DeFi space.
+    answer: `Maker was co-founded by Rune Christensen and Nikolai Mushegian in late 2014. It was designed to develop an inclusive decentralized financial (DeFi) platform that aims to provide anyone, anywhere with equal access to an empowering global financial marketplace. Maker quickly found success with the development of its native DAI stablecoin. DAI enabled the Maker Protocol to become the first DeFi liquidity protocol with a product-market fit, bringing real value to the DeFi space.
 
 In 2024, Maker rebranded to the Sky Ecosystem. Through this rebranding effort, Sky has since taken the former decentralized Maker Protocol to the next level with new technology that focuses on resilience and simplicity while remaining non-custodial.`,
     categories: ['Sky Protocol & Ecosystem']
@@ -12,7 +12,7 @@ In 2024, Maker rebranded to the Sky Ecosystem. Through this rebranding effort, S
     question: 'Why rebrand MakerDAO to the Sky Ecosystem?',
     answer: `Maker began in 2014, as a small community-governed project responsible for developing the Maker Protocol on the Ethereum blockchain. Maker quickly grew to find success with the development of its DAI stablecoin. DAI enabled the Maker Protocol to become the first decentralized finance (DeFi) liquidity protocol with a product-market fit. The Maker Protocol grew to such an extent that by 2021, effective governance by its monolithic community proved challenging.
 
-While the complexity of Maker had been necessary to pursue the best opportunities in the market, the community felt that there existed scaling issues that ultimately held the project back. The rebrand of Maker to the Sky Ecosystem, in 2024, took the former Maker Protocol to the next level with technology that focuses on resilience and simplicity while remaining decentralized and non-custodial. In short, the Sky Protocol features products and tools, organizational restructuring, and token upgrades — i.e., USDS, the upgraded version of DAI; and SKY, the upgraded version of MKR.
+While the complexity of Maker had been necessary to pursue the best opportunities in the market, the community felt that there existed scaling issues that ultimately held the project back. The rebrand of Maker to the Sky Ecosystem, in 2024, took the former Maker Protocol to the next level with technology that focuses on resilience and simplicity while remaining decentralized and non-custodial. In short, the Sky Protocol features products and tools, organizational restructuring, and token upgrades (i.e., USDS, the upgraded version of DAI; and SKY, the upgraded version of MKR).
 
 These advancements have vastly improved user experiences and enhanced network resilience while creating more alignment between product users, governance participants and the ecosystem as a whole.`,
     categories: ['Sky Protocol & Ecosystem']
@@ -27,11 +27,11 @@ These advancements have vastly improved user experiences and enhanced network re
     question: 'What is the Sky Protocol?',
     answer: `The Sky Protocol is a decentralized financial application (dApp) developed around its native USDS stablecoin. It is designed to enable the Sky Ecosystem to operate autonomously and allow users to engage with blockchain technology.
 
-The Sky Protocol is made up of software code deployed to the Ethereum blockchain. The code takes the form of smart contracts that are self-executing, trustless, decentralized and permissionless. These smart contracts contain the rules and agreements that constitute the framework of the Sky Protocol, and are what allow for the fast and efficient creation, transfer and validation of digital assets, as well as for Sky Ecosystem community governance.
+The Sky Protocol is made up of software code deployed to the Ethereum blockchain. The code consists of smart contracts that are self-executing, trustless, decentralized and permissionless. These smart contracts contain the rules and agreements that constitute the framework of the Sky Protocol, and are what allow for the fast and efficient creation, transfer and validation of digital assets, as well as for Sky Ecosystem Governance.
 
 Smart contracts work a lot like vending machines. A vending machine automatically provides a product once you feed it a coin and choose the product you want. The machine does not call someone at the vending machine company to get permission or further instructions. Similarly, a smart contract automatically provides a specific output (O) when prompted by a specific input (I). For example, a smart contract deployed to serve an ecosystem can send money to contractors (O) on the first of every month (I), without any help or interference from a payroll manager, bank or other financial institution.
 
-The Sky Protocol features several tokens— USDS, DAI, sUSDS, SKY and MKR—plus the Sky Savings Rate, Sky Token Rewards, the Staking Engine, SkyLink, and more.`,
+The Sky Protocol features several tokens—USDS, DAI, sUSDS, SKY and MKR—plus the Sky Savings Rate, Sky Token Rewards, the Staking Engine, SkyLink, and more.`,
     categories: ['Sky Protocol & Ecosystem']
   },
   {
@@ -40,12 +40,13 @@ The Sky Protocol features several tokens— USDS, DAI, sUSDS, SKY and MKR—plus
 
 SKY, when written in all caps, is the ticker symbol of the native governance token of the Sky Protocol. SKY token holders have the ability to both participate directly in Sky Ecosystem Governance through a system of decentralized onchain voting and to access Staking Rewards via the Staking Engine of the Sky Protocol.
 
-Understanding this distinction helps in navigating the ecosystem, whether you are accessing the features of the Sky Protocol, engaging effectively in governance, or both.`,
+Understanding this distinction helps you navigate the ecosystem, whether you are accessing the features of the Sky Protocol, engaging effectively in governance, or both.`,
     categories: ['Sky Protocol & Ecosystem']
   },
   {
     question: 'What is Sky Core?',
-    answer: "Sky Core is the core code and decentralized mechanisms behind the Sky Protocol's key functions.",
+    answer:
+      "Sky Core refers to the foundational code and decentralized mechanisms behind the Sky Protocol's key functions.",
     categories: ['Sky Protocol & Ecosystem']
   },
   {
@@ -69,7 +70,7 @@ For a deeper dive into the facets and checks and balances of governance, please 
   {
     question: 'Where can I find information and data about Sky Protocol and its performance?',
     answer:
-      'Comprehensive information and data about the Sky Protocol and its performance is available through the [Sky Ecosystem Dashboard](https://info.sky.money/rewards/0x10ab606b067c9c461d8893c47c7512472e19e2ce). This dashboard, designed by [Block Analitica](https://blockanalitica.com/), allows anyone to examine the health of the Sky Protocol in real time. You can view the total value locked (TVL) in the Protocol, TVL in the Sky Savings Rate module, TVL in the Sky Token Rewards module, TVL in the Staking Engine, the total collateral backing the system, an estimation of annual profits, and much more.',
+      'Comprehensive information and data about the Sky Protocol and its performance is available through the [Sky Ecosystem Dashboard](https://info.sky.money/rewards/0x10ab606b067c9c461d8893c47c7512472e19e2ce). The Dashboard, designed by [Block Analitica](https://blockanalitica.com/), allows anyone to examine the health of the Sky Protocol in real time. You can view the total value locked (TVL) in the Protocol, TVL in the Sky Savings Rate module, TVL in the Sky Token Rewards module, TVL in the Staking Engine, the total collateral backing the system, estimated annual profits, and much more.',
     categories: ['Sky Protocol & Ecosystem']
   },
   {
@@ -87,20 +88,20 @@ For a deeper dive into the facets and checks and balances of governance, please 
   {
     question: 'Has the Sky Protocol undergone security audits?',
     answer:
-      'Yes. The code behind the Sky Protocol is open source and has undergone extensive [audits](https://developers.sky.money/security/security-measures/overview#audits) by highly regarded auditing firms within the industry, including ChainSecurity and Cantina. For more information, see the [User Risk Documentation](https://docs.sky.money/user-risks).',
+      'Yes. The Sky Protocol codebase is open source and has undergone extensive [audits](https://developers.sky.money/security/security-measures/overview#audits) by highly regarded auditing firms within the industry, including ChainSecurity and Cantina. For more information, see the [User Risk Documentation](https://docs.sky.money/user-risks).',
     categories: ['Sky Protocol & Ecosystem']
   },
   {
     question: "Where can I see the Sky Protocol's total liquidity?",
     answer:
-      '[The Sky Ecosystem Dashboard](https://info.sky.money/), designed by [Block Analitica](https://blockanalitica.com/), enables anyone to examine the health of the Sky Protocol in real time. You can view the total value locked (TVL) in the Sky Protocol, TVL in the Sky Savings Rate module, TVL in the Sky Token Rewards module, TVL in the Stakiing Engine, the total amount of collateral backing the system, an estimation of annual rewards, and much more.',
+      '[The Sky Ecosystem Dashboard](https://info.sky.money/), designed by [Block Analitica](https://blockanalitica.com/), enables anyone to examine the health of the Sky Protocol in real time. You can view the total value locked (TVL) in the Sky Protocol, TVL in the Sky Savings Rate module, TVL in the Sky Token Rewards module, TVL in the Staking Engine, the total amount of collateral backing the system, estimated annual profits, and much more.',
     categories: ['Sky Protocol & Ecosystem']
   },
   {
     question: 'Explain Peg Stability Modules, how they work, and their advantages?',
     answer: `Peg Stability Modules (PSMs) are smart contracts that allow users to convert certain stablecoins directly with the Sky Protocol for USDS or DAI at a fixed rate and with relatively low fees. They are designed to maintain the stability of USDS and DAI. Unlike decentralized exchange (DEX) transactions, PSM operations do not involve trading between users. Instead, they are direct, non-custodial conversions (generate and burn) executed with the decentralized smart contracts of the Sky Protocol.
 
-Through PSMs, USDS or DAI is obtained via predictable-rate conversion (typically a 1:1 ratio with certain stablecoins, or, in the case of sUSDS, for an amount reflecting its current price) rather than through borrowing. For example, given the existence of a USDC-backed PSM, a user could supply 100 USDC stablecoins to generate 100 USDS or 100 DAI (minus fees), without taking on any debt. Given that PSM operations are facilitated on the Sky Protocol directly and not on a DEX, price slippage (i.e., the difference between the expected price of a token and the actual price when traded) is not a concern. Zero Sky protocol fees and no slippage are some of the benefits of using PSM, which adds liquidity to the assets backing the PSM. That liquidity helps to keep the value of USDS and DAI stable.
+Through PSMs, USDS or DAI is obtained via predictable-rate conversion (typically a 1:1 ratio with certain stablecoins, or, in the case of sUSDS, for an amount reflecting its current price) rather than through borrowing. For example, given the existence of a USDC-backed PSM, a user could supply 100 USDC stablecoins to generate 100 USDS or 100 DAI (minus fees), without taking on any debt. Given that PSM operations are facilitated on the Sky Protocol directly and not on a DEX, price slippage (i.e., the difference between the expected price of a token and the actual price when traded) is not a concern. Zero Sky Protocol fees and no slippage are among the benefits of using a PSM, which adds liquidity to the assets backing the PSM. That liquidity helps to keep the value of USDS and DAI stable.
 
 A PSM can only hold an asset that is pegged to the same asset as DAI or USDS because it offers 1-to-1 conversions. A PSM with a non-stable asset would become undercollateralized as soon as the market price of that non-stable asset decreased.
 
@@ -113,7 +114,7 @@ For more information, review the [Peg Stability Modules section](https://sky-atl
     question: 'What are oracles?',
     answer: `The decentralized, non-custodial Sky Protocol relies on oracles, which are third-party services that provide offchain price feed data to the blockchain. Oracles support DeFi protocols in a number of ways, and offer users and end users the following:
 
-• **Increased stability:** Reliable price data ensures efficient collateralization of stablecoins and minimises the risk of under-collateralized borrowing, safeguarding pegs.
+• **Increased stability:** Reliable price data helps ensure efficient collateralization of stablecoins and minimizes the risk of under-collateralized borrowing, safeguarding pegs.
 
 • **Transparency and decentralization:** The use of multiple independent oracle feeds reduces a protocol's or decentralized exchange's reliance on any single source, promoting transparency and trust in a system.
 
@@ -129,7 +130,7 @@ Sky Core uses oracles provided by [Chronicle](https://chroniclelabs.org/). Pleas
   },
   {
     question: 'What is the Sky Ecosystem, and what does it offer users?',
-    answer: `The Sky Ecosystem consists of the community and projects that support the Sky Protocol, a decentralized financial application (dApp) developed around its native USDS stablecoin and designed to enable the Sky Ecosystem to operate autonomously and enable users to engage with blockchain technology.
+    answer: `The Sky Ecosystem consists of the community and projects that support the Sky Protocol, a decentralized financial application (dApp) developed around its native USDS stablecoin and designed to enable the Sky Ecosystem to operate autonomously and allow users to engage with blockchain technology.
 
 Governance of the Sky Ecosystem and Sky Protocol relies on a decentralized, multi-faceted, detailed and transparent system of decision-making that includes discussion, polling and onchain voting. The Sky Ecosystem Governance community is broad and diversified, comprising individuals and entities from around the world who hold SKY tokens.
 
@@ -138,11 +139,11 @@ The Sky Ecosystem also includes Sky Stars. Stars are autonomous and independent 
   },
   {
     question: 'Is the Sky Ecosystem the same as the Sky Protocol?',
-    answer: `No. The Sky Ecosystem consists of the community and projects that support the Sky Protocol, a decentralized financial application (dApp) developed around its native USDS stablecoin and designed to enable the Sky Ecosystem to operate autonomously and enable users to engage with blockchain technology.
+    answer: `No. The Sky Ecosystem consists of the community and projects that support the Sky Protocol, a decentralized financial application (dApp) developed around its native USDS stablecoin and designed to enable the Sky Ecosystem to operate autonomously and allow users to engage with blockchain technology.
 
 The Sky Ecosystem also includes Sky Stars. Stars are autonomous and independent decentralized projects within the larger Sky Ecosystem. They are designed to enable focused, fast-moving innovation and development.
 
-The Sky Protocol is made up of software code deployed to the Ethereum blockchain. The code takes the form of smart contracts that are self-executing, trustless, decentralized and permissionless. These smart contracts contain the rules and agreements that constitute the framework of the Sky Protocol, and are what allow for the fast and efficient creation, transfer and validation of digital assets, as well as for Sky Ecosystem community governance.
+The Sky Protocol is made up of software code deployed to the Ethereum blockchain. The code consists of smart contracts that are self-executing, trustless, decentralized and permissionless. These smart contracts contain the rules and agreements that constitute the framework of the Sky Protocol, and are what allow for the fast and efficient creation, transfer and validation of digital assets, as well as for Sky Ecosystem community governance.
 
 Smart contracts work a lot like vending machines. A vending machine automatically provides a product once you feed it a coin and choose the product you want. The machine does not call someone at the vending machine company to get permission or further instructions. Similarly, a smart contract automatically provides a specific output (O) when prompted by a specific input (I). For example, a smart contract deployed to serve an ecosystem can send money to contractors (O) on the first of every month (I), without any help or interference from a payroll manager, bank or other financial institution.
 
@@ -152,19 +153,19 @@ The Sky Protocol features several tokens—USDS, DAI, sUSDS, SKY and MKR—plus 
   {
     question: 'What is the Sky Ecosystem Dashboard?',
     answer:
-      'The [Sky Ecosystem Dashboard](https://info.sky.money/), designed by [Block Analitica](https://blockanalitica.com/), allows anyone to examine the health of the decentralized Sky Protocol in real time. Users can view the total value locked (TVL) in the Protocol, TVL in the Sky Savings Rate module, TVL in the Sky Token Rewards module, TVL in the Staking Engine, the total collateral backing the system, an estimation of annual profits, and much more. For more on the Dashboard, see this [blog post](https://blockanalitica.substack.com/p/the-sky-risk-and-analytics-dashboard) by Block Analitica.',
+      'The [Sky Ecosystem Dashboard](https://info.sky.money/), designed by [Block Analitica](https://blockanalitica.com/), allows anyone to examine the health of the decentralized Sky Protocol in real time. Users can view the total value locked (TVL) in the Protocol, TVL in the Sky Savings Rate module, TVL in the Sky Token Rewards module, TVL in the Staking Engine, the total collateral backing the system, estimated annual profits, and much more. For more on the Dashboard, see this [blog post](https://blockanalitica.substack.com/p/the-sky-risk-and-analytics-dashboard) by Block Analitica.',
     categories: ['Sky Protocol & Ecosystem']
   },
   {
     question: 'What is the Sky Forum, and how does it differ from other discussion platforms?',
     answer:
-      'The [Sky Forum](https://forum.sky.money/) (formerly the Maker Forum) is a public discussion platform group that includes conversation threads, tagging, categorization and active moderation. It is formally used for discussions focused mainly on Sky Ecosystem Governance and risk. Other platforms used by the Sky Ecosystem community, such as [Discord](https://discord.com/invite/skyecosystem) and X ([@SkyEcosystem](https://x.com/SkyEcosystem)), are much less formal, more ad hoc.',
+      'The [Sky Forum](https://forum.sky.money/) (formerly the Maker Forum) is a public discussion platform that includes conversation threads, tagging, categorization and active moderation. It is formally used for discussions focused mainly on Sky Ecosystem Governance and risk. Other platforms used by the Sky Ecosystem community, such as [Discord](https://discord.com/invite/skyecosystem) and X ([@SkyEcosystem](https://x.com/SkyEcosystem)), are much less formal, more ad hoc.',
     categories: ['Sky Protocol & Ecosystem']
   },
   {
     question: 'I want to contribute to the Sky project. How do I get involved?',
     answer:
-      'To contribute to Sky as a community member, start by visiting the [Sky Forum](https://forum.sky.money/) (formerly the MakerDAO Forum), a public discussion platform group that includes conversation threads, tagging, categorization and active moderation. The Forum is formally used for discussions focused mainly on Sky Ecosystem Governance and risk. Other platforms used by the Sky Ecosystem community, such as [Discord](https://discord.com/invite/skyecosystem) and X ([@SkyEcosystem](https://x.com/SkyEcosystem)), are much less formal, more ad hoc.',
+      'To contribute to Sky as a community member, start by visiting the [Sky Forum](https://forum.sky.money/) (formerly the MakerDAO Forum), a public discussion platform that includes conversation threads, tagging, categorization and active moderation. The Forum is formally used for discussions focused mainly on Sky Ecosystem Governance and risk. Other platforms used by the Sky Ecosystem community, such as [Discord](https://discord.com/invite/skyecosystem) and X ([@SkyEcosystem](https://x.com/SkyEcosystem)), are much less formal, more ad hoc.',
     categories: ['Sky Protocol & Ecosystem']
   }
 ];

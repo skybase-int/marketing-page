@@ -9,18 +9,18 @@ L2 solutions usually work by processing transactions on their own blockchain, an
 
 Moving assets between L1 and L2 networks requires specialized protocols called bridges. While bridges can be designed to connect any two blockchain networks, L2 networks operate on top of L1s, inheriting their security while delivering improved efficiency.
 
-L2s used with Ethereum not only offer users much lower fees and much faster speeds (transactions can be near-instant), they can enable users to transact using the wallets and tools they are already familiar with. There is a tradeoff, however, as users bridging their assets between L1 and L2 networks generally must pay a transaction fee. For users making multiple transactions, the savings may outweigh that cost and you must use your own discretion. Also, L1 networks may provide stronger security guarantees compared to L2s, which often rely on centralized components and actors, which could potentially introduce points of failure.`,
+L2s used with Ethereum not only offer users lower fees and faster speeds (transactions can be near-instant), they can enable users to transact using the wallets and tools they are already familiar with. There is a tradeoff, however, as users bridging their assets between L1 and L2 networks generally must pay a transaction fee. For users making multiple transactions, the savings may outweigh that cost and you must use your own discretion. Also, L1 networks may provide stronger security guarantees compared to L2s, which often rely on centralized components and actors, which could potentially introduce points of failure.`,
     categories: ['Network Integrations']
   },
   {
     question: 'What can I do with my assets once they are linked to an L2 network?',
     answer:
-      'On many L2s, you can perform the same types of transactions as on Ethereum Mainnet—i.e., trade tokens, use DeFi applications (dApps), etc.— but with reduced fees and faster transaction speeds. Many popular dApps have L2 versions, though not all are available on every L2. Please note that some features of Sky.money or the Sky Protocol will not be available on L2s.',
+      'On many L2s, you can perform the same types of transactions as on Ethereum Mainnet—i.e., trade tokens, use DeFi applications (dApps), etc.—but with reduced fees and faster transaction speeds. Many popular dApps have L2 versions, though not all are available on every L2. Please note that some features of Sky.money or the Sky Protocol will not be available on L2s.',
     categories: ['Network Integrations']
   },
   {
     question: 'Which tokens can I trade on supported L2s?',
-    answer: `Supported trading pairs vary by network:
+    answer: `Supported trading pairs vary by network, depending also on your location and other criteria:
 
 • **Ethereum Mainnet:** USDC, USDT, ETH, WETH, DAI, MKR, USDS, sUSDS, SKY, SPK
 
@@ -38,7 +38,7 @@ On some supported L2s, you can also access the [Sky Savings Rate](#tooltip-sky-s
 
 SkyLink is the Sky system that provides the rails for Sky Ecosystem projects to link assets between the Sky Protocol on Ethereum Mainnet and supported L2 networks. If you have shied away from the Ethereum blockchain due to the high price of gas, SkyLink introduces reduced fees and faster transaction speeds.
 
-Available tokens may evolve over time as new trading pairs are added.`,
+Available tokens may evolve over time as new trading pairs are added. Please see the [Terms of Use](https://docs.sky.money/legal-terms) for Sky.money web app access eligibility.`,
     categories: ['Network Integrations']
   },
   {
