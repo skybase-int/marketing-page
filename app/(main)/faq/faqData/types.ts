@@ -13,7 +13,7 @@ export type Category =
   | 'Upgrade'
   | 'Staking Engine'
   | 'stUSDS'
-  | 'Expert Modules';
+  | 'Expert modules';
 
 export type FAQItem = {
   question: string;
@@ -38,5 +38,5 @@ export const categories: Category[] = [
   'Upgrade',
   'Staking Engine',
   'stUSDS',
-  'Expert Modules'
+  'Expert modules'
 ];

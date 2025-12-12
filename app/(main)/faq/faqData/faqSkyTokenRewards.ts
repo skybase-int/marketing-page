@@ -4,7 +4,7 @@ export const skyTokenRewards: FAQItem[] = [
   {
     question: 'What are Sky Token Rewards, and how do they work?',
     answer:
-      'When you supply USDS to the Sky Token Rewards module of the Sky Protocol, you receive Sky Token Rewards over time. The USDS, as well as the rewards received, are supplied to a non-custodial smart contract that represents the USDS pool of assets. That means no intermediary has custody of your supplied assets.',
+      'When you supply USDS to the Sky Token Rewards module of the Sky Protocol, you receive Sky Token Rewards over time. These rewards are distributed automatically by smart contracts on the blockchain. The USDS, as well as the rewards received, are supplied to a non-custodial smart contract that represents the USDS pool of assets. That means no intermediary has custody of your supplied assets.',
     categories: ['Sky Token Rewards']
   },
   {
@@ -20,7 +20,7 @@ export const skyTokenRewards: FAQItem[] = [
   },
   {
     question: 'How are Sky Token Rewards Rates calculated?',
-    answer: `The Sky Token Reward Rate is different for each type of token rewarded, and always fluctuates, determined by the following factors:
+    answer: `The Sky Token Reward Rate is different for each type of token rewarded, and always fluctuates, as determined by the following factors:
 
 • The issuance rate of the token rewarded, which is determined by Sky Ecosystem Governance;
 
@@ -42,9 +42,9 @@ export const skyTokenRewards: FAQItem[] = [
   },
   {
     question: 'How much does it cost to participate in Sky Token Rewards?',
-    answer: `There is no fee to participate in the Sky Token Rewards feature of the Sky Protocol; however, with each transaction, you will likely pay a transaction, or gas, fee for using the Ethereum blockchain network. That fee is neither controlled, imposed nor received by Sky.money or the Sky Protocol.
+    answer: `There is no fee to participate in the Sky Token Rewards feature of the Sky Protocol; however, with each transaction, you will likely pay a transaction (gas) fee for using the Ethereum blockchain network. That fee is neither controlled, imposed nor received by Sky.money or the Sky Protocol.
 
-Note that if you have shied away from the Ethereum blockchain due to the high price of gas, the average price of gas on Ethereum has dropped significantly as a result of the 2024 Dencum upgrade.`,
+Note that if you have shied away from the Ethereum blockchain due to the high price of gas, the average price of gas on Ethereum has dropped significantly as a result of the 2024 Dencun upgrade.`,
     categories: ['Sky Token Rewards']
   },
   {
@@ -75,7 +75,7 @@ Chronicle Points might ultimately become claimable for Chronicle tokens (CLE) at
   {
     question: 'Where can I see the current total distribution of Chronicle Points?',
     answer:
-      'Users can view the current distribution of Chronicle Points on the [Sky Ecosystem Dashboard](https://info.sky.money/rewards/0x10ab606b067c9c461d8893c47c7512472e19e2ce).',
+      'You can view the current distribution of Chronicle Points on the [Sky Ecosystem Dashboard](https://info.sky.money/rewards/0x10ab606b067c9c461d8893c47c7512472e19e2ce).',
     categories: ['Sky Token Rewards']
   }
 ];
