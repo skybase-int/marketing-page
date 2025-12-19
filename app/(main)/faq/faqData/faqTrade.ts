@@ -27,7 +27,7 @@ Market participants trade crypto for a variety of reasons. For example, users ma
     question: 'Why do token prices vary between different DEXs and CEXs?',
     answer: `Token prices vary between different exchanges due to key market dynamics, such as:
 
-• **Market Structure.** DEXs typically use automated market makers (AMMs), which price based on algorithms. CEXs typically use order books, which price based on actual bids/asks. The different mechanisms can lead to different price discoveries.
+• **Market Structure.** DEXs typically use automated market makers (AMMs), which price based on algorithms. CEXs typically use order books, which price based on actual bids and asks. The different mechanisms can lead to different price discoveries.
 
 • **Market Segmentation.** Not all traders can access all exchanges for various reasons, including jurisdiction restrictions and Know Your Customer (KYC) requirements. Some exchanges may have more institutional flow versus retail flow, and different user bases can lead to different price dynamics.
 
@@ -40,7 +40,7 @@ Market participants trade crypto for a variety of reasons. For example, users ma
     question: 'How do I trade Sky Protocol tokens?',
     answer: `Sky Protocol tokens are available to trade on crypto exchanges that list them.
 
-For example, eligible users can access the Sky.money web app to trade Sky tokens on Ethereum Mainnet and select L2s via an API integration with the third-party decentralized exchange (DEX) [CoW Swap](https://swap.cow.fi/#/1/swap/WETH). Users can trade USDC, USDT, ETH or SKY for USDS, and USDC, USDT, ETH and USDS for SKY. These trades occur through smart contracts on the blockchain without relying on centralized entities. The exact trade route is determined by CoW Swap and is not influenced by Sky.money or the Sky Protocol. Some Sky Protocol features are not available in certain countries for regulatory compliance purposes. USDS and SKY are native Sky Protocol tokens. Please see the [Terms of Use](https://docs.sky.money/legal-terms) for more information on third-party services.`,
+Depending on location or other criteria, eligible users of the Sky.money web app can access the non-custodial Sky Protocol to trade Sky tokens on Ethereum Mainnet and select L2s via an API integration with the third-party decentralized exchange (DEX) [CoW Swap](https://swap.cow.fi/#/1/swap/WETH). These trades occur through smart contracts on the blockchain without relying on centralized entities. The exact trade route is determined by CoW Swap and is not influenced by Sky.money or the Sky Protocol. Please see the [Terms of Use](https://docs.sky.money/legal-terms) for more information on third-party services. Some Sky Protocol features are not available in certain countries for regulatory compliance purposes.`,
     categories: ['Trade']
   },
   {
@@ -54,7 +54,7 @@ Please see the [Terms of Use](https://docs.sky.money/legal-terms) for more infor
     question: "Why aren't all trading pairs available on the Sky.money web app?",
     answer: `There are several key technical and practical reasons why some DeFi apps, including the Sky.money web app, don't support all cryptocurrencies. For example, each token would need to be specifically integrated into the Sky Protocol's smart contracts, which would require development work and security auditing. Regulatory risk is also a key consideration.
 
-Note, however, that Sky.money web app users can trade a wide range of assets on Ethereum Mainnet through the [CoW Swap](https://swap.cow.fi/#/1/swap/WETH) integration.The Sky Protocol does not limit the assets available for trading via CoW Swap, as it is an independent, third-party decentralized exchange (DEX) that Sky does not control. Please see the [Terms of Use](https://docs.sky.money/legal-terms) for more information on third-party services.`,
+Note, however, that Sky.money web app users can trade a wide range of assets on Ethereum Mainnet through the [CoW Swap](https://swap.cow.fi/#/1/swap/WETH) integration. The Sky Protocol does not limit the assets available for trading via CoW Swap, as it is an independent, third-party decentralized exchange (DEX) that Sky does not control. Please see the [Terms of Use](https://docs.sky.money/legal-terms) for more information on third-party services.`,
     categories: ['Trade']
   },
   {
