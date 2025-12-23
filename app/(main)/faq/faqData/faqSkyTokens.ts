@@ -28,7 +28,7 @@ USDS is also available on networks other than Ethereum Mainnet, including Solana
 
 • **Transparency.** The Sky Protocol is transparent. Users have complete insight into all USDS and other Sky Protocol token transactions.
 
-• **Security.** The design of the blockchain and its network of nodes, miners and validators, combined with the fact that cryptocurrencies like USDS are rooted in cryptography, enhance user security.
+• **Security.** The transparent design of the blockchain and its network of nodes, miners and validators, combined with the fact that cryptocurrencies like USDS are rooted in cryptography, enhance user trust.
 
 • **Trading options.** Popular tokens can be traded for USDS at current market prices using permissionless rails. With the non-custodial Sky.money web app, you can access the decentralized Sky Protocol to directly trade on the blockchain instead of relying on centralized entities.
 
