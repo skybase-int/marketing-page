@@ -3,7 +3,7 @@ import type { FAQItem } from './types';
 export const skymoney: FAQItem[] = [
   {
     question: 'What is the Sky.money web app, and what can I do with it?',
-    answer: `The non-custodial Sky.money web app is one of many free-to-access frontend gateways to the Sky Protocol, which is designed around the USDS stablecoin. It provides eligible users with access to all Sky Protocol tokens (sUSDS, USDS, DAI, SKY and MKR) and features, including the Sky Savings Rate (SSR), Sky Token Rewards (STRs), the Staking Engine, SkyLink, and more.
+    answer: `The non-custodial Sky.money web app is one of many free-to-access frontend gateways to the Sky Protocol, which is designed around the USDS stablecoin. It provides eligible users with access to all Sky Protocol tokens (sUSDS, USDS, DAI, SKY and MKR) and features, including the Sky Savings Rate (SSR), Sky Token Rewards (STRs), the Staking Engine, Expert modules, and more.
 
 Eligible Sky.money web app users can:
 
@@ -28,7 +28,7 @@ With Sky.money, you always remain in control of your supplied assets.`,
   {
     question: 'What is an eligible user?',
     answer:
-      'Some Sky Protocol features are unavailable to users in certain countries for regulatory compliance purposes. For more information, please refer to the [Terms of Use](https://docs.sky.money/legal-terms).',
+      'Some Sky Protocol features are unavailable to users in certain countries. For more information, please refer to the [Terms of Use](https://docs.sky.money/legal-terms).',
     categories: ['Sky.money']
   },
   {
@@ -75,12 +75,12 @@ USDS borrow positions are subject to liquidation risk if at any time the value o
   {
     question: "Why can't I access Sky.money web app with a VPN?",
     answer:
-      'The Sky.money web app restricts user access from certain jurisdictions in compliance with the Terms of Use. As a result, VPNs are blocked to ensure adherence to these restrictions. For more information, please refer to the [Terms of Use](https://docs.sky.money/legal-terms).',
+      'The Sky.money web app restricts user access from certain jurisdictions. As a result, VPNs are blocked to ensure adherence to these restrictions. For more information, please refer to the [Terms of Use](https://docs.sky.money/legal-terms).',
     categories: ['Sky.money']
   },
   {
     question:
-      "I supplied assets on the Sky Protocol, but now I can't access the Sky.money web app. Is my money gone?",
+      "I supplied assets on the Sky Protocol, but now I can't access the Sky.money web app. Are my assets gone?",
     answer:
       'Not necessarily. You can use a block explorer to verify your assets are still on the blockchain. For details on the risks associated with cryptocurrencies, please review the [User Risk Documentation](https://docs.sky.money/user-risks).',
     categories: ['Sky.money']
@@ -95,7 +95,7 @@ USDS borrow positions are subject to liquidation risk if at any time the value o
     question:
       "I'm not in a banned country, but I see an access restricted message when trying to use Sky.money. Why?",
     answer:
-      'Due to the modular design of the Sky.money web app for regulatory compliance purposes, you may not be able to access certain functionalities of the Sky Protocol in your jurisdiction. For more information, please refer to the [Terms of Use](https://docs.sky.money/legal-terms).',
+      'Due to the modular design of the Sky.money web app, you may not be able to access certain functionalities of the Sky Protocol in your jurisdiction. For more information, please refer to the [Terms of Use](https://docs.sky.money/legal-terms).',
     categories: ['Sky.money']
   }
 ];
