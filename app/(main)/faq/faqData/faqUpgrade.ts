@@ -52,7 +52,7 @@ SKY holders can use the token to vote directly on Sky Ecosystem Governance propo
 
 SKY also enables users to access Staking Rewards via the Sky.money web app. When users supply SKY to the Staking Engine of the Sky Protocol, they can access those rewards and may also choose to create one or more positions, including positions that enable them to generate and borrow USDS against their supplied SKY, and to delegate the voting power their supplied SKY tokens provide.
 
-For the most current information regarding the SKY token, the Sky Protocol and Sky Ecosystem Governance, join the community conversations in the [Sky Forum](https://forum.sky.money/), [Sky Discord](https://discord.com/invite/skyecosystem) and [Sky Builder Discord](https://discord.gg/skybuilder).`,
+For the most current information regarding the SKY token, the Sky Protocol and Sky Ecosystem Governance, join the community conversations in the [Sky Forum](https://forum.sky.money/) and [Sky Discord](https://discord.com/invite/skyecosystem).`,
     categories: ['Upgrade']
   },
   {
@@ -97,7 +97,7 @@ For upgrade details and step-by-step upgrade instructions, please visit the [MKR
     question: 'What are the incentives to upgrade MKR to SKY?',
     answer: `Upgrading is a critical step for the future of the Sky Ecosystem, as it ensures long-term stability and enhanced functionality of the decentralized Sky Protocol, governance participation, a more inclusive and robust governance community, and SKY holder access to Staking Rewards. Simply put, this upgrade strengthens the integrity, effectiveness and usefulness of the Sky Protocol while expanding governance participation.
 
-For the most current information regarding the SKY token, the Sky Protocol and Sky Ecosystem Governance, join the community conversations in the [Sky Forum](https://forum.sky.money/), [Sky Discord](https://discord.com/invite/skyecosystem) and [Sky Builder Discord](https://discord.gg/skybuilder).`,
+For the most current information regarding the SKY token, the Sky Protocol and Sky Ecosystem Governance, join the community conversations in the [Sky Forum](https://forum.sky.money/) and [Sky Discord](https://discord.com/invite/skyecosystem).`,
     categories: ['Upgrade']
   },
   {
@@ -148,7 +148,7 @@ For upgrade details and step-by-step upgrade instructions, please visit the [MKR
 
 • Always make sure you are accessing the correct URLs. Beware of fake sites with barely noticeable typos in the address.
 
-• Cross-check the [Sky.money website](https://sky.money/) and the Sky.money web app information and details with official Sky social media accounts (i.e., [X](https://x.com/skyecosystem), [Sky Discord](https://discord.com/invite/skyecosystem), [Sky Builder Discord](https://discord.gg/skybuilder) and the [Sky Forum](https://forum.sky.money/)).
+• Cross-check the [Sky.money website](https://sky.money/) and the Sky.money web app information and details with official Sky social media accounts (i.e., [X](https://x.com/skyecosystem), [Sky Discord](https://discord.com/invite/skyecosystem), and the [Sky Forum](https://forum.sky.money/)).
 
 • Be suspicious of DMs on social media sites. Scammers have been known to impersonate project team members.
 
@@ -191,7 +191,7 @@ SKY holders can use the token to vote directly on Sky Ecosystem Governance propo
 
 Please bookmark the links above to avoid interacting with fake sites that include barely noticeable typos in the address.
 
-For the most current information regarding the SKY token, the Sky Protocol and Sky Ecosystem Governance, join the community conversations in the [Sky Forum](https://forum.sky.money/), [Sky Discord](https://discord.com/invite/skyecosystem) and [Sky Builder Discord](https://discord.gg/skybuilder).
+For the most current information regarding the SKY token, the Sky Protocol and Sky Ecosystem Governance, join the community conversations in the [Sky Forum](https://forum.sky.money/) and [Sky Discord](https://discord.com/invite/skyecosystem).
 
 For upgrade details and step-by-step upgrade instructions, please visit the [MKR to SKY Upgrade Hub](https://upgrademkrtosky.sky.money).`,
     categories: ['Upgrade']
@@ -236,7 +236,7 @@ For upgrade details and step-by-step upgrade instructions, please visit the [MKR
     question: 'Are DAI and MKR going away?',
     answer: `No. Sky Ecosystem Governance has not indicated that the DAI and MKR will go away. You can continue to hold DAI or you can upgrade it to USDS, which may enable more uses than DAI.
 
-For the most current information on all things Sky, join the community conversations in the [Sky Forum](https://forum.sky.money/), [Sky Discord](https://discord.com/invite/skyecosystem), and [Sky Builder Discord](https://discord.gg/skybuilder), where the Sky community dives deep into Sky Stars, the Sky Agent Framework and Sky Ecosystem Governance.`,
+For the most current information on all things Sky, join the community conversations in the [Sky Forum](https://forum.sky.money/) and [Sky Discord](https://discord.com/invite/skyecosystem).`,
     categories: ['Upgrade']
   },
   {

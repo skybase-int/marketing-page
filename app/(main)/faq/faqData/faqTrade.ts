@@ -20,7 +20,7 @@ Market participants trade crypto for a variety of reasons. For example, users ma
   {
     question: 'What is an exchange rate?',
     answer:
-      'Exchange rate refers to the price of one cryptocurrency relative to the price of another cryptocurrency or fiat currency at any given moment. Cryptocurrency exchange rates may be subject to price volatility and may fluctuate based on various factors.',
+      'Exchange rate refers to the price of one currency relative to the price of another currency at any given moment. Cryptocurrency exchange rates may be subject to price volatility and may fluctuate based on various factors.',
     categories: ['Trade']
   },
   {
@@ -40,7 +40,7 @@ Market participants trade crypto for a variety of reasons. For example, users ma
     question: 'How do I trade Sky Protocol tokens?',
     answer: `Sky Protocol tokens are available to trade on crypto exchanges that list them.
 
-Depending on location or other criteria, eligible users of the Sky.money web app can access the non-custodial Sky Protocol to trade Sky tokens on Ethereum Mainnet and select L2s via an API integration with the third-party decentralized exchange (DEX) [CoW Swap](https://swap.cow.fi/#/1/swap/WETH). These trades occur through smart contracts on the blockchain without relying on centralized entities. The exact trade route is determined by CoW Swap and is not influenced by Sky.money or the Sky Protocol. Please see the [Terms of Use](https://docs.sky.money/legal-terms) for more information on third-party services. Some Sky Protocol features are not available in certain countries for regulatory compliance purposes.`,
+Depending on location or other criteria, eligible users of the Sky.money web app can access the non-custodial Sky Protocol to trade Sky tokens on Ethereum Mainnet and select L2s via an API integration with the third-party decentralized exchange (DEX) [CoW Swap](https://swap.cow.fi/#/1/swap/WETH). These trades occur through smart contracts on the blockchain without relying on centralized entities. The exact trade route is determined by CoW Swap and is not influenced by Sky.money or the Sky Protocol. Please see the [Terms of Use](https://docs.sky.money/legal-terms) for more information on third-party services. Some Sky Protocol features are not available in certain countries.`,
     categories: ['Trade']
   },
   {
