@@ -285,7 +285,7 @@ For example, if you have USDS, a native stablecoin of the Sky Protocol, which is
     question: 'What are smart contracts?',
     answer: `Smart contracts are agreements written in computer code and deployed to a blockchain, where they self-execute automatically when called upon. No centralized entity or intermediary is needed to complete the steps laid out in those agreements. Smart contracts are key to the decentralized finance (DeFi) sector, as they are used to execute everything from simple transfers and trades to the governance of decentralized ecosystems in a peer-to-peer or peer-to-contract manner.
 
-Smart contracts work a lot like vending machines. A vending machine automatically provides a product once you feed it a coin and choose the product you want. The machine does not call someone at the vending machine company to get permission or further instructions. Similarly, a smart contract automatically provides a specific output (O) when prompted by a specific input (I). For example, a smart contract deployed to serve an ecosystem can send money to contractors (O) on the first of every month (I), without any help or interference from a payroll manager, bank or other financial institution.
+Smart contracts work a lot like vending machines. A vending machine automatically provides a product once you feed it a coin and choose the product you want. The machine does not call someone at the vending machine company to get permission or further instructions. Similarly, a smart contract automatically provides a specific output (O) when prompted by a specific input (I). For example, a smart contract deployed to serve an ecosystem can send assets to contractors (O) on the first of every month (I), without any help or interference from a payroll manager, bank or other financial institution.
 
 Most smart contracts are open source (transparent) and immutable in theory, meaning no one can change them once they're deployed. In DeFi ecosystems, including the Sky Ecosystem, smart contract changes can only be made through a system of decentralized community governance and onchain voting processes.`,
     categories: ['Crypto (General)']
@@ -330,7 +330,7 @@ Some onchain actions might require multiple wallet signatures to authorize them.
 
 From a security perspective, crypto wallets can be classified under two broad categories: hot and cold.
 
-Hot wallets are those connected to the internet most of the time (i.e., software-based mobile, desktop, and browser wallets), making it easy to access and use for transactions but also potentially more vulnerable to hacking and cyber threats. Cold wallets include hardware wallets, which are physical appliances that connect to a computer, laptop, or mobile device via a cable or Bluetooth, further enhancing their security against hacking and cyber threats; and paper wallets, which consist simply of a piece of paper on which the public and private keys of a cryptocurrency address or a QR code are written. Cold wallets are completely offline. Each wallet type has specific advantages, so you'll want to do your own research to choose the one that best meets your security and performance needs. SkyWing does not endorse products. For more info, see the [User Risk Documentation](https://docs.sky.money/user-risks).
+Hot wallets are those connected to the internet most of the time (i.e., software-based mobile, desktop, and browser wallets), making it easy to access and use for transactions but also potentially more vulnerable to hacking and cyber threats. Cold wallets include hardware wallets, which are physical appliances that connect to a computer, laptop, or mobile device via a cable or Bluetooth, further enhancing their security against hacking and cyber threats; and paper wallets, which consist simply of a piece of paper on which the public and private keys of a cryptocurrency address or a QR code are written. Cold wallets are completely offline. Each wallet type has specific advantages, so you'll want to do your own research to choose the one that best meets your security and performance needs. For more info, see the [User Risk Documentation](https://docs.sky.money/user-risks).
 
 ### **Hot Wallet Types**
 
@@ -378,6 +378,8 @@ A smart contract wallet, or "smart wallet," is a wallet managed through smart co
 ### **The weaknesses of decentralization**
 
 • **Distributed control may sacrifice speed.** In decentralized organizations, final decisions could take longer to reach. Even minor changes may require significant discussion and consensus, making them difficult to approve or reject quickly.
+
+• **Coordination issues might result from fast growth.** The need for widespread agreement can lead to delays in implementing changes or adopting new strategies, especially when the group is large or when opinions are diverse. An inability to coordinate efficiently could be particularly challenging in fast-moving environments where quick decision-making is critical.
 
 • **Complexity.** Just because an organization is decentralized doesn't mean everyone works completely on their own and smoothly. Authority is typically delegated, and there are goals that must be met. This means that, despite decentralization, the organization still requires coordination and accountability, which can be difficult to achieve.
 
