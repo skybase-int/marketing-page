@@ -34,9 +34,9 @@ L2s used with Ethereum not only offer users lower fees and faster speeds (transa
 
 Using the Sky.money web app, you can interact with the Peg Stability Module (PSM) for conversions to and from **USDS**, **sUSDS**, and **USDC**. The PSM handles conversions programmatically, driven at your direction, between these pairs directly.
 
-On some supported L2s, you can also access the [Sky Savings Rate](#tooltip-sky-savings-rate).
+On some supported L2s, you can also access the Sky Savings Rate.
 
-SkyLink is the Sky system that provides the rails for Sky Ecosystem projects to link assets between the Sky Protocol on Ethereum Mainnet and supported L2 networks. If you have shied away from the Ethereum blockchain due to the high price of gas, SkyLink introduces reduced fees and faster transaction speeds.
+SkyLink is Sky Ecosystem’s multichain solution connecting USDS, SKY and other Sky Ecosystem tokens from the Ethereum Mainnet to other chains and L2 protocols. 
 
 Available tokens may evolve over time as new trading pairs are added. Please see the [Terms of Use](https://docs.sky.money/legal-terms) for Sky.money web app access eligibility.`,
     categories: ['Network Integrations']
@@ -45,7 +45,7 @@ Available tokens may evolve over time as new trading pairs are added. Please see
     question: 'How does trading on supported L2s differ from trading on Ethereum?',
     answer: `On Ethereum Mainnet, Base, and Arbitrum, the Sky.money web app features a native integration of [CoW Swap](https://swap.cow.fi/#/1/swap/WETH), a third-party decentralized exchange (DEX) aggregator. Please see the [Terms of Use](https://docs.sky.money/legal-terms) for more information on third-party services.
 
-On Optimism and Unichain, converting between tokens is made possible through a Peg Stability Module [(PSM)](#tooltip-psm).`,
+On Optimism and Unichain, converting between tokens is made possible through a Peg Stability Module (PSM).`,
     categories: ['Network Integrations']
   },
   {
@@ -61,10 +61,9 @@ On Optimism and Unichain, converting between tokens is made possible through a P
     categories: ['Network Integrations']
   },
   {
-    question: 'What is SkyLink, and how does it work?',
-    answer: `SkyLink is the Sky system that provides the rails for Sky Ecosystem projects, such as [Spark](https://spark.fi/), to link assets between the Sky Protocol on Ethereum Mainnet and supported L2 networks. This enables end users on L2s, such as Base and Arbitrum for example, to tap into Sky Protocol features via the Sky Ecosystem projects' rails.
-
-If you have shied away from the Ethereum blockchain due to the high price of gas, SkyLink introduces reduced fees and faster transaction speeds.`,
+    question: 'What is SkyLink?',
+    answer:
+      'SkyLink is Sky Ecosystem’s multichain solution connecting USDS, SKY and other Sky Ecosystem tokens from the Ethereum Mainnet to other chains and L2 protocols.',
     categories: ['Network Integrations']
   }
 ];
