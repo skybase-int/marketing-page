@@ -95,7 +95,7 @@ For upgrade details and step-by-step upgrade instructions, please visit the [MKR
   },
   {
     question: 'What are the incentives to upgrade MKR to SKY?',
-    answer: `Upgrading is a critical step for the future of the Sky Ecosystem, as it ensures long-term stability and enhanced functionality of the decentralized Sky Protocol, governance participation, a more inclusive and robust governance community, and SKY holder access to Staking Rewards. Simply put, this upgrade strengthens the integrity, effectiveness and usefulness of the Sky Protocol while expanding governance participation.
+    answer: `Upgrading is a critical step for the future of Sky Ecosystem, as it ensures long-term stability and enhanced functionality of the decentralized Sky Protocol, governance participation, a more inclusive and robust governance community, and SKY holder access to Staking Rewards. Simply put, this upgrade strengthens the integrity, effectiveness and usefulness of the Sky Protocol while expanding governance participation.
 
 For the most current information regarding the SKY token, the Sky Protocol and Sky Ecosystem Governance, join the community conversations in the [Sky Forum](https://forum.sky.money/) and [Sky Discord](https://discord.com/invite/skyecosystem).`,
     categories: ['Upgrade']
@@ -110,14 +110,7 @@ For the most current information regarding the SKY token, the Sky Protocol and S
     question: 'How does SKY differ from MKR?',
     answer: `Think of SKY not as different from MKR, but as the technical and functional evolution of MKR, with SKY inheriting the governance functionalities previously held by MKR. SKY is the sole governance token of the Sky Protocol.
 
-Upgrade MKR to SKY at the rate of 1:24,000 (1 MKR = 24,000 SKY) to unlock all the Sky Protocol has to offer. SKY holders maintain the ability to participate in governance (vote and delegate), maintain access to Staking Rewards and avoid the Delayed Upgrade Penalty.`,
-    categories: ['Upgrade']
-  },
-  {
-    question: 'Will the MKR I have locked in Staking positions be automatically upgraded to SKY?',
-    answer: `No, but your sealed MKR will be upgraded to SKY during the Seal to Staking migration process. The process via the Sky.money web app makes manually exiting your current Seal positions and creating new positions in the Staking Engine as simple as possible. The Staking Engine offers all of the same features as the Seal Engine, but it has no exit fee and only supports SKY, not MKR.
-
-For upgrade details and step-by-step upgrade instructions, please visit the [MKR to SKY Upgrade Hub](https://upgrademkrtosky.sky.money).`,
+Unlock all the Sky Protocol has to offer. Upgrade MKR to SKY at the rate of 1:24,000 (1 MKR = 24,000 SKY) to avoid the Delayed Upgrade Penalty and maintain the ability to participate in Sky Ecosystem Governance (vote and delegate).`,
     categories: ['Upgrade']
   },
   {
