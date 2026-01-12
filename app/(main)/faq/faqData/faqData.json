@@ -157,11 +157,11 @@
       },
       {
         "question": "What is a smart contract audit?",
-        "answer": "A smart contract audit is a crucial process for identifying potential security risks within a smart contract. Since crypto projects rely heavily on smart contracts for transaction functions, decision-making, treasury management, and more, taking steps to find vulnerable code is paramount.\n\n### **What happens during an audit?**\n\n• **In-depth analysis.** Auditors meticulously examine smart contract code, line by line, to uncover vulnerabilities and flaws, access control issues, reentrancy attacks, and other risks.\n• **Security checks.** Auditors compare the code against common vulnerabilities and help to ensure adherence to secure coding practices.\n• **Functionality assessment. Auditors verify that the code behaves as intended and reflects the project’s governance design.\n• **Reporting and recommendations.** After identifying issues, auditors provide a detailed report outlining the vulnerabilities, their severity, and recommendations for fixing them.\n\n### **What does an audit accomplish?**\n\n• **Prevents costly exploits.** Identifying contract vulnerabilities before deployment helps avoid hacks and potential theft of project funds, protecting investments and the project's reputation.\n• **Builds trust and transparency.** A demonstrably secure smart contract audit inspires confidence and shows commitment to responsible governance.\n• **Mitigates legal risks.** A smart contract audit might reduce the risk of unintended consequences or losses\n\nA smart contract audit is an investment in a project’s future."
+        "answer": "A smart contract audit is a crucial process for identifying potential security risks within a smart contract. Since crypto projects rely heavily on smart contracts for transaction functions, decision-making, treasury management, and more, taking steps to find vulnerable code is paramount.\n\n### **What happens during an audit?**\n\n• **In-depth analysis.** Auditors meticulously examine smart contract code, line by line, to uncover vulnerabilities and flaws, access control issues, reentrancy attacks, and other risks.\n• **Security checks.** Auditors compare the code against common vulnerabilities and help to ensure adherence to secure coding practices.\n• **Functionality assessment.** Auditors verify that the code behaves as intended and reflects the project’s governance design.\n• **Reporting and recommendations.** After identifying issues, auditors provide a detailed report outlining the vulnerabilities, their severity, and recommendations for fixing them.\n\n### **What does an audit accomplish?**\n\n• **Prevents costly exploits.** Identifying contract vulnerabilities before deployment helps avoid hacks and potential theft of project funds, protecting investments and the project's reputation.\n• **Builds trust and transparency.** A demonstrably secure smart contract audit inspires confidence and shows commitment to responsible governance.\n• **Mitigates legal risks.** A smart contract audit might reduce the risk of unintended consequences or losses\n\nA smart contract audit is an investment in a project’s future."
       },
       {
         "question": "What are tokenized real-world assets (RWAs)?",
-        "answer": "Real-World Assets (RWAs) is a term used to describe  traditional assets that have been tokenized to be represented on the blockchain. In the Sky Ecosystem, some limited categories of RWAs are used along with crypto assets as collateral to back USDS and DAI stablecoins."
+        "answer": "Real-World Assets (RWAs) is a term used to describe traditional assets that have been tokenized to be represented on the blockchain. In the Sky Ecosystem, some limited categories of RWAs are used along with crypto assets as collateral to back USDS and DAI stablecoins."
       }
     ]
   },
@@ -284,7 +284,7 @@
         "answer": "Prime Agents maintain and automate Sky features in new markets and innovate custom products. Prime Agents are the only Agent type that can access all Sky Primitives. For more information, see the [Sky Atlas](https://sky-atlas.io/)."
       },
       {
-        "question": "How do Stars Agents benefit Sky Ecosystem?",
+        "question": "How do Star Agents benefit Sky Ecosystem?",
         "answer": "Sky Star Agents are autonomous and independent decentralized projects within Sky Ecosystem. They operate within the Sky Agent Framework, which is designed to foster innovation, expand liquidity, and help grow Sky Ecosystem."
       },
       {
@@ -879,7 +879,7 @@
       },
       {
         "question": "Where can I learn all about Sky Ecosystem Governance?",
-        "answer": "For a deep dive into the facets and checks and balances of Sky Ecosystem Governance, please refer to the [Sky Forum](https://forum.sky.money/), the [Sky Governance Voting Portal](https://vote.sky.money/), and the [Sky Atlas.](https://sky-atlas.io/). The Sky Atlas is the definitive rulebook of Sky Ecosystem, as determined by Sky Ecosystem Governance."
+        "answer": "For a deep dive into the facets and checks and balances of Sky Ecosystem Governance, please refer to the [Sky Forum](https://forum.sky.money/), the [Sky Governance Voting Portal](https://vote.sky.money/), and the [Sky Atlas](https://sky-atlas.io/). The Sky Atlas is the definitive rulebook of Sky Ecosystem, as determined by Sky Ecosystem Governance."
       },
       {
         "question": "What is the Sky Atlas?",

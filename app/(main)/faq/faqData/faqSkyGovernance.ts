@@ -11,7 +11,7 @@ For a deep dive into the facets and checks and balances of governance, please re
   {
     question: 'Where can I learn all about Sky Ecosystem Governance?',
     answer:
-      'For a deep dive into the facets and checks and balances of Sky Ecosystem Governance, please refer to the [Sky Forum](https://forum.sky.money/), the [Sky Governance Voting Portal](https://vote.sky.money/), and the [Sky Atlas.](https://sky-atlas.io/). The Sky Atlas is the definitive rulebook of Sky Ecosystem, as determined by Sky Ecosystem Governance.',
+      'For a deep dive into the facets and checks and balances of Sky Ecosystem Governance, please refer to the [Sky Forum](https://forum.sky.money/), the [Sky Governance Voting Portal](https://vote.sky.money/), and the [Sky Atlas](https://sky-atlas.io/). The Sky Atlas is the definitive rulebook of Sky Ecosystem, as determined by Sky Ecosystem Governance.',
     categories: ['Sky Governance']
   },
   {

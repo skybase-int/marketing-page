@@ -34,7 +34,7 @@ Some Star Agent Artifacts are high-level, focusing on vision, principles and com
     categories: ['Sky Agent Framework and Stars']
   },
   {
-    question: 'How do Stars Agents benefit Sky Ecosystem?',
+    question: 'How do Star Agents benefit Sky Ecosystem?',
     answer:
       'Sky Star Agents are autonomous and independent decentralized projects within Sky Ecosystem. They operate within the Sky Agent Framework, which is designed to foster innovation, expand liquidity, and help grow Sky Ecosystem.',
     categories: ['Sky Agent Framework and Stars']

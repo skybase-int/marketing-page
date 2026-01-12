@@ -426,7 +426,7 @@ Governance of the decentralized, non-custodial Sky Protocol and ecosystem is sha
 
 • **In-depth analysis.** Auditors meticulously examine smart contract code, line by line, to uncover vulnerabilities and flaws, access control issues, reentrancy attacks, and other risks.
 • **Security checks.** Auditors compare the code against common vulnerabilities and help to ensure adherence to secure coding practices.
-• **Functionality assessment. Auditors verify that the code behaves as intended and reflects the project’s governance design.
+• **Functionality assessment.** Auditors verify that the code behaves as intended and reflects the project’s governance design.
 • **Reporting and recommendations.** After identifying issues, auditors provide a detailed report outlining the vulnerabilities, their severity, and recommendations for fixing them.
 
 ### **What does an audit accomplish?**
@@ -441,7 +441,7 @@ A smart contract audit is an investment in a project’s future.`,
   {
     question: 'What are tokenized real-world assets (RWAs)?',
     answer:
-      'Real-World Assets (RWAs) is a term used to describe  traditional assets that have been tokenized to be represented on the blockchain. In the Sky Ecosystem, some limited categories of RWAs are used along with crypto assets as collateral to back USDS and DAI stablecoins.',
+      'Real-World Assets (RWAs) is a term used to describe traditional assets that have been tokenized to be represented on the blockchain. In the Sky Ecosystem, some limited categories of RWAs are used along with crypto assets as collateral to back USDS and DAI stablecoins.',
     categories: ['Crypto (General)']
   }
 ];
