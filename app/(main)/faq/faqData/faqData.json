@@ -160,7 +160,7 @@
         "answer": "A smart contract audit is a crucial process for identifying potential security risks within a smart contract. Since crypto projects rely heavily on smart contracts for transaction functions, decision-making, treasury management, and more, taking steps to find vulnerable code is paramount.\n\n### **What happens during an audit?**\n\n• **In-depth analysis.** Auditors meticulously examine smart contract code, line by line, to uncover vulnerabilities and flaws, access control issues, reentrancy attacks, and other risks.\n• **Security checks.** Auditors compare the code against common vulnerabilities and help to ensure adherence to secure coding practices.\n• **Functionality assessment. Auditors verify that the code behaves as intended and reflects the project’s governance design.\n• **Reporting and recommendations.** After identifying issues, auditors provide a detailed report outlining the vulnerabilities, their severity, and recommendations for fixing them.\n\n### **What does an audit accomplish?**\n\n• **Prevents costly exploits.** Identifying contract vulnerabilities before deployment helps avoid hacks and potential theft of project funds, protecting investments and the project's reputation.\n• **Builds trust and transparency.** A demonstrably secure smart contract audit inspires confidence and shows commitment to responsible governance.\n• **Mitigates legal risks.** A smart contract audit might reduce the risk of unintended consequences or losses\n\nA smart contract audit is an investment in a project’s future."
       },
       {
-        "question": "What are token wrappers?",
+        "question": "What are tokenized real-world assets (RWAs)?",
         "answer": "Real-World Assets (RWAs) is a term used to describe  traditional assets that have been tokenized to be represented on the blockchain. In the Sky Ecosystem, some limited categories of RWAs are used along with crypto assets as collateral to back USDS and DAI stablecoins."
       }
     ]
@@ -284,8 +284,8 @@
         "answer": "Prime Agents maintain and automate Sky features in new markets and innovate custom products. Prime Agents are the only Agent type that can access all Sky Primitives. For more information, see the [Sky Atlas](https://sky-atlas.io/)."
       },
       {
-        "question": "How do Stars Agents benefit tSky Ecosystem?",
-        "answer": "Sky Star Agents are autonomous and independent decentralized projects within tSky Ecosystem. They operate within the Sky Agent Framework, which is designed to foster innovation, expand liquidity, and help grow Sky Ecosystem."
+        "question": "How do Stars Agents benefit Sky Ecosystem?",
+        "answer": "Sky Star Agents are autonomous and independent decentralized projects within Sky Ecosystem. They operate within the Sky Agent Framework, which is designed to foster innovation, expand liquidity, and help grow Sky Ecosystem."
       },
       {
         "question": "What is Spark?",
@@ -296,7 +296,7 @@
         "answer": "SPK is the native governance and staking token of [Spark.fi](https://spark.fi/). Designed with a long-term vision for sustainability, decentralization and ecosystem alignment, SPK enables protocol governance, protocol security via staking, and reward access to participants. For more information on Spark Governance, please see [Spark Governance documentation](https://docs.spark.fi/governance/). Please review the [Terms of Use](https://docs.sky.money/legal-terms) for more information on third-party services."
       },
       {
-        "question": "What is the Spark Liquidity Layer",
+        "question": "What is the Spark Liquidity Layer?",
         "answer": "The Spark Liquidity Layer directly and automatically provides USDS, sUSDS and USDC liquidity across networks and DeFi markets. This enables users to access the Sky Savings Rate on their preferred network using sUSDS. Additionally, it allows Spark to automate liquidity provision into DeFi markets to optimize yield. Please see [Spark Documentation](https://docs.spark.fi/user-guides/spark-liquidity-layer) and [Spark Liquidity Layer documentation](https://docs.spark.fi/user-guides/spark-liquidity-layer) for details. For more information on third-party services, please see the [Terms of Use](https://docs.sky.money/legal-terms)."
       },
       {
@@ -758,6 +758,10 @@
       {
         "question": "Can I trade stUSDS on the open market?",
         "answer": "Yes, eligible users of the Sky.money web app can access the Trade feature to trade stUSDS via an API integration with the third-party decentralized exchange CoW Swap. stUSDS holders are also free to access any other protocol or exchange that supports stUSDS trading; however, users do so at their own risk. Sky.money is not responsible for any loss or damages incurred while using such third-party platforms. Please see the [User Risk Documentation](https://docs.sky.money/user-risks) for more information on third-party services."
+      },
+      {
+        "question": "What is the Curve Pool and why is it used in the stUSDS module of the Sky Protocol?",
+        "answer": "A Curve LP (Liquidity Provider) Pool is a smart contract on Curve Finance designed for efficient trading of similar assets, such as stablecoins or wrapped tokens, with very low slippage. Liquidity Providers deposit those assets into a pool, and in return receive unique ERC-20 LP tokens that represent their share of the pool. They may choose to stake those LP tokens to earn rewards or trader fees. Curve Pools often attract significant capital, potentially creating deep liquidity.\n\nEligible Sky.money web app users accessing the stUSDS module are automatically routed to a Curve LP pool when native Sky Protocol USDS liquidity is unavailable (100% utilized) or when native exchange rates are inferior. Please see the [Terms of Use](https://docs.sky.money/legal-terms) for more information on third-party services."
       }
     ]
   },
@@ -887,7 +891,7 @@
       },
       {
         "question": "Can I participate in Sky Ecosystem Governance using both MKR and SKY?",
-        "answer": "No. SKY is the sole governance token of tSky Ecosystem and the upgrade of MKR. Only SKY token holders can use their SKY to participate directly in Sky Ecosystem Governance through a system of decentralized onchain voting, and/or to transfer the voting power of their SKY tokens to a recognized delegate or a contract that they own. Voting with MKR is no longer possible."
+        "answer": "No. SKY is the sole governance token of Sky Ecosystem and the upgrade of MKR. Only SKY token holders can use their SKY to participate directly in Sky Ecosystem Governance through a system of decentralized onchain voting, and/or to transfer the voting power of their SKY tokens to a recognized delegate or a contract that they own. Voting with MKR is no longer possible."
       },
       {
         "question": "What is onchain voting?",
@@ -914,7 +918,7 @@
         "answer": "Yes, you can participate in Sky Ecosystem Governance using a mobile wallet, as long as that wallet supports governance functions."
       },
       {
-        "question": "How can I  get involved in Sky Ecosystem Governance discussions?",
+        "question": "How can I get involved in Sky Ecosystem Governance discussions?",
         "answer": "To participate in discussions regarding Sky Ecosystem Governance and risk, join the [Sky Forum](https://forum.sky.money/), a public platform that includes conversation threads, tagging, categorization and active moderation. Other platforms used by the Sky Ecosystem community, such as [Discord](https://discord.com/invite/skyecosystem) and X ([@SkyEcosystem](https://x.com/SkyEcosystem)), cover all other Sky topics and are much less formal."
       },
       {

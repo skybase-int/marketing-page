@@ -34,9 +34,9 @@ Some Star Agent Artifacts are high-level, focusing on vision, principles and com
     categories: ['Sky Agent Framework and Stars']
   },
   {
-    question: 'How do Stars Agents benefit tSky Ecosystem?',
+    question: 'How do Stars Agents benefit Sky Ecosystem?',
     answer:
-      'Sky Star Agents are autonomous and independent decentralized projects within tSky Ecosystem. They operate within the Sky Agent Framework, which is designed to foster innovation, expand liquidity, and help grow Sky Ecosystem.',
+      'Sky Star Agents are autonomous and independent decentralized projects within Sky Ecosystem. They operate within the Sky Agent Framework, which is designed to foster innovation, expand liquidity, and help grow Sky Ecosystem.',
     categories: ['Sky Agent Framework and Stars']
   },
   {
@@ -52,7 +52,7 @@ Some Star Agent Artifacts are high-level, focusing on vision, principles and com
     categories: ['Sky Agent Framework and Stars']
   },
   {
-    question: 'What is the Spark Liquidity Layer',
+    question: 'What is the Spark Liquidity Layer?',
     answer:
       'The Spark Liquidity Layer directly and automatically provides USDS, sUSDS and USDC liquidity across networks and DeFi markets. This enables users to access the Sky Savings Rate on their preferred network using sUSDS. Additionally, it allows Spark to automate liquidity provision into DeFi markets to optimize yield. Please see [Spark Documentation](https://docs.spark.fi/user-guides/spark-liquidity-layer) and [Spark Liquidity Layer documentation](https://docs.spark.fi/user-guides/spark-liquidity-layer) for details. For more information on third-party services, please see the [Terms of Use](https://docs.sky.money/legal-terms).',
     categories: ['Sky Agent Framework and Stars']

@@ -439,7 +439,7 @@ A smart contract audit is an investment in a project’s future.`,
     categories: ['Crypto (General)']
   },
   {
-    question: 'What are token wrappers?',
+    question: 'What are tokenized real-world assets (RWAs)?',
     answer:
       'Real-World Assets (RWAs) is a term used to describe  traditional assets that have been tokenized to be represented on the blockchain. In the Sky Ecosystem, some limited categories of RWAs are used along with crypto assets as collateral to back USDS and DAI stablecoins.',
     categories: ['Crypto (General)']

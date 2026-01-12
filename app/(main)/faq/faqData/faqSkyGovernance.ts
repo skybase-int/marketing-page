@@ -39,7 +39,7 @@ Delegates granted voting power can never directly access any SKY tokens delegate
   {
     question: 'Can I participate in Sky Ecosystem Governance using both MKR and SKY?',
     answer:
-      'No. SKY is the sole governance token of tSky Ecosystem and the upgrade of MKR. Only SKY token holders can use their SKY to participate directly in Sky Ecosystem Governance through a system of decentralized onchain voting, and/or to transfer the voting power of their SKY tokens to a recognized delegate or a contract that they own. Voting with MKR is no longer possible.',
+      'No. SKY is the sole governance token of Sky Ecosystem and the upgrade of MKR. Only SKY token holders can use their SKY to participate directly in Sky Ecosystem Governance through a system of decentralized onchain voting, and/or to transfer the voting power of their SKY tokens to a recognized delegate or a contract that they own. Voting with MKR is no longer possible.',
     categories: ['Sky Governance']
   },
   {
@@ -85,7 +85,7 @@ Delegates in receipt of token voting power can never directly access any SKY tok
     categories: ['Sky Governance']
   },
   {
-    question: 'How can I  get involved in Sky Ecosystem Governance discussions?',
+    question: 'How can I get involved in Sky Ecosystem Governance discussions?',
     answer:
       'To participate in discussions regarding Sky Ecosystem Governance and risk, join the [Sky Forum](https://forum.sky.money/), a public platform that includes conversation threads, tagging, categorization and active moderation. Other platforms used by the Sky Ecosystem community, such as [Discord](https://discord.com/invite/skyecosystem) and X ([@SkyEcosystem](https://x.com/SkyEcosystem)), cover all other Sky topics and are much less formal.',
     categories: ['Sky Governance']
