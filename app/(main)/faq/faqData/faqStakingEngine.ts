@@ -7,11 +7,9 @@ export const stakingEngine: FAQItem[] = [
 
 • **Access Rewards.** Supply SKY tokens to access Staking Rewards in the form of SKY or Sky Star tokens. Staking Reward rates are determined by Sky Ecosystem Governance through the process of decentralized onchain voting.
 
-• **Borrow.** Borrow USDS against your supplied SKY. You can exit your borrow position at any time and withdraw or pay back USDS whenever you would like. The USDS Borrow Rate and debt ceiling are determined by Sky Ecosystem Governance through the process of decentralized onchain voting. Your total debt increases each block according to the Borrow Rate.
+• **Borrow.** Borrow USDS against your supplied SKY. You can decide to pay back all of your debt, withdraw your staked SKY, and claim some or all of your rewards at any time. Your SKY and claimed rewards are then released from the Staking Engine smart contract back to your connected wallet. The USDS Borrow Rate and debt ceiling are determined by Sky Ecosystem Governance through the process of decentralized onchain voting. Your total debt increases each block according to the Borrow Rate.
 
 • **Delegate.** Transfer the voting power of your supplied SKY tokens to a recognized delegate or a contract that you own. Your chosen delegate can then participate in the Sky Ecosystem Governance voting process on your behalf. You can choose one delegate per position, meaning if you want to entrust your SKY to two different delegates using the Staking Engine, you will need to create two separate positions.
-
-You may exit your Staking positions at any time; no exit fee applies. Staking Rewards Rates and the Borrow Rate are determined by Sky Ecosystem Governance through the process of decentralized onchain voting.
 
 Your SKY, as well as any Staking Rewards that you accumulate, are supplied to a non-custodial smart contract, such that no intermediary ever takes custody of those tokens. With Sky, you always remain in control of your assets.`,
     categories: ['Staking Engine']
@@ -91,11 +89,11 @@ If you would rather manage your position(s) in the typical way, you would go to 
     question: 'How does the Staking Engine enable borrowing?',
     answer: `The Staking Engine is a feature of the decentralized Sky Protocol. When you stake SKY tokens, you can access Staking Rewards and may also choose to create one or more positions, including a position that enables you to generate and borrow USDS stablecoins against your supplied SKY.
 
-You can exit your borrow position at any time—no exit fee applies—and withdraw or pay back USDS whenever you would like.
+You can manage your borrow position at any time and withdraw or pay back USDS whenever you would like. Your SKY and claimed rewards are then released from the Staking Engine smart contract back to your connected wallet.
 
 The USDS Borrow Rate and debt ceiling are determined by Sky Ecosystem Governance through the process of decentralized onchain voting. Your total debt increases each block according to the Borrow Rate.
 
-Please note that opening a USDS borrow position subjects you to liquidation risk if at any time the value of your supplied collateral drops below the required threshold ([liquidation price](#tooltip-liquidation-price-staking)) and your position becomes undercollateralized. If this were to occur, the smart contract would automatically liquidate and auction your collateral, and any leftover collateral may be claimed through the [Unified Auctions portal](https://unified-auctions.makerdao.com/).
+Please note that opening a USDS borrow position subjects you to liquidation risk if at any time the value of your supplied collateral drops below the required threshold (liquidation price) and your position becomes undercollateralized. If this were to occur, the smart contract would automatically liquidate and auction your collateral, and any leftover collateral may be claimed through the [Unified Auctions portal](https://unified-auctions.makerdao.com/).
 
 For more information, see the [User Risk Documentation](https://docs.sky.money/user-risks).`,
     categories: ['Staking Engine']
@@ -109,12 +107,12 @@ For more information, see the [User Risk Documentation](https://docs.sky.money/u
   {
     question: 'Can I borrow USDS using ETH?',
     answer:
-      'Yes. For example, you can do so via the Borrow feature of [Spark](http://Spark.fi), but not via the Sky.money web app. Please see the [Terms of Use](https://docs.sky.money/legal-terms) for more information on third-party services.',
+      'Yes. For example, you can do so via the Borrow feature of [Spark](https://Spark.fi), but not via the Sky.money web app. Please see the [Terms of Use](https://docs.sky.money/legal-terms) for more information on third-party services.',
     categories: ['Staking Engine']
   },
   {
     question: 'What happens if my USDS borrow position is liquidated?',
-    answer: `When you [borrow](#tooltip-borrow) USDS stablecoins against SKY tokens using the Staking Engine of the Sky Protocol or some other method, your position is subject to liquidation risk in the following scenario: If at any time the value of your supplied collateral drops below the required threshold ([liquidation price](#tooltip-liquidation-price-staking)), your position is undercollateralized. That means it will be liquidated and your supplied collateral will be auctioned, coordinated through Sky Ecosystem Governance channels. Any leftover collateral can be claimed through the [Unified Auctions portal](https://unified-auctions.makerdao.com/).
+    answer: `When you borrow USDS stablecoins against SKY tokens using the Staking Engine of the Sky Protocol or some other method, your position is subject to liquidation risk in the following scenario: If at any time the value of your supplied collateral drops below the required threshold (liquidation price), your position is undercollateralized. That means it will be liquidated and your supplied collateral will be auctioned, coordinated through Sky Ecosystem Governance channels. Any leftover collateral can be claimed through the [Unified Auctions portal](https://unified-auctions.makerdao.com/).
 
 For more information, see the [User Risk Documentation](https://docs.sky.money/user-risks).`,
     categories: ['Staking Engine']
@@ -123,7 +121,7 @@ For more information, see the [User Risk Documentation](https://docs.sky.money/u
     question: 'How do Sky liquidation auctions work?',
     answer: `The liquidation auctions of the Sky Protocol are automated processes that occur when a USDS or DAI borrow position becomes unsafe due to price fluctuations.
 
-A borrow position is subject to liquidation risk if at any time the value of the supplied collateral drops below the required threshold ([liquidation price](#tooltip-liquidation-price-staking)) and the position becomes undercollateralized. If this were to occur, the system would automatically liquidate and auction the collateral, and any leftover collateral may be claimed through the [Unified Auctions portal](https://unified-auctions.makerdao.com/).
+A borrow position is subject to liquidation risk if at any time the value of the supplied collateral drops below the required threshold (liquidation price) and the position becomes undercollateralized. If this were to occur, the system would automatically liquidate and auction the collateral, and any leftover collateral may be claimed through the [Unified Auctions portal](https://unified-auctions.makerdao.com/).
 
 ### **The Auction**
 
@@ -160,9 +158,9 @@ Staking Rewards are what you can access when you stake SKY to the Staking Engine
     categories: ['Staking Engine']
   },
   {
-    question: 'How does exiting a Staking Engine position work?',
+    question: 'How does managing a Staking Engine position work?',
     answer:
-      'You can change your Staking Reward selection and exit your Staking Engine position(s) at any time (no exit fee applies), and draw or pay back USDS whenever you would like.',
+      'You can change your Staking Reward selection and manage your position(s) at any time. You can also withdraw or pay back USDS whenever you would like. Your SKY and claimed rewards are then released from the Staking Engine smart contract back to your connected wallet.',
     categories: ['Staking Engine']
   }
 ];

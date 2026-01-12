@@ -83,5 +83,12 @@ Rate/fee changes: Sky Ecosystem Governance can update parameters (rates, caps) a
     answer:
       'Yes, eligible users of the Sky.money web app can access the Trade feature to trade stUSDS via an API integration with the third-party decentralized exchange CoW Swap. stUSDS holders are also free to access any other protocol or exchange that supports stUSDS trading; however, users do so at their own risk. Sky.money is not responsible for any loss or damages incurred while using such third-party platforms. Please see the [User Risk Documentation](https://docs.sky.money/user-risks) for more information on third-party services.',
     categories: ['stUSDS']
+  },
+  {
+    question: 'What is the Curve Pool and why is it used in the stUSDS module of the Sky Protocol?',
+    answer: `A Curve LP (Liquidity Provider) Pool is a smart contract on Curve Finance designed for efficient trading of similar assets, such as stablecoins or wrapped tokens, with very low slippage. Liquidity Providers deposit those assets into a pool, and in return receive unique ERC-20 LP tokens that represent their share of the pool. They may choose to stake those LP tokens to earn rewards or trader fees. Curve Pools often attract significant capital, potentially creating deep liquidity.
+
+Eligible Sky.money web app users accessing the stUSDS module are automatically routed to a Curve LP pool when native Sky Protocol USDS liquidity is unavailable (100% utilized) or when native exchange rates are inferior. Please see the [Terms of Use](https://docs.sky.money/legal-terms) for more information on third-party services.`,
+    categories: ['stUSDS']
   }
 ];

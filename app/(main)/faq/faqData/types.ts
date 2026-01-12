@@ -3,7 +3,7 @@ export type Category =
   | 'Crypto (General)'
   | 'Sky Tokens'
   | 'Sky Protocol & Ecosystem'
-  | 'Sky Stars'
+  | 'Sky Agent Framework and Stars'
   | 'Sky.money'
   | 'Trade'
   | 'Sky Savings Rate'
@@ -28,7 +28,7 @@ export const categories: Category[] = [
   'Crypto (General)',
   'Sky Tokens',
   'Sky Protocol & Ecosystem',
-  'Sky Stars',
+  'Sky Agent Framework and Stars',
   'Sky.money',
   'Trade',
   'Sky Savings Rate',
