@@ -25,7 +25,7 @@ These advancements have vastly improved user experiences and enhanced network re
   },
   {
     question: 'What is the Sky Protocol?',
-    answer: `The Sky Protocol is a decentralized financial application built around its native USDS stablecoin—the largest decentralized yield-generating stablecoin and the third-largest stablecoin overall—supporting access to outstanding risk-adjusted returns on sUSDS. Sky is optimized for financial institutions, fully automated whales, builders and defi users—all entities and individuals looking for a fully decentralized, non-custodial financial system that delivers maximum effectiveness, transparency, and enhanced security at scale.
+    answer: `The Sky Protocol is a decentralized financial application built around its native USDS stablecoin—the largest decentralized yield-generating stablecoin and the third-largest stablecoin overall—supporting access to outstanding risk-adjusted returns on USDS. Sky is optimized for financial institutions, fully automated whales, builders and defi users—all entities and individuals looking for a fully decentralized, non-custodial financial system that delivers maximum effectiveness, transparency, and enhanced security at scale.
 
 The Sky Protocol is made up of software code deployed to the Ethereum blockchain and designed to enable Sky Ecosystem to operate autonomously and allow users to engage with blockchain technology. The code consists of smart contracts that are self-executing, trustless, decentralized and permissionless. These smart contracts contain the rules and agreements that constitute the framework of the Sky Protocol, and are what allow for the fast and efficient creation, transfer and validation of digital assets, as well as for Sky Ecosystem Governance.
 
