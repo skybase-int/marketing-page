@@ -37,15 +37,20 @@ Sentry.init({
     'The operation was aborted'
   ],
 
-  // Enable integrations
-  integrations: [
-    Sentry.replayIntegration({
-      // Mask all text content for privacy
-      maskAllText: true,
-      // Block all media elements
-      blockAllMedia: true
-    })
-  ],
+  // Configure the built-in replay integration
+  // Note: replayIntegration is added automatically by @sentry/nextjs v10+
+  // Use integrations callback to modify its settings
+  integrations: defaultIntegrations => {
+    return defaultIntegrations.map(integration => {
+      if (integration.name === 'Replay') {
+        return Sentry.replayIntegration({
+          maskAllText: true,
+          blockAllMedia: true
+        });
+      }
+      return integration;
+    });
+  },
 
   // Before sending, you can filter or modify events
   beforeSend(event, hint) {
