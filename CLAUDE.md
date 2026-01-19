@@ -50,27 +50,23 @@ This is a Next.js 15 marketing website built with the App Router pattern. The co
 1. **Route Organization**: Uses route groups `(main)` and `(legal)` to organize pages without affecting URLs. Main marketing pages live under `(main)` while legal documents are under `(legal)`.
 
 2. **State Management**:
-
    - Server state: TanStack Query (React Query) for API data fetching
    - Client state: Custom AppContext for UI state (modals, loading states, theme)
    - No Redux or Zustand - keep state management simple
 
 3. **Component Structure**:
-
    - Shared components in `/app/components/`
    - UI primitives (built on Radix UI) in `/app/components/ui/`
    - Page-specific components co-located with their routes
    - All components use TypeScript with proper type definitions
 
 4. **Styling System**:
-
    - Tailwind CSS with extensive custom configuration
    - `tailwind-variants` for component variants
    - Design tokens defined in tailwind.config.js
    - Responsive breakpoints: mobile, tablet, desktop, desktop-xl
 
 5. **Animation Strategy**:
-
    - Framer Motion for complex animations
    - CSS animations via Tailwind for simple transitions
    - Video backgrounds with performance optimizations
@@ -144,3 +140,91 @@ Note: The sync script will gracefully skip if authentication or network issues o
 - Co-locate related code (component + styles + types)
 - Use descriptive variable names
 - Keep components focused and composable
+
+## Sentry / Error Monitoring
+
+This project uses Sentry (`@sentry/nextjs`) for error tracking, performance monitoring, and session replay.
+
+### Configuration Files
+
+| File                      | Purpose                                               |
+| ------------------------- | ----------------------------------------------------- |
+| `sentry.client.config.ts` | Browser-side initialization                           |
+| `sentry.server.config.ts` | Server-side initialization (Node.js runtime)          |
+| `sentry.edge.config.ts`   | Edge runtime initialization (middleware, edge routes) |
+| `instrumentation.ts`      | Next.js 15 instrumentation hook                       |
+
+### Exception Catching
+
+When catching errors that should be reported to Sentry, use `Sentry.captureException`:
+
+```typescript
+import * as Sentry from '@sentry/nextjs';
+
+try {
+  await riskyOperation();
+} catch (error) {
+  Sentry.captureException(error, {
+    tags: { component: 'MyComponent' },
+    extra: { userId: user.id }
+  });
+  throw error; // Re-throw if needed
+}
+```
+
+### Custom Tracing
+
+Add custom spans to track specific operations:
+
+```typescript
+import * as Sentry from '@sentry/nextjs';
+
+// UI action tracing
+async function handleSubmit() {
+  return Sentry.startSpan({ name: 'form.submit', op: 'ui.action' }, async () => {
+    await submitForm();
+  });
+}
+
+// API call tracing
+async function fetchData() {
+  return Sentry.startSpan({ name: 'api.fetchData', op: 'http.client' }, async () => {
+    return await fetch('/api/data');
+  });
+}
+```
+
+### Sentry Logger
+
+Use `Sentry.logger` for structured logging that appears in Sentry:
+
+```typescript
+import * as Sentry from '@sentry/nextjs';
+
+const logger = Sentry.logger;
+
+logger.info('User logged in', { userId: user.id });
+logger.warn('Rate limit approaching', { remaining: 10 });
+logger.error('Payment failed', { orderId, reason });
+```
+
+### Web3 Error Tagging
+
+When capturing Web3-specific errors, use consistent tags:
+
+```typescript
+Sentry.captureException(error, {
+  tags: {
+    type: 'rpc_error', // simulation_failure, wallet_error, subgraph_error
+    chain_id: chainId,
+    contract: contractAddress,
+    error_code: error.code
+  }
+});
+```
+
+### Development vs Production
+
+- Events are **not sent** in development unless `NEXT_PUBLIC_SENTRY_DEBUG=true`
+- Session replay masks all text and blocks media for privacy
+- 10% of client transactions sampled; 100% on server/edge
