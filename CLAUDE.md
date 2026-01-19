@@ -147,12 +147,12 @@ This project uses Sentry (`@sentry/nextjs`) for error tracking, performance moni
 
 ### Configuration Files
 
-| File                      | Purpose                                               |
-| ------------------------- | ----------------------------------------------------- |
-| `sentry.client.config.ts` | Browser-side initialization                           |
-| `sentry.server.config.ts` | Server-side initialization (Node.js runtime)          |
-| `sentry.edge.config.ts`   | Edge runtime initialization (middleware, edge routes) |
-| `instrumentation.ts`      | Next.js 15 instrumentation hook                       |
+| File                        | Purpose                                               |
+| --------------------------- | ----------------------------------------------------- |
+| `instrumentation-client.ts` | Browser-side initialization (Turbopack compatible)    |
+| `sentry.server.config.ts`   | Server-side initialization (Node.js runtime)          |
+| `sentry.edge.config.ts`     | Edge runtime initialization (middleware, edge routes) |
+| `instrumentation.ts`        | Next.js 15 instrumentation hook (server/edge loader)  |
 
 ### Exception Catching
 

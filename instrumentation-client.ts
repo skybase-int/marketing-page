@@ -1,5 +1,5 @@
 // This file configures the initialization of Sentry on the client.
-// The added config here will be used whenever a users loads a page in their browser.
+// The config here will be used whenever a user loads a page in their browser.
 // https://docs.sentry.io/platforms/javascript/guides/nextjs/
 
 import * as Sentry from '@sentry/nextjs';
@@ -7,25 +7,63 @@ import * as Sentry from '@sentry/nextjs';
 Sentry.init({
   dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
 
-  // Add optional integrations for additional features
-  integrations: [Sentry.replayIntegration()],
+  // Environment configuration
+  environment: process.env.NEXT_PUBLIC_SENTRY_ENVIRONMENT || 'development',
 
-  // Define how likely traces are sampled. Adjust this value in production, or use tracesSampler for greater control.
-  tracesSampleRate: 1,
+  // Performance Monitoring
+  // Capture 10% of transactions in production, 100% in development
+  tracesSampleRate: process.env.NODE_ENV === 'production' ? 0.1 : 1.0,
+
+  // Session Replay
+  // Capture 10% of sessions, 100% of sessions with errors
+  replaysSessionSampleRate: 0.1,
+  replaysOnErrorSampleRate: 1.0,
+
   // Enable logs to be sent to Sentry
   enableLogs: true,
 
-  // Define how likely Replay events are sampled.
-  // This sets the sample rate to be 10%. You may want this to be 100% while
-  // in development and sample at a lower rate in production
-  replaysSessionSampleRate: 0.1,
+  // Debug mode for development
+  debug: process.env.NODE_ENV !== 'production',
 
-  // Define how likely Replay events are sampled when an error occurs.
-  replaysOnErrorSampleRate: 1.0,
+  // Release tracking
+  release: process.env.NEXT_PUBLIC_SENTRY_RELEASE,
 
-  // Enable sending user PII (Personally Identifiable Information)
-  // https://docs.sentry.io/platforms/javascript/guides/nextjs/configuration/options/#sendDefaultPii
-  sendDefaultPii: true
+  // Filter out noisy errors
+  ignoreErrors: [
+    // Browser extensions
+    /^chrome-extension:\/\//,
+    /^moz-extension:\/\//,
+    // Network errors
+    'Network Error',
+    'Failed to fetch',
+    'Load failed',
+    // User aborted requests
+    'AbortError',
+    'The operation was aborted'
+  ],
+
+  // Configure the replay integration with privacy settings
+  integrations: defaultIntegrations => {
+    return defaultIntegrations.map(integration => {
+      if (integration.name === 'Replay') {
+        return Sentry.replayIntegration({
+          maskAllText: true,
+          blockAllMedia: true
+        });
+      }
+      return integration;
+    });
+  },
+
+  // Before sending, filter or modify events
+  beforeSend(event, hint) {
+    // Don't send events in development unless explicitly enabled
+    if (process.env.NODE_ENV !== 'production' && !process.env.NEXT_PUBLIC_SENTRY_DEBUG) {
+      return null;
+    }
+    return event;
+  }
 });
 
+// Capture router transitions for performance monitoring
 export const onRouterTransitionStart = Sentry.captureRouterTransitionStart;
