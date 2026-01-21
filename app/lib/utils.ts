@@ -1,3 +1,4 @@
+import * as Sentry from '@sentry/nextjs';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
@@ -41,6 +42,10 @@ export function getTermsLink(): { url: string; name: string }[] {
   try {
     if (linkVar) termsLink = JSON.parse(linkVar);
   } catch (error) {
+    Sentry.captureException(error, {
+      level: 'warning',
+      tags: { type: 'config_error', config: 'terms_link' }
+    });
     console.error('Error parsing TERMS_LINK:', error);
   }
   return termsLink;
@@ -57,6 +62,10 @@ export function getFooterLinks(): { url: string; name: string }[] {
   try {
     if (footerLinksVar) footerLinks = JSON.parse(footerLinksVar);
   } catch (error) {
+    Sentry.captureException(error, {
+      level: 'warning',
+      tags: { type: 'config_error', config: 'footer_links' }
+    });
     console.error('Error parsing FOOTER_LINKS:', error);
   }
   return footerLinks;
