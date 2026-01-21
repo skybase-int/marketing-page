@@ -1,3 +1,4 @@
+import * as Sentry from '@sentry/nextjs';
 import { formatNumber, formatPercent } from '@/app/utils';
 
 export interface FetchedData {
@@ -99,6 +100,9 @@ export const fetchData = async (): Promise<FetchedData> => {
           : ''
     };
   } catch (error) {
+    Sentry.captureException(error, {
+      tags: { type: 'api_error', endpoint: 'protocol-data' }
+    });
     console.error('Error fetching data:', error);
     return {
       users: '',
