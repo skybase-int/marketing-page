@@ -81,6 +81,8 @@ jobs:
           NEXT_PUBLIC_FOOTER_LINKS: ${{ vars.NEXT_PUBLIC_FOOTER_LINKS }}
           NEXT_PUBLIC_TERMS_LINK: ${{ vars.NEXT_PUBLIC_TERMS_LINK }}
           PNPM_VERSION: ${{ vars.PNPM_VERSION }}
+          SENTRY_DSN: ${{ vars.SENTRY_DSN }}
+          SENTRY_ENVIRONMENT: ${{ vars.SENTRY_ENVIRONMENT }}
 
   deploy:
     name: Deploy image
