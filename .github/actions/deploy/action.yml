@@ -102,5 +102,5 @@ runs:
         create-namespace: false
         name: ${{ inputs.APP_NAME }}
         namespace: ${{ inputs.NAMESPACE }}
-        timeout: 3m0s
+        timeout: 8m0s
         version: 0.0.35
