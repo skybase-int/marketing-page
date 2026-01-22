@@ -45,3 +45,6 @@ next-env.d.ts
 # Content sync
 .tmp-content-repo/
 .tmp-version-check/
+
+# Sentry Config File
+.env.sentry-build-plugin
