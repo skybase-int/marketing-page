@@ -54,6 +54,14 @@ inputs:
     description: 'The version of pnpm to use'
     required: true
     default: ''
+  SENTRY_DSN:
+    description: 'Sentry Data Source Name, which is a URL'
+    required: true
+    default: ''
+  SENTRY_ENVIRONMENT:
+    description: 'The name of the Sentry Environment to use'
+    required: true
+    default: ''
 
 runs:
   using: 'composite'
@@ -91,5 +99,7 @@ runs:
           NEXT_PUBLIC_FOOTER_LINKS=${{ inputs.NEXT_PUBLIC_FOOTER_LINKS }}
           NEXT_PUBLIC_TERMS_LINK=${{ inputs.NEXT_PUBLIC_TERMS_LINK }}
           PNPM_VERSION=${{ inputs.PNPM_VERSION }}
+          SENTRY_DSN=${{ inputs.SENTRY_DSN }}
+          SENTRY_ENVIRONMENT=${{ inputs.SENTRY_ENVIRONMENT }}
 
         secrets: NPM_TOKEN=${{ inputs.NPM_TOKEN }}
