@@ -6,7 +6,7 @@ import { PageAnimatePresence } from '@/app/components/PageAnimatePresence';
 import { circleStdClassName } from '@/app/lib/fonts';
 import { Header } from '@/app/components/Header';
 import { ExternalLinkModal } from '@/app/components/ExternalLinkModal';
-import Script from 'next/script';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
   title: 'sky.money',
@@ -60,6 +60,7 @@ export default async function RootLayout({ children }: { children?: React.ReactN
             </AuthWrapper>
           )}
         </Providers>
+        <SpeedInsights />
       </body>
     </html>
   );
