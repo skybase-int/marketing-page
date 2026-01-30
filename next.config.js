@@ -12,6 +12,7 @@ const cspHeader = `
       https://api.ipify.org
       https://vercel.live/
       https://vercel.com
+      https://cdn.markfi.xyz
       wss://ws-us3.pusher.com
       *.pusher.com
       *.pusherapp.com
